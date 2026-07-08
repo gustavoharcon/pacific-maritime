@@ -1,5 +1,5 @@
 // import tailwind.css file
-import "@/assets/styles/globals.css";
+import "../assets/styles/globals.css";
 import AuthProvider from "@/components/AuthProvider.jsx";
 import { ToastContainer } from "react-toastify";
 import { GlobalProvider } from "@/context/GlobalContext.js";

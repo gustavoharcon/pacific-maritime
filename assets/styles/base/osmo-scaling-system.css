@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Martian+Mono:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo+Black:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 /* ------------------------- Osmo [https://osmo.supply/] ------------------------- */
 /* ------------------------- Variables ------------------------------------------- */
@@ -249,12 +249,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Martian Mono", monospace;
+    font-family: "Archivo Black", sans-serif;
 }
 
 h1 {
     margin-top: 0;
-    margin-bottom: 0;
     font-size: var(--font-size-h1);
     font-weight: 500;
     line-height: var(--line-height-h1);

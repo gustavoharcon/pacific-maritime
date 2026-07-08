@@ -1,3 +1,5 @@
-@import './base/osmo-scaling-system.css';
-@import './NavBars/MainMenu.css';
-@import './HeroSections/HeroSection.css';
+@import "./base/osmo-scaling-system.css";
+@import "./nav-bars/main-menu.css";
+@import "./hero-sections/hero-section.css";
+@import "./hero-text-container.css";
+@import "./form/multi-step-form.css";

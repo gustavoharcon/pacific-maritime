@@ -1,0 +1,20 @@
+.hero-text-container {
+    z-index: 1;
+    color: var(--color-light);
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        margin-bottom: 24px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 16px;
+
+    }
+}

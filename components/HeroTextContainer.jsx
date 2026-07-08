@@ -7,7 +7,7 @@ const HeroTextContainer = ({ data }) => {
     return (
         <div className="hero-text-container">
             {
-                title && <h1>{title}</h1>
+                title && <h1 className="title">{title}</h1>
             }
             {
                 subtitle && <p className="subtitle">{subtitle}</p>

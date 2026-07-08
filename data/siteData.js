@@ -92,6 +92,8 @@ const siteData = [
                 "description": "Pacific Maritime Industries Corp manufactures heavy-duty, NAVSEA-compliant marine furniture and custom seating for the U.S. Navy and commercial shipyards."
             },
             "hero_section": {
+                // "background_image": "https://res.cloudinary.com/irwujctd/image/upload/v1783529228/pexels-kelly-37195596_j7tyau.jpg",
+                "background_image": "https://res.cloudinary.com/irwujctd/image/upload/v1783529911/pexels-hujason-32863928_gmu07z.jpg",
                 "title": "Fabrication for the Navy, Built to Last",
                 "subtitle": "Pacific Maritime Industries Corp manufactures heavy-duty, NAVSEA-compliant marine furniture and custom seating for the U.S. Navy and commercial shipyards.",
                 "buttons": [

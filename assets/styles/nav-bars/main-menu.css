@@ -1,6 +1,11 @@
 .main-menu {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
     >.container {
         >.row {
+            background-color: var(--color-shade-2);
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
