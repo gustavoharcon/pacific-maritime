@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { 
-  FaRegEnvelope, 
-  FaRegCalendar, 
-  FaCheck, 
-  FaLock, 
-  FaWrench, 
-  FaBolt, 
+import {
+  FaRegEnvelope,
+  FaRegCalendar,
+  FaCheck,
+  FaLock,
+  FaWrench,
+  FaBolt,
   FaBoxesStacked,
   FaSpinner
 } from "react-icons/fa6";
@@ -134,7 +134,7 @@ export default function MultiStepForm() {
     try {
       // Find full capability label
       const capLabel = capabilities.find(c => c.id === formData.capability)?.label || formData.capability;
-      
+
       const response = await fetch("/api/submit", {
         method: "POST",
         headers: {
@@ -168,10 +168,10 @@ export default function MultiStepForm() {
         {[1, 2, 3, 4].map((item, idx) => {
           const isActive = step === item;
           const isCompleted = step > item;
-          
+
           return (
             <div key={item} className="step-indicator-item">
-              <div 
+              <div
                 className={`step-circle ${isActive ? "active" : ""} ${isCompleted ? "completed" : ""}`}
               >
                 {isCompleted ? <FaCheck size={10} /> : item}
@@ -206,13 +206,13 @@ export default function MultiStepForm() {
       {renderStepsIndicator()}
 
       <form onSubmit={step === 4 ? handleSubmit : (e) => e.preventDefault()} className="rfq-form">
-        
+
         {/* STEP 1: Your Name and Email */}
         {step === 1 && (
           <div className="form-step-content">
             <h3 className="form-title">YOUR NAME AND EMAIL</h3>
             <p className="form-subtitle">We need to know who is sending the hard stuff.</p>
-            
+
             <div className="form-group">
               <label htmlFor="fullName">Your full name</label>
               <div className="input-wrapper">
@@ -452,16 +452,16 @@ export default function MultiStepForm() {
             </div>
 
             <div className="form-actions">
-              <button 
-                type="button" 
-                className="btn-cancel" 
+              <button
+                type="button"
+                className="btn-cancel"
                 onClick={prevStep}
                 disabled={loading}
               >
                 Back
               </button>
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className="btn-submit"
                 disabled={loading}
               >

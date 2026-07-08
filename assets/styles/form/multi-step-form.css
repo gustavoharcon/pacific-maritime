@@ -2,7 +2,6 @@
     background-color: rgba(239, 238, 236, 0.95);
     /* matching --color-neutral-200 */
     border: 2px solid var(--color-neutral-600);
-    border-radius: 24px;
     padding: 32px;
     box-shadow: var(--shadow-deep, 0 10px 30px rgba(0, 0, 0, 0.15));
     width: 100%;
