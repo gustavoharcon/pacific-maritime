@@ -3,11 +3,14 @@
 import { useState } from "react";
 import { FaPlay } from "react-icons/fa";
 
-const VideoSection = () => {
+const VideoSection = ({ data }) => {
+
+    const { video_id, video_title, video_description } = data;
+
     const [isPlaying, setIsPlaying] = useState(false);
 
     // YouTube Video ID and URL configurations
-    const videoId = "4_Kq6xXg1u0";
+    const videoId = video_id || "u31qwQUeGuM";
     const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
     const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&si=u07lP7i4l69v83s8`;
 
@@ -25,7 +28,7 @@ const VideoSection = () => {
                             allowFullScreen
                         ></iframe>
                     ) : (
-                        <div 
+                        <div
                             className="video-thumbnail-container"
                             style={{ backgroundImage: `url(${thumbnailUrl})` }}
                             onClick={() => setIsPlaying(true)}
@@ -42,9 +45,9 @@ const VideoSection = () => {
                                     </div>
                                 </div>
                                 <span className="video-tagline">Watch Video</span>
-                                <h2 className="video-title">NAVSEA-Compliant Shipboard Fabrication & Seating</h2>
+                                <h2 className="video-title">{video_title}</h2>
                                 <p className="video-description">
-                                    Discover how we design and build heavy-duty marine furniture and custom seating for the U.S. Navy and commercial shipyards.
+                                    {video_description}
                                 </p>
                             </div>
                         </div>

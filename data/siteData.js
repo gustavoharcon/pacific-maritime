@@ -108,6 +108,11 @@ const siteData = [
                         "button_style": "secondary"
                     }
                 ],
+            },
+            "video_section": {
+                "video_id": "",
+                "video_title": "NAVSEA-Compliant Shipboard Fabrication & Seating",
+                "video_description": "Discover how we design and build heavy-duty marine furniture and custom seating for the U.S. Navy and commercial shipyards.",
             }
         }
     }

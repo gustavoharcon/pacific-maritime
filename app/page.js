@@ -14,11 +14,12 @@ export async function generateMetadata() {
 export default function Home() {
 
   const hero_section = homeData.hero_section;
+  const video_section = homeData.video_section;
 
   return (
     <>
       <HeroSection data={hero_section} />
-      <VideoSection />
+      <VideoSection data={video_section} />
     </>
   );
 }
