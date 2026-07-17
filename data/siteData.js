@@ -40,48 +40,58 @@ const siteData = [
     {
         "main_menu": [
             {
-                "menu_name": "Home",
-                "menu_url": "/"
-            },
-            {
-                "menu_name": "About Us",
+                "menu_name": "About",
                 "menu_url": "/about"
-            },
-            {
-                "menu_name": "Services",
-                "menu_url": "/services"
             },
             {
                 "menu_name": "Products",
                 "menu_url": "/products"
             },
             {
+                "menu_name": "Catalogs",
+                "menu_url": "/catalogs"
+            },
+            {
+                "menu_name": "Blog",
+                "menu_url": "/blog"
+            },
+            {
                 "menu_name": "Contact",
-                "menu_url": "/contact"
+                "menu_url": "/contact",
+                "button_style": "secondary"
+            },
+            {
+                "menu_name": "Request Quote",
+                "menu_url": "/request-quote",
+                "button_style": "primary"
             }
         ]
     },
     {
         "footer_menu": [
             {
-                "menu_name": "Home",
-                "menu_url": "/"
-            },
-            {
-                "menu_name": "About Us",
+                "menu_name": "About",
                 "menu_url": "/about"
-            },
-            {
-                "menu_name": "Services",
-                "menu_url": "/services"
             },
             {
                 "menu_name": "Products",
                 "menu_url": "/products"
             },
             {
+                "menu_name": "Catalogs",
+                "menu_url": "/catalogs"
+            },
+            {
+                "menu_name": "Blog",
+                "menu_url": "/blog"
+            },
+            {
                 "menu_name": "Contact",
                 "menu_url": "/contact"
+            },
+            {
+                "menu_name": "Request quote",
+                "menu_url": "/request-quote"
             }
         ]
     },
@@ -94,8 +104,8 @@ const siteData = [
             "hero_section": {
                 "background_image": "https://res.cloudinary.com/irwujctd/image/upload/v1783529228/pexels-kelly-37195596_j7tyau.jpg",
                 // "background_image": "https://res.cloudinary.com/irwujctd/image/upload/v1783529911/pexels-hujason-32863928_gmu07z.jpg",
-                "title": "Fabrication for the Navy, Built to Last",
-                "subtitle": "Pacific Maritime Industries Corp manufactures heavy-duty, NAVSEA-compliant marine furniture and custom seating for the U.S. Navy and commercial shipyards.",
+                "title": "Built for the sea since 1979",
+                "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet.",
                 "buttons": [
                     {
                         "text": "Our work",

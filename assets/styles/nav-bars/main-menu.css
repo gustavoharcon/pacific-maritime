@@ -1,20 +1,19 @@
 .main-menu {
-    position: fixed;
     width: 100%;
     z-index: 1000;
+    background-color: var(--color-primary);
+    padding-top: 24px;
 
     >.container {
         >.row {
-            background-color: var(--color-shade-2);
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
             width: 100%;
-            border: 2px solid var(--color-neutral-600);
-            padding-left: 25px;
-            padding-right: 25px;
-            margin-top: 25px;
+            border: 2px solid var(--color-white);
+            border-radius: 16px;
+            padding: 10px 25px;
 
             >.mobile-menu-column {
                 display: none;
@@ -30,8 +29,9 @@
                     justify-content: center;
 
                     img {
-                        max-height: 65px;
+                        width: 100%;
                         overflow: hidden;
+                        object-fit: contain;
                     }
                 }
             }
@@ -58,6 +58,8 @@
                             >a {
                                 padding: 10px;
                                 font-size: 14px;
+                                font-weight: 400;
+                                color: var(--color-white);
                             }
                         }
                     }

@@ -1,16 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo+Black:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400..800&display=swap');
 
 /* ------------------------- Osmo [https://osmo.supply/] ------------------------- */
 /* ------------------------- Variables ------------------------------------------- */
 :root {
     --color-light: var(--color-neutral-200);
     --color-dark: var(--color-neutral-800);
-    --color-primary: #1B2A4A;
-    --color-rolling-stone: #707F85;
-    --color-spectra: #2F4F4F;
-    --color-tango: #F37021;
-    --color-red: #ff0000;
+    --color-primary: #5F6980;
+    --color-background: #E8E9EC;
+    --color-foreground: #E8E9EC;
+    --color-border: #010101;
+    --color-accent: #1B2A4A;
+    --color-accent-2: #15213B;
+    --color-white: #fff;
     /* Start: Shades, testing */
+    --color-text: #010101;
     /* Paster */
     --color-shade-1: #F2F2F2;
     --color-shade-2: #D9D9D9;
@@ -51,7 +54,7 @@
     /* 20px to 25px */
     --font-size-h2: clamp(1.5rem, 1.125rem + 1.25vw, 2.25rem);
     /* 24px to 36px */
-    --font-size-h1: clamp(2rem, 1.5rem + 1.667vw, 3rem);
+    --font-size-h1: 64px;
     /* 32px to 48px */
 
     /* Line Heights */
@@ -70,7 +73,7 @@
     /* Roboto Button & Form Variables */
     /* --btn-font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", sans-serif; */
     --btn-font-family: "Inter", Arial, Helvetica Neue, Helvetica, sans-serif;
-    --btn-radius: 2rem;
+    --btn-radius: 16px;
     /* 8px */
     --btn-primary-1: #6b7c8c;
     /* dark start */
@@ -227,10 +230,10 @@ body {
     cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/671251b239d7aeb290a31ac5_cursor-default%402x.svg") 2 0, auto;
 }
 
-a,
+/* a,
 button {
     cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/671251b212e6b71494aa67ff_cursor-pointer%402x.svg") 12 0, pointer;
-}
+} */
 
 h1,
 h2,
@@ -249,13 +252,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Syne", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
 h1 {
     margin-top: 0;
     font-size: var(--font-size-h1);
-    font-weight: 500;
     line-height: var(--line-height-h1);
 }
 
@@ -302,6 +306,7 @@ h6 {
 p {
     margin-bottom: 0;
     margin-top: 0;
+    color: var(--color-text);
     font-size: var(--font-size-body);
     line-height: var(--line-height-body);
     font-weight: 500;
@@ -623,7 +628,7 @@ strong {
     line-height: 1;
     min-height: 2.75rem;
     /* 44px touch target */
-    padding: 0.75rem 1.25rem;
+    padding: 12px 10px;
     transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
@@ -637,10 +642,10 @@ strong {
 .btn--primary,
 .btn-primary {
     color: var(--btn-primary-contrast);
-    /* background: linear-gradient(180deg, var(--btn-primary-2), var(--btn-primary-1)); */
-    background: linear-gradient(90deg, #0b1e3a 0%, #6b7c8c 100%);
     border: none;
     box-shadow: 0 6px 18px rgba(11, 15, 25, 0.18);
+    background-color: var(--color-accent);
+
 }
 
 .btn--primary:hover,
@@ -659,16 +664,13 @@ strong {
 /* Secondary outlined */
 .btn--secondary,
 .btn-secondary {
-    color: var(--color-shade-6);
-    background: #ffffff;
-    border: 2px solid var(--btn-border-color);
-    padding: 0.5rem 1rem;
+    color: var(--color-white);
+    background: transparent;
+    border: 2px solid var(--color-white);
 }
 
 .btn--secondary:hover,
 .btn-secondary:hover {
-    background: #f7f7f7;
-    border-color: #000;
     transform: translateY(-1px);
 }
 
