@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSections/HeroSection";
-import VideoSection from "@/components/Videos/VideoSection";
+import TopTextThreeColumns from "@/components/TopTextThreeColumns";
 import siteData from "@/data/siteData.js";
 
 const homeData = siteData.find(item => item.home_page)?.home_page;
@@ -14,12 +14,12 @@ export async function generateMetadata() {
 export default function Home() {
 
   const hero_section = homeData.hero_section;
-  const video_section = homeData.video_section;
+  const top_text_three_columns = homeData.top_text_three_columns;
 
   return (
     <>
       <HeroSection data={hero_section} />
-      <VideoSection data={video_section} />
+      <TopTextThreeColumns data={top_text_three_columns} />
     </>
   );
 }

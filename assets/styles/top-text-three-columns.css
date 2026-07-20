@@ -1,0 +1,36 @@
+.top-text-three-columns {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-color: var(--color-background);
+
+    >.container {
+        >.row {
+            &.columns-row {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                gap: 32px;
+
+                >.col {
+                    width: 31%;
+                    border: 2px solid var(--color-text);
+                    border-radius: 16px;
+
+                    .background-image {
+                        width: 100%;
+                        height: 240px;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border-top-left-radius: 16px;
+                        border-top-right-radius: 16px;
+                    }
+                }
+
+                >.text-container {
+                    padding: 32px;
+                }
+            }
+        }
+    }
+}

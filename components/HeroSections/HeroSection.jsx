@@ -1,21 +1,19 @@
 import HeroTextContainer from "@/components/HeroTextContainer";
-import MultiStepForm from "@/components/Form/MultiStepForm";
 
 const HeroSection = ({ data }) => {
 
-    const { background_image } = data;
+    const { right_column_image } = data;
 
     return (
-        <section className="hero-section" style={{
-            ...(background_image && { backgroundImage: `url(${background_image})` }),
-        }}>
+        <section className="hero-section">
             <div className="container" >
                 <div className="row" >
                     <div className="col">
                         <HeroTextContainer data={data} />
                     </div>
-                    <div className="col">
-                        <MultiStepForm />
+                    <div className="col col-with-bg" style={{
+                        ...(right_column_image && { backgroundImage: `url(${right_column_image})` }),
+                    }}>
                     </div>
                 </div>
             </div>

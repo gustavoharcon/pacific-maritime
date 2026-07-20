@@ -102,22 +102,55 @@ const siteData = [
                 "description": "Pacific Maritime Industries Corp manufactures heavy-duty, NAVSEA-compliant marine furniture and custom seating for the U.S. Navy and commercial shipyards."
             },
             "hero_section": {
-                "background_image": "https://res.cloudinary.com/irwujctd/image/upload/v1783529228/pexels-kelly-37195596_j7tyau.jpg",
-                // "background_image": "https://res.cloudinary.com/irwujctd/image/upload/v1783529911/pexels-hujason-32863928_gmu07z.jpg",
+                "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/w_800,h_900,c_fill/v1784555981/Frame_1_wzzxdc.png",
                 "title": "Built for the sea since 1979",
                 "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet.",
                 "buttons": [
                     {
-                        "text": "Our work",
-                        "url": "#our-work",
+                        "text": "Request quote",
+                        "url": "/request-quote",
                         "button_style": "primary"
                     },
                     {
-                        "text": "Request quote",
-                        "url": "/request-quote",
+                        "text": "View Products",
+                        "url": "/products",
                         "button_style": "secondary"
                     }
                 ],
+            },
+            "top_text_three_columns": {
+                "top_text": {
+                    "small_title": "Trust",
+                    "title": "Built on Decades of Precision",
+                    "subtitle": "45+ years serving the fleet",
+                },
+                "columns": [
+                    {
+                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/serving-san-dieg-and-the-pacific-fleet_jbg4xy.png",
+                        "small_title": "Facility",
+                        "title": "Serving San Diego and the Pacific Fleet",
+                        "subtitle": "Port of San Diego",
+                        "buttons": [
+                            {
+                                "text": "Directions",
+                                "link": "",
+                                "button_style": "secondary"
+                            }
+                        ]
+                    },
+                    {
+                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/NAVSEA_certified_and_specification_compliant_o3tfrg.png",
+                        "small_title": "Certified",
+                        "title": "NAVSEA certified and specification compliant",
+                        "subtitle": "MIL-SPEC, ABS, NVR compliant",
+                    },
+                    {
+                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/Call_for_lead_times_and_RFQ_support_jg6z0c.png",
+                        "small_title": "Contact",
+                        "title": "Call for lead times and RFQ support",
+                        "subtitle": "(619) 423-5544 ",
+                    }
+                ]
             },
             "video_section": {
                 "video_id": "",
