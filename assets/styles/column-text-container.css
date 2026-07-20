@@ -1,3 +1,16 @@
 .column-text-container {
     padding: 32px;
+
+    >.text-area {
+        >.buttons-container {
+            >a {
+                max-width: fit-content;
+
+                >.right-arrow {
+                    font-size: 20px;
+                    color: inherit;
+                }
+            }
+        }
+    }
 }

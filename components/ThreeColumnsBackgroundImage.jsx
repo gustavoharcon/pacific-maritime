@@ -1,11 +1,11 @@
 import TopText from "./Text/TopText";
 import ColumnTextContainer from "./Text/ColumnTextContainer";
 
-const TopTextThreeColumns = ({ className = "", data = {} }) => {
+const ThreeColumnsBackgroundImage = ({ className = "", data = {} }) => {
     const { top_text, columns } = data;
 
     return (
-        <section className={`top-text-three-columns ${className}`}>
+        <section className={`three-columns-background-image ${className}`}>
             <div className="container">
                 <div className="row">
                     <div className="col">
@@ -15,16 +15,14 @@ const TopTextThreeColumns = ({ className = "", data = {} }) => {
                 <div className="row columns-row">
 
                     {columns.map((column, index) => (
-                        <div key={index} className="col">
-                            <div className="background-image" style={{ backgroundImage: `url(${column.top_bg_image})` }}></div>
+                        <div key={index} className="col" style={{ backgroundImage: `url(${column.top_bg_image})` }}>
                             <ColumnTextContainer data={column} />
                         </div>
                     ))}
                 </div>
             </div>
-
         </section>
     );
 };
 
-export default TopTextThreeColumns;
+export default ThreeColumnsBackgroundImage;

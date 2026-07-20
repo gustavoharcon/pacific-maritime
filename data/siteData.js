@@ -134,7 +134,7 @@ const siteData = [
                             {
                                 "text": "Directions",
                                 "link": "",
-                                "button_style": "secondary"
+                                "button_style": "btn-black-outline"
                             }
                         ]
                     },
@@ -149,6 +149,53 @@ const siteData = [
                         "small_title": "Contact",
                         "title": "Call for lead times and RFQ support",
                         "subtitle": "(619) 423-5544 ",
+                    }
+                ]
+            },
+
+            "capabilities_three_columns": {
+                "top_text": {
+                    "small_title": "Capabilities",
+                    "title": "Precision manufacturing for the fleet",
+                    "subtitle": "Three core disciplines, one standard of performance",
+                },
+                "columns": [
+                    {
+                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784583769/birthing-01_z0ngrs.png",
+                        "small_title": "Interiors",
+                        "title": "Shipboard interiors and berthing",
+                        "subtitle": "Stateroom modules and crew berthing systems.",
+                        "buttons": [
+                            {
+                                "text": "View Products",
+                                "link": "/products",
+                                "button_style": "btn-secondary"
+                            }
+                        ]
+                    },
+                    {
+                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784584007/modular-furniture_o66smf.png",
+                        "title": "Modular furniture and doors",
+                        "subtitle": "NAVY-grade metal joiner doors and frames. Dining, lounge and office furniture systems.",
+                        "buttons": [
+                            {
+                                "text": "View Products",
+                                "link": "/products",
+                                "button_style": "btn-secondary"
+                            }
+                        ]
+                    },
+                    {
+                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784584387/shipyard-integration_iuvyw9.png",
+                        "title": "SHIPYARD INTEGRATION ",
+                        "subtitle": "Pre-assembled stateroom modules and hardware staged for rapid deployment. Palletized, secured, and ready. ",
+                        "buttons": [
+                            {
+                                "text": "View Products",
+                                "link": "",
+                                "button_style": "btn-secondary"
+                            }
+                        ]
                     }
                 ]
             },

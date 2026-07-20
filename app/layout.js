@@ -6,6 +6,7 @@ import { GlobalProvider } from "@/context/GlobalContext.js";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleTagManager } from '@next/third-parties/google'
 import TopNavBar from "@/components/NavBars/TopNavBar";
+import BodyWrapper from "@/components/BodyWrapper";
 
 export const metadata = {
   title: {
@@ -57,14 +58,14 @@ export default function RootLayout({
       <AuthProvider>
         <html lang="en">
           <GoogleTagManager />
-          <body>
+          <BodyWrapper>
             <TopNavBar />
             <main>
               {children}
             </main>
             <ToastContainer />
             <SpeedInsights />
-          </body>
+          </BodyWrapper>
         </html>
       </AuthProvider>
     </GlobalProvider>

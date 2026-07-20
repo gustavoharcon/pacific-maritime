@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const ColumnTextContainer = ({ data = {} }) => {
     const { small_title, title, subtitle, buttons } = data;
@@ -12,7 +13,7 @@ const ColumnTextContainer = ({ data = {} }) => {
                 {subtitle && <p className="subtitle">{subtitle}</p>}
                 <div className="buttons-container">
                     {buttons?.map((button, index) => (
-                        <Link key={index} href={button.link} className="btn btn-black-outline">{button.text}</Link>
+                        <Link key={index} href={button.link} className={`btn ${button.button_style}`}>{button.text} <span className="right-arrow"><MdKeyboardArrowRight /></span></Link>
                     ))}
                 </div>
             </div>
