@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSections/HeroSection";
 import TopTextThreeColumns from "@/components/TopTextThreeColumns";
 import ThreeColumnsBackgroundImage from "@/components/ThreeColumnsBackgroundImage";
+import TimelineThreeColumns from "@/components/TimelineThreeColumns";
 
 import siteData from "@/data/siteData.js";
 
@@ -18,12 +19,14 @@ export default function Home() {
   const hero_section = homeData.hero_section;
   const top_text_three_columns = homeData.top_text_three_columns;
   const capabilities_three_columns = homeData.capabilities_three_columns;
+  const timeline_three_columns = homeData.timeline_three_columns;
 
   return (
     <>
       <HeroSection data={hero_section} />
       <TopTextThreeColumns data={top_text_three_columns} />
       <ThreeColumnsBackgroundImage className="capabilities-three-columns" data={capabilities_three_columns} />
+      <TimelineThreeColumns data={timeline_three_columns} />
     </>
   );
 }

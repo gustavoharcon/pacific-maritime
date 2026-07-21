@@ -676,7 +676,7 @@ strong {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    transition: transform 120ms ease, box-shadow 120ms ease, color 300ms ease, border-color 300ms ease;
+    transition: transform 120ms ease, box-shadow 120ms ease, color 300ms ease, border-color 300ms ease, background-color 300ms ease;
 }
 
 .btn::before {
@@ -774,6 +774,22 @@ strong {
 
 .btn-black-outline:hover {
     color: var(--color-white);
+}
+
+.btn-animation-two {
+    transform: translateY(0);
+}
+
+.btn-animation-two::before {
+    display: none;
+}
+
+.btn-animation-two:hover,
+.btn-animation-two:active {
+    transform: translateY(-2px);
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
 }
 
 /* Alert/Danger button state (kept for compatibility) */

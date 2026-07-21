@@ -1,0 +1,135 @@
+.timeline-three-columns {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-color: var(--color-background);
+
+    >.container {
+        >.timeline-wrapper {
+            position: relative;
+
+            >.timeline-line {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 285px;
+                height: 2px;
+                background-color: var(--color-text, #010101);
+                z-index: 1;
+            }
+
+            >.columns-row {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                gap: 32px;
+                position: relative;
+                z-index: 2;
+
+                >.timeline-col {
+                    width: calc((100% - 64px) / 3);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    >.top-image {
+                        width: 100%;
+                        max-width: 256px;
+                        height: 256px;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        margin-bottom: 0px;
+                        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+                        >img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: block;
+                        }
+                    }
+
+                    >.dot-container {
+                        height: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 32px;
+                        background-color: var(--color-background);
+                        padding: 0 8px;
+                        position: relative;
+                        top: 22px;
+
+                        >.dot {
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            background-color: var(--color-text, #010101);
+                            display: block;
+                        }
+                    }
+
+                    >.content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 16px;
+                        padding: 0 8px;
+
+                        >.title {
+                            font-weight: 700;
+                            font-size: 32px;
+                            line-height: 1.2;
+                            letter-spacing: 0.05em;
+                            text-transform: uppercase;
+                            color: var(--color-text, #010101);
+                            margin: 0;
+                        }
+
+                        >.subtitle {
+                            font-family: var(--btn-font-family, "Inter", sans-serif);
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 1.5;
+                            color: var(--color-neutral-800, #333333);
+                            margin: 0;
+                            max-width: 320px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .timeline-three-columns {
+        padding-top: 64px;
+        padding-bottom: 64px;
+
+        >.container {
+            >.timeline-wrapper {
+                >.timeline-line {
+                    display: none;
+                }
+
+                >.columns-row {
+                    flex-direction: column;
+                    gap: 48px;
+
+                    >.timeline-col {
+                        width: 100%;
+
+                        >.top-image {
+                            height: 220px;
+                        }
+
+                        >.dot-container {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
