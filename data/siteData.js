@@ -59,11 +59,6 @@ const siteData = [
                 "menu_name": "Contact",
                 "menu_url": "/contact",
                 "button_style": "secondary"
-            },
-            {
-                "menu_name": "Request Quote",
-                "menu_url": "/request-quote",
-                "button_style": "primary"
             }
         ]
     },

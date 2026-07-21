@@ -6,7 +6,7 @@
     >.container {
         >.row {
             &:nth-of-type(1) {
-                padding-bottom: 16px;
+                padding-bottom: 32px;
 
                 >.col {
                     >img {
@@ -63,6 +63,10 @@
                         display: flex;
                         flex-flow: row nowrap;
                         gap: 40px;
+
+                        a {
+                            text-decoration: underline;
+                        }
                     }
 
                     &.copyright-column {
