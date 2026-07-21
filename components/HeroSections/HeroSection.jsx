@@ -11,10 +11,11 @@ const HeroSection = ({ data }) => {
                     <div className="col">
                         <HeroTextContainer data={data} />
                     </div>
-                    <div className="col col-with-bg" style={{
+
+                    {right_column_image && <div className="col col-with-bg" style={{
                         ...(right_column_image && { backgroundImage: `url(${right_column_image})` }),
                     }}>
-                    </div>
+                    </div>}
                 </div>
             </div>
         </section>

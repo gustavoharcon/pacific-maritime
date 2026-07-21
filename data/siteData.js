@@ -135,7 +135,7 @@ const siteData = [
             },
             "hero_section": {
                 "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/w_800,h_900,c_fill/v1784555981/Frame_1_wzzxdc.png",
-                "title": "Built for the sea since 1979",
+                "title": "Shipboard interiors built to NAVY standards",
                 "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet.",
                 "buttons": [
                     {
@@ -325,6 +325,12 @@ const siteData = [
                 "video_title": "NAVSEA-Compliant Shipboard Fabrication & Seating",
                 "video_description": "Discover how we design and build heavy-duty marine furniture and custom seating for the U.S. Navy and commercial shipyards.",
             }
+        },
+        "about_page": {
+            "meta_data": {
+                "title": "About",
+                "description": "About"
+            },
         }
     }
 ];

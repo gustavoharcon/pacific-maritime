@@ -22,7 +22,12 @@
             gap: 48px;
 
             >.col {
-                flex: 1 1 50%;
+
+                /* If the next column with a class is not present then the width of the first column should be full width */
+                &:not(:has(+ .col-with-bg)) {
+                    flex: 1 1 100%;
+                }
+
                 min-width: 0;
 
                 &:first-child {
