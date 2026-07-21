@@ -1,0 +1,36 @@
+.products-three-columns {
+    padding: 112px 0;
+    background-color: var(--color-white);
+
+    >.container {
+        >.row {
+            &.columns-row {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 32px;
+
+                >.col {
+                    width: 33%;
+                    margin: 0;
+                    border-radius: 16px;
+                    border: 2px solid var(--color-text);
+
+                    >img {
+                        width: 100%;
+                        height: auto;
+                        border-top-left-radius: 14px;
+                        border-top-right-radius: 14px;
+                    }
+
+                    .text-container {
+                        padding: 24px;
+
+                        >.column-text-container {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

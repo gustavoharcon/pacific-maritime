@@ -71,28 +71,44 @@ const siteData = [
         "footer_menu": [
             {
                 "menu_name": "About",
-                "menu_url": "/about"
-            },
-            {
+                "link": "/about",
+                "sub_menu": [
+                    {
+                        "text": "Manufacturing Capabilities",
+                        "link": "/about/manufacturing-capabilities"
+                    },
+                    {
+                        "text": "Quality & Compliance",
+                        "link": "/about/quality-and-compliance"
+                    },
+                    {
+                        "text": "Equipment List",
+                        "link": "/about/equipment-list"
+                    }
+                ],
                 "menu_name": "Products",
-                "menu_url": "/products"
-            },
-            {
-                "menu_name": "Catalogs",
-                "menu_url": "/catalogs"
-            },
-            {
-                "menu_name": "Blog",
-                "menu_url": "/blog"
-            },
-            {
+                "link": "/products",
+                "sub_menu": [
+                    {
+                        "text": "Catalogs & Downloads",
+                        "link": "/catalogs-and-downloads"
+                    }
+                ],
                 "menu_name": "Contact",
-                "menu_url": "/contact"
+                "link": "/contact",
+                "sub_menu": [
+                    {
+                        "text": "Request a Quote",
+                        "link": "/request-quote"
+                    },
+                    {
+                        "text": "Careers",
+                        "link": "/careers"
+                    }
+                ],
+                "menu_name": "Blog & News",
+                "link": "/blog"
             },
-            {
-                "menu_name": "Request quote",
-                "menu_url": "/request-quote"
-            }
         ]
     },
     {
@@ -209,17 +225,82 @@ const siteData = [
                     {
                         "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
                         "title": "DESIGN",
-                        "subtitle": "CAD modeling, material specs, revision control. Typical lead time is 2 to 4 weeks."
+                        // "subtitle": "CAD modeling, material specs, revision control. Typical lead time is 2 to 4 weeks."
+                        "subtitle": "CAD modeling, material specs, revision control."
                     },
                     {
                         "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/welding-frame_sazu6s.png",
                         "title": "FABRICATE",
-                        "subtitle": "CNC cutting, welding, and finishing in our San Diego facility. Typical lead time is 6 to 12 weeks."
+                        // "subtitle": "CNC cutting, welding, and finishing in our San Diego facility. Typical lead time is 6 to 12 weeks."
+                        "subtitle": "CNC cutting, welding, and finishing in our San Diego facility."
                     },
                     {
                         "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/forklift-lifting-pallet-in-the-port-area-of-san-diego_fz49oa.png",
                         "title": "DELIVER",
                         "subtitle": "Components are palletized, tightly wrapped, and staged for immediate freight dispatch."
+                    }
+                ]
+            },
+            "products_three_columns": {
+                "top_text": {
+                    "small_title": "Products",
+                    "title": "Proven components, ready to specify",
+                    "subtitle": "Standard models built to MIL-SPEC. Custom modifications available."
+                },
+                "columns": [
+                    {
+                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/naval-lockers-and-cabinets_dsaabp.png",
+                        "top_image_description": "Naval Lockers & Cabinets",
+                        "title": "Naval Lockers & Cabinets",
+                        "subtitle": "Fabricated to conform to stringent U.S. Navy specifications. Configurations include ammo lockers, file cabinets, dressers, and specialized industrial stowage.",
+                        "categories": [
+                            "Steel",
+                            "Shock Grade",
+                            "MIL-SPEC"
+                        ],
+                        "buttons": [
+                            {
+                                "text": "Download CAD",
+                                "link": "/catalogs-and-downloads",
+                                "button_style": "btn-black-outline"
+                            }
+                        ]
+                    },
+                    {
+                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/stateroom-and-berthing_y1mhou.png",
+                        "top_image_description": "STATEROOM & BERTHING",
+                        "title": "STATEROOM & BERTHING",
+                        "subtitle": "Complete marine accommodations built with superior workmanship. Engineered to match marine standard drawings and your exact conceptual sketches.",
+                        "categories": [
+                            "Modular",
+                            "Habitability",
+                            "Integrated"
+                        ],
+                        "buttons": [
+                            {
+                                "text": "Download CAD",
+                                "link": "/catalogs-and-downloads",
+                                "button_style": "btn-black-outline"
+                            }
+                        ]
+                    },
+                    {
+                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/metal-joiner-doors_toycqp.png",
+                        "top_image_description": "Metal Joiner Doors",
+                        "title": "Metal Joiner Doors",
+                        "subtitle": "Custom manufactured shipboard doors designed to satisfy all marine environments. Supported by our dedicated technical catalog for rapid procurement.",
+                        "categories": [
+                            "Watertight",
+                            "Joiner",
+                            "Primed"
+                        ],
+                        "buttons": [
+                            {
+                                "text": "Download CAD",
+                                "link": "/catalogs-and-downloads",
+                                "button_style": "btn-black-outline"
+                            }
+                        ]
                     }
                 ]
             },

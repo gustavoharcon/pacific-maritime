@@ -63,7 +63,7 @@
     --line-height-h6: 1.4;
     --line-height-h5: 1.4;
     --line-height-h4: 1.35;
-    --line-height-h3: 1.3;
+    --line-height-h3: 1;
     --line-height-h2: 1;
     --line-height-h1: 1;
 
@@ -329,6 +329,7 @@ select,
 textarea,
 button {
     font-size: 1rem;
+    font-family: "Syne", sans-serif;
     /* Prevent iOS zoom behavior */
 }
 
@@ -370,6 +371,22 @@ strong {
         font-size: 18px;
         margin-bottom: 80px;
     }
+
+    >.categories {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 6px;
+        margin-bottom: 16px;
+
+        >span {
+            font-size: 16px;
+            border: 2px solid var(--color-text);
+            padding: 4px 10px;
+            font-weight: 500;
+            color: var(--color-text);
+            border-radius: 6px;
+        }
+    }
 }
 
 .text-area {
@@ -385,6 +402,10 @@ strong {
     }
 
     >.subtitle {
+        margin-bottom: 16px;
+    }
+
+    >.categories {
         margin-bottom: 24px;
     }
 }
@@ -664,7 +685,7 @@ strong {
     font-size: 0.88rem;
     line-height: 1;
     min-height: 2.75rem;
-    padding: 8px 20px;
+    padding: 7px 20px;
     align-items: center;
     text-align: center;
     display: inline-flex;
@@ -754,7 +775,8 @@ strong {
 
 .btn--secondary:active,
 .btn-secondary:active,
-.btn-black-outline:active {
+.btn-black-outline:active,
+.btn-white-background:active {
     box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.03);
 }
 
@@ -762,6 +784,7 @@ strong {
     border: 2px solid var(--color-text);
     background-color: transparent;
     color: var(--color-text);
+    font-weight: 600;
     display: inline-flex;
     flex-flow: row nowrap;
     align-items: center;

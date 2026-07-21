@@ -2,8 +2,10 @@ import HeroSection from "@/components/HeroSections/HeroSection";
 import TopTextThreeColumns from "@/components/TopTextThreeColumns";
 import ThreeColumnsBackgroundImage from "@/components/ThreeColumnsBackgroundImage";
 import TimelineThreeColumns from "@/components/TimelineThreeColumns";
+import ProductsThreeColumns from "@/components/ProductsThreeColumns";
 
 import siteData from "@/data/siteData.js";
+import CallToAction from "@/components/CTA/CallToAction";
 
 const homeData = siteData.find(item => item.home_page)?.home_page;
 
@@ -20,6 +22,7 @@ export default function Home() {
   const top_text_three_columns = homeData.top_text_three_columns;
   const capabilities_three_columns = homeData.capabilities_three_columns;
   const timeline_three_columns = homeData.timeline_three_columns;
+  const products_three_columns = homeData.products_three_columns;
 
   return (
     <>
@@ -27,6 +30,8 @@ export default function Home() {
       <TopTextThreeColumns data={top_text_three_columns} />
       <ThreeColumnsBackgroundImage className="capabilities-three-columns" data={capabilities_three_columns} />
       <TimelineThreeColumns data={timeline_three_columns} />
+      <ProductsThreeColumns data={products_three_columns} />
+      <CallToAction />
     </>
   );
 }
