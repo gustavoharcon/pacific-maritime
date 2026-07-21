@@ -17,7 +17,7 @@ const CallToAction = () => {
                                     </div>
                                 </div>
                                 <div className="col">
-                                    <button type="submit" className="btn btn-white-background">Request spec pack</button>
+                                    <a type="submit" className="btn btn-white-background">Request spec pack</a>
                                 </div>
                             </div>
                             <p className="small-text">Your information is secured and it’s never shared.</p>
