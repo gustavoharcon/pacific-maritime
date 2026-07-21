@@ -13,7 +13,7 @@ const CallToAction = () => {
                             <div className="row">
                                 <div className="col">
                                     <div className="input-container">
-                                        <input type="email" id="email" name="email" placeholder="Email your email" />
+                                        <input type="email" id="email" name="email" placeholder="Enter your email" />
                                     </div>
                                 </div>
                                 <div className="col">

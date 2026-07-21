@@ -1,0 +1,80 @@
+.main-footer {
+    background-color: var(--color-accent);
+    padding: 40px 0;
+    color: var(--color-white);
+
+    >.container {
+        >.row {
+            &:nth-of-type(1) {
+                padding-bottom: 16px;
+
+                >.col {
+                    >img {
+                        width: 100%;
+                        height: auto;
+                        max-width: 220px;
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 40px;
+                margin-bottom: 24px;
+                border-bottom: 1px solid var(--color-white);
+                padding-bottom: 14px;
+
+                >.col {
+                    width: 15%;
+
+                    h4 {
+                        font-size: 16px;
+                        text-transform: unset;
+                        margin-bottom: 16px;
+                        margin-top: 0;
+                        font-weight: 500;
+                        color: var(--color-white);
+                        font-family: "Inter", Arial, sans-serif;
+                    }
+
+                    ul {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+
+                        >li {
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: space-between;
+
+                >.col {
+                    width: 50%;
+
+                    &.menu-column {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        gap: 40px;
+                    }
+
+                    &.copyright-column {
+                        >p {
+                            text-align: right;
+                            font-size: 16px;
+                            color: var(--color-white);
+                            max-width: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

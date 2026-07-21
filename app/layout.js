@@ -7,6 +7,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleTagManager } from '@next/third-parties/google'
 import TopNavBar from "@/components/NavBars/TopNavBar";
 import BodyWrapper from "@/components/BodyWrapper";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: {
@@ -67,6 +68,7 @@ export default function RootLayout({
             <SpeedInsights />
           </BodyWrapper>
         </html>
+        <Footer />
       </AuthProvider>
     </GlobalProvider>
   );

@@ -68,6 +68,21 @@ const siteData = [
         ]
     },
     {
+        "bottom_credits": {
+            "menu": [
+                {
+                    "text": "Privacy policy",
+                    "link": "/privacy-policy"
+                },
+                {
+                    "text": "Terms of service",
+                    "link": "/terms-of-service"
+                }
+            ],
+            "copyright_text": "© " + new Date().getFullYear() + " Pacific Maritime Industries Corp. All rights reserved."
+        }
+    },
+    {
         "footer_menu": [
             {
                 "menu_name": "About",
@@ -86,6 +101,8 @@ const siteData = [
                         "link": "/about/equipment-list"
                     }
                 ],
+            },
+            {
                 "menu_name": "Products",
                 "link": "/products",
                 "sub_menu": [
@@ -94,6 +111,8 @@ const siteData = [
                         "link": "/catalogs-and-downloads"
                     }
                 ],
+            },
+            {
                 "menu_name": "Contact",
                 "link": "/contact",
                 "sub_menu": [
@@ -106,9 +125,11 @@ const siteData = [
                         "link": "/careers"
                     }
                 ],
+            },
+            {
                 "menu_name": "Blog & News",
                 "link": "/blog"
-            },
+            }
         ]
     },
     {
