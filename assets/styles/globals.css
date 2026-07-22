@@ -15,4 +15,5 @@
 @import "./pages/catalogs-page.css";
 @import "./catalogs/catalogs-interactive.css";
 @import "./catalogs/shipboard-furniture-catalog.css";
+@import "./catalogs/catalog-overlay.css";
 @import "./footer.css";

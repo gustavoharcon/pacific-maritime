@@ -1,5 +1,4 @@
-import PrimaryButton from "@/components/Buttons/PrimaryButton";
-import SecondaryButton from "@/components/Buttons/SecondaryButton";
+import Link from "next/link";
 
 const HeroTextContainer = ({ data }) => {
     const { title, subtitle, buttons } = data;
@@ -17,15 +16,10 @@ const HeroTextContainer = ({ data }) => {
                     <div className="buttons">
                         {buttons.map((button, index) => (
                             <div className="button" key={index}>
-                                {button.button_style === "primary" ? (
-                                    <PrimaryButton href={button.url} aria-label={button.text}>
-                                        {button.text}
-                                    </PrimaryButton>
-                                ) : (
-                                    <SecondaryButton href={button.url} aria-label={button.text}>
-                                        {button.text}
-                                    </SecondaryButton>
-                                )}
+                                <Link className={button.button_style} href={button.url} aria-label={button.text}>
+                                    {button.text}
+                                </Link>
+
                             </div>
                         ))}
                     </div>

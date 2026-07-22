@@ -1,10 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { FiFolder, FiCompass, FiDownload } from "react-icons/fi";
+import folderIcon from "@/assets/images/icons/folder-icon.png"
+import compassIcon from "@/assets/images/icons/drafting-compass-icon.png"
+import downloadIcon from "@/assets/images/icons/download-icon.png"
 import TopText from "./Text/TopText";
 
-const ShipboardFurnitureCatalog = ({ data = {} }) => {
+const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
     const { title, subtitle, rows = [] } = data;
     const [isSfcExpanded, setIsSfcExpanded] = useState(false);
 
@@ -26,19 +28,19 @@ const ShipboardFurnitureCatalog = ({ data = {} }) => {
                         <div className="header-cell category-cell">Category</div>
                         <div className="header-cell section-cell">
                             <div className="icon-header-box">
-                                <FiFolder className="header-icon" />
+                                <img src={folderIcon.src} className="header-icon" />
                                 <span>Section Title</span>
                             </div>
                         </div>
                         <div className="header-cell item-cell">
                             <div className="icon-header-box">
-                                <FiCompass className="header-icon" />
+                                <img src={compassIcon.src} className="header-icon" />
                                 <span>Item</span>
                             </div>
                         </div>
                         <div className="header-cell link-cell">
                             <div className="icon-header-box">
-                                <FiDownload className="header-icon" />
+                                <img src={downloadIcon.src} className="header-icon" />
                                 <span>File Link</span>
                             </div>
                         </div>
@@ -52,9 +54,13 @@ const ShipboardFurnitureCatalog = ({ data = {} }) => {
                                 <div className="body-cell section-cell">{row.section_title}</div>
                                 <div className="body-cell item-cell">{row.item}</div>
                                 <div className="body-cell link-cell">
-                                    <a href={row.url} className="sfc-link-btn">
+                                    <button 
+                                        onClick={() => onOpenOverlay && onOpenOverlay(row)}
+                                        className="sfc-link-btn btn btn-secondary btn-animation-two"
+                                        style={{ cursor: "pointer" }}
+                                    >
                                         {row.file_link}
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         ))}
@@ -65,7 +71,7 @@ const ShipboardFurnitureCatalog = ({ data = {} }) => {
                 {rows.length > 4 && (
                     <div className="sfc-action-box">
                         <button
-                            className="btn-view-more"
+                            className="btn btn-secondary btn-animation-two"
                             onClick={() => setIsSfcExpanded(!isSfcExpanded)}
                         >
                             {isSfcExpanded ? "View Less" : "View More"}

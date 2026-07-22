@@ -11,6 +11,7 @@
     --color-border: #010101;
     --color-accent: #1B2A4A;
     --color-accent-2: #15213B;
+    --color-accent-3: #535C71;
     --color-white: #fff;
     /* Start: Shades, testing */
     --color-text: #010101;
@@ -703,29 +704,14 @@ strong {
     overflow: hidden;
     z-index: 1;
     transition: transform 120ms ease, box-shadow 120ms ease, color 300ms ease, border-color 300ms ease, background-color 300ms ease;
+
+    &:active,
+    &:focus,
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-.btn::before {
-    content: "";
-    position: absolute;
-    top: -10%;
-    left: 0%;
-    width: 110%;
-    height: 125%;
-    z-index: -1;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: inherit;
-}
-
-.btn:hover::before {
-    transform: scaleY(1);
-}
-
-.btn:hover {
-    text-decoration: none;
-}
 
 .btn svg,
 .btn .btn__icon,
@@ -750,12 +736,8 @@ strong {
 }
 
 .btn--primary:hover,
-.btn-primary:hover {
-    color: var(--color-text);
-}
-
-.btn--primary:active,
 .btn-primary:active {
+    color: var(--color-text);
     transform: translateY(0);
     box-shadow: 0 4px 12px rgba(11, 15, 25, 0.14);
 }
@@ -822,7 +804,8 @@ strong {
 }
 
 .btn-animation-two,
-.btn-animation-three {
+.btn-animation-three,
+.btn-animation-four {
     transform: translateY(0);
 
     &:before {
@@ -831,8 +814,7 @@ strong {
 }
 
 .btn-animation-two:hover,
-.btn-animation-two:active,
-.btn-animation-two:focus {
+.btn-animation-two:active {
     transform: translateY(-2px);
     color: var(--color-white);
     background-color: var(--color-accent);
@@ -840,11 +822,18 @@ strong {
 }
 
 .btn-animation-three:hover,
-.btn-animation-three:active,
-.btn-animation-three:focus {
+.btn-animation-three:active {
     transform: translateY(-2px);
     color: var(--color-white);
     background-color: var(--color-text);
+    border-color: var(--color-text);
+}
+
+.btn-animation-four:hover,
+.btn-animation-four:active {
+    transform: translateY(-2px);
+    color: var(--color-text);
+    background-color: var(--color-white);
     border-color: var(--color-text);
 }
 

@@ -141,12 +141,12 @@ const siteData = [
                     {
                         "text": "Request quote",
                         "url": "/request-quote",
-                        "button_style": "primary"
+                        "button_style": "btn btn--primary btn-animation-four"
                     },
                     {
-                        "text": "View Products",
+                        "text": "View products",
                         "url": "/products",
-                        "button_style": "secondary"
+                        "button_style": "btn btn-secondary btn-animation-two"
                     }
                 ],
             },
@@ -166,7 +166,7 @@ const siteData = [
                             {
                                 "text": "Directions",
                                 "link": "/contact",
-                                "button_style": "btn-black-outline"
+                                "button_style": "btn btn-black-outline btn-animation-two"
                             }
                         ]
                     },
@@ -278,7 +278,7 @@ const siteData = [
                             {
                                 "text": "Download CAD",
                                 "link": "/catalogs-and-downloads",
-                                "button_style": "btn-black-outline"
+                                "button_style": "btn btn-black-outline btn-animation-two"
                             }
                         ]
                     },
@@ -296,7 +296,7 @@ const siteData = [
                             {
                                 "text": "Download CAD",
                                 "link": "/catalogs-and-downloads",
-                                "button_style": "btn-black-outline"
+                                "button_style": "btn btn-black-outline btn-animation-two"
                             }
                         ]
                     },
@@ -314,7 +314,7 @@ const siteData = [
                             {
                                 "text": "Download CAD",
                                 "link": "/catalogs-and-downloads",
-                                "button_style": "btn-black-outline"
+                                "button_style": "btn btn-black-outline btn-animation-two"
                             }
                         ]
                     }
@@ -497,7 +497,7 @@ const siteData = [
                 ]
             },
             "shipboard_furniture_catalog": {
-                "title": "SHIPBOARD FURNITURE CATALOG",
+                "title": "Shipboard Furniture Catalog",
                 "subtitle": `The official US Navy Shipboard Furniture Catalog (SFC) which is updated at: <a href='https://navlogtd.navy.mil/habitability' rel='noopener noreferrer'>navlogtd.navy.mil/habitability</a>`,
                 "headers": [
                     "Category",
@@ -511,6 +511,7 @@ const siteData = [
                         "section_title": "Beds and Berths (Officer)",
                         "item": "Bed, Cabin-Stateroom",
                         "file_link": "B-1A-1",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                         "url": "#"
                     },
                     {
@@ -518,6 +519,7 @@ const siteData = [
                         "section_title": "Officer Staterooms",
                         "item": "Case, Toilet Article",
                         "file_link": "B-2A-1",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                         "url": "#"
                     },
                     {
@@ -525,6 +527,7 @@ const siteData = [
                         "section_title": "Sofas, Chairs and Transoms",
                         "item": "Sofas and Chair, Lounge",
                         "file_link": "B-3A-1",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                         "url": "#"
                     },
                     {
@@ -532,6 +535,7 @@ const siteData = [
                         "section_title": "Dining and Serving Tables (Officer)",
                         "item": "Sideboards and Serving Tables, Modular",
                         "file_link": "B-4A-1",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                         "url": "#"
                     },
                     {
@@ -539,6 +543,7 @@ const siteData = [
                         "section_title": "Desks, Flat Top",
                         "item": "Desk, Flat Top, Double Pedestal",
                         "file_link": "B-5A-1",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                         "url": "#"
                     },
                     {
@@ -546,6 +551,7 @@ const siteData = [
                         "section_title": "Cabinets, Cases and Lockers",
                         "item": "Locker, Cleaning Gear or Battle Dressing Stowage",
                         "file_link": "B-6A-1",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                         "url": "#"
                     },
                     {
@@ -553,6 +559,7 @@ const siteData = [
                         "section_title": "Barber Shop",
                         "item": "Locker, Supply Barber",
                         "file_link": "B-7C-1",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                         "url": "#"
                     }
                 ]

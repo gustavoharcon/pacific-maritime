@@ -1,15 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 // import profileDefault from "@/assets/images/profile.png";
 import { IoIosMenu } from "react-icons/io";
 import LogoImageLink from "@/components/LogoImageLink";
 import MainMenu from "@/components/Menus/MainMenu";
-import PrimaryButton from "@/components/Buttons/PrimaryButton";
-import SecondaryButton from "@/components/Buttons/SecondaryButton";
 
 const NavBar = () => {
 
@@ -60,20 +57,22 @@ const NavBar = () => {
                         </div>
                         {!session && (<div className="main-menu-buttons col">
                             <div className="main-menu-button">
-                                <SecondaryButton
+                                <Link
                                     href="#our-work"
                                     aria-label="Our Work"
+                                    className="btn btn-secondary btn-animation-two"
                                 >
                                     Our work
-                                </SecondaryButton>
+                                </Link>
                             </div>
                             <div className="main-menu-button">
-                                <PrimaryButton
+                                <Link
                                     href="/request-quote"
                                     aria-label="Request Quote"
+                                    className="btn btn--primary btn-animation-four"
                                 >
                                     Request quote
-                                </PrimaryButton>
+                                </Link>
                             </div>
                         </div>)}
                     </div>

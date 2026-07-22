@@ -1,7 +1,7 @@
 import siteData from "@/data/siteData";
 import HeroSection from "@/components/HeroSections/HeroSection";
-import CatalogsInteractive from "@/components/CatalogsInteractive";
-import ShipboardFurnitureCatalog from "@/components/ShipboardFurnitureCatalog";
+import CatalogsClientContainer from "@/components/CatalogsClientContainer";
+import CallToAction from "@/components/CTA/CallToAction";
 
 const catalogsData = siteData.find(item => item.catalogs_page)?.catalogs_page;
 
@@ -16,8 +16,8 @@ const CatalogsPage = () => {
     return (
         <>
             <HeroSection data={catalogsData.hero_section} />
-            <CatalogsInteractive data={catalogsData} />
-            <ShipboardFurnitureCatalog data={catalogsData.shipboard_furniture_catalog} />
+            <CatalogsClientContainer catalogsData={catalogsData} />
+            <CallToAction />
         </>
     )
 }

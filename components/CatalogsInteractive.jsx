@@ -9,7 +9,7 @@ import { LuSofa } from "react-icons/lu";
 import TopText from "./Text/TopText";
 
 
-const CatalogsInteractive = ({ data = {} }) => {
+const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
     const { catalogs_interactive_section = {} } = data;
     const catalogs = catalogs_interactive_section.catalogs || [];
 
@@ -116,9 +116,13 @@ const CatalogsInteractive = ({ data = {} }) => {
                                                 <img src={file.image} alt={file.title} />
                                             </div>
                                             <h4 className="file-title">{file.title}</h4>
-                                            <a href={file.download_url} className="btn btn-secondary btn-animation-two">
+                                            <button 
+                                                onClick={() => onOpenOverlay && onOpenOverlay(file)}
+                                                className="btn btn-secondary btn-animation-two"
+                                                style={{ cursor: "pointer" }}
+                                            >
                                                 Download PDF
-                                            </a>
+                                            </button>
                                         </div>
                                     ))}
                                 </div>

@@ -1,7 +1,6 @@
 /* SHIPBOARD FURNITURE CATALOG SECTION */
 .sfc-table-section {
     background-color: var(--color-primary);
-    /* Slate-blue #5F6980 */
     color: var(--color-white);
     padding-top: 80px;
     padding-bottom: 112px;
@@ -9,29 +8,26 @@
 
     .top-text {
 
-        >.small-title,
         >h2,
-        >.subtitle {
+        >.subtitle,
+        >.small-title {
             color: var(--color-white);
         }
     }
 
     .sfc-table-wrapper {
         background: transparent;
-        border-radius: 12px;
-        overflow: hidden;
         margin-bottom: 40px;
     }
 
     .sfc-table-header {
         display: flex;
         border-bottom: 2px solid var(--color-white);
-        padding-bottom: 20px;
-        margin-bottom: 20px;
+        padding-bottom: 24px;
+        align-items: flex-end;
 
         .header-cell {
-            font-family: "Syne", sans-serif;
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 700;
             color: var(--color-white);
 
@@ -42,7 +38,8 @@
                 gap: 12px;
 
                 .header-icon {
-                    font-size: 28px;
+                    width: 100%;
+                    max-width: 40px;
                 }
             }
         }
@@ -51,12 +48,16 @@
     .sfc-table-row {
         display: flex;
         align-items: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        padding: 24px 0;
+        border-bottom: 2px solid var(--color-white);
+        padding: 16px 0;
         transition: background-color 150ms ease;
 
+        &:nth-of-type(odd) {
+            background-color: var(--color-accent-3);
+        }
+
         &:hover {
-            background-color: rgba(255, 255, 255, 0.03);
+            background-color: rgba(255, 255, 255, 0.1);
         }
     }
 
@@ -65,25 +66,16 @@
         width: 25%;
         text-align: left;
         padding-left: 12px;
-        font-size: 16px;
-        line-height: 1.4;
-        color: rgba(255, 255, 255, 0.8);
     }
 
     .section-cell {
         width: 25%;
         text-align: center;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.4;
     }
 
     .item-cell {
         width: 25%;
         text-align: center;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 1.4;
     }
 
     .link-cell {
@@ -94,47 +86,12 @@
     }
 
     .sfc-link-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid var(--color-white);
-        color: var(--color-white);
-        background: transparent;
-        padding: 8px 32px;
-        font-weight: 700;
-        font-size: 16px;
-        border-radius: 12px;
         min-width: 140px;
-        text-decoration: none;
-        transition: background-color 200ms ease, color 200ms ease;
-
-        &:hover {
-            background-color: var(--color-white);
-            color: var(--color-text, #010101);
-        }
     }
 
     .sfc-action-box {
         display: flex;
         justify-content: center;
         margin-top: 32px;
-
-        .btn-view-more {
-            background: transparent;
-            border: 2px solid var(--color-white);
-            color: var(--color-white);
-            padding: 10px 32px;
-            font-family: "Syne", sans-serif;
-            font-size: 16px;
-            font-weight: 700;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: background-color 200ms ease, color 200ms ease;
-
-            &:hover {
-                background-color: var(--color-white);
-                color: var(--color-text, #010101);
-            }
-        }
     }
 }
