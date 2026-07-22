@@ -366,43 +366,43 @@ const siteData = [
                             {
                                 "category": "HONEYCOMB CORE",
                                 "title": "TYPE-1 MODEL",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             },
                             {
                                 "category": "HONEYCOMB CORE",
                                 "title": "TYPE-1 (ALTERNATIVE) MODEL",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             },
                             {
                                 "category": "HONEYCOMB CORE",
                                 "title": "TYPE-2 (6 1/4\" SILL) MODEL",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             },
                             {
                                 "category": "METAL JOINER",
                                 "title": "TYPE-3 MODEL",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             },
                             {
                                 "category": "METAL JOINER",
                                 "title": "TYPE-3 (ALTERNATE SILL) MODEL",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             },
                             {
                                 "category": "FUME TIGHT / FIRE ZONE",
                                 "title": "TYPE-4 FUME TIGHT (6 1/4\" SILL) MODEL",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             },
                             {
                                 "category": "FUME TIGHT / FIRE ZONE",
                                 "title": "TYPE-4 FUME TIGHT (6 1/4\" SILL) MODEL",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             }
                         ]
@@ -423,19 +423,19 @@ const siteData = [
                             {
                                 "category": "DOOR ASSEMBLIES",
                                 "title": "TYPE-1 METAL JOINER DOOR",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             },
                             {
                                 "category": "FRAMES",
                                 "title": "TYPE-A DOOR FRAME DETAILS",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             },
                             {
                                 "category": "HARDWARE",
                                 "title": "SHOCK-GRADE DOOR LOCKSETS",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             }
                         ]
@@ -456,13 +456,13 @@ const siteData = [
                             {
                                 "category": "BERTHING SYSTEMS",
                                 "title": "MODULAR 3-TIER BERTH MODEL",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             },
                             {
                                 "category": "SEATING & LOUNGE",
                                 "title": "HEAVY-DUTY NAVY CHAIRS",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             }
                         ]
@@ -483,13 +483,13 @@ const siteData = [
                             {
                                 "category": "LOCKSETS & LATCHES",
                                 "title": "CYLINDER SHOCK LATCH SPEC",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             },
                             {
                                 "category": "HINGES",
                                 "title": "NAVY BRONZE HINGE DRAWING",
-                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1784747872/B-1A-1_h1chds.jpg",
                                 "download_url": "#"
                             }
                         ]
@@ -498,7 +498,7 @@ const siteData = [
             },
             "shipboard_furniture_catalog": {
                 "title": "SHIPBOARD FURNITURE CATALOG",
-                "subtitle": "The official US Navy Shipboard Furniture Catalog (SFC) which is updated at: navlogtd.navy.mil/habitability",
+                "subtitle": `The official US Navy Shipboard Furniture Catalog (SFC) which is updated at: <a href='https://navlogtd.navy.mil/habitability' rel='noopener noreferrer'>navlogtd.navy.mil/habitability</a>`,
                 "headers": [
                     "Category",
                     "Section Title",

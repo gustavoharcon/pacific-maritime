@@ -25,6 +25,7 @@
 
         .catalog-details {
             width: 60%;
+            min-height: 415px;
             padding: 64px;
             display: flex;
             flex-direction: column;

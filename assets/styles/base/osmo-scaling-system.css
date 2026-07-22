@@ -73,7 +73,7 @@
     /* Roboto Button & Form Variables */
     /* --btn-font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", sans-serif; */
     --btn-font-family: "Inter", Arial, Helvetica Neue, Helvetica, sans-serif;
-    --btn-radius: 16px;
+    --btn-radius: 12px;
     /* 8px */
     --btn-primary-1: #6b7c8c;
     /* dark start */
@@ -791,11 +791,13 @@ strong {
     background-color: var(--color-white);
     font-weight: 600;
     color: var(--color-text);
+    border: 2px solid var(--color-white);
 
     &:hover,
     &:active,
     &:focus {
         color: var(--color-white);
+        background-color: transparent;
     }
 }
 
@@ -810,13 +812,13 @@ strong {
     gap: 8px;
 }
 
-.btn-black-outline::before,
-.btn-white-background::before {
-    background-color: var(--color-text);
+.btn-black-outline::before {
+    background-color: var(--color-accent);
 }
 
 .btn-black-outline:hover {
     color: var(--color-white);
+    border: 2px solid var(--color-accent);
 }
 
 .btn-animation-two,

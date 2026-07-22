@@ -59,7 +59,7 @@ const CatalogsInteractive = ({ data = {} }) => {
                             <h2 className="catalog-title">{activeCatalog.title}</h2>
                             <p className="catalog-subtitle">{activeCatalog.subtitle}</p>
                             <div className="action-buttons">
-                                <a href={activeCatalog.download_url} className="btn btn-black-outline btn-animation-three">
+                                <a href={activeCatalog.download_url} className="btn btn-black-outline btn-animation-two">
                                     Download
                                 </a>
                                 <a href="#individual-files" className="link-view-individual">
@@ -116,7 +116,7 @@ const CatalogsInteractive = ({ data = {} }) => {
                                                 <img src={file.image} alt={file.title} />
                                             </div>
                                             <h4 className="file-title">{file.title}</h4>
-                                            <a href={file.download_url} className="btn btn-secondary btn-animation-three">
+                                            <a href={file.download_url} className="btn btn-secondary btn-animation-two">
                                                 Download PDF
                                             </a>
                                         </div>
