@@ -1,3 +1,4 @@
+import HeroSection from "@/components/HeroSections/HeroSection";
 import siteData from "@/data/siteData";
 
 
@@ -12,7 +13,9 @@ export async function generateMetadata() {
 
 const AboutPage = () => {
     return (
-        <div>AboutPage</div>
+        <>
+            <HeroSection data={aboutData.hero_section} />
+        </>
     )
 }
 

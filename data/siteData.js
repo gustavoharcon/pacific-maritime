@@ -331,6 +331,10 @@ const siteData = [
                 "title": "About",
                 "description": "About"
             },
+            "hero_section": {
+                "title": "Built for the sea since 1979",
+                "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet."
+            }
         }
     }
 ];
