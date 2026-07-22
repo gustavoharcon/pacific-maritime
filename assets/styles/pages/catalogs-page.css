@@ -1,0 +1,18 @@
+.catalogs-and-downloads-page {
+
+    .hero-section {
+        >.container {
+            padding-right: var(--container-padding);
+
+            >.row {
+                >.col {
+                    .hero-text-container {
+                        max-width: 768px;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}

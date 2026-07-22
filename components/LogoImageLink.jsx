@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/images/Pacific Maritime Industries White Logo.png";
+import logo from "@/assets/images/logos/Pacific Maritime Industries White Logo.png";
 
 const LogoImageLink = () => {
     return (

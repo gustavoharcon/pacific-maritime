@@ -14,10 +14,6 @@
 
             >.col {
 
-                .hero-text-container {
-                    max-width: 991px;
-                }
-
                 /* If the next column with a class is not present then the width of the first column should be full width */
                 &:not(:has(+ .col-with-bg)) {
                     flex: 1 1 100%;

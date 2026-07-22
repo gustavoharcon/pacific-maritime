@@ -11,4 +11,8 @@
 @import "./products-three-columns.css";
 @import "./cta/call-to-action.css";
 @import "./pages/home-page.css";
+@import "./pages/about-page.css";
+@import "./pages/catalogs-page.css";
+@import "./catalogs/catalogs-interactive.css";
+@import "./catalogs/shipboard-furniture-catalog.css";
 @import "./footer.css";

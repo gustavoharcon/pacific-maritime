@@ -785,13 +785,12 @@ strong {
     box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.03);
 }
 
+
+
 .btn-white-background {
     background-color: var(--color-white);
     font-weight: 600;
     color: var(--color-text);
-}
-
-.btn-white-background {
 
     &:hover,
     &:active,
@@ -820,20 +819,31 @@ strong {
     color: var(--color-white);
 }
 
-.btn-animation-two {
+.btn-animation-two,
+.btn-animation-three {
     transform: translateY(0);
-}
 
-.btn-animation-two::before {
-    display: none;
+    &:before {
+        display: none;
+    }
 }
 
 .btn-animation-two:hover,
-.btn-animation-two:active {
+.btn-animation-two:active,
+.btn-animation-two:focus {
     transform: translateY(-2px);
     color: var(--color-white);
     background-color: var(--color-accent);
     border-color: var(--color-accent);
+}
+
+.btn-animation-three:hover,
+.btn-animation-three:active,
+.btn-animation-three:focus {
+    transform: translateY(-2px);
+    color: var(--color-white);
+    background-color: var(--color-text);
+    border-color: var(--color-text);
 }
 
 /* Alert/Danger button state (kept for compatibility) */

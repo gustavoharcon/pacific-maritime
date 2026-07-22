@@ -1,0 +1,16 @@
+.about-page {
+
+    .hero-section {
+        >.container {
+            padding-right: var(--container-padding);
+
+            >.row {
+                >.col {
+                    .hero-text-container {
+                        max-width: 768px;
+                    }
+                }
+            }
+        }
+    }
+}

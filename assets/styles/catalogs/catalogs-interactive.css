@@ -1,0 +1,282 @@
+.catalogs-container-wrapper {
+
+    /* Base background for the page content sections below hero */
+    .catalogs-tabs-section,
+    .individual-files-section {
+        background-color: var(--color-primary);
+        /* Slate-blue #5F6980 */
+        color: var(--color-white);
+    }
+
+    /* Catalogs Tabs SECTION */
+    .catalogs-tabs-section {
+        padding-bottom: 48px;
+
+        .catalog-card {
+            display: flex;
+            background-color: var(--color-background);
+            /* Light gray box container background */
+            border: 2px solid var(--color-text);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            color: var(--color-text);
+        }
+
+        .catalog-details {
+            width: 60%;
+            padding: 64px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .icon-wrapper {
+                margin-bottom: 16px;
+
+                .catalog-icon-svg {
+                    font-size: 48px;
+                    color: var(--color-text, #010101);
+
+                    &.pacmaritime-logo {
+                        max-height: 50px;
+                        width: auto;
+                    }
+                }
+            }
+
+            .catalog-title {
+                font-weight: 700;
+                font-size: 48px;
+                margin: 0 0 24px 0;
+            }
+
+            .catalog-subtitle {
+                font-size: 18px;
+                color: var(--color-text);
+                margin: 0 0 32px 0;
+            }
+
+            .action-buttons {
+                display: flex;
+                align-items: center;
+                gap: 28px;
+
+                .link-view-individual {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 6px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: var(--color-text, #010101);
+                    text-decoration: none;
+                    transition: opacity 150ms ease;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+        .catalog-tabs {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            border-left: 2px solid var(--color-text, #010101);
+
+            .tab-item-btn {
+                flex: 1;
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                gap: 6px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid var(--color-text, #010101);
+                color: var(--color-text, #010101);
+                padding: 28px;
+                font-size: 22px;
+                font-weight: 700;
+                text-align: left;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: background-color 200ms ease, color 200ms ease;
+
+                .right-icon {
+                    transform: rotate(135deg);
+                    font-size: 26px;
+                    visibility: hidden;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.03);
+                }
+
+                &.active {
+                    background-color: var(--color-white);
+
+                    .right-icon {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Individual Files Section */
+    .individual-files-section {
+        padding-bottom: 80px;
+
+        .section-title {
+            font-weight: 700;
+            font-size: 48px;
+            text-align: center;
+            margin: 0 0 80px 0;
+            color: var(--color-white);
+            max-width: 991px;
+            margin-inline: auto;
+        }
+
+        >.container {
+            >.top-text {
+                max-width: 991px;
+
+                >.small-title,
+                >h2 {
+                    color: var(--color-white);
+                }
+
+                >h2 {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        .files-layout {
+            margin-top: 40px;
+            display: flex;
+            gap: 56px;
+        }
+
+        .files-sidebar {
+            width: 280px;
+            flex-shrink: 0;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            padding-right: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .sidebar-cat-btn {
+                background: transparent;
+                border: none;
+                text-align: left;
+                font-family: "Syne", sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+                color: rgba(255, 255, 255, 0.65);
+                padding: 12px 16px;
+                cursor: pointer;
+                border-radius: 8px;
+                transition: color 200ms ease, background-color 200ms ease;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: var(--color-white);
+                    background-color: rgba(255, 255, 255, 0.05);
+                }
+
+                &.active {
+                    color: var(--color-white);
+                    background-color: rgba(255, 255, 255, 0.12);
+
+                }
+            }
+        }
+
+        .files-grid-container {
+            flex-grow: 1;
+
+            .no-files-message {
+                padding: 48px;
+
+                >p {
+                    font-size: 18px;
+                    color: rgba(255, 255, 255, 0.6);
+                    text-align: center;
+                }
+            }
+        }
+
+        .files-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+
+            .file-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .thumbnail-box {
+                    background-color: var(--color-white);
+                    border-radius: 16px;
+                    width: 170px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 8px;
+                    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                    transition: transform 200ms ease;
+
+                    >img {
+                        max-width: 100%;
+                        max-height: 100%;
+                        border-radius: 8px;
+                        object-fit: contain;
+                    }
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+
+                .file-title {
+                    font-weight: 500;
+                    font-family: var(--btn-font-family);
+                    font-size: 18px;
+                    color: var(--color-white);
+                    margin: 18px 0 18px 0;
+                    text-transform: capitalize;
+                    letter-spacing: -0.05px;
+                    max-width: 200px;
+                }
+
+                .btn-download-pdf {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: transparent;
+                    color: var(--color-white);
+                    border: 2px solid var(--color-white);
+                    padding: 8px 20px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    border-radius: 20px;
+                    text-decoration: none;
+                    transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+
+                    &:hover {
+                        background-color: var(--color-white);
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -49,7 +49,7 @@ const siteData = [
             },
             {
                 "menu_name": "Catalogs",
-                "menu_url": "/catalogs"
+                "menu_url": "/catalogs-and-downloads"
             },
             {
                 "menu_name": "Blog",
@@ -334,6 +334,228 @@ const siteData = [
             "hero_section": {
                 "title": "Built for the sea since 1979",
                 "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet."
+            }
+        },
+        "catalogs_page": {
+            "meta_data": {
+                "title": "Catalogs & Downloads",
+                "description": "Access the complete Naval Shipboard Furniture Catalog, Metal Joiner Door Catalog, and individual product datasheets."
+            },
+            "hero_section": {
+                "title": "Technical catalogs & downloads",
+                "subtitle": "Access the complete Naval Shipboard Furniture Catalog, Metal Joiner Door Catalog, and individual product datasheets. Download CAD files, DWGs, and technical PDFs with full revision history."
+            },
+            "catalogs_interactive_section": {
+                "catalogs": [
+                    {
+                        "id": "naval-furniture",
+                        "tab_name": "Naval Shipboard Furniture Catalog",
+                        "title": "NAVAL FURNITURE CATALOG",
+                        "subtitle": "The complete 145-page stateroom and berthing systems catalog",
+                        "download_url": "#",
+                        "categories": [
+                            "ALL FILES",
+                            "REFERENCE DIAGRAMS",
+                            "HONEYCOMB CORE",
+                            "METAL JOINER",
+                            "FUME TIGHT / FIRE ZONE",
+                            "ACCESSORIES & REPLACEMENT PARTS",
+                            "SUPERSEDED DOOR TYPE SCHEDULE"
+                        ],
+                        "files": [
+                            {
+                                "category": "HONEYCOMB CORE",
+                                "title": "TYPE-1 MODEL",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            },
+                            {
+                                "category": "HONEYCOMB CORE",
+                                "title": "TYPE-1 (ALTERNATIVE) MODEL",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            },
+                            {
+                                "category": "HONEYCOMB CORE",
+                                "title": "TYPE-2 (6 1/4\" SILL) MODEL",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            },
+                            {
+                                "category": "METAL JOINER",
+                                "title": "TYPE-3 MODEL",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            },
+                            {
+                                "category": "METAL JOINER",
+                                "title": "TYPE-3 (ALTERNATE SILL) MODEL",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            },
+                            {
+                                "category": "FUME TIGHT / FIRE ZONE",
+                                "title": "TYPE-4 FUME TIGHT (6 1/4\" SILL) MODEL",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            },
+                            {
+                                "category": "FUME TIGHT / FIRE ZONE",
+                                "title": "TYPE-4 FUME TIGHT (6 1/4\" SILL) MODEL",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "metal-joiner",
+                        "tab_name": "Metal Joiner Door Catalog",
+                        "title": "METAL JOINER DOOR CATALOG",
+                        "subtitle": "NAVSEA-compliant door assemblies, frames, hardware and drawings",
+                        "download_url": "#",
+                        "categories": [
+                            "ALL FILES",
+                            "DOOR ASSEMBLIES",
+                            "FRAMES",
+                            "HARDWARE"
+                        ],
+                        "files": [
+                            {
+                                "category": "DOOR ASSEMBLIES",
+                                "title": "TYPE-1 METAL JOINER DOOR",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            },
+                            {
+                                "category": "FRAMES",
+                                "title": "TYPE-A DOOR FRAME DETAILS",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            },
+                            {
+                                "category": "HARDWARE",
+                                "title": "SHOCK-GRADE DOOR LOCKSETS",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "pacific-maritime-furniture",
+                        "tab_name": "Pacific Maritime Furniture Catalog",
+                        "title": "PACIFIC MARITIME FURNITURE CATALOG",
+                        "subtitle": "Commercial shipboard furniture, berths, and custom seating designs",
+                        "download_url": "#",
+                        "categories": [
+                            "ALL FILES",
+                            "BERTHING SYSTEMS",
+                            "SEATING & LOUNGE",
+                            "WARDROOM FURNITURE"
+                        ],
+                        "files": [
+                            {
+                                "category": "BERTHING SYSTEMS",
+                                "title": "MODULAR 3-TIER BERTH MODEL",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            },
+                            {
+                                "category": "SEATING & LOUNGE",
+                                "title": "HEAVY-DUTY NAVY CHAIRS",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "pacific-maritime-parts",
+                        "tab_name": "Pacific Maritime Parts Catalog",
+                        "title": "PACIFIC MARITIME PARTS CATALOG",
+                        "subtitle": "Shock-grade hardware, latches, hinges, and marine locksets",
+                        "download_url": "#",
+                        "categories": [
+                            "ALL FILES",
+                            "LOCKSETS & LATCHES",
+                            "HINGES",
+                            "FASTENERS"
+                        ],
+                        "files": [
+                            {
+                                "category": "LOCKSETS & LATCHES",
+                                "title": "CYLINDER SHOCK LATCH SPEC",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            },
+                            {
+                                "category": "HINGES",
+                                "title": "NAVY BRONZE HINGE DRAWING",
+                                "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                                "download_url": "#"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "shipboard_furniture_catalog": {
+                "title": "SHIPBOARD FURNITURE CATALOG",
+                "subtitle": "The official US Navy Shipboard Furniture Catalog (SFC) which is updated at: navlogtd.navy.mil/habitability",
+                "headers": [
+                    "Category",
+                    "Section Title",
+                    "Item",
+                    "File Link"
+                ],
+                "rows": [
+                    {
+                        "category": "Beds and Berths",
+                        "section_title": "Beds and Berths (Officer)",
+                        "item": "Bed, Cabin-Stateroom",
+                        "file_link": "B-1A-1",
+                        "url": "#"
+                    },
+                    {
+                        "category": "Furnishings - Staterooms and Berthing Spaces",
+                        "section_title": "Officer Staterooms",
+                        "item": "Case, Toilet Article",
+                        "file_link": "B-2A-1",
+                        "url": "#"
+                    },
+                    {
+                        "category": "Seating",
+                        "section_title": "Sofas, Chairs and Transoms",
+                        "item": "Sofas and Chair, Lounge",
+                        "file_link": "B-3A-1",
+                        "url": "#"
+                    },
+                    {
+                        "category": "Tables",
+                        "section_title": "Dining and Serving Tables (Officer)",
+                        "item": "Sideboards and Serving Tables, Modular",
+                        "file_link": "B-4A-1",
+                        "url": "#"
+                    },
+                    {
+                        "category": "Desks",
+                        "section_title": "Desks, Flat Top",
+                        "item": "Desk, Flat Top, Double Pedestal",
+                        "file_link": "B-5A-1",
+                        "url": "#"
+                    },
+                    {
+                        "category": "Stowage, General",
+                        "section_title": "Cabinets, Cases and Lockers",
+                        "item": "Locker, Cleaning Gear or Battle Dressing Stowage",
+                        "file_link": "B-6A-1",
+                        "url": "#"
+                    },
+                    {
+                        "category": "Furnishings, Special Purpose",
+                        "section_title": "Barber Shop",
+                        "item": "Locker, Supply Barber",
+                        "file_link": "B-7C-1",
+                        "url": "#"
+                    }
+                ]
             }
         }
     }
