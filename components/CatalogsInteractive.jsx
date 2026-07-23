@@ -7,7 +7,7 @@ import { LiaShipSolid } from "react-icons/lia";
 import { TfiLocationArrow } from "react-icons/tfi";
 import { LuSofa } from "react-icons/lu";
 import TopText from "./Text/TopText";
-import Aos from "aos";
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 
@@ -23,15 +23,18 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
     const [activeCategory, setActiveCategory] = useState("ALL FILES");
 
     useEffect(() => {
-        Aos.init({
+        AOS.init({
             duration: 800,
-            once: true,
+            offset: 100,
+            once: false,
+            mirror: true,
             easing: "ease-out-quad",
         });
+
     }, []);
 
     useEffect(() => {
-        Aos.refresh();
+        AOS.refresh();
     }, [activeCatalogId, activeCategory]);
 
     const handleCatalogChange = (id) => {
@@ -76,6 +79,7 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                 <div className="container">
                     <div className="catalog-card"
                         data-aos="fade-up"
+                        data-aos-once="false"
                         data-aos-delay="200"
                         data-aos-duration="800"
                     >
