@@ -343,7 +343,7 @@ const siteData = [
             },
             "hero_section": {
                 "title": "Technical catalogs & downloads",
-                "subtitle": "Access the complete Naval Shipboard Furniture Catalog, Metal Joiner Door Catalog, and individual product datasheets. Download CAD files, DWGs, and technical PDFs with full revision history."
+                "subtitle": "Access the complete Naval Shipboard Furniture Catalog, Metal Joiner Door Catalog, and individual product datasheets. Download CAD files, DWGs, and technical PDFs."
             },
             "catalogs_interactive_section": {
                 "catalogs": [
