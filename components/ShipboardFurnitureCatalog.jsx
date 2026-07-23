@@ -61,6 +61,11 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
                                     >
                                         {row.file_link}
                                     </button>
+                                    {row.image && (
+                                        <div className="sfc-preview-tooltip">
+                                            <img src={row.image} alt={row.item || "Preview"} />
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         ))}

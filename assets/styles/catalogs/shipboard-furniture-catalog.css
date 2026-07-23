@@ -51,6 +51,7 @@
         border-bottom: 2px solid var(--color-white);
         padding: 16px 0;
         transition: background-color 150ms ease;
+        position: relative;
 
         &:nth-of-type(odd) {
             background-color: var(--color-accent-3);
@@ -58,6 +59,7 @@
 
         &:hover {
             background-color: rgba(255, 255, 255, 0.1);
+            z-index: 10;
         }
     }
 
@@ -83,10 +85,65 @@
         text-align: center;
         display: flex;
         justify-content: center;
+        position: relative;
     }
 
     .sfc-link-btn {
         min-width: 140px;
+    }
+
+    .sfc-preview-tooltip {
+        position: absolute;
+        bottom: 85%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px);
+        background-color: var(--color-white);
+        border: 2px solid var(--color-border, #010101);
+        border-radius: 8px;
+        padding: 6px;
+        width: 140px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+        z-index: 100;
+        pointer-events: none;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            display: block;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 6px;
+            border-style: solid;
+            border-color: var(--color-white) transparent transparent transparent;
+        }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(2px);
+            border-width: 6px;
+            border-style: solid;
+            border-color: var(--color-border, #010101) transparent transparent transparent;
+            z-index: -1;
+        }
+    }
+
+    .link-cell:hover .sfc-preview-tooltip {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
     }
 
     .sfc-action-box {
