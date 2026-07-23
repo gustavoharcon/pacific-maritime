@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FiFolder, FiSettings, FiChevronDown } from "react-icons/fi";
 import { TbDoor } from "react-icons/tb";
 import { LiaShipSolid } from "react-icons/lia";
 import { TfiLocationArrow } from "react-icons/tfi";
 import { LuSofa } from "react-icons/lu";
 import TopText from "./Text/TopText";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
@@ -19,6 +21,18 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
 
     // State for category selection (Design 505)
     const [activeCategory, setActiveCategory] = useState("ALL FILES");
+
+    useEffect(() => {
+        Aos.init({
+            duration: 800,
+            once: true,
+            easing: "ease-out-quad",
+        });
+    }, []);
+
+    useEffect(() => {
+        Aos.refresh();
+    }, [activeCatalogId, activeCategory]);
 
     const handleCatalogChange = (id) => {
         setActiveCatalogId(id);
@@ -46,13 +60,27 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
         return file.category === activeCategory;
     });
 
+    const handleSmoothScroll = (e) => {
+        e.preventDefault();
+        const target = document.getElementById("individual-files");
+        if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
-        <div className="catalogs-container-wrapper">
+        <div
+            className="catalogs-container-wrapper"
+        >
             <section className="catalogs-tabs-section">
                 <div className="container">
-                    <div className="catalog-card">
+                    <div className="catalog-card"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                        data-aos-duration="800"
+                    >
                         {/* Left side details */}
-                        <div className="catalog-details">
+                        <div className="catalog-details" key={activeCatalogId}>
                             <div className="icon-wrapper">
                                 {getCatalogIcon(activeCatalog.id)}
                             </div>
@@ -62,7 +90,11 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                                 <a href={activeCatalog.download_url} className="btn btn-black-outline btn-animation-two">
                                     Download
                                 </a>
-                                <a href="#individual-files" className="link-view-individual">
+                                <a
+                                    href="#individual-files"
+                                    className="link-view-individual"
+                                    onClick={handleSmoothScroll}
+                                >
                                     View individual files below <FiChevronDown />
                                 </a>
                             </div>
@@ -76,7 +108,7 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                                     className={`tab-item-btn ${activeCatalogId === catalog.id ? "active" : ""}`}
                                     onClick={() => handleCatalogChange(catalog.id)}
                                 >
-                                    <span className="right-icon"><TfiLocationArrow /></span>
+                                    <span className="right-icon" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800"><TfiLocationArrow /></span>
                                     {catalog.tab_name}
                                 </button>
                             ))}
@@ -94,7 +126,7 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
 
                     <div className="files-layout">
                         {/* Sidebar */}
-                        <aside className="files-sidebar">
+                        <aside className="files-sidebar" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
                             {(activeCatalog.categories || []).map((category, idx) => (
                                 <button
                                     key={idx}
@@ -111,12 +143,18 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                             {filteredFiles.length > 0 ? (
                                 <div className="files-grid">
                                     {filteredFiles.map((file, idx) => (
-                                        <div key={idx} className="file-card">
+                                        <div
+                                            key={idx}
+                                            className="file-card"
+                                            data-aos="fade-up"
+                                            data-aos-delay={Math.min(idx * 50, 300)}
+                                            data-aos-duration="600"
+                                        >
                                             <div className="thumbnail-box">
                                                 <img src={file.image} alt={file.title} />
                                             </div>
                                             <h4 className="file-title">{file.title}</h4>
-                                            <button 
+                                            <button
                                                 onClick={() => onOpenOverlay && onOpenOverlay(file)}
                                                 className="btn btn-secondary btn-animation-two"
                                                 style={{ cursor: "pointer" }}

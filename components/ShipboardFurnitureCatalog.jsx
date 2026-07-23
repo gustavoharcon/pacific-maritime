@@ -1,14 +1,28 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import folderIcon from "@/assets/images/icons/folder-icon.png"
 import compassIcon from "@/assets/images/icons/drafting-compass-icon.png"
 import downloadIcon from "@/assets/images/icons/download-icon.png"
 import TopText from "./Text/TopText";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
     const { title, subtitle, rows = [] } = data;
     const [isSfcExpanded, setIsSfcExpanded] = useState(false);
+
+    useEffect(() => {
+        Aos.init({
+            duration: 800,
+            once: true,
+            easing: "ease-out-quad",
+        });
+    }, []);
+
+    useEffect(() => {
+        Aos.refresh();
+    }, [isSfcExpanded]);
 
     const displayedSfcRows = isSfcExpanded ? rows : rows.slice(0, 4);
 
@@ -24,7 +38,11 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
 
                 <div className="sfc-table-wrapper">
                     {/* Table Header */}
-                    <div className="sfc-table-header">
+                    <div 
+                        className="sfc-table-header"
+                        data-aos="fade-up"
+                        data-aos-duration="600"
+                    >
                         <div className="header-cell category-cell">Category</div>
                         <div className="header-cell section-cell">
                             <div className="icon-header-box">
@@ -49,7 +67,13 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
                     {/* Table Body */}
                     <div className="sfc-table-body">
                         {displayedSfcRows.map((row, idx) => (
-                            <div key={idx} className="sfc-table-row">
+                            <div 
+                                key={idx} 
+                                className="sfc-table-row"
+                                data-aos="fade-up"
+                                data-aos-delay={Math.min(idx * 50, 300)}
+                                data-aos-duration="600"
+                            >
                                 <div className="body-cell category-cell">{row.category}</div>
                                 <div className="body-cell section-cell">{row.section_title}</div>
                                 <div className="body-cell item-cell">{row.item}</div>
@@ -74,7 +98,12 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
 
                 {/* View More Button */}
                 {rows.length > 4 && (
-                    <div className="sfc-action-box">
+                    <div 
+                        className="sfc-action-box"
+                        data-aos="fade-up"
+                        data-aos-duration="600"
+                        data-aos-offset="50"
+                    >
                         <button
                             className="btn btn-secondary btn-animation-two"
                             onClick={() => setIsSfcExpanded(!isSfcExpanded)}

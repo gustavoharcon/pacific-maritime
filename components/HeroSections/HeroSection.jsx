@@ -1,6 +1,19 @@
+"use client";
+
 import HeroTextContainer from "@/components/HeroTextContainer";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const HeroSection = ({ data }) => {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 800,
+            once: true,
+            easing: "ease-out-quad",
+        });
+    }, []);
 
     const { right_column_image } = data;
 
@@ -12,9 +25,14 @@ const HeroSection = ({ data }) => {
                         <HeroTextContainer data={data} />
                     </div>
 
-                    {right_column_image && <div className="col col-with-bg" style={{
-                        ...(right_column_image && { backgroundImage: `url(${right_column_image})` }),
-                    }}>
+                    {right_column_image && <div
+                        className="col col-with-bg"
+                        data-aos="fade-left"
+                        data-aos-delay="200"
+                        data-aos-duration="800"
+                        style={{
+                            ...(right_column_image && { backgroundImage: `url(${right_column_image})` }),
+                        }}>
                     </div>}
                 </div>
             </div>

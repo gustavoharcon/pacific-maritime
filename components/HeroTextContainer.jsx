@@ -1,15 +1,36 @@
+"use client";
+
+import { useEffect } from "react";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const HeroTextContainer = ({ data }) => {
     const { title, subtitle, buttons } = data;
 
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: "ease-out-quad",
+        });
+    }, []);
+
     return (
         <div className="hero-text-container">
             {
-                title && <h1 className="title">{title}</h1>
+                title && (
+                    <h1 className="title" data-aos="fade-up">
+                        {title}
+                    </h1>
+                )
             }
             {
-                subtitle && <p className="subtitle">{subtitle}</p>
+                subtitle && (
+                    <p className="subtitle" data-aos="fade-up" data-aos-delay="200">
+                        {subtitle}
+                    </p>
+                )
             }
             {
                 buttons && buttons.length > 0 && (
