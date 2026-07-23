@@ -49,7 +49,7 @@ const CatalogOverlay = ({ item, onClose }) => {
     };
 
     return (
-        <div className="catalog-overlay-backdrop" onClick={handleBackdropClick}>
+        <div className="catalog-overlay-backdrop">
             {/* Close Button top right */}
             <button className="overlay-close-btn" onClick={onClose} aria-label="Close overlay">
                 <FiX />
@@ -57,7 +57,7 @@ const CatalogOverlay = ({ item, onClose }) => {
 
             <div className="overlay-content-wrapper">
                 {/* Image Container */}
-                <div 
+                <div
                     ref={containerRef}
                     className={`overlay-image-container ${isZoomed ? "zoomed" : ""}`}
                     onClick={toggleZoom}
@@ -65,9 +65,9 @@ const CatalogOverlay = ({ item, onClose }) => {
                     onMouseLeave={() => isZoomed && setIsZoomed(false)}
                     style={{ cursor: isZoomed ? "zoom-out" : "zoom-in" }}
                 >
-                    <img 
-                        src={highResUrl} 
-                        alt={item?.title || "Catalog Sheet"} 
+                    <img
+                        src={highResUrl}
+                        alt={item?.title || "Catalog Sheet"}
                         className="overlay-image"
                         style={{
                             transform: isZoomed ? "scale(2.2)" : "scale(1)",
@@ -78,18 +78,18 @@ const CatalogOverlay = ({ item, onClose }) => {
 
                 {/* Bottom Action Bar */}
                 <div className="overlay-action-bar">
-                    <a 
-                        href={highResUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="btn btn-black-outline btn-animation-two overlay-btn-outline"
+                    <a
+                        href={highResUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-secondary btn-animation-two"
                     >
                         View Full Size
                     </a>
-                    <a 
-                        href={highResUrl} 
+                    <a
+                        href={highResUrl}
                         download={`catalog-${item?.file_link || "sheet"}.jpg`}
-                        className="btn btn-white-filled overlay-btn-filled"
+                        className="btn btn--primary btn-animation-four"
                         onClick={(e) => {
                             // If the image is external (Cloudinary), we may just navigate/open depending on CORS.
                             // But we can keep standard download anchor behavior.

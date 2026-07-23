@@ -82,40 +82,6 @@
     margin-top: 32px;
     justify-content: center;
     align-items: center;
-
-    .btn {
-        min-width: 160px;
-        text-align: center;
-        justify-content: center;
-        border-radius: 30px;
-        font-weight: 700;
-        font-size: 16px;
-        padding: 12px 32px;
-        text-decoration: none;
-        transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
-    }
-
-    .overlay-btn-outline {
-        border: 2px solid rgba(255, 255, 255, 0.4);
-        color: var(--color-white);
-        background: transparent;
-
-        &:hover {
-            border-color: var(--color-white);
-            background-color: rgba(255, 255, 255, 0.1);
-            color: var(--color-white);
-        }
-    }
-
-    .overlay-btn-filled {
-        background-color: var(--color-white);
-        color: var(--color-text, #010101);
-        border: 2px solid var(--color-white);
-
-        &:hover {
-            background-color: rgba(255, 255, 255, 0.9);
-        }
-    }
 }
 
 @keyframes overlayFadeIn {
