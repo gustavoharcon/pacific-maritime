@@ -11,23 +11,25 @@ const HeroTextContainer = ({ data }) => {
     useEffect(() => {
         AOS.init({
             duration: 800,
-            once: true,
-            easing: "ease-out-quad",
+            once: false,
+            mirror: true,
+            easing: "ease-in-out",
         });
+        AOS.refresh();
     }, []);
 
     return (
         <div className="hero-text-container">
             {
                 title && (
-                    <h1 className="title" data-aos="fade-up">
+                    <h1 className="title" data-aos="fade-right">
                         {title}
                     </h1>
                 )
             }
             {
                 subtitle && (
-                    <p className="subtitle" data-aos="fade-up" data-aos-delay="200">
+                    <p className="subtitle" data-aos="fade-right" data-aos-delay="200">
                         {subtitle}
                     </p>
                 )
