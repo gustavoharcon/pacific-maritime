@@ -1,19 +1,6 @@
-"use client";
-
 import HeroTextContainer from "@/components/HeroTextContainer";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const HeroSection = ({ data }) => {
-
-    useEffect(() => {
-        Aos.init({
-            duration: 800,
-            once: true,
-            easing: "ease-out-quad",
-        });
-    }, []);
 
     const { right_column_image } = data;
 

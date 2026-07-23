@@ -1,19 +1,6 @@
-"use client";
-
 import Link from "next/link";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const TopText = ({ data }) => {
-
-    useEffect(() => {
-        Aos.init({
-            duration: 800,
-            once: true,
-            easing: "ease-out-quad",
-        });
-    }, []);
 
     const { small_title, title, subtitle, buttons } = data;
 

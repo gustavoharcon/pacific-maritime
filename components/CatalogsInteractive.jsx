@@ -23,17 +23,6 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
     const [activeCategory, setActiveCategory] = useState("ALL FILES");
 
     useEffect(() => {
-        AOS.init({
-            duration: 800,
-            offset: 100,
-            once: false,
-            mirror: true,
-            easing: "ease-out-quad",
-        });
-
-    }, []);
-
-    useEffect(() => {
         AOS.refresh();
     }, [activeCatalogId, activeCategory]);
 
@@ -79,7 +68,6 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                 <div className="container">
                     <div className="catalog-card"
                         data-aos="fade-up"
-                        data-aos-once="false"
                         data-aos-delay="200"
                         data-aos-duration="800"
                     >

@@ -1,18 +1,4 @@
-"use client";
-
-import { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
-
 const CallToAction = () => {
-    useEffect(() => {
-        Aos.init({
-            duration: 800,
-            once: true,
-            easing: "ease-out-quad",
-        });
-    }, []);
-
     return (
         <section className="call-to-action">
             <div className="container">

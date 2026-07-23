@@ -5,7 +5,7 @@ import folderIcon from "@/assets/images/icons/folder-icon.png"
 import compassIcon from "@/assets/images/icons/drafting-compass-icon.png"
 import downloadIcon from "@/assets/images/icons/download-icon.png"
 import TopText from "./Text/TopText";
-import Aos from "aos";
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
@@ -13,15 +13,7 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
     const [isSfcExpanded, setIsSfcExpanded] = useState(false);
 
     useEffect(() => {
-        Aos.init({
-            duration: 800,
-            once: true,
-            easing: "ease-out-quad",
-        });
-    }, []);
-
-    useEffect(() => {
-        Aos.refresh();
+        AOS.refresh();
     }, [isSfcExpanded]);
 
     const displayedSfcRows = isSfcExpanded ? rows : rows.slice(0, 4);
