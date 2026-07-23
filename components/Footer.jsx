@@ -1,7 +1,7 @@
 import Link from "next/link"
 import siteData from "@/data/siteData"
 import Image from "next/image";
-import white_logo from "@/assets/images/logos/Pacific Maritime Industries White Logo with Company Name.png";
+import white_logo from "@/assets/images/logos/Pacific-Maritime-Industries-White-Logo-with-Company-Name.png";
 
 const footer_menu = siteData.find(item => item.footer_menu)?.footer_menu;
 const bottom_credits = siteData.find(item => item.bottom_credits)?.bottom_credits;

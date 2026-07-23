@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
 // import profileDefault from "@/assets/images/profile.png";
-import { IoIosMenu } from "react-icons/io";
 import LogoImageLink from "@/components/LogoImageLink";
 import MainMenu from "@/components/Menus/MainMenu";
 

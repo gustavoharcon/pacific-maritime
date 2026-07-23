@@ -111,10 +111,14 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
 
             <section id="individual-files" className="individual-files-section">
                 <div className="container">
-                    <TopText data={{
-                        small_title: "Files",
-                        title: activeCatalog.tab_name + " Individual Files"
-                    }} />
+                    <TopText 
+                        key={activeCatalogId}
+                        aosAnimation="fade-left"
+                        data={{
+                            small_title: "Files",
+                            title: activeCatalog.tab_name + " Individual Files"
+                        }} 
+                    />
 
                     <div className="files-layout">
                         {/* Sidebar */}
