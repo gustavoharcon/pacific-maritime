@@ -5,6 +5,7 @@ import TopTextThreeColumns from "@/components/TopTextThreeColumns";
 import TeamMembers from "@/components/TeamMembers";
 import Buttons from "@/components/Buttons/Buttons";
 import ColumnsWithIconText from "@/components/ColumnsWithIconText";
+import Contracts from "@/components/Contracts";
 import siteData from "@/data/siteData";
 
 
@@ -13,6 +14,7 @@ const milestonesData = aboutData?.milestones_section;
 const capabilities = aboutData?.capabilities_section;
 const ourteamData = aboutData?.our_team_section;
 const processData = aboutData?.process_section;
+const contractsData = aboutData?.contracts_section;
 
 export async function generateMetadata() {
     return {
@@ -62,6 +64,15 @@ const AboutPage = () => {
                         </div>
                     </div>
 
+                </div>
+            </section>
+            <section className="contracts-section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <Contracts data={contractsData} />
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

@@ -497,6 +497,38 @@ const siteData = [
                         "button_style": "btn btn-black-outline btn-animation-two"
                     }
                 ]
+            },
+            "contracts_section": {
+                "top_text": {
+                    "small_title": "References",
+                    "title": "Contracts that Prove the Work"
+                },
+                "contracts_text": {
+                    "description": "A record of on-time, on-budget delivery for the U.S. Navy and prime contractors. Contact us for past performance references.",
+                    "title": "Notable contracts",
+                    "contracts": [
+                        {
+                            "description": "The Fleet & Industrial Supply Center has awarded an Indefinite Delivery Order IDTC Habitability Contract to Pacific Maritime Industries.",
+                            "number": "N00244-02-D-0039",
+                            "contact_info_title": "FISC Contact Information",
+                            "contact_name": "Pat Walsh",
+                            "contact_phone": "(619) 556-2116",
+                            "contact_email": "patrick.walsh@navy.mil"
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Contact",
+                            "link": "/contact",
+                            "button_style": "btn btn-secondary btn-animation-two"
+                        },
+                        {
+                            "text": "Careers",
+                            "link": "/careers",
+                            "button_style": "btn btn-secondary btn-animation-two"
+                        }
+                    ]
+                }
             }
         },
         "catalogs_page": {

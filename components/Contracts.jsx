@@ -1,0 +1,32 @@
+import TopText from "./Text/TopText"
+import { FiPhoneCall } from "react-icons/fi";
+import { MdOutlineMail } from "react-icons/md";
+
+
+
+const Contracts = ({ data }) => {
+    const { top_text, contracts_text } = data;
+    return (
+        <div className="contracts-component">
+            <div className="column">
+                <TopText data={top_text} />
+            </div>
+            <div className="column">
+                <p className="description">{contracts_text.description}</p>
+                <h4 className="title">{contracts_text.title}</h4>
+                {contracts_text.contracts.map((contract, index) => (
+                    <div key={index} className="contract">
+                        <p className="description">{contract.description}</p>
+                        <p className="number">Contract #: {contract.number}</p>
+                        <p className="contact-info-title">{contract.contact_info_title}</p>
+                        <p className="contact-name">{contract.contact_name}</p>
+                        <a href={`tel:${contract.contact_phone}`} className="contact-phone"><FiPhoneCall className="icon" />{contract.contact_phone}</a>
+                        <a href={`mailto:${contract.contact_email}`} className="contact-email"><MdOutlineMail className="icon" />{contract.contact_email}</a>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
+}
+
+export default Contracts

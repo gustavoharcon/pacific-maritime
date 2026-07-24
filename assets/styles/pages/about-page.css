@@ -87,4 +87,23 @@
             margin-top: 80px;
         }
     }
+
+    .contracts-section {
+        padding: 112px 0;
+        background-color: var(--color-accent);
+
+        >.container {
+            .contracts-component {
+                >.column {
+                    >.top-text {
+
+                        >.small-title,
+                        >.title {
+                            color: var(--color-white);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
