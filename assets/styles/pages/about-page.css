@@ -13,4 +13,34 @@
             }
         }
     }
+
+    .milestones-section {
+        background-color: var(--color-background);
+        padding: 112px 0;
+
+        >.container {
+            >.row {
+
+                >.col {
+                    >.top-text {
+
+                        >.small-title,
+                        >.title,
+                        >.subtitle {
+                            text-align: left;
+                        }
+
+                        >.subtitle {
+                            margin-bottom: 32px;
+                        }
+
+                        >.buttons {
+                            justify-content: flex-start;
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

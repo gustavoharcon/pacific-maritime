@@ -140,12 +140,12 @@ const siteData = [
                 "buttons": [
                     {
                         "text": "Request quote",
-                        "url": "/request-quote",
+                        "link": "/request-quote",
                         "button_style": "btn btn--primary btn-animation-four"
                     },
                     {
                         "text": "View products",
-                        "url": "/products",
+                        "link": "/products",
                         "button_style": "btn btn-secondary btn-animation-two"
                     }
                 ],
@@ -333,7 +333,55 @@ const siteData = [
             },
             "hero_section": {
                 "title": "Built for the sea since 1979",
-                "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet."
+                "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet.",
+                "buttons": [
+                    {
+                        "text": "Explore capabilities",
+                        "link": "/about/manufacturing-capabilities",
+                        "button_style": "btn btn--primary btn-animation-four"
+                    },
+                    {
+                        "text": "Request a quote",
+                        "link": "/request-quote",
+                        "button_style": "btn btn-secondary btn-animation-two"
+                    }
+                ]
+            },
+            "milestones_section": {
+                "top_text": {
+                    "small_title": "Milestones",
+                    "title": "Four decades of precision engineering for the fleet",
+                    "subtitle": "A timeline of continuous service to the U.S. Navy and prime contractors. Each date marks a commitment to quality and on-time delivery.",
+                    "buttons": [
+                        {
+                            "text": "Careers",
+                            "link": "/careers",
+                            "button_style": "btn btn-black-outline btn-animation-two"
+                        }
+                    ]
+                },
+                "timeline": [
+                    {
+                        "year": "1979",
+                        "title": "Humble dockside beginnings",
+                        "subtitle": "Founded in San Diego to serve Navy ship repair contracts. The work was hard, the standards were high, and the reputation grew fast."
+                    },
+                    {
+                        "year": "1987",
+                        "title": "First major retrofit",
+                        "subtitle": "Awarded our first MSC berthing system retrofit contract. This job proved we could handle complex modular manufacturing under tight deadlines."
+                    },
+                    {
+                        "year": "1998",
+                        "title": "Capacity expands",
+                        "subtitle": "Expanded to a fully equipped 45,000 square foot facility. The new floor space allowed for simultaneous fabrication of multiple large-scale shipboard furniture projects."
+                    },
+                    {
+                        "year": "2007",
+                        "title": "Digital traceability",
+                        "subtitle": "Implemented SolidWorks CAD and MetalSoft production control. Every cut, weld, and assembly point now had a digital record from design to delivery."
+                    }
+                ]
             }
         },
         "catalogs_page": {

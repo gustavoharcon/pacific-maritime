@@ -29,7 +29,7 @@ const HeroTextContainer = ({ data }) => {
                     <div className="buttons">
                         {buttons.map((button, index) => (
                             <div className="button" key={index}>
-                                <Link className={button.button_style} href={button.url} aria-label={button.text}>
+                                <Link className={button.button_style} href={button.link} aria-label={button.text}>
                                     {button.text}
                                 </Link>
 
