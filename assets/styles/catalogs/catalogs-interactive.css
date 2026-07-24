@@ -107,7 +107,7 @@
                 font-weight: 700;
                 text-align: left;
                 text-transform: uppercase;
-                cursor: pointer;
+                cursor: unset;
                 max-height: 110px;
                 transition: background-color 200ms ease, color 200ms ease;
 

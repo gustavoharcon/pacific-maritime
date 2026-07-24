@@ -97,10 +97,6 @@
 
     .sfc-link-btn {
         min-width: 140px;
-
-        &:hover,
-        &:active,
-        &:focus {}
     }
 
     .sfc-preview-tooltip {

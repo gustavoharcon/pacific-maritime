@@ -350,7 +350,7 @@ const siteData = [
                     {
                         "id": "naval-furniture",
                         "tab_name": "Naval Shipboard Furniture Catalog",
-                        "title": "NAVAL FURNITURE CATALOG",
+                        "title": "NAVAL SHIPBOARD FURNITURE CATALOG",
                         "subtitle": "The complete 145-page stateroom and berthing systems catalog",
                         "download_url": "#",
                         "categories": [
