@@ -30,17 +30,55 @@
                             text-align: left;
                         }
 
-                        >.subtitle {
-                            margin-bottom: 32px;
-                        }
-
                         >.buttons {
                             justify-content: flex-start;
-                            display: flex;
                         }
                     }
                 }
             }
         }
     }
+
+    .capabilities-section {
+        background-color: var(--color-white);
+        padding: 112px 0;
+
+        .column-text-container {
+            >.text-area {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .our-team-section {
+        background-color: var(--color-background);
+        padding: 112px 0;
+
+        >.container {
+            >.row {
+                display: flex;
+                flex-flow: row nowrap;
+
+                >.col {
+                    width: 50%;
+
+                    >.top-text {
+                        margin-bottom: 0;
+
+                        >.small-title,
+                        >.title,
+                        >.subtitle {
+                            text-align: left;
+                        }
+
+                        >.buttons {
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 }

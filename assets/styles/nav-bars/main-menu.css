@@ -29,9 +29,9 @@
                     justify-content: center;
 
                     img {
-                        width: 100%;
-                        overflow: hidden;
                         object-fit: contain;
+                        width: auto;
+                        height: auto;
                     }
                 }
             }

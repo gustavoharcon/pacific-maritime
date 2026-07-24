@@ -161,7 +161,6 @@ const siteData = [
                         "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/serving-san-dieg-and-the-pacific-fleet_jbg4xy.png",
                         "small_title": "Facility",
                         "title": "Serving San Diego and the Pacific Fleet",
-
                         "buttons": [
                             {
                                 "text": "Directions",
@@ -380,6 +379,81 @@ const siteData = [
                         "year": "2007",
                         "title": "Digital traceability",
                         "subtitle": "Implemented SolidWorks CAD and MetalSoft production control. Every cut, weld, and assembly point now had a digital record from design to delivery."
+                    }
+                ]
+            },
+            "capabilities_section": {
+                "top_text": {
+                    "small_title": "Capabilities",
+                    "title": "Engineered and fabricated under one roof",
+                    "subtitle": "The state-of-the-art facilities and talent to take your project from concept to shipyard integration."
+                },
+                "columns": [
+                    {
+                        "icon": "engineering",
+                        "title": "Engineering",
+                        "subtitle": "3D CAD simulation drives every design to ensure strict MIL-SPEC compliance.",
+                        "buttons": [
+                            {
+                                "text": "Learn More",
+                                "link": "/about/manufacturing-capabilities",
+                                "button_style": "btn btn-black-outline btn-animation-two"
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "fabrication",
+                        "title": "Fabrication",
+                        "subtitle": "Over 45,000 sq ft of CNC cutting, welding, and finishing capacity in San Diego.",
+                        "buttons": [
+                            {
+                                "text": "Learn More",
+                                "link": "/about/manufacturing-capabilities",
+                                "button_style": "btn btn-black-outline btn-animation-two"
+                            }
+                        ]
+                    },
+                    {
+                        "icon": "logistics",
+                        "title": "STAGING & LOGISTICS",
+                        "subtitle": "Pre-assembled modules are palletized, secured, and ready for immediate on-board fit-out by crews.",
+                        "buttons": [
+                            {
+                                "text": "Learn More",
+                                "link": "/about/manufacturing-capabilities",
+                                "button_style": "btn btn-black-outline btn-animation-two"
+                            }
+                        ]
+                    },
+                ]
+            },
+            "our_team_section": {
+                "top_text": {
+                    "small_title": "Leadership",
+                    "title": "Our team",
+                    "subtitle": "Decades of experience in maritime manufacturing, engineering, and quality control. These are the people who deliver on every contract.",
+                    "buttons": [
+                        {
+                            "text": "Open positions",
+                            "link": "/careers",
+                            "button_style": "btn btn-black-outline btn-animation-two"
+                        }
+                    ]
+                },
+                "team_members": [
+                    {
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/v1784913543/team-member-placeholder_wpiqzi.png",
+                        "name": "John Atkinson",
+                        "position": "President",
+                        "description": "35 years in maritime manufacturing. Former NASSCO production engineer. Founded PMI in 1979. He oversees all contract execution.",
+                        "phone": process.env.CONTACT_PHONE_NUMBER,
+                        "email": "jatkinson@pacmaritime.com",
+                        "social_media": [
+                            {
+                                "icon": "linkedin",
+                                "link": ""
+                            }
+                        ]
                     }
                 ]
             }

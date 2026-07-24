@@ -359,7 +359,7 @@ strong {
     text-align: center;
     max-width: 768px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 80px;
 
     >.small-title {
         margin-bottom: 16px;
@@ -375,7 +375,15 @@ strong {
 
     >.subtitle {
         font-size: 18px;
-        margin-bottom: 80px;
+        margin-bottom: 24px;
+    }
+
+
+    >.buttons {
+        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 16px;
     }
 
     >.categories {
@@ -397,6 +405,7 @@ strong {
 
 .text-area {
     text-align: left;
+    margin-bottom: 0;
 
     >.small-title {
         margin-bottom: 8px;

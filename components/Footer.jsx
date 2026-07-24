@@ -14,7 +14,9 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <Image src={white_logo} alt="Pacific Maritime Industries Corp. White Logo" width={0} height={0} />
+                        <Link href="/">
+                            <Image src={white_logo} alt="Pacific Maritime Industries Corp. White Logo" width={0} height={0} />
+                        </Link>
                     </div>
                 </div>
                 <div className="row">
