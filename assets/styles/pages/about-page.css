@@ -80,5 +80,11 @@
         }
     }
 
+    .process-section {
+        padding: 112px 0;
 
+        .buttons-component {
+            margin-top: 80px;
+        }
+    }
 }

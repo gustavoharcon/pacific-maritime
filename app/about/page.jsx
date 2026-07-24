@@ -3,6 +3,8 @@ import TopText from "@/components/Text/TopText";
 import Timeline from "@/components/Timeline";
 import TopTextThreeColumns from "@/components/TopTextThreeColumns";
 import TeamMembers from "@/components/TeamMembers";
+import Buttons from "@/components/Buttons/Buttons";
+import ColumnsWithIconText from "@/components/ColumnsWithIconText";
 import siteData from "@/data/siteData";
 
 
@@ -10,6 +12,7 @@ const aboutData = siteData.find(item => item.about_page)?.about_page;
 const milestonesData = aboutData?.milestones_section;
 const capabilities = aboutData?.capabilities_section;
 const ourteamData = aboutData?.our_team_section;
+const processData = aboutData?.process_section;
 
 export async function generateMetadata() {
     return {
@@ -47,6 +50,18 @@ const AboutPage = () => {
                             <TeamMembers data={ourteamData.team_members} />
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="process-section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <TopText data={processData.top_text} />
+                            <ColumnsWithIconText data={processData.steps} />
+                            <Buttons buttons={processData.buttons} />
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </>

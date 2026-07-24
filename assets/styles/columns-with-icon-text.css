@@ -1,0 +1,31 @@
+.columns-with-icon-text {
+    display: flex;
+    flex-flow: row nowrap;
+
+    .column {
+        width: 25%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+        color: var(--color-text);
+
+        >.icon-container {
+            >svg {
+                font-size: 48px;
+            }
+        }
+
+        >.title {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        >.description {
+            font-size: 18px;
+        }
+
+    }
+}

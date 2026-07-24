@@ -12,6 +12,8 @@
 @import "./products-three-columns.css";
 @import "./team-members.css";
 @import "./cta/call-to-action.css";
+@import "./buttons.css";
+@import "./columns-with-icon-text.css";
 @import "./pages/home-page.css";
 @import "./pages/about-page.css";
 @import "./pages/catalogs-page.css";

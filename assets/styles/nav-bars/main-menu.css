@@ -30,8 +30,8 @@
 
                     img {
                         object-fit: contain;
-                        width: auto;
-                        height: auto;
+                        width: 100%;
+                        max-width: 122px;
                     }
                 }
             }

@@ -456,6 +456,47 @@ const siteData = [
                         ]
                     }
                 ]
+            },
+            "process_section": {
+                "top_text": {
+                    "small_title": "Process",
+                    "title": "From ship spec to final sign-off in four steps",
+                    "subtitle": "A disciplined workflow that respects the Navy's requirements and your schedule. Every step is documented and traceable."
+                },
+                "steps": [
+                    {
+                        "icon": "design-and-quote",
+                        "title": "Design and quote",
+                        "description": "We receive your ship specs and develop 3D models with a firm-fixed-price proposal within 5 to 7 business days."
+                    },
+                    {
+                        "icon": "engineering",
+                        "title": "Engineering Submittal",
+                        "description": "We submit shop drawings, material certifications, and finish samples for approval."
+                    },
+                    {
+                        "icon": "fabrication",
+                        "title": "Fabrication and QC",
+                        "description": "Production runs with in-process inspection. Final dimensional and coating checks meet all contract requirements."
+                    },
+                    {
+                        "icon": "logistics",
+                        "title": "Stage and Dispatch",
+                        "description": "Components are meticulously wrapped, palletized, and securely staged at our San Diego facility for seamless load-out and transport by logistics teams."
+                    },
+                ],
+                "buttons": [
+                    {
+                        "text": "Contact",
+                        "link": "/contact",
+                        "button_style": "btn btn-black-outline btn-animation-two"
+                    },
+                    {
+                        "text": "Careers",
+                        "link": "/careers",
+                        "button_style": "btn btn-black-outline btn-animation-two"
+                    }
+                ]
             }
         },
         "catalogs_page": {
