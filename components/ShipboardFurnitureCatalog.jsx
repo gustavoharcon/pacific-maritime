@@ -30,7 +30,7 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
 
                 <div className="sfc-table-wrapper">
                     {/* Table Header */}
-                    <div 
+                    <div
                         className="sfc-table-header"
                         data-aos="fade-up"
                         data-aos-duration="600"
@@ -45,13 +45,13 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
                         <div className="header-cell item-cell">
                             <div className="icon-header-box">
                                 <img src={compassIcon.src} className="header-icon" />
-                                <span>Item</span>
+                                <span>Item Description</span>
                             </div>
                         </div>
                         <div className="header-cell link-cell">
                             <div className="icon-header-box">
                                 <img src={downloadIcon.src} className="header-icon" />
-                                <span>File Link</span>
+                                <span>MIL-SPEC Code</span>
                             </div>
                         </div>
                     </div>
@@ -59,19 +59,20 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
                     {/* Table Body */}
                     <div className="sfc-table-body">
                         {displayedSfcRows.map((row, idx) => (
-                            <div 
-                                key={idx} 
+                            <div
+                                key={idx}
                                 className="sfc-table-row"
                                 data-aos="fade-up"
                                 data-aos-delay={Math.min(idx * 50, 300)}
                                 data-aos-duration="600"
+                                onClick={() => onOpenOverlay && onOpenOverlay(row)}
                             >
                                 <div className="body-cell category-cell">{row.category}</div>
                                 <div className="body-cell section-cell">{row.section_title}</div>
                                 <div className="body-cell item-cell">{row.item}</div>
                                 <div className="body-cell link-cell">
-                                    <button 
-                                        onClick={() => onOpenOverlay && onOpenOverlay(row)}
+                                    <button
+
                                         className="sfc-link-btn btn btn-secondary btn-animation-two"
                                         style={{ cursor: "pointer" }}
                                     >
@@ -90,7 +91,7 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
 
                 {/* View More Button */}
                 {rows.length > 4 && (
-                    <div 
+                    <div
                         className="sfc-action-box"
                         data-aos="fade-up"
                         data-aos-duration="600"

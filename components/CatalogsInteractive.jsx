@@ -82,13 +82,13 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                                 <a href={activeCatalog.download_url} className="btn btn-black-outline btn-animation-two">
                                     Download
                                 </a>
-                                <a
+                                {/* <a
                                     href="#individual-files"
                                     className="link-view-individual"
                                     onClick={handleSmoothScroll}
                                 >
                                     View individual files below <FiChevronDown />
-                                </a>
+                                </a> */}
                             </div>
                         </div>
 
@@ -109,7 +109,7 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                 </div>
             </section>
 
-            <section id="individual-files" className="individual-files-section">
+            {/* <section id="individual-files" className="individual-files-section">
                 <div className="container">
                     <TopText 
                         key={activeCatalogId}
@@ -121,7 +121,6 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                     />
 
                     <div className="files-layout">
-                        {/* Sidebar */}
                         <aside className="files-sidebar" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
                             {(activeCatalog.categories || []).map((category, idx) => (
                                 <button
@@ -134,7 +133,6 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                             ))}
                         </aside>
 
-                        {/* Grid */}
                         <main className="files-grid-container">
                             {filteredFiles.length > 0 ? (
                                 <div className="files-grid">
@@ -168,7 +166,7 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                         </main>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 };

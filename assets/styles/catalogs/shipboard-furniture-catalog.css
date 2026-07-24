@@ -60,6 +60,13 @@
         &:hover {
             background-color: rgba(255, 255, 255, 0.1);
             z-index: 10;
+            cursor: pointer;
+
+            .sfc-preview-tooltip {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(-50%) translateY(0);
+            }
         }
     }
 
@@ -90,6 +97,10 @@
 
     .sfc-link-btn {
         min-width: 140px;
+
+        &:hover,
+        &:active,
+        &:focus {}
     }
 
     .sfc-preview-tooltip {
@@ -126,7 +137,7 @@
             border-style: solid;
             border-color: var(--color-white) transparent transparent transparent;
         }
-        
+
         &::before {
             content: "";
             position: absolute;
@@ -140,11 +151,7 @@
         }
     }
 
-    .link-cell:hover .sfc-preview-tooltip {
-        opacity: 1;
-        visibility: visible;
-        transform: translateX(-50%) translateY(0);
-    }
+    /* .link-cell:hover  */
 
     .sfc-action-box {
         display: flex;

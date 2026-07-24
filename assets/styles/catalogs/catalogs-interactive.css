@@ -15,7 +15,6 @@
         .catalog-card {
             display: flex;
             background-color: var(--color-background);
-            /* Light gray box container background */
             border: 2px solid var(--color-text);
             border-radius: 16px;
             overflow: hidden;
@@ -109,6 +108,7 @@
                 text-align: left;
                 text-transform: uppercase;
                 cursor: pointer;
+                max-height: 110px;
                 transition: background-color 200ms ease, color 200ms ease;
 
                 .right-icon {
@@ -117,12 +117,12 @@
                     opacity: 0;
                     transform: translateX(-15px) rotate(135deg);
                     transition: opacity 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
-                                transform 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                        transform 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
                 }
 
-                &:last-child {
+                /* &:last-child {
                     border-bottom: none;
-                }
+                } */
 
                 &:hover {
                     background-color: rgba(0, 0, 0, 0.03);
@@ -140,7 +140,6 @@
         }
     }
 
-    /* Individual Files Section */
     .individual-files-section {
         padding-bottom: 80px;
 
@@ -299,6 +298,7 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
