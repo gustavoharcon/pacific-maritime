@@ -656,9 +656,9 @@ const siteData = [
                         "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
                     },
                     {
-                        "small_title": "Laser",
-                        "title": "Mazak Hyper Turbo-X",
-                        "subtitle": "High-precision 2D laser with auto load and unload system. Ideal for precision sheet metal parts.",
+                        "small_title": "Waterjet",
+                        "title": "Omax 55100",
+                        "subtitle": "Abrasive waterjet for complex profiles and composite materials. Closed‑loop digital drives.",
                         "buttons": [
                             {
                                 "text": "Learn more",
@@ -666,46 +666,46 @@ const siteData = [
                                 "button_style": "btn btn-black-outline btn-animation-two"
                             }
                         ],
-                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/h_171/v1785178784/Omax-55100_vm597j.png"
                     },
                     {
-                        "small_title": "Laser",
-                        "title": "Mazak Hyper Turbo-X",
-                        "subtitle": "High-precision 2D laser with auto load and unload system. Ideal for precision sheet metal parts.",
+                        "small_title": "Punch",
+                        "title": "Amada Vipro 255",
+                        "subtitle": "CNC punching for high‑volume sheet metal parts with quick tool change.",
                         "buttons": [
                             {
                                 "text": "Learn more",
-                                "link": "/about/equipment-list/#laser-and-waterjet-cutting",
+                                "link": "/about/equipment-list/#cnc-punching",
                                 "button_style": "btn btn-black-outline btn-animation-two"
                             }
                         ],
-                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/h_171/v1785178783/Amada-Vipro-255_irfvbw.png"
                     },
                     {
-                        "small_title": "Laser",
-                        "title": "Mazak Hyper Turbo-X",
-                        "subtitle": "High-precision 2D laser with auto load and unload system. Ideal for precision sheet metal parts.",
+                        "small_title": "Bend",
+                        "title": "Amada RG series",
+                        "subtitle": "CNC bending and press brake for accurate forming of enclosures and frames.",
                         "buttons": [
                             {
                                 "text": "Learn more",
-                                "link": "/about/equipment-list/#laser-and-waterjet-cutting",
+                                "link": "/about/equipment-list/#cnc-punching",
                                 "button_style": "btn btn-black-outline btn-animation-two"
                             }
                         ],
-                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/h_171/v1785178784/Amada-RG-Series_eyvolc.png"
                     },
                     {
-                        "small_title": "Laser",
-                        "title": "Mazak Hyper Turbo-X",
-                        "subtitle": "High-precision 2D laser with auto load and unload system. Ideal for precision sheet metal parts.",
+                        "small_title": "Shear",
+                        "title": "Amada shears",
+                        "subtitle": "CNC shearing for clean, square cuts on sheet stock up to 10 gauge.",
                         "buttons": [
                             {
                                 "text": "Learn more",
-                                "link": "/about/equipment-list/#laser-and-waterjet-cutting",
+                                "link": "/about/equipment-list/#cnc-shearing",
                                 "button_style": "btn btn-black-outline btn-animation-two"
                             }
                         ],
-                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/h_171/v1785178784/Amada-Shears_p2huhr.png"
                     },
                 ]
             }
