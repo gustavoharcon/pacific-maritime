@@ -1,5 +1,6 @@
 import TopText from "./Text/TopText";
 import ColumnTextContainer from "./Text/ColumnTextContainer";
+import Link from "next/link";
 import { MdOutlineEngineering, MdOutlineFactory, MdOutlineControlCamera } from "react-icons/md";
 
 
