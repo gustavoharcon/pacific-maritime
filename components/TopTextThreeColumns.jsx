@@ -29,7 +29,6 @@ const TopTextThreeColumns = ({ className = "", data = {} }) => {
                     </div>
                 </div>
                 <div className="row columns-row">
-
                     {columns.map((column, index) => (
                         <div key={index} className="col">
                             {

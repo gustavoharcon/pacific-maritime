@@ -3,7 +3,6 @@ const siteData = [
         "site_name": "Pacific Maritime Industries Corp.",
         "tagline": "Heavy-Duty Marine Fabrication & NAVSEA-Compliant Shipboard Furniture.",
         "site_url": "http://www.pacmaritime.com/",
-        // "site_logo": "/assets/images/Pacific_Maritime_Industries_Corp_logo.png",
         "site_logo": "/assets/images/logos/black_with_text_Pacific_Maritime_Industries_Corporation.png",
     },
     {
@@ -707,6 +706,32 @@ const siteData = [
                         ],
                         "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/h_171/v1785178784/Amada-Shears_p2huhr.png"
                     },
+                ]
+            },
+            "production_capacity_section": {
+                "top_text": {
+                    "small_title": "Capacity",
+                    "title": "Production capacity and lead times you can plan against",
+                    "subtitle": "We run one to two shifts with surge capacity to three. Typical weekly throughput is 1,200 sheet metal parts and 80 welded assemblies. Lead times are small parts in one to two weeks, medium assemblies in three to six weeks, and large custom projects by schedule."
+                },
+                "production_statistics": [
+                    {
+                        "number": "1,200",
+                        "text": "Sheet metal parts weekly"
+                    },
+                    {
+                        "number": "80",
+                        "text": "Welded assemblies weekly"
+                    },
+                    {
+                        "icon": "plus-minus",
+                        "number": "0.1",
+                        "text": "Laser tolerance in MM"
+                    },
+                    {
+                        "number": "3",
+                        "text": "Shift surge capacity"
+                    }
                 ]
             }
 
