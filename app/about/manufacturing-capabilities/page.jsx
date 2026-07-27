@@ -6,7 +6,6 @@ import ColumnsWithTopBGImageText from "@/components/ColumnsWithTopBGImageText";
 import TopText from "@/components/Text/TopText";
 import Buttons from "@/components/Buttons/Buttons";
 import LeftSideColumnAndFourItems from "@/components/LeftSideColumnAndFourItems";
-
 import ProductionCapacity from "@/components/ProductionCapacity";
 
 const manufacturingData = siteData.find(item => item.manufacturing_capabilities_page)?.manufacturing_capabilities_page;
@@ -14,6 +13,7 @@ const twoColumnsLeftSidImageData = manufacturingData.two_columns_left_side_image
 const workflowData = manufacturingData.workflow_section;
 const equipmentData = manufacturingData.equipment_section;
 const productionCapacityData = manufacturingData.production_capacity_section;
+const qualityData = manufacturingData.quality_section;
 
 export async function generateMetadata() {
     return {
@@ -28,7 +28,7 @@ const ManufacturingCapabilitiesPage = () => {
             {/* Hero Section */}
             <HeroSection data={manufacturingData.hero_section} />
             <TwoColumnsLeftSideImage data={twoColumnsLeftSidImageData} />
-            <div className="workflow-section">
+            <section className="workflow-section">
                 <div className="container">
                     <div className="row">
                         <div className="col">
@@ -38,8 +38,8 @@ const ManufacturingCapabilitiesPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="equipment-section">
+            </section>
+            <section className="equipment-section">
                 <div className="container">
                     <div className="row">
                         <div className="col">
@@ -48,8 +48,22 @@ const ManufacturingCapabilitiesPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <ProductionCapacity data={productionCapacityData} />
+            <section className="quality-section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <TopText data={qualityData.top_text} />
+                        </div>
+                    </div>
+                    <div className="row columns-row">
+                        <div className="col">
+                            <TwoColumnsLeftSideImage data={qualityData.right_side_column} />
+                        </div>
+                    </div>
+                </div>
+            </section>
             <CallToAction />
         </div>
     )

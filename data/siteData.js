@@ -733,8 +733,37 @@ const siteData = [
                         "text": "Shift surge capacity"
                     }
                 ]
-            }
+            },
+            "quality_section": {
+                "top_text": {
+                    "small_title": "Quality",
+                    "title": "Quality, testing and finishing",
+                    "subtitle": "Every part is checked. Every finish is tested. The documentation proves it.",
+                    "buttons": [
+                        {
+                            "text": "Request a quote",
+                            "link": "/request-quote",
+                            "button_style": "btn btn-black-outline btn-animation-two"
+                        }
+                    ]
+                },
+                "right_side_column": {
+                    "left_side_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785184237/testing-piece-of-steel_vbrzvx.png",
+                    "top_text": {
+                        "small_title": "QA",
+                        "title": "Checkpoints at every critical stage",
+                        "subtitle": "We inspect at receiving, first‑article, in‑process weld, pre‑finish, and final assembly. Nothing moves forward without a sign‑off.",
+                        "buttons": [
+                            {
+                                "text": "Request a quote",
+                                "link": "/request-quote",
+                                "button_style": "btn btn-black-outline btn-animation-two"
+                            }
+                        ]
+                    }
 
+                }
+            }
         },
         "catalogs_page": {
             "meta_data": {

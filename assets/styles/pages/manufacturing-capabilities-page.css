@@ -2,12 +2,38 @@
 
     .workflow-section,
     .production-capacity-section,
-    .equipment-section {
+    .equipment-section,
+    .quality-section {
         background-color: var(--color-background);
         padding: 112px 0;
     }
 
-    .equipment-section {
+    .equipment-section,
+    .quality-section {
         background-color: var(--color-white);
+    }
+
+    .quality-section {
+        .two-columns-left-side-image-section {
+            border: 2px solid var(--color-text);
+            border-radius: 16px;
+
+            .left-column-image {
+                border-top-left-radius: 16px;
+                border-bottom-left-radius: 16px;
+            }
+
+            .right-column {
+                .top-text {
+                    .title {
+                        font-size: 48px;
+                    }
+
+                    .buttons {
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
     }
 }

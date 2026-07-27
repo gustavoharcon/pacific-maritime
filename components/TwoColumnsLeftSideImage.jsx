@@ -1,8 +1,7 @@
 import TopText from "./Text/TopText"
-import Link from "next/link";
 import Buttons from "@/components/Buttons/Buttons";
 
-const TwoColumnsLeftSideImage = ({ data, className }) => {
+const TwoColumnsLeftSideImage = ({ data, className = "" }) => {
     const { top_text, left_side_image, numbers, buttons } = data;
 
     console.log(buttons);
@@ -21,23 +20,26 @@ const TwoColumnsLeftSideImage = ({ data, className }) => {
                     </div>
                     <div className="col right-column">
                         <TopText data={top_text} />
-                        <div className="numbers">
-                            {numbers.map((item, idx) => {
-                                return (
-                                    <div
-                                        className="item"
-                                        key={idx}
-                                        data-aos="fade-up"
-                                        data-aos-delay={idx * 200}
-                                        data-aos-duration="800"
-                                    >
-                                        <p className="number">{item.number}</p>
-                                        <p className="text">{item.text}</p>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                        <Buttons data={buttons} className="" />
+                        {
+                            numbers && numbers.length > 0 && (
+                                <div className="numbers">
+                                    {numbers.map((item, idx) => {
+                                        return (
+                                            <div
+                                                className="item"
+                                                key={idx}
+                                                data-aos="fade-up"
+                                                data-aos-delay={idx * 200}
+                                                data-aos-duration="800"
+                                            >
+                                                <p className="number">{item.number}</p>
+                                                <p className="text">{item.text}</p>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+                            )}
+                        <Buttons data={buttons} />
                     </div>
                 </div>
             </div>
