@@ -765,6 +765,46 @@ const siteData = [
                 }
             }
         },
+        "equipment_list_page": {
+            "meta_data": {
+                "title": "Equipment List",
+                "description": "45,000 sq. ft. San Diego facility with in-house fabrication, finishing, and assembly resources."
+            },
+            "hero_section": {
+                "title": "Equipment List",
+                "subtitle": "45,000 sq. ft. San Diego facility with in-house fabrication, finishing, and assembly resources."
+            },
+            "laser_and_waterjet_cutting_section": {
+                "top_text": {
+                    "small_title": "Precision",
+                    "title": "Laser and Waterjet Cutting"
+                },
+                "machines": {
+                    "top_text": {
+                        "subtitle": "Two distinct cutting technologies for any material or tolerance. From high-speed steel profiling to cold-cut aluminum."
+                    },
+                    "machines_list": [
+                        {
+                            "icon": "2x",
+                            "title": "Mazak Hyper Turbo-X",
+                            "subtitle": "Laser load/unload cell, high-speed 2D cutting, automated material handling."
+                        },
+                        {
+                            "icon": "water-lightning",
+                            "title": "Omax Waterjet 55100",
+                            "subtitle": "Abrasive waterjet, 5' x 10' bed, cold-cut process for sensitive alloys."
+                        }
+                    ]
+                },
+                "buttons": [
+                    {
+                        "text": "Request a quote",
+                        "link": "/request-quote",
+                        "button_style": "btn btn-black-outline btn-animation-two"
+                    }
+                ]
+            }
+        },
         "catalogs_page": {
             "meta_data": {
                 "title": "Catalogs & Downloads",
