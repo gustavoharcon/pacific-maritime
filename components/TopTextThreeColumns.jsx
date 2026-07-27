@@ -32,7 +32,31 @@ const TopTextThreeColumns = ({ className = "", data = {} }) => {
                     {columns.map((column, index) => (
                         <div key={index} className="col">
                             {
-                                column.top_bg_image !== null && column.top_bg_image !== undefined ? <div className="background-image" style={{ backgroundImage: `url(${column.top_bg_image})` }}></div> : <div className="icon-container"><div className="icon">{getIcon(column.icon)}</div></div>
+                                column.top_bg_image !== null && column.top_bg_image !== undefined ?
+                                    <div className="background-image"
+                                        style={{ backgroundImage: `url(${column.top_bg_image})` }}
+                                        data-aos="fade-up"
+                                        data-aos-delay={index * 100}
+                                        data-aos-duration="800"
+                                        data-aos-easing="ease-in-out"
+                                    >
+                                        {column.buttons && (
+                                            <div className="buttons">
+                                                {column.buttons.map((button, index) => (
+                                                    <Link href={button.link} key={index} className={button.button_style}>
+                                                        {button.text}
+                                                    </Link>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div> :
+                                    <div
+                                        className="icon-container"
+                                        data-aos="fade-up"
+                                        data-aos-delay={index * 100}
+                                        data-aos-duration="800"
+                                        data-aos-easing="ease-in-out"
+                                    ><div className="icon">{getIcon(column.icon)}</div></div>
 
                             }
                             <ColumnTextContainer data={column} />

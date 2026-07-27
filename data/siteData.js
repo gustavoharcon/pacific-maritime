@@ -528,8 +528,20 @@ const siteData = [
                             "button_style": "btn btn-secondary btn-animation-two"
                         }
                     ]
-                }
-            }
+                },
+                "buttons": [
+                    {
+                        "text": "Contact",
+                        "link": "/contact",
+                        "button_style": "btn btn-white-background"
+                    },
+                    {
+                        "text": "Request a quote",
+                        "link": "/request-quote",
+                        "button_style": "btn btn-white-background"
+                    }
+                ]
+            },
         },
         "catalogs_page": {
             "meta_data": {

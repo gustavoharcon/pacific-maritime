@@ -7,7 +7,12 @@ const ColumnTextContainer = ({ data = {} }) => {
 
     return (
         <div className="column-text-container">
-            <div className="text-area">
+            <div
+                className="text-area"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+            >
                 {small_title && <p className="small-title">{small_title}</p>}
                 {title && <h3 className="title">{title}</h3>}
                 {subtitle && <p className="subtitle">{subtitle}</p>}

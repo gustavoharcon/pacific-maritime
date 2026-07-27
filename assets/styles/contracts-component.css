@@ -54,5 +54,12 @@
                 font-weight: 700;
             }
         }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 16px;
+        }
     }
 }
