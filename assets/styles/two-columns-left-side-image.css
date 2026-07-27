@@ -1,0 +1,67 @@
+.two-columns-left-side-image-section {
+    background-color: var(--color-white);
+
+    >.container {
+        padding: 0;
+
+        >.row {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+
+            >.col {
+                width: 50%;
+
+                &.left-column-image {
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    min-height: 90vh;
+                    width: 50%;
+                    height: 100%;
+                }
+
+                &.right-column {
+                    padding-right: var(--container-padding);
+
+                    .top-text {
+                        text-align: left;
+                        padding-left: var(--container-padding);
+                        margin-bottom: 32px;
+                    }
+
+                    .numbers {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        justify-content: space-between;
+                        padding-left: var(--container-padding);
+                        margin-bottom: 40px;
+                        gap: 32px;
+
+                        .item {
+                            width: 50%;
+
+                            .number {
+                                font-size: 60px;
+                                font-weight: 700;
+                                font-family: "Syne", sans-serif;
+                                line-height: 1;
+                                margin-bottom: 8px;
+                            }
+
+                            .text {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    .buttons-component {
+                        justify-content: flex-start;
+                        padding-left: var(--container-padding);
+                    }
+                }
+            }
+        }
+    }
+}

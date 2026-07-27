@@ -1,0 +1,11 @@
+.about-manufacturing-capabilities-page {
+    .workflow-section {
+        background-color: var(--color-background);
+        padding: 112px 0;
+    }
+
+    .equipment-section {
+        background-color: var(--color-white);
+        padding: 112px 0;
+    }
+}

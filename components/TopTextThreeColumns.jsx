@@ -41,15 +41,7 @@ const TopTextThreeColumns = ({ className = "", data = {} }) => {
                                         data-aos-duration="800"
                                         data-aos-easing="ease-in-out"
                                     >
-                                        {column.buttons && (
-                                            <div className="buttons">
-                                                {column.buttons.map((button, index) => (
-                                                    <Link href={button.link} key={index} className={button.button_style}>
-                                                        {button.text}
-                                                    </Link>
-                                                ))}
-                                            </div>
-                                        )}
+
                                     </div> :
                                     <div
                                         className="icon-container"

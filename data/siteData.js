@@ -41,7 +41,21 @@ const siteData = [
         "main_menu": [
             {
                 "menu_name": "About",
-                "menu_url": "/about"
+                "menu_url": "/about",
+                "sub_menu": [
+                    {
+                        "text": "Manufacturing Capabilities",
+                        "link": "/about/manufacturing-capabilities"
+                    },
+                    {
+                        "text": "Quality & Compliance",
+                        "link": "/about/quality-and-compliance"
+                    },
+                    {
+                        "text": "Equipment List",
+                        "link": "/about/equipment-list"
+                    }
+                ],
             },
             {
                 "menu_name": "Products",
@@ -542,6 +556,107 @@ const siteData = [
                     }
                 ]
             },
+        },
+        "manufacturing_capabilities_page": {
+            "meta_data": {
+                "title": "Manufacturing Capabilities and Equipment",
+                "description": "Precision fabrication and comprehensive staging from our San Diego facility. We turn Navy-grade specifications into ready-to-deploy shipboard interiors."
+            },
+            "hero_section": {
+                "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/h_810/v1785167914/computer-screen-with-cad-design_sgv7su.png",
+                "title": "Manufacturing Capabilities and Equipment",
+                "subtitle": "Precision fabrication and comprehensive staging from our San Diego facility. We turn Navy-grade specifications into ready-to-deploy shipboard interiors.",
+                "buttons": [
+                    {
+                        "text": "Request a quote",
+                        "link": "/request-quote",
+                        "button_style": "btn btn--primary btn-animation-four"
+                    }
+                ]
+            },
+            "two_columns_left_side_image": {
+                "left_side_image": "https://res.cloudinary.com/irwujctd/image/upload/h_810/v1785168851/machine-shop_rou5my.png",
+                "top_text": {
+                    "small_title": "Facility",
+                    "title": "San Diego production facility",
+                    "subtitle": "Forty-five thousand square feet of precision fabrication capacity at the Port of San Diego. We have been turning Navy-grade specifications into staged, finished shipboard interiors since 1979"
+                },
+                "numbers": [
+                    {
+                        "number": "45,000",
+                        "text": "Square feet of production floor"
+                    },
+                    {
+                        "number": "1979",
+                        "text": "Year established in San Diego"
+                    }
+                ],
+                "buttons": [
+                    {
+                        "text": "Contact",
+                        "link": "/contact",
+                        "button_style": "btn btn-black-outline btn-animation-two"
+                    }
+                ]
+            },
+            "workflow_section": {
+                "top_text": {
+                    "small_title": "Workflow",
+                    "title": "From Drawing to Deployment in Four Steps",
+                    "subtitle": "A clear production pipeline that moves your project from SolidWorks model to final acceptance aboard the vessel. Every step is measured and documented."
+                },
+                "columns": [
+                    {
+                        "top_background_image": "https://res.cloudinary.com/irwujctd/image/upload/h_160/v1785174339/cad-design-on-computer-screen_aspait.png",
+                        "title": "Design and engineering",
+                        "description": "SolidWorks modeling, BOM generation, and a full manufacturability feedback loop before the first cut."
+                    },
+                    {
+                        "top_background_image": "https://res.cloudinary.com/irwujctd/image/upload/h_160/v1785174338/man-on-laptop-typing-in-spreadsheet-file-coffee-mug-nearby_if952n.png",
+                        "title": "Quote and planning",
+                        "description": "RFQ response within 24 hours. Lead time and schedule aligned directly to your project milestones."
+                    },
+                    {
+                        "top_background_image": "https://res.cloudinary.com/irwujctd/image/upload/h_160/v1785174338/welding_tuqmor.png",
+                        "title": "Fabrication and QC",
+                        "description": "Laser, waterjet, CNC, forming, welding, and finishing with in-process inspection using MIE Trak tracking software."
+                    },
+                    {
+                        "top_background_image": "https://res.cloudinary.com/irwujctd/image/upload/h_160/v1785174338/wrapped-pallets_yc0uk6.png",
+                        "title": "Stage and Dispatch",
+                        "description": "We mobilize the crew, complete final acceptance testing, and deliver the full documentation package."
+                    },
+                ],
+                "buttons": [
+                    {
+                        "text": "Request a quote",
+                        "link": "/request-quote",
+                        "button_style": "btn btn-black-outline btn-animation-two"
+                    }
+                ]
+            },
+            "equipment_section": {
+                "top_text": {
+                    "small_title": "Equipment",
+                    "title": "Major Equipment by Process",
+                    "subtitle": "The machines that turn specification into steel."
+                },
+                "equipment_list": [
+                    {
+                        "small_title": "Laser",
+                        "title": "Mazak Hyper Turbo-X",
+                        "subtitle": "High-precision 2D laser with auto load and unload system. Ideal for precision sheet metal parts.",
+                        "buttons": [
+                            {
+                                "text": "Learn more",
+                                "link": "/about/equipment-list/#laser-and-waterjet-cutting"
+                            }
+                        ],
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
+                    }
+                ]
+            }
+
         },
         "catalogs_page": {
             "meta_data": {

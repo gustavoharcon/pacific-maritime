@@ -3,7 +3,7 @@
     flex-flow: row nowrap;
 
     .column {
-        width: 25%;
+        flex: 1 1 0;
         display: flex;
         flex-flow: column nowrap;
         justify-content: flex-start;

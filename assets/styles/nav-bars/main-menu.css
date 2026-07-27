@@ -55,11 +55,70 @@
                         padding: 0;
 
                         >li {
+                            display: inline-block;
+                            height: 100%;
+
+                            &.has-sub-menu {
+                                &:hover {
+                                    .sub-menu {
+                                        opacity: 1;
+                                        visibility: visible;
+                                        transform: translateY(0);
+                                    }
+                                }
+                            }
+
                             >a {
                                 padding: 10px;
                                 font-size: 14px;
                                 font-weight: 400;
                                 color: var(--color-white);
+
+                                .sub-menu-chevron {
+                                    width: 12px;
+                                    height: 12px;
+                                    margin-left: 5px;
+                                    position: relative;
+                                    top: -1px;
+
+                                    path {
+                                        stroke: var(--color-white);
+                                    }
+                                }
+                            }
+
+                            >ul.sub-menu {
+                                position: absolute;
+                                list-style: none;
+                                margin: 10px 0 0 0;
+                                padding: 10px;
+                                background-color: var(--color-primary);
+                                border-radius: 12px;
+                                border: 2px solid var(--color-white);
+                                color: var(--color-white);
+                                display: flex;
+                                flex-flow: column nowrap;
+                                gap: 5px;
+                                z-index: 1001;
+                                opacity: 0;
+                                visibility: hidden;
+                                transform: translateY(-10px);
+                                transition: all 0.3s ease-in-out;
+
+                                &:hover {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transform: translateY(0);
+                                }
+
+                                >li {
+                                    >a {
+                                        padding: 10px;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: var(--color-white);
+                                    }
+                                }
                             }
                         }
                     }

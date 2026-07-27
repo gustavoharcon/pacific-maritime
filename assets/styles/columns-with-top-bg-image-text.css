@@ -1,0 +1,32 @@
+.columns-with-bg-image-text {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 80px;
+    gap: 32px;
+
+    >.column {
+        text-align: center;
+        flex: 1 1 0;
+
+        >.bg-image-container {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 160px;
+            border-radius: 16px;
+            margin-bottom: 24px;
+        }
+
+        >.title {
+            margin-bottom: 16px;
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        >.description {
+            font-size: 18px;
+        }
+    }
+}

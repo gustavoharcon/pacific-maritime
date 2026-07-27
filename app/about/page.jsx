@@ -60,7 +60,7 @@ const AboutPage = () => {
                         <div className="col">
                             <TopText data={processData.top_text} />
                             <ColumnsWithIconText data={processData.steps} />
-                            <Buttons buttons={processData.buttons} />
+                            <Buttons data={processData.buttons} />
                         </div>
                     </div>
 

@@ -55,7 +55,7 @@
     /* 20px to 25px */
     --font-size-h2: clamp(1.5rem, 1.125rem + 1.25vw, 2.25rem);
     /* 24px to 36px */
-    --font-size-h1: 64px;
+    --font-size-h1: 60px;
     /* 32px to 48px */
 
     /* Line Heights */
@@ -496,7 +496,6 @@ strong {
 }
 
 .container {
-    z-index: 1;
     max-width: var(--size-container);
     padding-left: var(--container-padding);
     padding-right: var(--container-padding);

@@ -2,24 +2,27 @@
     background-color: var(--color-primary);
 
     >.container {
-        padding-right: 0;
+        padding: 0;
 
         >.row {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-            gap: 48px;
 
             >.col {
+                width: 50%;
 
-                /* If the next column with a class is not present then the width of the first column should be full width */
-                &:not(:has(+ .col-with-bg)) {
-                    flex: 1 1 100%;
+                /* If there is only one column, it will have the full width of the container */
+                &:only-child {
+                    width: 100%;
+                    padding-top: 160px;
+                    padding-bottom: 100px;
                 }
 
                 &:first-child {
-                    padding: 160px 0 100px;
+                    padding-left: var(--container-padding);
+                    padding-right: var(--container-padding);
 
                     .title {
                         color: var(--color-white);
@@ -36,7 +39,8 @@
                     background-repeat: no-repeat;
                     background-position: center;
                     background-size: cover;
-                    min-height: 90vh
+                    min-height: 90vh;
+                    width: 50%;
                 }
             }
 
