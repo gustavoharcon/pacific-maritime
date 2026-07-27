@@ -4,7 +4,7 @@ const siteData = [
         "tagline": "Heavy-Duty Marine Fabrication & NAVSEA-Compliant Shipboard Furniture.",
         "site_url": "http://www.pacmaritime.com/",
         // "site_logo": "/assets/images/Pacific_Maritime_Industries_Corp_logo.png",
-        "site_logo": "/assets/images/placeholder-logo.png",
+        "site_logo": "/assets/images/logos/black_with_text_Pacific_Maritime_Industries_Corporation.png",
     },
     {
         "social_media": [
