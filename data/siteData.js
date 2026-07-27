@@ -649,11 +649,64 @@ const siteData = [
                         "buttons": [
                             {
                                 "text": "Learn more",
-                                "link": "/about/equipment-list/#laser-and-waterjet-cutting"
+                                "link": "/about/equipment-list/#laser-and-waterjet-cutting",
+                                "button_style": "btn btn-black-outline btn-animation-two"
                             }
                         ],
                         "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
-                    }
+                    },
+                    {
+                        "small_title": "Laser",
+                        "title": "Mazak Hyper Turbo-X",
+                        "subtitle": "High-precision 2D laser with auto load and unload system. Ideal for precision sheet metal parts.",
+                        "buttons": [
+                            {
+                                "text": "Learn more",
+                                "link": "/about/equipment-list/#laser-and-waterjet-cutting",
+                                "button_style": "btn btn-black-outline btn-animation-two"
+                            }
+                        ],
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
+                    },
+                    {
+                        "small_title": "Laser",
+                        "title": "Mazak Hyper Turbo-X",
+                        "subtitle": "High-precision 2D laser with auto load and unload system. Ideal for precision sheet metal parts.",
+                        "buttons": [
+                            {
+                                "text": "Learn more",
+                                "link": "/about/equipment-list/#laser-and-waterjet-cutting",
+                                "button_style": "btn btn-black-outline btn-animation-two"
+                            }
+                        ],
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
+                    },
+                    {
+                        "small_title": "Laser",
+                        "title": "Mazak Hyper Turbo-X",
+                        "subtitle": "High-precision 2D laser with auto load and unload system. Ideal for precision sheet metal parts.",
+                        "buttons": [
+                            {
+                                "text": "Learn more",
+                                "link": "/about/equipment-list/#laser-and-waterjet-cutting",
+                                "button_style": "btn btn-black-outline btn-animation-two"
+                            }
+                        ],
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
+                    },
+                    {
+                        "small_title": "Laser",
+                        "title": "Mazak Hyper Turbo-X",
+                        "subtitle": "High-precision 2D laser with auto load and unload system. Ideal for precision sheet metal parts.",
+                        "buttons": [
+                            {
+                                "text": "Learn more",
+                                "link": "/about/equipment-list/#laser-and-waterjet-cutting",
+                                "button_style": "btn btn-black-outline btn-animation-two"
+                            }
+                        ],
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
+                    },
                 ]
             }
 

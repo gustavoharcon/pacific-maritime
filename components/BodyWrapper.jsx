@@ -11,7 +11,7 @@ const BodyWrapper = ({ children }) => {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      offset: 50,
+      offset: 0,
       once: false,
       mirror: true,
       easing: "ease-out-quad",

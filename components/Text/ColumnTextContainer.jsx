@@ -3,15 +3,15 @@ import Link from "next/link";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const ColumnTextContainer = ({ data = {} }) => {
-    const { small_title, title, subtitle, buttons, categories } = data;
+    const { small_title, title, subtitle, buttons, categories, animation = "fade-up", animation_duration = "800", animation_easing = "ease-in-out" } = data;
 
     return (
         <div className="column-text-container">
             <div
                 className="text-area"
-                data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-easing="ease-in-out"
+                data-aos={animation}
+                data-aos-duration={animation_duration}
+                data-aos-easing={animation_easing}
             >
                 {small_title && <p className="small-title">{small_title}</p>}
                 {title && <h3 className="title">{title}</h3>}

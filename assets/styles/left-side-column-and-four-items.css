@@ -1,0 +1,20 @@
+.left-side-column-and-four-items {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    gap: 32px;
+
+    >div {
+        width: 50%;
+
+        &.right-side-four-items {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 32px;
+
+            >.item {
+                width: calc(50% - 16px);
+            }
+        }
+    }
+}
