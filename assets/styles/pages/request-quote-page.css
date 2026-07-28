@@ -1,0 +1,20 @@
+.request-quote-page-content {
+    padding: 112px 0;
+    background-color: var(--color-background);
+
+    .top-text {
+        text-align: left;
+        margin: 0 auto 48px 0;
+    }
+
+    >.container {
+        >.row {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            >.col {}
+        }
+    }
+}

@@ -57,10 +57,6 @@ const siteData = [
                 ],
             },
             {
-                "menu_name": "Products",
-                "menu_url": "/products"
-            },
-            {
                 "menu_name": "Catalogs",
                 "menu_url": "/catalogs-and-downloads"
             },
@@ -103,20 +99,16 @@ const siteData = [
                     {
                         "text": "Quality & Compliance",
                         "link": "/about/quality-and-compliance"
-                    },
-                    {
-                        "text": "Equipment List",
-                        "link": "/about/equipment-list"
                     }
                 ],
             },
             {
-                "menu_name": "Products",
-                "link": "/products",
+                "menu_name": "Catalogs & Downloads",
+                "link": "/catalogs-and-downloads",
                 "sub_menu": [
                     {
-                        "text": "Catalogs & Downloads",
-                        "link": "/catalogs-and-downloads"
+                        "text": "Equipment List",
+                        "link": "/equipment-list"
                     }
                 ],
             },
@@ -1313,6 +1305,18 @@ const siteData = [
                         "url": "#"
                     }
                 ]
+            }
+        },
+        "request_quote_page": {
+            "meta_data": {
+                "title": "Request a Quote",
+                "description": "Request a Quote"
+            },
+            "top_text": {
+                "small_title": "Start",
+                "title": "Request a Quote",
+                "subtitle": "Complete the steps below to receive a tailored quote.",
+                "heading_type": "h1"
             }
         }
     }

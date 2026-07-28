@@ -210,7 +210,7 @@ export default function MultiStepForm() {
         {/* STEP 1: Your Name and Email */}
         {step === 1 && (
           <div className="form-step-content">
-            <h3 className="form-title">YOUR NAME AND EMAIL</h3>
+            <h2 className="form-title">YOUR NAME AND EMAIL</h2>
             <p className="form-subtitle">We need to know who is sending the hard stuff.</p>
 
             <div className="form-group">
@@ -249,12 +249,12 @@ export default function MultiStepForm() {
             </div>
 
             <div className="form-actions">
-              <button type="button" className="btn-cancel" onClick={resetForm}>
+              <a type="button" className="btn btn-black-outline btn-animation-two" onClick={resetForm}>
                 Cancel
-              </button>
-              <button type="button" className="btn-primary" onClick={nextStep}>
+              </a>
+              <a type="button" className="btn btn--primary btn-animation-four" onClick={nextStep}>
                 Next
-              </button>
+              </a>
             </div>
           </div>
         )}
@@ -452,15 +452,15 @@ export default function MultiStepForm() {
             </div>
 
             <div className="form-actions">
-              <button
+              <a
                 type="button"
-                className="btn-cancel"
+                className="btn btn-black-outline btn-animation-two"
                 onClick={prevStep}
                 disabled={loading}
               >
                 Back
-              </button>
-              <button
+              </a>
+              <a
                 type="submit"
                 className="btn-submit"
                 disabled={loading}
@@ -472,7 +472,7 @@ export default function MultiStepForm() {
                 ) : (
                   "Send specs"
                 )}
-              </button>
+              </a>
             </div>
           </div>
         )}

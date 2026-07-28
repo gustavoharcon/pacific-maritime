@@ -11,8 +11,8 @@ const TopText = ({ data, aosAnimation = "fade-up", className = "" }) => {
         <div className={`top-text ${className}`}>
             {small_title && <p className="small-title" data-aos={aosAnimation} data-aos-delay="200" data-aos-duration="600">{small_title}</p>}
             {title
-                ? heading_type === "h2"
-                    ? <h2 className="title" data-aos={aosAnimation} data-aos-delay="200" data-aos-duration="600">{title}</h2>
+                ? heading_type === "h1"
+                    ? <h1 className="title" data-aos={aosAnimation} data-aos-delay="200" data-aos-duration="600">{title}</h1>
                     : heading_type === "h3"
                         ? <h3 className="title" data-aos={aosAnimation} data-aos-delay="200" data-aos-duration="600">{title}</h3>
                         : heading_type === "h4"
