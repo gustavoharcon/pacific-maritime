@@ -19,7 +19,9 @@ const TopText = ({ data, aosAnimation = "fade-up", className = "" }) => {
                             ? <h4 className="title" data-aos={aosAnimation} data-aos-delay="200" data-aos-duration="600">{title}</h4>
                             : heading_type === "h5"
                                 ? <h5 className="title" data-aos={aosAnimation} data-aos-delay="200" data-aos-duration="600">{title}</h5>
-                                : <h6 className="title" data-aos={aosAnimation} data-aos-delay="200" data-aos-duration="600">{title}</h6>
+                                : heading_type === "h6"
+                                    ? <h6 className="title" data-aos={aosAnimation} data-aos-delay="200" data-aos-duration="600">{title}</h6>
+                                    : <h2 className="title" data-aos={aosAnimation} data-aos-delay="200" data-aos-duration="600">{title}</h2>
                 : null
             }
             {subtitle && <p className="subtitle" dangerouslySetInnerHTML={{ __html: subtitle }} data-aos={aosAnimation} data-aos-delay="200" data-aos-duration="600" />}

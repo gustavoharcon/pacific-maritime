@@ -19,11 +19,6 @@ const renderIcon = (iconName) => {
                     <LuZap className="icon-zap" />
                 </div>
             );
-        case "water":
-            return <LuDroplet className="icon" />;
-        case "lightning":
-        case "zap":
-            return <LuZap className="icon" />;
         case "blinds":
             return <MdOutlineBlinds className="icon" />;
         case "compress":
@@ -72,7 +67,7 @@ const EquipmentSection = ({ data, sectionKey }) => {
 
     return (
         <section className={`equipment-section section-${sectionKey} image-${image_side} ${top_text_included === false ? "two-columns-grid-full" : ""}`}>
-            <div className="container">
+            <div className={`container ${image_side === "none" ? "no-column-image" : ""}`}>
                 {/* Optional Top Header Text */}
                 {top_text_included && top_text && (
                     <TopText className={`section-header text-align-${top_text_alignment}`} data={top_text} />

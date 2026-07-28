@@ -974,7 +974,7 @@ const siteData = [
                     },
                     {
                         "title": "Takisawa lathes",
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785268361/haas-cnc-milling_njyvxj.png",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785269320/Takisawa_CNC_Lathe_machine_01_erwba4.png",
                         "content": [
                             {
                                 "small_title": "Turning",
@@ -990,9 +990,101 @@ const siteData = [
                                 ]
                             }
                         ]
+                    },
+                    {
+                        "title": "Fadal mills",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785269731/White_Fadal_CNC_milling_machine_202607281315_cdrogp.jpg",
+                        "content": [
+                            {
+                                "small_title": "Milling",
+                                "title": "Fadal CNC Milling",
+                                "subtitle": "VMC 4020 with a WYE/Delta 15,000 RPM spindle system that delivers a wider range of cutting performance for high-speed aluminum operations.",
+                                "heading_type": "h3",
+                                "buttons": [
+                                    {
+                                        "text": "Request a quote",
+                                        "link": "/request-quote",
+                                        "button_style": "btn btn-black-outline btn-animation-two"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ],
             },
+            "welding_section": {
+                "image_side": "none",
+                "items_axis": "horizontal",
+                "items_with_bottom_border": false,
+                "top_text_included": true,
+                "top_text_alignment": "left",
+                "tabs_included": false,
+                "top_text": {
+                    "small_title": "Welding",
+                    "title": "Welding and certified fusion",
+                },
+                "column_two": {
+                    "top_text": {
+                        "subtitle": "All weld procedures are qualified and documented per contract requirements. Steel, stainless, and aluminum capability under one roof."
+                    },
+                    "items": [
+                        {
+                            "title": "Resistance",
+                            "subtitle": "Amada spotwelder and two Janda spotwelders for sheet metal tacking."
+                        },
+                        {
+                            "title": "Fusion",
+                            "subtitle": "Ten TIG/MIG weld stations certified to MIL-STD-22 and NAVSEA TP 248."
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Request a quote",
+                            "link": "/request-quote",
+                            "button_style": "btn btn-black-outline btn-animation-two"
+                        }
+                    ]
+                }
+            },
+            "secondary_operations_section": {
+                "image_side": "right",
+                "items_axis": "vertical",
+                "items_with_bottom_border": true,
+                "top_text_included": true,
+                "top_text_alignment": "center",
+                "tabs_included": false,
+                "top_text": {
+                    "small_title": "Finish",
+                    "title": "Forming, Cutting and Secondary Operations",
+                    "subtitle": "Complete in-house powder coating capability, upholstery shop, and laminate shop for full turnkey assembly. We finish what we fabricate.",
+                    "buttons": [
+                        {
+                            "text": "Request a quote",
+                            "link": "/request-quote",
+                            "button_style": "btn btn-black-outline btn-animation-two"
+                        }
+                    ]
+                },
+                "column_one": {
+                    "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785270570/amada_di4lub.png"
+                },
+                "column_two": {
+                    "items": [
+                        {
+                            "title": "Forming",
+                            "subtitle": "Webb Rolls and Eagle Tube Rolls for radius forming of brackets and stiffeners."
+                        },
+                        {
+                            "title": "Sawing",
+                            "subtitle": "Amada HA-250 band saw, George Fisher RA-6, Pedrazzoli cold saw, and misc. extrusion saws."
+                        },
+                        {
+                            "title": "Deburr and Finishing",
+                            "subtitle": "Time Saver 36\"W MDL, RAMCO MDL, Burr King deburring machines, and a Honeycomb Press."
+                        }
+                    ]
+                }
+            }
         },
         "catalogs_page": {
             "meta_data": {
