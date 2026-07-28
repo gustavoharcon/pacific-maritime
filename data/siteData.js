@@ -775,15 +775,31 @@ const siteData = [
                 "subtitle": "45,000 sq. ft. San Diego facility with in-house fabrication, finishing, and assembly resources."
             },
             "laser_and_waterjet_cutting_section": {
+                "image_side": "left",
+                "items_axis": "horizontal",
+                "items_with_bottom_border": false,
+                "top_text_included": true,
+                "top_text_alignment": "left",
+                "tabs_included": false,
                 "top_text": {
                     "small_title": "Precision",
                     "title": "Laser and Waterjet Cutting"
                 },
-                "machines": {
+                "column_one": {
+                    "image": "https://res.cloudinary.com/irwujctd/image/upload/h_800/v1785254396/laser-mazak-hyper-turbo-x_jenjtj.png"
+                },
+                "column_two": {
                     "top_text": {
-                        "subtitle": "Two distinct cutting technologies for any material or tolerance. From high-speed steel profiling to cold-cut aluminum."
+                        "subtitle": "Two distinct cutting technologies for any material or tolerance. From high-speed steel profiling to cold-cut aluminum.",
                     },
-                    "machines_list": [
+                    "buttons": [
+                        {
+                            "text": "Request a quote",
+                            "link": "/request-quote",
+                            "button_style": "btn btn-black-outline btn-animation-two"
+                        }
+                    ],
+                    "items": [
                         {
                             "icon": "2x",
                             "title": "Mazak Hyper Turbo-X",
@@ -795,15 +811,188 @@ const siteData = [
                             "subtitle": "Abrasive waterjet, 5' x 10' bed, cold-cut process for sensitive alloys."
                         }
                     ]
+                }
+            },
+            "cnc_punching_section": {
+                "image_side": "right",
+                "items_axis": "horizontal",
+                "items_with_bottom_border": false,
+                "top_text_included": true,
+                "top_text_alignment": "center",
+                "tabs_included": true,
+                "top_text": {
+                    "small_title": "Punching",
+                    "title": "CNC Punching"
                 },
-                "buttons": [
+                "tabs": [
                     {
-                        "text": "Request a quote",
-                        "link": "/request-quote",
-                        "button_style": "btn btn-black-outline btn-animation-two"
+                        "title": "Amada Vipro 255",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785257202/amada-vipro-255-quantity-3_k4dvrz.png",
+                        "content": [
+                            {
+                                "small_title": "Speed",
+                                "title": "Amada Vipro 255, quantity 3",
+                                "subtitle": "High-speed 30-ton turret punch presses. Two units are equipped with automated loaders for lights-out production.",
+                                "heading_type": "h3",
+                                "buttons": [
+                                    {
+                                        "text": "Request a quote",
+                                        "link": "/request-quote",
+                                        "button_style": "btn btn-black-outline btn-animation-two"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Amada Pega 345",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785261242/Amada-Pega-345-Queen-with-Loader_gj4tuo.jpg",
+                        "content": [
+                            {
+                                "small_title": "Efficient",
+                                "title": "Amada Pega 345 Queen with Loader",
+                                "subtitle": "The Pega is one of the most efficient 58 station turrets available. It has a programmable work chute and an in-table automatic crank shaft lubrication.",
+                                "buttons": [
+                                    {
+                                        "text": "Request a quote",
+                                        "link": "/request-quote",
+                                        "button_style": "btn btn-black-outline btn-animation-two"
+                                    }
+                                ]
+                            }
+                        ]
                     }
-                ]
-            }
+                ],
+            },
+            "amada_rg_series_section": {
+                "image_side": "left",
+                "items_axis": "vertical",
+                "items_with_bottom_border": false,
+                "top_text_included": false,
+                "tabs_included": false,
+                "column_two_top_text_position": "bottom",
+                "column_one": {
+                    "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785261826/amada-rg-100_bi0oja.png"
+                },
+                "column_two": {
+                    "items": [
+                        {
+                            "icon": "blinds",
+                            "title": "Amada RG 100",
+                            "subtitle": "Two 110-ton precision press brakes. They have a 10-foot bed length and multi-axis back gauge for complex bends."
+                        },
+                        {
+                            "icon": "screen",
+                            "title": "Amada RG 500",
+                            "subtitle": "Three 55-ton press brakes for smaller components. They deliver speed and accuracy on tight flanges."
+                        },
+                        {
+                            "icon": "compress",
+                            "title": "Amada FBD and Accupress",
+                            "subtitle": "Hydraulic press brakes for heavy-gauge forming and coining. They shape the thickest locker shells we build."
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "text": "Request a quote",
+                            "link": "/request-quote",
+                            "button_style": "btn btn-black-outline btn-animation-two"
+                        }
+                    ],
+                }
+            },
+            "cnc_shearing": {
+                "image_side": "right",
+                "items_axis": "vertical",
+                "items_with_bottom_border": true,
+                "top_text_included": true,
+                "top_text_alignment": "center",
+                "tabs_included": false,
+                "top_text": {
+                    "small_title": "Shearing",
+                    "title": "CNC Shearing",
+                    "subtitle": "Programmed for nested blank optimization. We cut high-volume parts with minimal waste.",
+                    "buttons": [
+                        {
+                            "text": "Request a quote",
+                            "link": "/request-quote",
+                            "button_style": "btn btn-black-outline btn-animation-two"
+                        }
+                    ],
+                },
+                "column_one": {
+                    "image": "https://res.cloudinary.com/irwujctd/image/upload/w_600/v1785266251/amada-3060-with-conveyors_vteh0h.png"
+                },
+                "column_two": {
+                    "items": [
+                        {
+                            "title": "Amada 3060 with conveyors",
+                            "subtitle": "Quarter-inch by 10-foot capacity. Auto-sheet feed and part sorting for continuous operation."
+                        },
+                        {
+                            "title": "Amada 3040 with conveyors",
+                            "subtitle": "10-gauge by 4-foot capacity. High-speed cycling for thin-gauge blanks."
+                        },
+                        {
+                            "title": "Amada M-1245 48-inch mechanical shear",
+                            "subtitle": "16-gauge capacity. Rapid blanking for high-volume locker parts."
+                        }
+                    ]
+
+                }
+            },
+            "machining_section": {
+                "image_side": "right",
+                "items_axis": "horizontal",
+                "items_with_bottom_border": false,
+                "top_text_included": true,
+                "top_text_alignment": "center",
+                "tabs_included": true,
+                "top_text": {
+                    "small_title": "Machining",
+                    "title": "CNC Machining"
+                },
+                "tabs": [
+                    {
+                        "title": "Haas Minimill",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785268361/haas-cnc-milling_njyvxj.png",
+                        "content": [
+                            {
+                                "small_title": "Compact",
+                                "title": "Haas CNC Milling",
+                                "subtitle": "The Haas VF-3 is a rugged, medium-sized VMC that yields full reliability and accuracy. The VF-3 produces either 75 ft-lb of torque at a low 1400 rpm, or 250 ft-lb at 450 rpm with the optional 2-speed gearbox -- and will also run up to 7500 rpm in 1.2 seconds for finishing aluminum.",
+                                "heading_type": "h3",
+                                "buttons": [
+                                    {
+                                        "text": "Request a quote",
+                                        "link": "/request-quote",
+                                        "button_style": "btn btn-black-outline btn-animation-two"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Takisawa lathes",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785268361/haas-cnc-milling_njyvxj.png",
+                        "content": [
+                            {
+                                "small_title": "Turning",
+                                "title": "Takisawa lathes",
+                                "subtitle": "Use the latest technology for a perfect and balanced integration of controller, servo motors and mechanics. Great solution for small batches of complex parts with advanced safety features that reduce time dramatically due to operator errors.",
+                                "heading_type": "h3",
+                                "buttons": [
+                                    {
+                                        "text": "Request a quote",
+                                        "link": "/request-quote",
+                                        "button_style": "btn btn-black-outline btn-animation-two"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+            },
         },
         "catalogs_page": {
             "meta_data": {
