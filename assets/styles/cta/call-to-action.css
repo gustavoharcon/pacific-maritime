@@ -44,6 +44,7 @@
                                 background-color: transparent;
                                 color: var(--color-white);
                                 font-size: 16px;
+                                font-family: "Inter", sans-serif;
 
                                 &::placeholder {
                                     color: var(--color-shade-3);

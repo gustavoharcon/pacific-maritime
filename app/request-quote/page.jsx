@@ -1,3 +1,4 @@
+import CallToAction from "@/components/CTA/CallToAction";
 import MultiStepForm from "@/components/Form/MultiStepForm";
 import TopText from "@/components/Text/TopText";
 import siteData from "@/data/siteData";
@@ -13,17 +14,20 @@ export async function generateMetadata() {
 
 const RequestQuotePage = () => {
     return (
-        <div className="request-quote-page-content">
-            <div className="container">
-                <div className="row">
-                    <div className="col">
-                        <TopText data={requestQuoteData.top_text} />
-                        <MultiStepForm />
+        <>
+            <div className="request-quote-page-content">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <TopText data={requestQuoteData.top_text} />
+                            <MultiStepForm />
+                        </div>
+                        <div className="col"></div>
                     </div>
-                    <div className="col"></div>
                 </div>
             </div>
-        </div>
+            <CallToAction />
+        </>
     )
 }
 
