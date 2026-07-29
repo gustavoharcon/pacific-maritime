@@ -28,8 +28,6 @@ const siteData = [
     {
         "contact_info": {
             "email_1": process.env.CONTACT_EMAIL,
-            "email_2": "",
-            "email_3": "",
             "sales_email": "sales@pacmaritime.com",
             "phone_number_1": "(619) 423-5544",
             "address_line_1": "1790 Dornoch Court",
@@ -65,8 +63,8 @@ const siteData = [
                 "menu_url": "/blog"
             },
             {
-                "menu_name": "Contact",
-                "menu_url": "/contact",
+                "menu_name": "Careers",
+                "menu_url": "/careers",
                 "button_style": "secondary"
             }
         ]
@@ -764,7 +762,8 @@ const siteData = [
             },
             "hero_section": {
                 "title": "Equipment List",
-                "subtitle": "45,000 sq. ft. San Diego facility with in-house fabrication, finishing, and assembly resources."
+                "subtitle": "45,000 sq. ft. San Diego facility with in-house fabrication, finishing, and assembly resources.",
+                "center_text": true
             },
             "laser_and_waterjet_cutting_section": {
                 "image_side": "left",
@@ -1081,11 +1080,12 @@ const siteData = [
         "catalogs_page": {
             "meta_data": {
                 "title": "Catalogs & Downloads",
-                "description": "Access the complete Naval Shipboard Furniture Catalog, Metal Joiner Door Catalog, and individual product datasheets."
+                "description": "Access the complete Naval Shipboard Furniture Catalog, Metal Joiner Door Catalog, and individual product datasheets.",
             },
             "hero_section": {
                 "title": "Technical catalogs & downloads",
-                "subtitle": "Access the complete Naval Shipboard Furniture Catalog, Metal Joiner Door Catalog, and individual product datasheets. Download CAD files, DWGs, and technical PDFs."
+                "subtitle": "Access the complete Naval Shipboard Furniture Catalog, Metal Joiner Door Catalog, and individual product datasheets. Download CAD files, DWGs, and technical PDFs.",
+                "center_text": true
             },
             "catalogs_interactive_section": {
                 "catalogs": [
@@ -1326,12 +1326,82 @@ const siteData = [
                     "value": `<a class="phone-number" href='tel:${process.env.CONTACT_PHONE_NUMBER}'>${process.env.CONTACT_PHONE_NUMBER}</a>`
                 },
                 {
-                    "icon": "office",
+                    "icon": "location",
                     "title": "Office",
                     "subtitle": `${process.env.COMPANY_NAME}`,
                     "value": `${process.env.COMPANY_ADDRESS}<br>${process.env.COMPANY_CITY}, ${process.env.COMPANY_STATE}, ${process.env.COMPANY_ZIP}`
                 }
             ]
+        },
+        "contact_page": {
+            "meta_data": {
+                "title": "Contact",
+                "description": "Contact"
+            },
+            "hero_section": {
+                "title": "Contact Pacific Maritime Industries",
+                "subtitle": "Serving the Pacific Fleet from our San Diego facility. Standard component quotes are provided within 24 hours. Complex stateroom, berthing, and galley retrofits are quoted within 5 to 7 business days.",
+                "center_text": true,
+                "buttons": [
+                    {
+                        "text": "Call sales",
+                        "link": `tel: ${process.env.CONTACT_PHONE_NUMBER}`,
+                        "button_style": "btn btn-secondary btn-animation-two"
+                    },
+                    {
+                        "text": "Request a quote",
+                        "link": "/request-quote",
+                        "button_style": "btn btn--primary btn-animation-four"
+                    }
+                ]
+            },
+            "contact_info_section": {
+                "top_text": {
+                    "small_title": "Departments",
+                    "title": "Talk to a Specialist",
+                    "subtitle": "Direct lines to the right team. No switchboard, no waiting."
+                },
+                "three_columns_with_icon": {
+                    "items": [
+                        {
+                            "icon": "mail",
+                            "title": "Email",
+                            "description": "New projects, product inquiries, and site visits",
+                            "link": {
+                                "text": `${process.env.SALES_EMAIL}`,
+                                "url": `mailto:${process.env.SALES_EMAIL}`
+                            }
+                        },
+                        {
+                            "icon": "phone",
+                            "title": "Call Sales",
+                            "description": "Talk to an estimator now",
+                            "link": {
+                                "text": `${process.env.CONTACT_PHONE_NUMBER}`,
+                                "url": `tel: ${process.env.CONTACT_PHONE_NUMBER}`
+                            }
+                        },
+                        {
+                            "icon": "location",
+                            "title": "Office",
+                            "description": `${process.env.COMPANY_NAME}`,
+                            "link": {
+                                "text": `${process.env.COMPANY_ADDRESS}, ${process.env.COMPANY_CITY}, ${process.env.COMPANY_STATE}, ${process.env.COMPANY_ZIP}`,
+                                "target": "_blank",
+                                "url": "https://maps.app.goo.gl/vwELP8qpm7vgDPk16"
+                            }
+                        }
+                    ]
+                }
+            },
+            "send_a_message_section": {
+                "top_text": {
+                    "small_title": "Contact",
+                    "title": "Send Us a Message",
+                    "subtitle": "Select your inquiry type and we'll route it to the right team fast.",
+                    "align_left": true
+                }
+            }
         }
     }
 ];

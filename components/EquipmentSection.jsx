@@ -2,33 +2,7 @@
 
 import { useState } from "react";
 import TopText from "./Text/TopText";
-import { LuDroplet, LuZap, LuCpu } from "react-icons/lu";
-import { MdOutlineScreenshotMonitor, MdCompress, MdOutlineBlinds } from "react-icons/md";
-
-
-const renderIcon = (iconName) => {
-    if (!iconName) return null;
-
-    switch (iconName.toLowerCase()) {
-        case "2x":
-            return <div className="text-icon">2x</div>;
-        case "water-lightning":
-            return (
-                <div className="combined-icon">
-                    <LuDroplet className="icon-drop" />
-                    <LuZap className="icon-zap" />
-                </div>
-            );
-        case "blinds":
-            return <MdOutlineBlinds className="icon" />;
-        case "compress":
-            return <MdCompress className="icon" />;
-        case "screen":
-            return <MdOutlineScreenshotMonitor className="icon" />;
-        default:
-            return <LuCpu className="icon" />;
-    }
-};
+import { getIcon } from "@/utils/helperFunctions"
 
 const EquipmentSection = ({ data, sectionKey }) => {
     const {
@@ -131,7 +105,7 @@ const EquipmentSection = ({ data, sectionKey }) => {
                                             >
                                                 {item.icon && (
                                                     <div className="item-icon-container">
-                                                        {renderIcon(item.icon)}
+                                                        {getIcon(item.icon)}
                                                     </div>
                                                 )}
                                                 <div className="item-info">

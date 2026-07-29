@@ -3,6 +3,7 @@
 @import "./hero-sections/hero-section.css";
 @import "./hero-text-container.css";
 @import "./form/multi-step-form.css";
+@import "./form/contact-form.css";
 @import "./video-section.css";
 @import "./top-text-three-columns.css";
 @import "./column-text-container.css";
@@ -20,12 +21,14 @@
 @import "./left-side-column-and-four-items.css";
 @import "./production-capacity.css";
 @import "./equipment-section.css";
+@import "./three-columns-with-icon-component.css";
 @import "./pages/home-page.css";
 @import "./pages/about-page.css";
 @import "./pages/catalogs-page.css";
 @import "./pages/manufacturing-capabilities-page.css";
 @import "./pages/equipment-list-page.css";
 @import "./pages/request-quote-page.css";
+@import "./pages/contact-page.css";
 @import "./catalogs/catalogs-interactive.css";
 @import "./catalogs/shipboard-furniture-catalog.css";
 @import "./catalogs/catalog-overlay.css";

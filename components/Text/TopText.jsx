@@ -5,10 +5,10 @@ const TopText = ({ data, aosAnimation = "fade-up", className = "" }) => {
     // If all the variables in data are null or undefined, return null
     if (!data || !data.small_title && !data.title && !data.subtitle && !data.buttons) return null;
 
-    const { small_title, title, subtitle, buttons, heading_type } = data;
+    const { small_title, title, subtitle, buttons, heading_type, align_left } = data;
 
     return (
-        <div className={`top-text ${className}`}>
+        <div className={`top-text ${className} ${align_left ? 'align-left' : ''}`}>
             {small_title && <p className="small-title" data-aos={aosAnimation} data-aos-delay="200" data-aos-duration="600">{small_title}</p>}
             {title
                 ? heading_type === "h1"

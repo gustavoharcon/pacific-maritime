@@ -1,24 +1,10 @@
 import TopText from "./Text/TopText";
 import ColumnTextContainer from "./Text/ColumnTextContainer";
-import Link from "next/link";
-import { MdOutlineEngineering, MdOutlineFactory, MdOutlineControlCamera } from "react-icons/md";
+import { getIcon } from "@/utils/helperFunctions";
 
 
 const TopTextThreeColumns = ({ className = "", data = {} }) => {
     const { top_text, columns } = data;
-
-    const getIcon = (iconName) => {
-        switch (iconName) {
-            case "engineering":
-                return <MdOutlineEngineering className="icon" />;
-            case "fabrication":
-                return <MdOutlineFactory className="icon" />;
-            case "logistics":
-                return <MdOutlineControlCamera className="icon" />;
-            default:
-                return null;
-        }
-    }
 
     return (
         <section className={`top-text-three-columns ${className}`}>

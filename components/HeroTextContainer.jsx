@@ -1,15 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
 import Link from "next/link";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const HeroTextContainer = ({ data }) => {
-    const { title, subtitle, buttons } = data;
+    const { title, subtitle, buttons, center_text } = data;
 
     return (
-        <div className="hero-text-container">
+        <div className={`hero-text-container ${center_text === true ? "center-text" : ""}`}>
             {
                 title && (
                     <h1 className="title" data-aos="fade-up" data-aos-duration="800">

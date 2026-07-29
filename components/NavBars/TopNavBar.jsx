@@ -57,11 +57,11 @@ const NavBar = () => {
                         {!session && (<div className="main-menu-buttons col">
                             <div className="main-menu-button">
                                 <Link
-                                    href="#our-work"
-                                    aria-label="Our Work"
+                                    href="/contact"
+                                    aria-label="Contact"
                                     className="btn btn-secondary btn-animation-two"
                                 >
-                                    Our work
+                                    Contact
                                 </Link>
                             </div>
                             <div className="main-menu-button">

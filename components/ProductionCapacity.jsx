@@ -1,14 +1,5 @@
 import TopText from "./Text/TopText";
-import { FaPlusMinus } from "react-icons/fa6";
-
-const getIcon = (iconName) => {
-    switch (iconName) {
-        case "plus-minus":
-            return <FaPlusMinus className="icon" />
-        default:
-            return null;
-    }
-}
+import { getIcon } from "@/utils/helperFunctions";
 
 const ProductionCapacity = ({ data }) => {
     return (

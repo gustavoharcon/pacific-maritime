@@ -390,6 +390,13 @@ strong {
     color: var(--color-white);
 }
 
+.top-text {
+    &.align-left {
+        text-align: left;
+        margin: 0 auto 80px 0;
+    }
+}
+
 .top-text,
 .text-area {
     text-align: center;
@@ -565,6 +572,17 @@ strong {
 .header {
     padding-top: var(--gap);
     position: relative;
+}
+
+.link {
+    text-decoration: underline;
+    color: var(--color-text);
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: unset;
+    }
 }
 
 .website-link {
