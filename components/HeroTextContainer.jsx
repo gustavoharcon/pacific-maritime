@@ -30,7 +30,6 @@ const HeroTextContainer = ({ data }) => {
                                 <Link className={button.button_style} href={button.link} aria-label={button.text}>
                                     {button.text}
                                 </Link>
-
                             </div>
                         ))}
                     </div>

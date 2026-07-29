@@ -1448,6 +1448,23 @@ const siteData = [
                 }
             }
         },
+        "quality_compliance_page": {
+            "meta_data": {
+                "title": "Quality & Compliance",
+                "description": "Quality & Compliance"
+            },
+            "hero_section": {
+                "title": "Quality assurance & compliance",
+                "subtitle": "Evidence‑based documentation for NAVSEA, ABS, and NVR procurement requirements. Every material lot traceable to its mill cert.",
+                "buttons": [
+                    {
+                        "text": "Request a quote",
+                        "link": "/request-quote",
+                        "button_style": "btn btn--primary btn-animation-four",
+                    }
+                ]
+            }
+        }
     }
 ];
 
