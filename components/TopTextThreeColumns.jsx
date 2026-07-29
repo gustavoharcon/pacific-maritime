@@ -18,9 +18,9 @@ const TopTextThreeColumns = ({ className = "", data = {} }) => {
                     {columns.map((column, index) => (
                         <div key={index} className="col">
                             {
-                                column.top_bg_image !== null && column.top_bg_image !== undefined ?
+                                column.image !== null && column.image !== undefined ?
                                     <div className="background-image"
-                                        style={{ backgroundImage: `url(${column.top_bg_image})` }}
+                                        style={{ backgroundImage: `url(${column.image})` }}
                                         data-aos="fade-up"
                                         data-aos-delay={index * 100}
                                         data-aos-duration="800"

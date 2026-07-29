@@ -1,6 +1,5 @@
 
-import Link from "next/link";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { getButton } from "@/utils/helperFunctions";
 
 const ColumnTextContainer = ({ data = {} }) => {
     const { small_title, title, subtitle, buttons, categories, animation = "fade-up", animation_duration = "800", animation_easing = "ease-in-out" } = data;
@@ -21,11 +20,11 @@ const ColumnTextContainer = ({ data = {} }) => {
                         <span key={index}>{category}</span>
                     ))}
                 </div>}
-                <div className="buttons-container">
-                    {buttons?.map((button, index) => (
-                        <Link key={index} href={button.link} className={`btn ${button.button_style}`}>{button.text} <span className="right-arrow"><MdKeyboardArrowRight /></span></Link>
+                {buttons && buttons.length > 0 && <div className="buttons-container">
+                    {buttons.map((button, index) => (
+                        getButton(button, index)
                     ))}
-                </div>
+                </div>}
             </div>
         </div>
     )

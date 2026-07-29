@@ -1,11 +1,12 @@
 
-import { MdOutlineEngineering, MdOutlineFactory, MdOutlineControlCamera, MdOutlineLocalPhone, MdOutlineScreenshotMonitor, MdCompress, MdOutlineBlinds, MdOutlineMail } from "react-icons/md";
+import { MdOutlineEngineering, MdOutlineFactory, MdOutlineControlCamera, MdOutlineLocalPhone, MdOutlineScreenshotMonitor, MdCompress, MdOutlineBlinds, MdOutlineMail, MdKeyboardArrowRight } from "react-icons/md";
 import { LuDroplet, LuZap } from "react-icons/lu";
 import { FaPlusMinus } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
+import Link from "next/link";
 
 export const getIcon = (iconName) => {
-    switch (iconName.toLowerCase()) {
+    switch (iconName) {
         case "engineering":
             return <MdOutlineEngineering className="icon" />;
         case "fabrication":
@@ -35,9 +36,15 @@ export const getIcon = (iconName) => {
             return <MdOutlineScreenshotMonitor className="icon" />;
         case "mail":
             return <MdOutlineMail className="icon" />;
+        case "arrow-right":
+            return <MdKeyboardArrowRight className="icon" />;
         default:
             return null;
     }
 }
 
-export default getIcon;
+export const getButton = (button, index) => {
+    return (
+        <Link key={index} href={button.link} className={`${button.button_style}`}>{button.text} {button.icon ? <span className="button-icon">{getIcon(button.icon)}</span> : null}</Link>
+    )
+}

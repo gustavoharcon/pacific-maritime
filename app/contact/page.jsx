@@ -3,10 +3,13 @@ import TopText from "@/components/Text/TopText";
 import ThreeColumnsWithIcon from "@/components/ThreeColumnsWithIcon";
 import siteData from "@/data/siteData"
 import ContactForm from "@/components/Form/ContactForm";
+import ColumnsWithImage from "@/components/ColumnsWithImage";
 
 const contactData = siteData.find(item => item.contact_page)?.contact_page;
 const contactInfoSection = contactData.contact_info_section;
 const sendMessageSection = contactData.send_a_message_section;
+const facilitySection = contactData.facility_section;
+const hoursSection = contactData.hours_section;
 
 export async function generateMetadata() {
     return {
@@ -35,6 +38,16 @@ const ContactPage = () => {
                         <div className="col">
                             <TopText data={sendMessageSection.top_text} />
                             <ContactForm />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="facility-section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <TopText data={facilitySection.top_text} />
+                            <ColumnsWithImage data={facilitySection} />
                         </div>
                     </div>
                 </div>

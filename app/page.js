@@ -2,7 +2,8 @@ import HeroSection from "@/components/HeroSections/HeroSection";
 import TopTextThreeColumns from "@/components/TopTextThreeColumns";
 import ThreeColumnsBackgroundImage from "@/components/ThreeColumnsBackgroundImage";
 import TimelineThreeColumns from "@/components/TimelineThreeColumns";
-import ProductsThreeColumns from "@/components/ProductsThreeColumns";
+import ColumnsWithImage from "@/components/ColumnsWithImage";
+import TopText from "@/components/Text/TopText";
 
 import siteData from "@/data/siteData.js";
 import CallToAction from "@/components/CTA/CallToAction";
@@ -30,7 +31,16 @@ export default function Home() {
       <TopTextThreeColumns data={top_text_three_columns} />
       <ThreeColumnsBackgroundImage className="capabilities-three-columns" data={capabilities_three_columns} />
       <TimelineThreeColumns data={timeline_three_columns} />
-      <ProductsThreeColumns data={products_three_columns} />
+      <section className="columns-with-image-section">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <TopText data={products_three_columns.top_text} />
+              <ColumnsWithImage data={products_three_columns} />
+            </div>
+          </div>
+        </div>
+      </section>
       <CallToAction />
     </>
   );

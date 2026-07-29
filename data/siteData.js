@@ -161,25 +161,26 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/serving-san-dieg-and-the-pacific-fleet_jbg4xy.png",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/serving-san-dieg-and-the-pacific-fleet_jbg4xy.png",
                         "small_title": "Facility",
                         "title": "Serving San Diego and the Pacific Fleet",
                         "buttons": [
                             {
                                 "text": "Directions",
                                 "link": "/contact",
-                                "button_style": "btn btn-black-outline btn-animation-two"
+                                "button_style": "btn btn-black-outline btn-animation-two",
+                                "icon": "arrow-right"
                             }
                         ]
                     },
                     {
-                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/NAVSEA_certified_and_specification_compliant_o3tfrg.png",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/NAVSEA_certified_and_specification_compliant_o3tfrg.png",
                         "small_title": "Certified",
                         "title": "NAVSEA certified and specification compliant",
                         "subtitle": "MIL-SPEC, ABS, NVR compliant",
                     },
                     {
-                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/Call_for_lead_times_and_RFQ_support_jg6z0c.png",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/Call_for_lead_times_and_RFQ_support_jg6z0c.png",
                         "small_title": "Contact",
                         "title": "Call for lead times and RFQ support",
                         "subtitle": "(619) 423-5544 ",
@@ -203,7 +204,8 @@ const siteData = [
                             {
                                 "text": "View Products",
                                 "link": "/products",
-                                "button_style": "btn-secondary btn-animation-two"
+                                "button_style": "btn btn-secondary btn-animation-two",
+                                "icon": "arrow-right"
                             }
                         ]
                     },
@@ -215,7 +217,8 @@ const siteData = [
                             {
                                 "text": "View Products",
                                 "link": "/products",
-                                "button_style": "btn-secondary btn-animation-two"
+                                "button_style": "btn btn-secondary btn-animation-two",
+                                "icon": "arrow-right"
                             }
                         ]
                     },
@@ -227,7 +230,8 @@ const siteData = [
                             {
                                 "text": "View Products",
                                 "link": "",
-                                "button_style": "btn-secondary btn-animation-two"
+                                "button_style": "btn btn-secondary btn-animation-two",
+                                "icon": "arrow-right"
                             }
                         ]
                     }
@@ -267,10 +271,11 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/naval-lockers-and-cabinets_dsaabp.png",
-                        "top_image_description": "Naval Lockers & Cabinets",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/naval-lockers-and-cabinets_dsaabp.png",
+                        "image_description": "Naval Lockers & Cabinets",
                         "title": "Naval Lockers & Cabinets",
                         "subtitle": "Fabricated to conform to stringent U.S. Navy specifications. Configurations include ammo lockers, file cabinets, dressers, and specialized industrial stowage.",
+                        "with_border": true,
                         "categories": [
                             "Steel",
                             "Shock Grade",
@@ -280,15 +285,17 @@ const siteData = [
                             {
                                 "text": "Download CAD",
                                 "link": "/catalogs-and-downloads",
-                                "button_style": "btn btn-black-outline btn-animation-two"
+                                "button_style": "btn btn-black-outline btn-animation-two",
+                                "icon": "arrow-right"
                             }
                         ]
                     },
                     {
-                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/stateroom-and-berthing_y1mhou.png",
-                        "top_image_description": "STATEROOM & BERTHING",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/stateroom-and-berthing_y1mhou.png",
+                        "image_description": "STATEROOM & BERTHING",
                         "title": "STATEROOM & BERTHING",
                         "subtitle": "Complete marine accommodations built with superior workmanship. Engineered to match marine standard drawings and your exact conceptual sketches.",
+                        "with_border": true,
                         "categories": [
                             "Modular",
                             "Habitability",
@@ -298,15 +305,17 @@ const siteData = [
                             {
                                 "text": "Download CAD",
                                 "link": "/catalogs-and-downloads",
-                                "button_style": "btn btn-black-outline btn-animation-two"
+                                "button_style": "btn btn-black-outline btn-animation-two",
+                                "icon": "arrow-right"
                             }
                         ]
                     },
                     {
-                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/metal-joiner-doors_toycqp.png",
-                        "top_image_description": "Metal Joiner Doors",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/metal-joiner-doors_toycqp.png",
+                        "image_description": "Metal Joiner Doors",
                         "title": "Metal Joiner Doors",
                         "subtitle": "Custom manufactured shipboard doors designed to satisfy all marine environments. Supported by our dedicated technical catalog for rapid procurement.",
+                        "with_border": true,
                         "categories": [
                             "Watertight",
                             "Joiner",
@@ -316,7 +325,8 @@ const siteData = [
                             {
                                 "text": "Download CAD",
                                 "link": "/catalogs-and-downloads",
-                                "button_style": "btn btn-black-outline btn-animation-two"
+                                "button_style": "btn btn-black-outline btn-animation-two",
+                                "icon": "arrow-right"
                             }
                         ]
                     }
@@ -1401,8 +1411,43 @@ const siteData = [
                     "subtitle": "Select your inquiry type and we'll route it to the right team fast.",
                     "align_left": true
                 }
+            },
+            "facility_section": {
+                "top_text": {
+                    "small_title": "Locations",
+                    "title": "Our Facility",
+                    "subtitle": "Based on San Diego's working waterfront. We serve the entire Pacific Fleet.",
+                    "align_left": true
+                },
+                "columns": [
+                    {
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_650/v1785358735/our-facility_cym6p0.png",
+                        "title": "Our Facility",
+                        "subtitle": "1790 Dornoch Court, San Diego, CA 92154",
+                        "buttons": [
+                            {
+                                "text": "Get directions",
+                                "link": "https://maps.app.goo.gl/vwELP8qpm7vgDPk16",
+                                "button_style": "btn btn-black-outline btn-animation-two",
+                                "button_icon": "arrow-right"
+                            }
+                        ]
+                    },
+                    {
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_650/v1785358735/ports-we-serve_c7kugz.png",
+                        "title": "Ports we serve",
+                        "subtitle": "We deploy installation teams to Pacific Fleet homeports including Pearl Harbor, Yokosuka, and Guam. Contact us for mobilization details."
+                    }
+                ]
+            },
+            "hours_section": {
+                "top_text": {
+                    "small_title": "Hours",
+                    "title": "Hours and response times",
+                    "subtitle": "Clear commitments. No ambiguity. This is how we work."
+                }
             }
-        }
+        },
     }
 ];
 

@@ -2,4 +2,9 @@
     .capabilities-three-columns {
         background-color: var(--color-white);
     }
+
+    .columns-with-image-section {
+        padding: 112px 0;
+        background-color: var(--color-white);
+    }
 }

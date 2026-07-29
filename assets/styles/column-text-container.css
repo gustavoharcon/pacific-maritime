@@ -6,7 +6,7 @@
             >a {
                 max-width: fit-content;
 
-                >.right-arrow {
+                >.button-icon {
                     font-size: 20px;
                     color: inherit;
                 }
