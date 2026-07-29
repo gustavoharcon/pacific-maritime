@@ -194,7 +194,7 @@ export default function MultiStepForm() {
         <p className="form-subtitle">
           Thank you! We will review your requirements and be in touch within one business day.
         </p>
-        <button type="button" className="btn-primary" onClick={resetForm}>
+        <button type="button" className="btn btn--primary btn-animation-four" onClick={resetForm}>
           Submit Another Request
         </button>
       </div>
@@ -249,12 +249,12 @@ export default function MultiStepForm() {
             </div>
 
             <div className="form-actions">
-              <a type="button" className="btn btn-black-outline btn-animation-two" onClick={resetForm}>
+              <button type="button" className="btn btn-black-outline btn-animation-two" onClick={resetForm}>
                 Cancel
-              </a>
-              <a type="button" className="btn btn--primary btn-animation-four" onClick={nextStep}>
+              </button>
+              <button type="button" className="btn btn--primary btn-animation-four" onClick={nextStep}>
                 Next
-              </a>
+              </button>
             </div>
           </div>
         )}
@@ -324,10 +324,10 @@ export default function MultiStepForm() {
             </div>
 
             <div className="form-actions">
-              <button type="button" className="btn-cancel" onClick={prevStep}>
+              <button type="button" className="btn btn-black-outline btn-animation-two" onClick={prevStep}>
                 Back
               </button>
-              <button type="button" className="btn-primary" onClick={nextStep}>
+              <button type="button" className="btn btn--primary btn-animation-four" onClick={nextStep}>
                 Next
               </button>
             </div>
@@ -388,10 +388,10 @@ export default function MultiStepForm() {
             </div>
 
             <div className="form-actions">
-              <button type="button" className="btn-cancel" onClick={prevStep}>
+              <button type="button" className="btn btn-black-outline btn-animation-two" onClick={prevStep}>
                 Back
               </button>
-              <button type="button" className="btn-primary" onClick={nextStep}>
+              <button type="button" className="btn btn--primary btn-animation-four" onClick={nextStep}>
                 Next
               </button>
             </div>
@@ -452,17 +452,17 @@ export default function MultiStepForm() {
             </div>
 
             <div className="form-actions">
-              <a
+              <button
                 type="button"
                 className="btn btn-black-outline btn-animation-two"
                 onClick={prevStep}
                 disabled={loading}
               >
                 Back
-              </a>
-              <a
+              </button>
+              <button
                 type="submit"
-                className="btn-submit"
+                className="btn btn--primary btn-animation-four"
                 disabled={loading}
               >
                 {loading ? (
@@ -472,7 +472,7 @@ export default function MultiStepForm() {
                 ) : (
                   "Send specs"
                 )}
-              </a>
+              </button>
             </div>
           </div>
         )}

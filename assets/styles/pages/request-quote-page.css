@@ -13,8 +13,61 @@
             flex-flow: row nowrap;
             align-items: flex-start;
             justify-content: space-between;
+            gap: 80px;
 
-            >.col {}
+            >.col {
+                width: 50%;
+
+                &.contact-methods {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: flex-start;
+                    gap: 24px;
+
+                    >div {
+                        width: 50%;
+                        display: flex;
+                        flex-flow: column nowrap;
+                        gap: 16px;
+                        color: var(--color-text);
+
+                        >.icon {
+                            font-size: 32px;
+                            color: var(--color-secondary);
+                        }
+
+                        >.details {
+                            display: flex;
+                            flex-flow: column nowrap;
+                            justify-content: flex-start;
+                            gap: 8px;
+
+                            .title {
+                                font-size: 26px;
+                                font-weight: 700;
+                            }
+
+                            .phone-number {
+                                text-decoration: underline;
+                                transition: var(--animation-default);
+
+                                &:hover {
+                                    text-decoration: unset;
+                                }
+                            }
+
+                            .directions {
+                                align-self: flex-start;
+                                margin-top: 8px;
+                            }
+
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -85,7 +85,7 @@ const EquipmentSection = ({ data, sectionKey }) => {
                             {tabs.map((tab, idx) => (
                                 <a
                                     key={idx}
-                                    className={`tab-nav-btn ${activeTabIdx === idx ? "active" : ""}`}
+                                    className={`tab-nav-btn animated-border-left ${activeTabIdx === idx ? "active" : ""}`}
                                     onClick={() => setActiveTabIdx(idx)}
                                 >
                                     {tab.title}

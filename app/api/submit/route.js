@@ -25,7 +25,7 @@ export async function POST(req) {
     }
 
     const apiKey = process.env.RESEND_API_KEY;
-    const submissionEmail = process.env.FORM_SUBMISSION_EMAIL || "warehouse@pacmaritime.com";
+    const submissionEmail = process.env.FORM_SUBMISSION_EMAIL || "gustavo.amezcua@pacmaritime.com";
 
     if (!apiKey) {
       console.error("Missing RESEND_API_KEY environment variable");
@@ -38,7 +38,7 @@ export async function POST(req) {
     const resend = new Resend(apiKey);
 
     const emailSubject = `New RFQ Submission from ${fullName || email}`;
-    
+
     const emailHtml = `
       <div style="font-family: 'Inter', sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e3e1de; border-radius: 8px; background-color: #efeeec; color: #131313;">
         <h2 style="font-family: 'Archivo Black', sans-serif; color: #1B2A4A; border-bottom: 2px solid #1B2A4A; padding-bottom: 10px; margin-top: 0;">

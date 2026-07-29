@@ -69,21 +69,6 @@
         gap: 24px;
     }
 
-    .tab-nav-btn {
-        color: var(--color-text);
-        padding-bottom: 10px;
-        cursor: pointer;
-
-        &:hover,
-        &:focus {
-            border-bottom: 2px solid var(--color-text);
-            text-decoration: unset;
-        }
-
-        &.active {
-            border-bottom: 2px solid var(--color-text);
-        }
-    }
 
     /* Grid */
     .two-columns-grid {

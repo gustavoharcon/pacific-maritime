@@ -1317,7 +1317,21 @@ const siteData = [
                 "title": "Request a Quote",
                 "subtitle": "Complete the steps below to receive a tailored quote.",
                 "heading_type": "h1"
-            }
+            },
+            "contact_methods": [
+                {
+                    "icon": "phone",
+                    "title": "Phone",
+                    "subtitle": "Call for urgent technical requests.",
+                    "value": `<a class="phone-number" href='tel:${process.env.CONTACT_PHONE_NUMBER}'>${process.env.CONTACT_PHONE_NUMBER}</a>`
+                },
+                {
+                    "icon": "office",
+                    "title": "Office",
+                    "subtitle": `${process.env.COMPANY_NAME}`,
+                    "value": `${process.env.COMPANY_ADDRESS}<br>${process.env.COMPANY_CITY}, ${process.env.COMPANY_STATE}, ${process.env.COMPANY_ZIP}`
+                }
+            ]
         }
     }
 ];
