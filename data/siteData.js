@@ -106,7 +106,7 @@ const siteData = [
                 "sub_menu": [
                     {
                         "text": "Equipment List",
-                        "link": "/equipment-list"
+                        "link": "/about/equipment-list"
                     }
                 ],
             },
