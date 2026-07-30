@@ -1528,6 +1528,37 @@ const siteData = [
                 }
             }
         },
+        "careers_page": {
+            "meta_data": {
+                "title": "Careers",
+                "description": "Careers"
+            },
+            'hero_section': {
+                "title": "Build your career with pacific maritime industries corp.",
+                "subtitle": "Join a San Diego team that takes pride in every weld, every door, and every stateroom we deliver to the fleet.",
+                "center_text": true,
+                "buttons": [
+                    {
+                        "text": "View open positions",
+                        "link": "#",
+                        "button_style": "btn btn--primary btn-animation-four"
+                    }
+                ]
+            },
+            "job_openings_section": {
+                "top_text": {
+                    "small_title": "Openings",
+                    "title": "Open positions",
+                    "subtitle": "We are hiring for our San Diego facility. All positions are full-time, on-site, with competitive pay and benefits.",
+                    "align_left": true
+                },
+                "job_listings": [
+                    {
+
+                    }
+                ]
+            }
+        }
     }
 ];
 

@@ -1,0 +1,15 @@
+.careers-page-content {
+    .job-openings-section {
+        padding: 112px 0;
+        background-color: var(--color-background);
+
+        >.container {
+            >.row {
+                display: flex;
+                flex-flow: row nowrap;
+                gap: 80px;
+                justify-content: flex-start;
+            }
+        }
+    }
+}
