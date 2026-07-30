@@ -3,6 +3,7 @@ import siteData from "@/data/siteData";
 import TopText from "@/components/Text/TopText";
 import LeftSideColumnAndFourItems from "@/components/LeftSideColumnAndFourItems";
 import FaqList from "@/components/FaqList";
+import CallToAction from "@/components/CTA/CallToAction";
 
 const qualityComplianceData = siteData.find(item => item.quality_compliance_page)?.quality_compliance_page
 const heroSectionData = qualityComplianceData.hero_section;
@@ -45,6 +46,7 @@ const QualityAndCompliancePage = () => {
                     </div>
                 </div>
             </section>
+            <CallToAction />
         </div>
     )
 }
