@@ -1456,6 +1456,7 @@ const siteData = [
             "hero_section": {
                 "title": "Quality assurance & compliance",
                 "subtitle": "Evidence‑based documentation for NAVSEA, ABS, and NVR procurement requirements. Every material lot traceable to its mill cert.",
+                "center_text": true,
                 "buttons": [
                     {
                         "text": "Request a quote",
@@ -1463,8 +1464,33 @@ const siteData = [
                         "button_style": "btn btn--primary btn-animation-four",
                     }
                 ]
-            }
-        }
+            },
+            "certifications_section": {
+                "top_text": {
+                    "small_title": "Certifications",
+                    "title": "Certifications and Standards",
+                    "subtitle": "Current credentials for NAVSEA, ABS, and NVR procurement requirements"
+                },
+                "certifications_list": [
+                    {
+                        "small_title": "ISO",
+                        "title": "ISO 9001:2015",
+                        "subtitle": "Pacific Maritime Industries Corp. has been assessed and certified as meeting the requirements of ISO 9001:2015. Manufacturer of Sheet Metal Products. Initial certification was issued on January 31, 2019. Expires on January 30, 2028.",
+                        "buttons": [
+                            {
+                                "text": "View Certificate",
+                                "link": "https://res.cloudinary.com/irwujctd/image/upload/v1785420485/ISO-9001-2015_lpsmie.png",
+                                "target": "_blank",
+                                "button_style": "btn btn-black-outline btn-animation-two"
+                            }
+                        ],
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_500/v1785420485/ISO-9001-2015_lpsmie.png",
+                        "bottom_image_alt": "ISO-9001-2015",
+                        "bottom_image_width": "400"
+                    }
+                ]
+            },
+        },
     }
 ];
 

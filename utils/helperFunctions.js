@@ -45,6 +45,6 @@ export const getIcon = (iconName) => {
 
 export const getButton = (button, index) => {
     return (
-        <Link key={index} href={button.link} className={`${button.button_style}`}>{button.text} {button.icon ? <span className="button-icon">{getIcon(button.icon)}</span> : null}</Link>
+        <Link key={index} href={button.link} target={button?.target || "_self"} className={`${button.button_style}`}>{button.text} {button.icon ? <span className="button-icon">{getIcon(button.icon)}</span> : null}</Link>
     )
 }
