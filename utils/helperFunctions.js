@@ -1,8 +1,11 @@
 
-import { MdOutlineEngineering, MdOutlineFactory, MdOutlineControlCamera, MdOutlineLocalPhone, MdOutlineScreenshotMonitor, MdCompress, MdOutlineBlinds, MdOutlineMail, MdKeyboardArrowRight } from "react-icons/md";
+import { MdOutlineEngineering, MdOutlineFactory, MdOutlineControlCamera, MdOutlineLocalPhone, MdOutlineScreenshotMonitor, MdCompress, MdOutlineBlinds, MdOutlineMail, MdKeyboardArrowRight, MdOutlineAttachMoney, MdOutlineWorkOutline } from "react-icons/md";
 import { LuDroplet, LuZap } from "react-icons/lu";
 import { FaPlusMinus } from "react-icons/fa6";
+import { FiClock } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
+import { RiCompasses2Fill } from "react-icons/ri";
+
 import Link from "next/link";
 
 export const getIcon = (iconName) => {
@@ -38,6 +41,16 @@ export const getIcon = (iconName) => {
             return <MdOutlineMail className="icon" />;
         case "arrow-right":
             return <MdKeyboardArrowRight className="icon" />;
+        case "clock":
+            return <FiClock className="icon" />;
+        case "dollar":
+        case "money":
+            return <MdOutlineAttachMoney className="icon" />;
+        case "briefcase":
+        case "work":
+            return <MdOutlineWorkOutline className="icon" />;
+        case "drafting-compass":
+            return <RiCompasses2Fill className="icon" />;
         default:
             return null;
     }

@@ -28,8 +28,16 @@ export default function Home() {
   return (
     <>
       <HeroSection data={hero_section} />
-      <TopTextThreeColumns data={top_text_three_columns} />
-      <ThreeColumnsBackgroundImage className="capabilities-three-columns" data={capabilities_three_columns} />
+      <div className="three-columns-background-image-section">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <TopText data={top_text_three_columns.top_text} />
+              <ThreeColumnsBackgroundImage className="capabilities-three-columns" data={capabilities_three_columns} />
+            </div>
+          </div>
+        </div>
+      </div>
       <TimelineThreeColumns data={timeline_three_columns} />
       <section className="columns-with-image-section">
         <div className="container">

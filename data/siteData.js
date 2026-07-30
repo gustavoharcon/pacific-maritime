@@ -1551,11 +1551,28 @@ const siteData = [
                     "title": "Open positions",
                     "subtitle": "We are hiring for our San Diego facility. All positions are full-time, on-site, with competitive pay and benefits.",
                     "align_left": true
+                }
+            },
+            "built_on_safety_section": {
+                "top_text": {
+                    "small_title": "Why Harcon",
+                    "title": "Built on safety and skill",
+                    "subtitle": "A career where you go home safe and grow strong."
                 },
-                "job_listings": [
+                "columns": [
                     {
-
-                    }
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/serving-san-dieg-and-the-pacific-fleet_jbg4xy.png",
+                        "small_title": "Facility",
+                        "title": "Serving San Diego and the Pacific Fleet",
+                        "buttons": [
+                            {
+                                "text": "Directions",
+                                "link": "/contact",
+                                "button_style": "btn btn-black-outline btn-animation-two",
+                                "icon": "arrow-right"
+                            }
+                        ]
+                    },
                 ]
             }
         }

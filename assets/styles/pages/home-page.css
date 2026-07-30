@@ -3,7 +3,8 @@
         background-color: var(--color-white);
     }
 
-    .columns-with-image-section {
+    .columns-with-image-section,
+    .three-columns-background-image-section {
         padding: 112px 0;
         background-color: var(--color-white);
     }

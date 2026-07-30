@@ -1,8 +1,8 @@
 
-import { getButton } from "@/utils/helperFunctions";
+import { getButton, getIcon } from "@/utils/helperFunctions";
 
 const ColumnTextContainer = ({ data = {} }) => {
-    const { small_title, title, subtitle, buttons, categories, animation = "fade-up", animation_duration = "800", animation_easing = "ease-in-out" } = data;
+    const { icon, small_title, title, subtitle, buttons, categories, animation = "fade-up", animation_duration = "800", animation_easing = "ease-in-out" } = data;
 
     return (
         <div className="column-text-container">
@@ -12,6 +12,7 @@ const ColumnTextContainer = ({ data = {} }) => {
                 data-aos-duration={animation_duration}
                 data-aos-easing={animation_easing}
             >
+                {icon && <div className="icon-wrapper">{getIcon(icon)}</div>}
                 {small_title && <p className="small-title">{small_title}</p>}
                 {title && <h3 className="title">{title}</h3>}
                 {subtitle && <p className="subtitle">{subtitle}</p>}

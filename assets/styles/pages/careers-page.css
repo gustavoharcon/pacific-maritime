@@ -1,6 +1,11 @@
 .careers-page-content {
+
+    .built-on-safety-section,
     .job-openings-section {
         padding: 112px 0;
+    }
+
+    .job-openings-section {
         background-color: var(--color-background);
 
         >.container {
@@ -9,6 +14,26 @@
                 flex-flow: row nowrap;
                 gap: 80px;
                 justify-content: flex-start;
+
+                >.col:first-child {
+                    flex: 0 0 35%;
+                    max-width: 35%;
+                }
+
+                >.col:last-child {
+                    flex: 1 1 auto;
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 991px) {
+                    flex-flow: column nowrap;
+                    gap: 48px;
+
+                    >.col:first-child {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
             }
         }
     }
