@@ -196,7 +196,7 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784583769/birthing-01_z0ngrs.png",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784583769/birthing-01_z0ngrs.png",
                         "small_title": "Interiors",
                         "title": "Shipboard interiors and berthing",
                         "subtitle": "Stateroom modules and crew berthing systems.",
@@ -210,7 +210,7 @@ const siteData = [
                         ]
                     },
                     {
-                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784584007/modular-furniture_o66smf.png",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784584007/modular-furniture_o66smf.png",
                         "title": "Modular furniture and doors",
                         "subtitle": "NAVY-grade metal joiner doors and frames. Dining, lounge and office furniture systems.",
                         "buttons": [
@@ -223,7 +223,7 @@ const siteData = [
                         ]
                     },
                     {
-                        "top_bg_image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784584387/shipyard-integration_iuvyw9.png",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784584387/shipyard-integration_iuvyw9.png",
                         "title": "SHIPYARD INTEGRATION ",
                         "subtitle": "Pre-assembled stateroom modules and hardware staged for rapid deployment. Palletized, secured, and ready. ",
                         "buttons": [
@@ -1561,19 +1561,34 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/serving-san-dieg-and-the-pacific-fleet_jbg4xy.png",
-                        "small_title": "Facility",
-                        "title": "Serving San Diego and the Pacific Fleet",
-                        "buttons": [
-                            {
-                                "text": "Directions",
-                                "link": "/contact",
-                                "button_style": "btn btn-black-outline btn-animation-two",
-                                "icon": "arrow-right"
-                            }
-                        ]
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_650/v1785443351/Toolbox_talk_on_concrete_floor_202607301327_znlqul.jpg",
+                        "small_title": "Safety",
+                        "title": "Safety first, always",
+                        "subtitle": "OSHA-compliant shop, daily toolbox talks, and a TRIR well below industry average. We invest in your safety gear and training.",
+                        "shadow": true
+                    },
+                    {
+                        "icon": "drafting-compass",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_300/v1785443352/Veteran_welder_mentoring_apprentice_202607301327_z8dkqt.jpg",
+                        "title": "Grow your skills here",
+                        "subtitle": "Company-paid certifications: NAVSEA welding, NDT, crane operator. Cross-training and apprenticeship pathways available.",
+                        "shadow": true
+                    },
+                    {
+                        "icon": "anchor",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_300/v1785443352/Fabricators_securing_module_on_p__202607301328_vv7kap.jpg",
+                        "title": "Local and stable work",
+                        "subtitle": "45+ years in San Diego. No out-of-state relocations. We hire locally and promote from within.",
+                        "shadow": true
                     },
                 ]
+            },
+            "join_the_crew_section": {
+                "top_text": {
+                    "small_title": "Apply",
+                    "title": "Join the crew",
+                    "subtitle": "Fill out the form and our hiring manager will reach out within 2 business days."
+                }
             }
         }
     }

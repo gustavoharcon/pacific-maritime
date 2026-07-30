@@ -1,5 +1,5 @@
 
-import { MdOutlineEngineering, MdOutlineFactory, MdOutlineControlCamera, MdOutlineLocalPhone, MdOutlineScreenshotMonitor, MdCompress, MdOutlineBlinds, MdOutlineMail, MdKeyboardArrowRight, MdOutlineAttachMoney, MdOutlineWorkOutline } from "react-icons/md";
+import { MdOutlineEngineering, MdOutlineFactory, MdOutlineControlCamera, MdOutlineLocalPhone, MdOutlineScreenshotMonitor, MdCompress, MdOutlineBlinds, MdOutlineMail, MdKeyboardArrowRight, MdOutlineAttachMoney, MdOutlineWorkOutline, MdAnchor } from "react-icons/md";
 import { LuDroplet, LuZap } from "react-icons/lu";
 import { FaPlusMinus } from "react-icons/fa6";
 import { FiClock } from "react-icons/fi";
@@ -51,6 +51,8 @@ export const getIcon = (iconName) => {
             return <MdOutlineWorkOutline className="icon" />;
         case "drafting-compass":
             return <RiCompasses2Fill className="icon" />;
+        case "anchor":
+            return <MdAnchor className="icon" />;
         default:
             return null;
     }

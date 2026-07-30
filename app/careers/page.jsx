@@ -4,9 +4,12 @@ import TopText from "@/components/Text/TopText";
 import JobListings from "@/components/JobListings";
 import ThreeColumnsBackgroundImage from "@/components/ThreeColumnsBackgroundImage";
 
+import CareersForm from "@/components/Form/CareersForm";
+
 const careersData = siteData.find(item => item.careers_page)?.careers_page;
 const jobOpeningsSection = careersData.job_openings_section;
 const builtOnSafetySection = careersData.built_on_safety_section;
+const joinTheCrewSection = careersData.join_the_crew_section;
 
 const CareersPage = () => {
     return (
@@ -30,6 +33,16 @@ const CareersPage = () => {
                         <div className="col">
                             <TopText data={builtOnSafetySection.top_text} />
                             <ThreeColumnsBackgroundImage data={builtOnSafetySection} />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="join-the-crew-section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <TopText data={joinTheCrewSection.top_text} />
+                            <CareersForm />
                         </div>
                     </div>
                 </div>

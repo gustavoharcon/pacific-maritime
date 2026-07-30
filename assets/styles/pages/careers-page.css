@@ -1,7 +1,8 @@
 .careers-page-content {
 
     .built-on-safety-section,
-    .job-openings-section {
+    .job-openings-section,
+    .join-the-crew-section {
         padding: 112px 0;
     }
 
@@ -34,6 +35,19 @@
                         max-width: 100%;
                     }
                 }
+            }
+        }
+    }
+
+    .join-the-crew-section {
+        background-color: var(--color-accent);
+
+        .top-text {
+
+            .small-title,
+            .title,
+            .subtitle {
+                color: var(--color-white);
             }
         }
     }
