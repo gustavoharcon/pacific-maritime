@@ -1490,6 +1490,43 @@ const siteData = [
                     }
                 ]
             },
+            "faqs_section": {
+                "top_text": {
+                    "title": "FAQs",
+                    "subtitle": "Answers for contracting officers and compliance teams",
+                    "align_left": true
+                },
+                "faqs_list": [
+                    {
+                        "question": "What are typical lead times?",
+                        "answer": "Standard items take six to eight weeks. Complex assemblies require ten to fourteen weeks. Lead times are confirmed at RFQ stage and tracked in our revision-controlled schedule."
+                    },
+                    {
+                        "question": "How are engineering revisions handled?",
+                        "answer": "All revisions follow our engineering change order process. Customer approval is required before fabrication on any deviation from approved drawings."
+                    },
+                    {
+                        "question": "What acceptance criteria apply?",
+                        "answer": "NAVSEA Standard Item 009-32 governs visual and dimensional acceptance. AQL sampling per ANSI/ASQ Z1.4 applies unless one hundred percent inspection is specified."
+                    },
+                    {
+                        "question": "Are materials DFARS compliant?",
+                        "answer": "Yes. All steel and aluminum are sourced from DFARS 252.225-7014 compliant mills. Country of origin certificates are provided with every order."
+                    }
+                ],
+                "call_to_action": {
+                    "title": "Still have questions?",
+                    "subtitle": "Contact our compliance team directly for specific requirements",
+                    "align_left": true,
+                    "buttons": [
+                        {
+                            "text": "Contact",
+                            "link": "/contact",
+                            "button_style": "btn btn-black-outline btn-animation-two"
+                        }
+                    ]
+                }
+            }
         },
     }
 ];

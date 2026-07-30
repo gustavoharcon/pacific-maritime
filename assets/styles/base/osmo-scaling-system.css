@@ -394,6 +394,10 @@ strong {
     &.align-left {
         text-align: left;
         margin: 0 auto 80px 0;
+
+        .buttons {
+            justify-content: flex-start;
+        }
     }
 }
 

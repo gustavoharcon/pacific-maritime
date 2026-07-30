@@ -3,4 +3,19 @@
         padding: 112px 0;
         background-color: var(--color-background);
     }
+
+    .faqs-section {
+        padding: 112px 0;
+        background-color: var(--color-white);
+
+        >.container {
+            >.row {
+                &:last-child {
+                    .top-text {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
 }

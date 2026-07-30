@@ -1,9 +1,6 @@
 import Link from "next/link";
 
-const TopText = ({ data, aosAnimation = "fade-up", className = "" }) => {
-
-    // If all the variables in data are null or undefined, return null
-    if (!data || !data.small_title && !data.title && !data.subtitle && !data.buttons) return null;
+const TopText = ({ data = {}, aosAnimation = "fade-up", className = "" }) => {
 
     const { small_title, title, subtitle, buttons, heading_type, align_left } = data;
 
