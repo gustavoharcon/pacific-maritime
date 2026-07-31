@@ -174,7 +174,7 @@ body {
 
 /* IE & Edge */
 html {
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
 }
 
 /* Firefox */
@@ -228,7 +228,7 @@ body {
     line-height: var(--line-height-body);
     margin: 0;
     font-weight: 500;
-    cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/671251b239d7aeb290a31ac5_cursor-default%402x.svg") 2 0, auto;
+    /* cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/671251b239d7aeb290a31ac5_cursor-default%402x.svg") 2 0, auto; */
 }
 
 /* a,
