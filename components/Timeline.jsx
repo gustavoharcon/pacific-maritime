@@ -1,15 +1,12 @@
 
 const Timeline = ({ data = [] }) => {
     return (
-        <div className="timeline-container" data-aos="fade-up" data-aos-duration="800">
+        <div className="timeline-container">
             <div className="timeline-items">
                 {data.map((item, idx) => (
                     <div
                         key={idx}
                         className="timeline-item"
-                        data-aos="fade-up"
-                        data-aos-delay={idx * 100}
-                        data-aos-duration="800"
                     >
                         <div className="dot-container"><div className="timeline-dot"></div></div>
                         <div className="timeline-content">

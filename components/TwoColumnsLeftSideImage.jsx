@@ -12,9 +12,6 @@ const TwoColumnsLeftSideImage = ({ data, className = "" }) => {
                 <div className="row">
                     <div
                         className="col left-column-image"
-                        data-aos="fade-right"
-                        data-aos-delay="200"
-                        data-aos-duration="800"
                         style={{ backgroundImage: `url(${left_side_image})` }}
                     >
                     </div>
@@ -28,9 +25,6 @@ const TwoColumnsLeftSideImage = ({ data, className = "" }) => {
                                             <div
                                                 className="item"
                                                 key={idx}
-                                                data-aos="fade-up"
-                                                data-aos-delay={idx * 200}
-                                                data-aos-duration="800"
                                             >
                                                 <p className="number">{item.number}</p>
                                                 <p className="text">{item.text}</p>

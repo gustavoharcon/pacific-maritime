@@ -14,9 +14,6 @@ const HeroSection = ({ data }) => {
 
                     {right_column_image && <div
                         className="col col-with-bg"
-                        data-aos="fade-left"
-                        data-aos-delay="200"
-                        data-aos-duration="800"
                         style={{
                             ...(right_column_image && { backgroundImage: `url(${right_column_image})` }),
                         }}>

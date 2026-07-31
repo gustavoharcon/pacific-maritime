@@ -78,22 +78,22 @@ export async function GET() {
                             const externalJobId = req.customFieldGroup?.stringFields?.find(f => f.nameCode?.codeValue === 'ExternalJobID')?.stringValue || '';
                             const link = `https://workforcenow.cloud.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=956bb2e1-0435-4211-ae80-2d83002ae0aa&ccId=19000101_000001&jobId=${externalJobId}&source=IN&lang=en_US`;
 
-                            const salaryRange = req.customFieldGroup?.stringFields?.find(f => f.nameCode?.codeValue === 'SalaryRange')?.stringValue || '';
-                            const workLevel = req.workLevelCode?.shortName || 'Full Time';
-                            const location = req.requisitionLocations?.[0]?.nameCode?.shortName?.trim() || 'San Diego, CA, US';
+                            // const salaryRange = req.customFieldGroup?.stringFields?.find(f => f.nameCode?.codeValue === 'SalaryRange')?.stringValue || '';
+                            // const workLevel = req.workLevelCode?.shortName || 'Full Time';
+                            // const location = req.requisitionLocations?.[0]?.nameCode?.shortName?.trim() || 'San Diego, CA, US';
 
-                            const description = extractDescription(detail.requisitionDescription);
+                            // const description = extractDescription(detail.requisitionDescription);
 
-                            const icons = [
-                                { icon: 'location', description: location },
-                                { icon: 'briefcase', description: workLevel }
-                            ];
+                            // const icons = [
+                            //     { icon: 'location', description: location },
+                            //     { icon: 'briefcase', description: workLevel }
+                            // ];
 
-                            if (salaryRange) {
-                                // Clean up salary text slightly (e.g. trim whitespace)
-                                const cleanSalary = salaryRange.trim().replace(/\s+/g, ' ');
-                                icons.push({ icon: 'dollar', description: cleanSalary });
-                            }
+                            // if (salaryRange) {
+                            //     // Clean up salary text slightly (e.g. trim whitespace)
+                            //     const cleanSalary = salaryRange.trim().replace(/\s+/g, ' ');
+                            //     icons.push({ icon: 'dollar', description: cleanSalary });
+                            // }
 
                             return {
                                 title: req.requisitionTitle,
@@ -127,7 +127,6 @@ export async function GET() {
             icons: [
                 { icon: "location", description: "San Diego, CA, US" },
                 { icon: "briefcase", description: "Full Time" },
-                { icon: "dollar", description: "23 To 25 (USD) Hourly" }
             ]
         },
         {
@@ -137,7 +136,6 @@ export async function GET() {
             icons: [
                 { icon: "location", description: "San Diego, CA, US" },
                 { icon: "briefcase", description: "Full Time" },
-                { icon: "dollar", description: "Up to 17.75 (USD) Hourly" }
             ]
         },
         {
@@ -147,7 +145,6 @@ export async function GET() {
             icons: [
                 { icon: "location", description: "San Diego, CA, US" },
                 { icon: "briefcase", description: "Full Time" },
-                { icon: "dollar", description: "17.75 To 20 (USD) Hourly" }
             ]
         },
         {
@@ -157,7 +154,6 @@ export async function GET() {
             icons: [
                 { icon: "location", description: "San Diego, CA, US" },
                 { icon: "briefcase", description: "Full Time" },
-                { icon: "dollar", description: "19 To 25 (USD) Hourly" }
             ]
         },
         {
@@ -167,7 +163,6 @@ export async function GET() {
             icons: [
                 { icon: "location", description: "San Diego, CA, US" },
                 { icon: "briefcase", description: "Full Time" },
-                { icon: "dollar", description: "17.75 To 19.00 (USD) Hourly" }
             ]
         },
         {
@@ -177,7 +172,6 @@ export async function GET() {
             icons: [
                 { icon: "location", description: "San Diego, CA, US" },
                 { icon: "briefcase", description: "Full Time" },
-                { icon: "dollar", description: "20.00 To 25.00 (USD) Hourly" }
             ]
         },
         {
@@ -187,7 +181,6 @@ export async function GET() {
             icons: [
                 { icon: "location", description: "San Diego, CA, US" },
                 { icon: "briefcase", description: "Full Time" },
-                { icon: "dollar", description: "18.00 To 20.00 (USD) Hourly" }
             ]
         },
         {
@@ -197,7 +190,6 @@ export async function GET() {
             icons: [
                 { icon: "location", description: "San Diego, CA, US" },
                 { icon: "briefcase", description: "Full Time" },
-                { icon: "dollar", description: "17.75 To 17.75 (USD) Hourly" }
             ]
         },
         {
@@ -207,7 +199,6 @@ export async function GET() {
             icons: [
                 { icon: "location", description: "San Diego, CA, US" },
                 { icon: "briefcase", description: "Full Time" },
-                { icon: "dollar", description: "17.75 To 17.75 (USD) Hourly" }
             ]
         }
     ];

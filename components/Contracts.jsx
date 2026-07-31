@@ -11,30 +11,16 @@ const Contracts = ({ data }) => {
                 <TopText data={top_text} />
             </div>
             <div className="column">
-                <p
-                    className="description"
-                    data-aos="fade-up"
-                    data-aos-duration="800"
-                    data-aos-easing="ease-in-out"
-                >
+                <p className="description">
                     {contracts_text.description}
                 </p>
-                <h4
-                    className="title"
-                    data-aos="fade-up"
-                    data-aos-duration="800"
-                    data-aos-easing="ease-in-out"
-                >
+                <h4 className="title">
                     {contracts_text.title}
                 </h4>
                 {contracts_text.contracts.map((contract, index) => (
                     <div
                         key={index}
                         className="contract"
-                        data-aos="fade-up"
-                        data-aos-delay={index * 100}
-                        data-aos-duration="800"
-                        data-aos-easing="ease-in-out"
                     >
                         <p className="description">{contract.description}</p>
                         <p className="number">Contract #: {contract.number}</p>
@@ -45,13 +31,7 @@ const Contracts = ({ data }) => {
                     </div>
                 ))}
                 {buttons && (
-                    <div
-                        className="buttons"
-                        data-aos="fade-up"
-                        data-aos-delay={contracts_text.contracts.length * 100}
-                        data-aos-duration="800"
-                        data-aos-easing="ease-in-out"
-                    >
+                    <div className="buttons">
                         {buttons.map((button, index) => (
                             <Link href={button.link} key={index} className={button.button_style}>
                                 {button.text}

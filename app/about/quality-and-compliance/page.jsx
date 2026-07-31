@@ -33,12 +33,12 @@ const QualityAndCompliancePage = () => {
             </section>
             <section className="faqs-section">
                 <div className="container">
-                    <div className="row">
+                    {/* <div className="row">
                         <div className="col">
                             <TopText data={faqsSection.top_text} />
                             <FaqList data={faqsSection} />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="row">
                         <div className="col">
                             <TopText data={faqsSection.call_to_action} />
@@ -46,7 +46,6 @@ const QualityAndCompliancePage = () => {
                     </div>
                 </div>
             </section>
-            <CallToAction />
         </div>
     )
 }

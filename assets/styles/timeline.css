@@ -13,15 +13,7 @@
         bottom: -5px;
         width: 2px;
         background-color: var(--color-text, #010101);
-        transform: translateX(-50%) translateY(30px);
-        opacity: 0;
-        transition: opacity 800ms ease-out, transform 800ms ease-out;
-        will-change: transform, opacity;
-    }
-
-    &.aos-animate::before {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
+        transform: translateX(-50%);
     }
 
     .timeline-items {

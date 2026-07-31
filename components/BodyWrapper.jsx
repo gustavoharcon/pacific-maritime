@@ -1,22 +1,9 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const BodyWrapper = ({ children }) => {
   const pathname = usePathname();
-
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      offset: 20,
-      once: false,
-      mirror: true,
-      easing: "ease-out-quad",
-    });
-  }, []);
 
   const getPageClass = (path) => {
     if (!path || path === "/") {

@@ -21,19 +21,11 @@ const TopTextThreeColumns = ({ className = "", data = {} }) => {
                                 column.image !== null && column.image !== undefined ?
                                     <div className="background-image"
                                         style={{ backgroundImage: `url(${column.image})` }}
-                                        data-aos="fade-up"
-                                        data-aos-delay={index * 100}
-                                        data-aos-duration="800"
-                                        data-aos-easing="ease-in-out"
                                     >
 
                                     </div> :
                                     <div
                                         className="icon-container"
-                                        data-aos="fade-up"
-                                        data-aos-delay={index * 100}
-                                        data-aos-duration="800"
-                                        data-aos-easing="ease-in-out"
                                     ><div className="icon">{getIcon(column.icon)}</div></div>
 
                             }

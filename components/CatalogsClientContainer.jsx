@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import CatalogsInteractive from "./CatalogsInteractive";
+// import CatalogsInteractive from "./CatalogsInteractive";
 import ShipboardFurnitureCatalog from "./ShipboardFurnitureCatalog";
 import CatalogOverlay from "./CatalogOverlay";
 
@@ -10,7 +10,7 @@ const CatalogsClientContainer = ({ catalogsData }) => {
 
     return (
         <>
-            <CatalogsInteractive data={catalogsData} onOpenOverlay={setOverlayItem} />
+            {/* <CatalogsInteractive data={catalogsData} onOpenOverlay={setOverlayItem} /> */}
             <ShipboardFurnitureCatalog data={catalogsData.shipboard_furniture_catalog} onOpenOverlay={setOverlayItem} />
             {overlayItem && (
                 <CatalogOverlay item={overlayItem} onClose={() => setOverlayItem(null)} />

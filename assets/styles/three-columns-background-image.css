@@ -59,6 +59,29 @@
                     }
                 }
             }
+
+            &.no-image {
+                border: 2px solid var(--color-text);
+
+                .column-text-container {
+                    >.text-area {
+
+                        .icon-wrapper {
+                            color: var(--color-text);
+                        }
+
+                        >.small-title,
+                        >.title,
+                        >.subtitle {
+                            color: var(--color-text);
+                        }
+
+                        >.subtitle {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 

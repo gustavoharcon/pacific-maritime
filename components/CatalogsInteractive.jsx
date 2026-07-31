@@ -1,14 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FiFolder, FiSettings, FiChevronDown } from "react-icons/fi";
 import { TbDoor } from "react-icons/tb";
 import { LiaShipSolid } from "react-icons/lia";
 import { TfiLocationArrow } from "react-icons/tfi";
 import { LuSofa } from "react-icons/lu";
 import TopText from "./Text/TopText";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 
 const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
@@ -22,9 +20,7 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
     // State for category selection (Design 505)
     const [activeCategory, setActiveCategory] = useState("ALL FILES");
 
-    useEffect(() => {
-        AOS.refresh();
-    }, [activeCatalogId, activeCategory]);
+
 
     const handleCatalogChange = (id) => {
         setActiveCatalogId(id);
@@ -66,11 +62,7 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
         >
             <section className="catalogs-tabs-section">
                 <div className="container">
-                    <div className="catalog-card"
-                        data-aos="fade-up"
-                        data-aos-delay="200"
-                        data-aos-duration="800"
-                    >
+                    <div className="catalog-card">
                         {/* Left side details */}
                         <div className="catalog-details" key={activeCatalogId}>
                             <div className="icon-wrapper">
@@ -100,7 +92,7 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                                     className={`tab-item-btn ${activeCatalogId === catalog.id ? "active" : ""}`}
                                     onClick={() => handleCatalogChange(catalog.id)}
                                 >
-                                    <span className="right-icon" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800"><TfiLocationArrow /></span>
+                                    <span className="right-icon"><TfiLocationArrow /></span>
                                     {catalog.tab_name}
                                 </button>
                             ))}
@@ -113,7 +105,6 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                 <div className="container">
                     <TopText 
                         key={activeCatalogId}
-                        aosAnimation="fade-left"
                         data={{
                             small_title: "Files",
                             title: activeCatalog.tab_name + " Individual Files"
@@ -121,7 +112,7 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                     />
 
                     <div className="files-layout">
-                        <aside className="files-sidebar" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <aside className="files-sidebar">
                             {(activeCatalog.categories || []).map((category, idx) => (
                                 <button
                                     key={idx}
@@ -140,9 +131,6 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                                         <div
                                             key={idx}
                                             className="file-card"
-                                            data-aos="fade-up"
-                                            data-aos-delay={Math.min(idx * 50, 300)}
-                                            data-aos-duration="600"
                                         >
                                             <div className="thumbnail-box">
                                                 <img src={file.image} alt={file.title} />

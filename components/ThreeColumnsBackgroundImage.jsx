@@ -7,7 +7,7 @@ const ThreeColumnsBackgroundImage = ({ className = "", data = {} }) => {
         <div className={`three-columns-background-image ${className}`}>
             <div className="columns-row">
                 {columns.map((column, index) => (
-                    <div key={index} className={`col ${column?.shadow ? "shadow" : ""}`} style={{ backgroundImage: `url(${column.image})` }}>
+                    <div key={index} className={`col ${column?.shadow ? "shadow" : ""} ${column?.image ? "" : "no-image"}`} style={{ backgroundImage: `url(${column.image})` }}>
                         <ColumnTextContainer data={column} />
                     </div>
                 ))}

@@ -17,7 +17,6 @@ const CatalogsPage = () => {
         <>
             <HeroSection data={catalogsData.hero_section} />
             <CatalogsClientContainer catalogsData={catalogsData} />
-            <CallToAction />
         </>
     )
 }

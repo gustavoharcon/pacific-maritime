@@ -49,12 +49,7 @@ const EquipmentSection = ({ data, sectionKey }) => {
 
                 {/* Tabs Selectors if included */}
                 {tabs_included && tabs.length > 0 && (
-                    <div
-                        className="tabs-nav-wrapper"
-                        data-aos="fade-up"
-                        data-aos-duration="800"
-                        data-aos-delay="100"
-                    >
+                    <div className="tabs-nav-wrapper">
                         <div className="tabs-nav">
                             {tabs.map((tab, idx) => (
                                 <a
@@ -73,11 +68,7 @@ const EquipmentSection = ({ data, sectionKey }) => {
                 <div className={`two-columns-grid ${image_side === "right" ? "grid-reversed" : ""}`}>
                     {/* Image Column */}
                     {imageSrc && (
-                        <div
-                            className="column column-image"
-                            data-aos="fade-up"
-                            data-aos-duration="800"
-                        >
+                        <div className="column column-image">
                             <div className={`image-wrapper ${top_text_included === false ? "image-wrapper-two" : ""}`}>
                                 <img src={imageSrc} alt={tabs_included ? activeTab?.title : top_text?.title || "Equipment"} />
                             </div>
@@ -85,12 +76,7 @@ const EquipmentSection = ({ data, sectionKey }) => {
                     )}
 
                     {/* Content Column */}
-                    <div
-                        className="column column-content"
-                        data-aos="fade-up"
-                        data-aos-duration="800"
-                        data-aos-delay="100"
-                    >
+                    <div className="column column-content">
                         {contentBlocks.map((block, bIdx) => (
                             <div key={bIdx} className={`content-block ${column_two_top_text_position === 'bottom' ? 'buttons-bottom' : ''} ${items_with_bottom_border == true ? 'items-with-bottom-border' : ''}`}>
                                 {block && <TopText data={block} />}

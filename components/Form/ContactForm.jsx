@@ -122,7 +122,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="contact-form" noValidate>
       {errorMsg && <div className="error-alert">{errorMsg}</div>}
-      
+
       <div className="form-row-2">
         <div className="form-group">
           <label htmlFor="firstName">First name</label>
@@ -231,7 +231,7 @@ export default function ContactForm() {
             />
             Sales inquiry
           </label>
-          
+
           <label className="radio-option">
             <input
               type="radio"
@@ -287,7 +287,7 @@ export default function ContactForm() {
         )}
       </div>
 
-      <div className="form-group checkbox-group">
+      {/* <div className="form-group checkbox-group">
         <label className="checkbox-wrapper">
           <input
             type="checkbox"
@@ -301,7 +301,7 @@ export default function ContactForm() {
         {validationErrors.acceptTerms && (
           <span className="error-text">{validationErrors.acceptTerms}</span>
         )}
-      </div>
+      </div> */}
 
       <div className="form-actions">
         <button

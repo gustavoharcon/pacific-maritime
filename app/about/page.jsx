@@ -27,7 +27,7 @@ const AboutPage = () => {
     return (
         <>
             <HeroSection data={aboutData.hero_section} />
-            <section className="milestones-section">
+            {/* <section className="milestones-section">
                 <div className="container">
                     <div className="row">
                         <div className="col">
@@ -40,7 +40,7 @@ const AboutPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <TopTextThreeColumns data={capabilities} className="capabilities-section" />
             <section className="our-team-section">
                 <div className="container">

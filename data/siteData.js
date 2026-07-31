@@ -99,12 +99,12 @@ const siteData = [
             {
                 "menu_name": "Catalogs & Downloads",
                 "link": "/catalogs-and-downloads",
-                "sub_menu": [
-                    {
-                        "text": "Equipment List",
-                        "link": "/about/equipment-list"
-                    }
-                ],
+                // "sub_menu": [
+                //     {
+                //         "text": "Equipment List",
+                //         "link": "/about/equipment-list"
+                //     }
+                // ],
             },
             {
                 "menu_name": "Contact",
@@ -141,11 +141,6 @@ const siteData = [
                         "text": "Request quote",
                         "link": "/request-quote",
                         "button_style": "btn btn--primary btn-animation-four"
-                    },
-                    {
-                        "text": "View products",
-                        "link": "/products",
-                        "button_style": "btn btn-secondary btn-animation-two"
                     }
                 ],
             },
@@ -192,44 +187,20 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784583769/birthing-01_z0ngrs.png",
+                        "image": "",
                         "small_title": "Interiors",
                         "title": "Shipboard interiors and berthing",
                         "subtitle": "Stateroom modules and crew berthing systems.",
-                        "buttons": [
-                            {
-                                "text": "View Products",
-                                "link": "/products",
-                                "button_style": "btn btn-secondary btn-animation-two",
-                                "icon": "arrow-right"
-                            }
-                        ]
                     },
                     {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784584007/modular-furniture_o66smf.png",
+                        "image": "",
                         "title": "Modular furniture and doors",
                         "subtitle": "NAVY-grade metal joiner doors and frames. Dining, lounge and office furniture systems.",
-                        "buttons": [
-                            {
-                                "text": "View Products",
-                                "link": "/products",
-                                "button_style": "btn btn-secondary btn-animation-two",
-                                "icon": "arrow-right"
-                            }
-                        ]
                     },
                     {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_400/v1784584387/shipyard-integration_iuvyw9.png",
+                        "image": "",
                         "title": "SHIPYARD INTEGRATION ",
                         "subtitle": "Pre-assembled stateroom modules and hardware staged for rapid deployment. Palletized, secured, and ready. ",
-                        "buttons": [
-                            {
-                                "text": "View Products",
-                                "link": "",
-                                "button_style": "btn btn-secondary btn-animation-two",
-                                "icon": "arrow-right"
-                            }
-                        ]
                     }
                 ]
             },
@@ -241,19 +212,17 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/design_j6acgz.png",
+                        "top_image": "",
                         "title": "DESIGN",
-                        // "subtitle": "CAD modeling, material specs, revision control. Typical lead time is 2 to 4 weeks."
                         "subtitle": "CAD modeling, material specs, revision control."
                     },
                     {
-                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/welding-frame_sazu6s.png",
+                        "top_image": "",
                         "title": "FABRICATE",
-                        // "subtitle": "CNC cutting, welding, and finishing in our San Diego facility. Typical lead time is 6 to 12 weeks."
                         "subtitle": "CNC cutting, welding, and finishing in our San Diego facility."
                     },
                     {
-                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784649915/forklift-lifting-pallet-in-the-port-area-of-san-diego_fz49oa.png",
+                        "top_image": "",
                         "title": "DELIVER",
                         "subtitle": "Components are palletized, tightly wrapped, and staged for immediate freight dispatch."
                     }
@@ -267,7 +236,7 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/naval-lockers-and-cabinets_dsaabp.png",
+                        "image": "",
                         "image_description": "Naval Lockers & Cabinets",
                         "title": "Naval Lockers & Cabinets",
                         "subtitle": "Fabricated to conform to stringent U.S. Navy specifications. Configurations include ammo lockers, file cabinets, dressers, and specialized industrial stowage.",
@@ -276,18 +245,10 @@ const siteData = [
                             "Steel",
                             "Shock Grade",
                             "MIL-SPEC"
-                        ],
-                        "buttons": [
-                            {
-                                "text": "Download CAD",
-                                "link": "/catalogs-and-downloads",
-                                "button_style": "btn btn-black-outline btn-animation-two",
-                                "icon": "arrow-right"
-                            }
                         ]
                     },
                     {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/stateroom-and-berthing_y1mhou.png",
+                        "image": "",
                         "image_description": "STATEROOM & BERTHING",
                         "title": "STATEROOM & BERTHING",
                         "subtitle": "Complete marine accommodations built with superior workmanship. Engineered to match marine standard drawings and your exact conceptual sketches.",
@@ -296,18 +257,10 @@ const siteData = [
                             "Modular",
                             "Habitability",
                             "Integrated"
-                        ],
-                        "buttons": [
-                            {
-                                "text": "Download CAD",
-                                "link": "/catalogs-and-downloads",
-                                "button_style": "btn btn-black-outline btn-animation-two",
-                                "icon": "arrow-right"
-                            }
                         ]
                     },
                     {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_250/v1784654304/metal-joiner-doors_toycqp.png",
+                        "image": "",
                         "image_description": "Metal Joiner Doors",
                         "title": "Metal Joiner Doors",
                         "subtitle": "Custom manufactured shipboard doors designed to satisfy all marine environments. Supported by our dedicated technical catalog for rapid procurement.",
@@ -316,14 +269,6 @@ const siteData = [
                             "Watertight",
                             "Joiner",
                             "Primed"
-                        ],
-                        "buttons": [
-                            {
-                                "text": "Download CAD",
-                                "link": "/catalogs-and-downloads",
-                                "button_style": "btn btn-black-outline btn-animation-two",
-                                "icon": "arrow-right"
-                            }
                         ]
                     }
                 ]
@@ -340,6 +285,7 @@ const siteData = [
                 "description": "About"
             },
             "hero_section": {
+                "max_width": "768",
                 "title": "Built for the sea since 1979",
                 "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet.",
                 "buttons": [
@@ -558,7 +504,7 @@ const siteData = [
                 "description": "Precision fabrication and comprehensive staging from our San Diego facility. We turn Navy-grade specifications into ready-to-deploy shipboard interiors."
             },
             "hero_section": {
-                "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/h_810/v1785167914/computer-screen-with-cad-design_sgv7su.png",
+                "max_width": "768",
                 "title": "Manufacturing Capabilities and Equipment",
                 "subtitle": "Precision fabrication and comprehensive staging from our San Diego facility. We turn Navy-grade specifications into ready-to-deploy shipboard interiors.",
                 "buttons": [
@@ -602,22 +548,22 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "top_background_image": "https://res.cloudinary.com/irwujctd/image/upload/h_160/v1785174339/cad-design-on-computer-screen_aspait.png",
+                        "top_background_image": "",
                         "title": "Design and engineering",
                         "description": "SolidWorks modeling, BOM generation, and a full manufacturability feedback loop before the first cut."
                     },
                     {
-                        "top_background_image": "https://res.cloudinary.com/irwujctd/image/upload/h_160/v1785174338/man-on-laptop-typing-in-spreadsheet-file-coffee-mug-nearby_if952n.png",
+                        "top_background_image": "",
                         "title": "Quote and planning",
                         "description": "RFQ response within 24 hours. Lead time and schedule aligned directly to your project milestones."
                     },
                     {
-                        "top_background_image": "https://res.cloudinary.com/irwujctd/image/upload/h_160/v1785174338/welding_tuqmor.png",
+                        "top_background_image": "",
                         "title": "Fabrication and QC",
                         "description": "Laser, waterjet, CNC, forming, welding, and finishing with in-process inspection using MIE Trak tracking software."
                     },
                     {
-                        "top_background_image": "https://res.cloudinary.com/irwujctd/image/upload/h_160/v1785174338/wrapped-pallets_yc0uk6.png",
+                        "top_background_image": "",
                         "title": "Stage and Dispatch",
                         "description": "We mobilize the crew, complete final acceptance testing, and deliver the full documentation package."
                     },
@@ -641,66 +587,26 @@ const siteData = [
                         "small_title": "Laser",
                         "title": "Mazak Hyper Turbo-X",
                         "subtitle": "High-precision 2D laser with auto load and unload system. Ideal for precision sheet metal parts.",
-                        "buttons": [
-                            {
-                                "text": "Learn more",
-                                "link": "/about/equipment-list/#laser-and-waterjet-cutting",
-                                "button_style": "btn btn-black-outline btn-animation-two"
-                            }
-                        ],
-                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785175376/Mazak-Hyper-Turbo_X_hu2xer.png"
                     },
                     {
                         "small_title": "Waterjet",
                         "title": "Omax 55100",
                         "subtitle": "Abrasive waterjet for complex profiles and composite materials. Closed‑loop digital drives.",
-                        "buttons": [
-                            {
-                                "text": "Learn more",
-                                "link": "/about/equipment-list/#laser-and-waterjet-cutting",
-                                "button_style": "btn btn-black-outline btn-animation-two"
-                            }
-                        ],
-                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/h_171/v1785178784/Omax-55100_vm597j.png"
                     },
                     {
                         "small_title": "Punch",
                         "title": "Amada Vipro 255",
                         "subtitle": "CNC punching for high‑volume sheet metal parts with quick tool change.",
-                        "buttons": [
-                            {
-                                "text": "Learn more",
-                                "link": "/about/equipment-list/#cnc-punching",
-                                "button_style": "btn btn-black-outline btn-animation-two"
-                            }
-                        ],
-                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/h_171/v1785178783/Amada-Vipro-255_irfvbw.png"
                     },
                     {
                         "small_title": "Bend",
                         "title": "Amada RG series",
-                        "subtitle": "CNC bending and press brake for accurate forming of enclosures and frames.",
-                        "buttons": [
-                            {
-                                "text": "Learn more",
-                                "link": "/about/equipment-list/#cnc-punching",
-                                "button_style": "btn btn-black-outline btn-animation-two"
-                            }
-                        ],
-                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/h_171/v1785178784/Amada-RG-Series_eyvolc.png"
+                        "subtitle": "CNC bending and press brake for accurate forming of enclosures and frames."
                     },
                     {
                         "small_title": "Shear",
                         "title": "Amada shears",
-                        "subtitle": "CNC shearing for clean, square cuts on sheet stock up to 10 gauge.",
-                        "buttons": [
-                            {
-                                "text": "Learn more",
-                                "link": "/about/equipment-list/#cnc-shearing",
-                                "button_style": "btn btn-black-outline btn-animation-two"
-                            }
-                        ],
-                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/h_171/v1785178784/Amada-Shears_p2huhr.png"
+                        "subtitle": "CNC shearing for clean, square cuts on sheet stock up to 10 gauge."
                     },
                 ]
             },
@@ -1417,8 +1323,8 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_650/v1785358735/our-facility_cym6p0.png",
-                        "title": "Our Facility",
+                        "image": "",
+                        "title": "Office",
                         "subtitle": "1790 Dornoch Court, San Diego, CA 92154",
                         "buttons": [
                             {
@@ -1430,7 +1336,7 @@ const siteData = [
                         ]
                     },
                     {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_650/v1785358735/ports-we-serve_c7kugz.png",
+                        "image": "",
                         "title": "Ports we serve",
                         "subtitle": "We deploy installation teams to Pacific Fleet homeports including Pearl Harbor, Yokosuka, and Guam. Contact us for mobilization details."
                     }
@@ -1532,14 +1438,7 @@ const siteData = [
             'hero_section': {
                 "title": "Build your career with pacific maritime industries corp.",
                 "subtitle": "Join a San Diego team that takes pride in every weld, every door, and every stateroom we deliver to the fleet.",
-                "center_text": true,
-                "buttons": [
-                    {
-                        "text": "View open positions",
-                        "link": "#",
-                        "button_style": "btn btn--primary btn-animation-four"
-                    }
-                ]
+                "center_text": true
             },
             "job_openings_section": {
                 "top_text": {
@@ -1557,25 +1456,22 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_650/v1785443351/Toolbox_talk_on_concrete_floor_202607301327_znlqul.jpg",
+                        "image": "",
                         "small_title": "Safety",
                         "title": "Safety first, always",
-                        "subtitle": "OSHA-compliant shop, daily toolbox talks, and a TRIR well below industry average. We invest in your safety gear and training.",
-                        "shadow": true
+                        "subtitle": "OSHA-compliant shop, daily toolbox talks, and a TRIR well below industry average. We invest in your safety gear and training."
                     },
                     {
                         "icon": "drafting-compass",
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_300/v1785443352/Veteran_welder_mentoring_apprentice_202607301327_z8dkqt.jpg",
+                        "image": "",
                         "title": "Grow your skills here",
                         "subtitle": "Company-paid certifications: NAVSEA welding, NDT, crane operator. Cross-training and apprenticeship pathways available.",
-                        "shadow": true
                     },
                     {
                         "icon": "anchor",
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_300/v1785443352/Fabricators_securing_module_on_p__202607301328_vv7kap.jpg",
+                        "image": "",
                         "title": "Local and stable work",
                         "subtitle": "45+ years in San Diego. No out-of-state relocations. We hire locally and promote from within.",
-                        "shadow": true
                     },
                 ]
             },

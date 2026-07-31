@@ -21,7 +21,7 @@ const ColumnsWithIconText = ({ data }) => {
     return (
         <div className="columns-with-icon-text">
             {data.map((column, index) => (
-                <div className="column" key={index} data-aos="fade-up" data-aos-delay={index * 100} data-aos-duration="800" data-aos-easing="ease-in-out">
+                <div className="column" key={index}>
                     <div className="icon-container">
                         {getColumnIcon(column.icon)}
                     </div>

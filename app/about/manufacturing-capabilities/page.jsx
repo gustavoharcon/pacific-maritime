@@ -27,7 +27,7 @@ const ManufacturingCapabilitiesPage = () => {
         <div>
             {/* Hero Section */}
             <HeroSection data={manufacturingData.hero_section} />
-            <TwoColumnsLeftSideImage data={twoColumnsLeftSidImageData} />
+            {/* <TwoColumnsLeftSideImage data={twoColumnsLeftSidImageData} /> */}
             <section className="workflow-section">
                 <div className="container">
                     <div className="row">
@@ -49,8 +49,8 @@ const ManufacturingCapabilitiesPage = () => {
                     </div>
                 </div>
             </section>
-            <ProductionCapacity data={productionCapacityData} />
-            <section className="quality-section">
+            {/* <ProductionCapacity data={productionCapacityData} /> */}
+            {/* <section className="quality-section">
                 <div className="container">
                     <div className="row">
                         <div className="col">
@@ -63,8 +63,7 @@ const ManufacturingCapabilitiesPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-            <CallToAction />
+            </section> */}
         </div>
     )
 }

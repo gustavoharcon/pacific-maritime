@@ -1,23 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import "aos/dist/aos.css";
 
 const HeroTextContainer = ({ data }) => {
-    const { title, subtitle, buttons, center_text } = data;
+    const { title, subtitle, buttons, center_text, max_width } = data;
 
     return (
-        <div className={`hero-text-container ${center_text === true ? "center-text" : ""}`}>
+        <div className={`hero-text-container ${center_text === true ? "center-text" : ""} ${max_width ? `max-width` : ""}`}>
             {
                 title && (
-                    <h1 className="title" data-aos="fade-up" data-aos-duration="800">
+                    <h1 className="title">
                         {title}
                     </h1>
                 )
             }
             {
                 subtitle && (
-                    <p className="subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                    <p className="subtitle">
                         {subtitle}
                     </p>
                 )

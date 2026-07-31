@@ -2,16 +2,11 @@
 
     .hero-section {
         >.container {
-
             >.row {
                 >.col {
                     width: 100%;
                     padding-right: var(--container-padding);
                     padding-left: var(--container-padding);
-
-                    .hero-text-container {
-                        max-width: 768px;
-                    }
                 }
             }
         }
@@ -48,6 +43,10 @@
         .column-text-container {
             >.text-area {
                 margin-bottom: 0;
+
+                .icon-wrapper {
+                    display: none;
+                }
             }
         }
     }

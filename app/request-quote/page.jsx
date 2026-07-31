@@ -44,7 +44,6 @@ const RequestQuotePage = () => {
                     </div>
                 </div>
             </div>
-            <CallToAction />
         </>
     )
 }

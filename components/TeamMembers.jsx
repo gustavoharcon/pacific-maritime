@@ -15,10 +15,10 @@ const TeamMembers = ({ data }) => {
         <div className="team-members">
             {data.map((teamMember, index) => (
                 <div key={index} className="row">
-                    <div className="col" data-aos="fade-up" data-aos-delay={index * 100} data-aos-duration="800" data-aos-easing="ease-in-out">
+                    <div className="col">
                         <img src={teamMember.image} alt={teamMember.name} />
                     </div>
-                    <div className="col" data-aos="fade-up" data-aos-delay={index * 100} data-aos-duration="800" data-aos-easing="ease-in-out">
+                    <div className="col">
                         <h2 className="name">{teamMember.name}</h2>
                         <h3 className="position">{teamMember.position}</h3>
                         <p className="description">{teamMember.description}</p>
