@@ -13,6 +13,14 @@
         background-color: var(--color-white);
     }
 
+    .equipment-section {
+        .text-area {
+            .subtitle {
+                margin-bottom: 0;
+            }
+        }
+    }
+
     .quality-section {
         .two-columns-left-side-image-section {
             border: 2px solid var(--color-text);

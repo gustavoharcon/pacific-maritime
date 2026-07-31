@@ -15,7 +15,7 @@ export async function generateMetadata() {
 const CatalogsPage = () => {
     return (
         <>
-            <HeroSection data={catalogsData.hero_section} />
+            {/* <HeroSection data={catalogsData.hero_section} /> */}
             <CatalogsClientContainer catalogsData={catalogsData} />
         </>
     )

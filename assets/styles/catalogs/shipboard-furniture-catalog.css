@@ -85,6 +85,7 @@
     .item-cell {
         width: 25%;
         text-align: center;
+        text-wrap: balance;
     }
 
     .link-cell {

@@ -48,7 +48,8 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
 
                     {/* Table Body */}
                     <div className="sfc-table-body">
-                        {displayedSfcRows.map((row, idx) => (
+                        {/* {displayedSfcRows.map((row, idx) => ( */}
+                        {rows.map((row, idx) => (
                             <div
                                 key={idx}
                                 className="sfc-table-row"
@@ -77,7 +78,7 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
                 </div>
 
                 {/* View More Button */}
-                {rows.length > 4 && (
+                {/* {rows.length > 4 && (
                     <div className="sfc-action-box">
                         <button
                             className="btn btn-secondary btn-animation-two"
@@ -86,7 +87,7 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
                             {isSfcExpanded ? "View Less" : "View More"}
                         </button>
                     </div>
-                )}
+                )} */}
             </div>
         </section>
     );
