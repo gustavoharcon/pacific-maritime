@@ -1,0 +1,15 @@
+.blog-page-content {
+    .latest-posts-from-pmi {
+        padding: 112px 0;
+        background-color: var(--color-accent);
+
+        .top-text {
+
+            .small-title,
+            .title,
+            .subtitle {
+                color: var(--color-white);
+            }
+        }
+    }
+}

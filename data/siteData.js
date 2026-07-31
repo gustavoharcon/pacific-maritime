@@ -59,10 +59,6 @@ const siteData = [
                 "menu_url": "/catalogs-and-downloads"
             },
             {
-                "menu_name": "Blog",
-                "menu_url": "/blog"
-            },
-            {
                 "menu_name": "Careers",
                 "menu_url": "/careers",
                 "button_style": "secondary"
@@ -124,10 +120,10 @@ const siteData = [
                     }
                 ],
             },
-            {
-                "menu_name": "Blog & News",
-                "link": "/blog"
-            }
+            // {
+            //     "menu_name": "Blog & News",
+            //     "link": "/blog"
+            // }
         ]
     },
     {
@@ -1588,6 +1584,25 @@ const siteData = [
                     "small_title": "Apply",
                     "title": "Join the crew",
                     "subtitle": "Fill out the form and our hiring manager will reach out within 2 business days."
+                }
+            }
+        },
+        "blog_page": {
+            "meta_data": {
+                "title": "Blog",
+                "description": "Blog"
+            },
+            "hero_section": {
+                "title": "Latest posts and updates",
+                "subtitle": "Industry updates, product announcements, and project highlights from Pacific Maritime Industries Corporation. We are San Diego's shipboard interior specialists.",
+                "center_text": true,
+                "buttons": []
+            },
+            "latest_posts_from_pmi": {
+                "top_text": {
+                    "small_title": "Insights",
+                    "title": "Latest from pacific maritime industries corp.",
+                    "align_left": true
                 }
             }
         }
