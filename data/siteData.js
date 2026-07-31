@@ -1399,25 +1399,29 @@ const siteData = [
                         "section_title": "Enlisted Berthing Spaces",
                         "item": "Container, Stowage, For Emergency Escape Breathing Device (EEBD)",
                         "file_link": "B-2B-4",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1785528235/B-2B-4_eol560.jpg"
+
                     },
                     {
                         "category": "Furnishings - Staterooms and Berthing Spaces",
                         "section_title": "Enlisted Berthing Spaces",
                         "item": "Lockers, Soiled Clothes",
                         "file_link": "B-2B-5",
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1785528235/B-2B-4_eol560.jpg"
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1785528288/B-2B-5_vl5itc.jpg"
                     },
                     {
                         "category": "Furnishings - Staterooms and Berthing Spaces",
                         "section_title": "Enlisted Berthing Spaces",
                         "item": "Locker, Clothes, Type A",
                         "file_link": "B-2B-6",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1785528236/B-2B-6_dbur3l.jpg"
                     },
                     {
                         "category": "Furnishings - Staterooms and Berthing Spaces",
                         "section_title": "Enlisted Berthing Spaces",
                         "item": "Locker, Overcoat, Types E and F and, Uniform, types G and H, CPO and Marine",
                         "file_link": "B-2B-7",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_200/v1785528260/B-2B-7_zkmown.jpg"
                     },
                     {
                         "category": "Furnishings - Staterooms and Berthing Spaces",
