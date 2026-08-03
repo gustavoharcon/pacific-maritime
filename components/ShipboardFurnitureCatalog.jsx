@@ -53,7 +53,12 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
                             <div
                                 key={idx}
                                 className="sfc-table-row"
-                                onClick={() => onOpenOverlay && onOpenOverlay(row)}
+                                onClick={() => {
+                                    if (row.image) {
+                                        const downloadUrl = row.image.replace("/w_200/", "/w_1200/");
+                                        window.open(downloadUrl, "_blank", "noopener,noreferrer");
+                                    }
+                                }}
                             >
                                 <div className="body-cell category-cell">{row.category}</div>
                                 <div className="body-cell section-cell">{row.section_title}</div>
