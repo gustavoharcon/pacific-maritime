@@ -6,7 +6,7 @@ const HeroTextContainer = ({ data }) => {
     const { title, subtitle, buttons, center_text, max_width } = data;
 
     return (
-        <div className={`hero-text-container ${center_text === true ? "center-text" : ""} ${max_width ? `max-width` : ""}`}>
+        <div className={`hero-text-container ${center_text === true ? "center-text" : ""} ${max_width ? `max-width-${max_width}` : ""}`}>
             {
                 title && (
                     <h1 className="title">

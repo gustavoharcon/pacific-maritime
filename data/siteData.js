@@ -281,8 +281,8 @@ const siteData = [
                 "description": "About"
             },
             "hero_section": {
-                "max_width": "768",
-                "title": "Built for the sea since 1979",
+                "max_width": "991",
+                "title": "The mark of quality in shipboard furniture",
                 "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet.",
                 "buttons": [
                     {
@@ -556,7 +556,7 @@ const siteData = [
                     {
                         "top_background_image": "",
                         "title": "Fabrication and QC",
-                        "description": "Laser, waterjet, CNC, forming, welding, and finishing with in-process inspection using MIE Trak tracking software."
+                        "description": "Laser, waterjet, CNC, forming, welding, and finishing with in-process inspection using an ERP software system."
                     },
                     {
                         "top_background_image": "",

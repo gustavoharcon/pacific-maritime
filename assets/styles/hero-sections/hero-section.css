@@ -29,8 +29,12 @@
                             }
                         }
 
-                        &.max-width {
+                        &.max-width-768 {
                             max-width: 768px;
+                        }
+
+                        &.max-width-991 {
+                            max-width: 991px;
                         }
                     }
                 }

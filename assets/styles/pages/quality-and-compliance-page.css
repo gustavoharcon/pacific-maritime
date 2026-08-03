@@ -2,6 +2,25 @@
     .certifications-section {
         padding: 112px 0;
         background-color: var(--color-background);
+
+        .left-side-column-and-four-items {
+            .item {
+                border: unset;
+            }
+
+            .column-text-container {
+                padding: 0;
+            }
+
+            .bottom-image-container {
+                margin-top: 32px;
+
+                img {
+                    border: 2px solid var(--color-text);
+                    border-radius: 16px;
+                }
+            }
+        }
     }
 
     .faqs-section {
