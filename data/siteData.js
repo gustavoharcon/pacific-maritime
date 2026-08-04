@@ -602,7 +602,7 @@ const siteData = [
                     {
                         "small_title": "Waterjet",
                         "title": "OMAX Waterjet",
-                        "subtitle": "A precision abrasive waterjet cutting system (likely the OMAX 55100 series noted in your equipment list) utilizing the Intelli-TRAX linear drive technology.",
+                        "subtitle": "A precision abrasive waterjet cutting system utilizing the Intelli-TRAX linear drive technology.",
                         "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785875981/OMAX_Waterjet_d4keut.jpg"
                     },
                     {
