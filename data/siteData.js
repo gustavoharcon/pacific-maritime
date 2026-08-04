@@ -2721,7 +2721,7 @@ const siteData = [
                 },
                 "certifications_list": [
                     {
-                        "small_title": "ISO",
+                        "small_title": "Quality",
                         "title": "ISO 9001:2015",
                         "subtitle": "Pacific Maritime Industries Corp. has been assessed and certified as meeting the requirements of ISO 9001:2015. Manufacturer of Sheet Metal Products. Initial certification was issued on January 31, 2019. Expires on January 30, 2028.",
                         "buttons": [
