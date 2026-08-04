@@ -1,5 +1,18 @@
 
-import { MdOutlineEngineering, MdOutlineFactory, MdOutlineControlCamera, MdOutlineLocalPhone, MdOutlineScreenshotMonitor, MdCompress, MdOutlineBlinds, MdOutlineMail, MdKeyboardArrowRight, MdOutlineAttachMoney, MdOutlineWorkOutline, MdAnchor } from "react-icons/md";
+import {
+    MdOutlineEngineering,
+    MdOutlineFactory,
+    MdOutlineControlCamera,
+    MdOutlineLocalPhone,
+    MdOutlineScreenshotMonitor,
+    MdCompress,
+    MdOutlineBlinds,
+    MdOutlineMail,
+    MdKeyboardArrowRight,
+    MdOutlineAttachMoney,
+    MdOutlineWorkOutline,
+    MdAnchor
+} from "react-icons/md";
 import { LuDroplet, LuZap } from "react-icons/lu";
 import { FaPlusMinus } from "react-icons/fa6";
 import { FiClock } from "react-icons/fi";
