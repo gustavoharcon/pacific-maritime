@@ -11,18 +11,25 @@ import {
     MdKeyboardArrowRight,
     MdOutlineAttachMoney,
     MdOutlineWorkOutline,
-    MdAnchor
+    MdAnchor,
+    MdOutlineVerified,
+    MdOutlineHistory,
+    MdPrecisionManufacturing,
+    MdOutlineRequestQuote
 } from "react-icons/md";
 import { LuDroplet, LuZap } from "react-icons/lu";
-import { FaPlusMinus } from "react-icons/fa6";
+import { FaPlusMinus, FaBoxesPacking } from "react-icons/fa6";
 import { FiClock } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import { RiCompasses2Fill } from "react-icons/ri";
+import { HiOutlineClipboardDocumentCheck } from "react-icons/hi2";
 
 import Link from "next/link";
 
 export const getIcon = (iconName) => {
     switch (iconName) {
+        case "manufacturing":
+            return <MdPrecisionManufacturing className="icon" />;
         case "engineering":
             return <MdOutlineEngineering className="icon" />;
         case "fabrication":
@@ -66,6 +73,16 @@ export const getIcon = (iconName) => {
             return <RiCompasses2Fill className="icon" />;
         case "anchor":
             return <MdAnchor className="icon" />;
+        case "verified":
+            return <MdOutlineVerified className="icon" />;
+        case "history":
+            return <MdOutlineHistory className="icon" />;
+        case "boxes":
+            return <FaBoxesPacking className="icon" />;
+        case "request-quote":
+            return <MdOutlineRequestQuote className="icon" />;
+        case "clipboard":
+            return <HiOutlineClipboardDocumentCheck className="icon" />;
         default:
             return null;
     }

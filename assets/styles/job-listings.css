@@ -44,14 +44,11 @@
             font-weight: 700;
             margin: 0;
             color: var(--color-text, #131313);
-            line-height: 1.2;
         }
 
         p {
-            font-size: 16px;
             color: var(--color-neutral-800, #333333);
             margin: 0;
-            line-height: 1.6;
         }
 
         .icons-container {

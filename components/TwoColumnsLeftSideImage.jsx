@@ -4,8 +4,6 @@ import Buttons from "@/components/Buttons/Buttons";
 const TwoColumnsLeftSideImage = ({ data, className = "" }) => {
     const { top_text, left_side_image, numbers, buttons } = data;
 
-    console.log(buttons);
-
     return (
         <div className={`two-columns-left-side-image-section ${className}`}>
             <div className="container">

@@ -1,0 +1,34 @@
+.two-columns-with-text-section {
+    background-color: var(--color-background);
+    padding: 112px 0;
+
+    .row {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+
+        .col {
+            width: 50%;
+
+            .top-text {
+                .subtitle {
+                    text-align: left;
+
+                    p {
+                        margin-bottom: 16px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            &.right-side-col {
+                .top-text {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

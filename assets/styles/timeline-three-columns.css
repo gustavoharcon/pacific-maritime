@@ -11,7 +11,7 @@
                 position: absolute;
                 left: 0;
                 right: 0;
-                top: 30px;
+                top: 78px;
                 height: 2px;
                 background-color: var(--color-text, #010101);
                 z-index: 1;
@@ -49,12 +49,25 @@
                         }
                     }
 
+                    >.icon-wrapper {
+                        overflow: hidden;
+                        margin-bottom: 0;
+                        display: block;
+                        position: relative;
+                        top: 4px;
+
+                        >svg {
+                            font-size: 48px;
+                            color: var(--color-text);
+                        }
+                    }
+
                     >.dot-container {
                         height: 14px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        margin-bottom: 32px;
+                        margin-bottom: 40px;
                         background-color: var(--color-background);
                         padding: 0 8px;
                         position: relative;

@@ -1,4 +1,5 @@
 import TopText from "./Text/TopText";
+import { getIcon } from "@/utils/helperFunctions";
 
 const TimelineThreeColumns = ({ className = "", data = {} }) => {
     const { top_text, columns = [] } = data;
@@ -21,6 +22,11 @@ const TimelineThreeColumns = ({ className = "", data = {} }) => {
                                 {column.top_image && (
                                     <div className="top-image">
                                         <img src={column.top_image} alt={column.title || ""} />
+                                    </div>
+                                )}
+                                {column.icon && (
+                                    <div className="icon-wrapper">
+                                        {getIcon(column.icon)}
                                     </div>
                                 )}
                                 <div className="dot-container">

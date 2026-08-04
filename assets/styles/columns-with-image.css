@@ -1,20 +1,36 @@
 .columns-with-image-component {
+
     .columns {
         display: flex;
+        align-items: start;
         flex-flow: row nowrap;
         gap: 32px;
 
-        >.col {
-            flex: 1 1 0;
-            margin: 0;
-            border-radius: 16px;
 
-            >img {
-                width: 100%;
-                height: auto;
+        >.col {
+            margin: 0 0 32px 0;
+            border-radius: 16px;
+            break-inside: avoid;
+            display: inline-block;
+            width: 100%;
+
+            >.image-wrapper {
+                max-height: 404px;
+                overflow: hidden;
+                position: relative;
                 border-radius: 16px;
                 margin-bottom: 32px;
+
+                >img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    position: relative;
+                    top: -70px;
+                }
+
             }
+
 
             .text-container {
                 >.column-text-container {
@@ -29,7 +45,7 @@
             }
 
             &.with-border {
-                border: 2px solid var(--color-text);
+                border: 2px solid var(--color-white);
 
                 >img {
                     border-top-left-radius: 14px;
@@ -45,9 +61,50 @@
                     >.column-text-container {
                         padding: 0;
                     }
+
+                    .title,
+                    .small-title,
+                    .subtitle {
+                        color: var(--color-white);
+                    }
+
+                    .categories {
+                        margin-bottom: 0;
+
+                        span {
+                            color: var(--color-white);
+                            border-color: var(--color-white);
+                        }
+                    }
                 }
             }
 
+        }
+
+    }
+
+    &.width-2 {
+        .columns {
+            column-count: 2;
+            column-gap: 32px;
+            display: block;
+
+            >.col {
+                >.image-wrapper {
+                    border-radius: unset;
+                    max-height: unset;
+                    margin-bottom: 0;
+                    border-top-left-radius: 14px;
+                    border-top-right-radius: 14px;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+
+
+                    >img {
+                        top: 0;
+                    }
+                }
+            }
         }
     }
 }

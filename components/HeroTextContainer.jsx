@@ -3,10 +3,14 @@
 import Link from "next/link";
 
 const HeroTextContainer = ({ data }) => {
-    const { title, subtitle, buttons, center_text, max_width } = data;
+    const { title, subtitle, buttons, center_text, max_width, small_title } = data;
 
     return (
         <div className={`hero-text-container ${center_text === true ? "center-text" : ""} ${max_width ? `max-width-${max_width}` : ""}`}>
+            {
+                small_title &&
+                <p className="small-title">{small_title}</p>
+            }
             {
                 title && (
                     <h1 className="title">

@@ -129,7 +129,8 @@ const siteData = [
                 "description": "Pacific Maritime Industries Corp manufactures heavy-duty, NAVSEA-compliant marine furniture and custom seating for the U.S. Navy and commercial shipyards."
             },
             "hero_section": {
-                "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/w_800,h_900,c_fill/v1784555981/Frame_1_wzzxdc.png",
+                "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785864384/Navy_assault_ship_navigating_waters_202608040741_evc2ih.jpg",
+                "small_title": "Pacific Maritime Industries",
                 "title": "Shipboard interiors built to NAVY standards",
                 "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet.",
                 "buttons": [
@@ -140,41 +141,6 @@ const siteData = [
                     }
                 ],
             },
-            "top_text_three_columns": {
-                "top_text": {
-                    "small_title": "Trust",
-                    "title": "Built on Decades of Precision",
-                    "subtitle": "45+ years serving the fleet",
-                },
-                "columns": [
-                    {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/serving-san-dieg-and-the-pacific-fleet_jbg4xy.png",
-                        "small_title": "Facility",
-                        "title": "Serving San Diego and the Pacific Fleet",
-                        "buttons": [
-                            {
-                                "text": "Directions",
-                                "link": "/contact",
-                                "button_style": "btn btn-black-outline btn-animation-two",
-                                "icon": "arrow-right"
-                            }
-                        ]
-                    },
-                    {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/NAVSEA_certified_and_specification_compliant_o3tfrg.png",
-                        "small_title": "Certified",
-                        "title": "NAVSEA certified and specification compliant",
-                        "subtitle": "MIL-SPEC, ABS, NVR compliant",
-                    },
-                    {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/h_300/v1784567190/Call_for_lead_times_and_RFQ_support_jg6z0c.png",
-                        "small_title": "Contact",
-                        "title": "Call for lead times and RFQ support",
-                        "subtitle": "(619) 423-5544 ",
-                    }
-                ]
-            },
-
             "capabilities_three_columns": {
                 "top_text": {
                     "small_title": "Capabilities",
@@ -183,20 +149,46 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "image": "",
+                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/w_405/v1785865399/pyro-locker-202608041042_kjjrdx.jpg",
                         "small_title": "Interiors",
-                        "title": "Shipboard interiors and berthing",
-                        "subtitle": "Stateroom modules and crew berthing systems.",
+                        "title": "Naval Lockers & Cabinets",
+                        "description": "Configurations include ammo lockers, file cabinets, dressers, and specialized industrial stowage.",
                     },
                     {
-                        "image": "",
-                        "title": "Modular furniture and doors",
-                        "subtitle": "NAVY-grade metal joiner doors and frames. Dining, lounge and office furniture systems.",
+                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/w_405/v1785865857/berth-4.jpg_202608030954_wbhk2c.jpg",
+                        "title": "STATEROOM & BERTHING",
+                        "description": "Complete marine accommodations built with superior workmanship. Engineered to match marine standard drawings and your exact conceptual sketches.",
                     },
                     {
-                        "image": "",
-                        "title": "SHIPYARD INTEGRATION ",
-                        "subtitle": "Pre-assembled stateroom modules and hardware staged for rapid deployment. Palletized, secured, and ready. ",
+                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/w_405/v1785866730/desk-04_xkk5mc.jpg",
+                        "title": "Modular furniture & doors",
+                        "description": "NAVY-grade metal joiner doors and frames. Dining, lounge and office furniture systems.",
+                    }
+                ]
+            },
+            "why_choose_pmi": {
+                "top_text": {
+                    "small_title": "Capability & Scale",
+                    "title": "Why choose Pacific Maritime Industries?",
+                    "subtitle": "Operating from a fully equipped 45,000-square-foot advanced manufacturing facility in San Diego, we turn rigorous naval specifications into rapid, ready-to-install shipboard interiors."
+                },
+                "right_side_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785869782/Warship_navigating_open_ocean_202608040717_rvqzmn.jpg",
+                "items": [
+                    {
+                        "icon": "fabrication",
+                        "text": "High-volume CNC precision fabrication, staging, and assembly under one roof."
+                    },
+                    {
+                        "icon": "verified",
+                        "text": "Stringent in-house quality control ensuring strict adherence to exact Navy habitability standards."
+                    },
+                    {
+                        "icon": "anchor",
+                        "text": "Strategically positioned just minutes from major Pacific Fleet shipyards for rapid logistics."
+                    },
+                    {
+                        "icon": "history",
+                        "text": "Over four decades of continuous, on-time, and on-budget delivery to prime marine contractors."
                     }
                 ]
             },
@@ -208,43 +200,32 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "top_image": "",
+                        "icon": "drafting-compass",
                         "title": "DESIGN",
                         "subtitle": "CAD modeling, material specs, revision control."
                     },
                     {
-                        "top_image": "",
+                        "icon": "manufacturing",
                         "title": "FABRICATE",
                         "subtitle": "CNC cutting, welding, and finishing in our San Diego facility."
                     },
                     {
-                        "top_image": "",
+                        "icon": "boxes",
                         "title": "DELIVER",
                         "subtitle": "Components are palletized, tightly wrapped, and staged for immediate freight dispatch."
                     }
                 ]
             },
             "products_three_columns": {
+                "width": "2",
                 "top_text": {
-                    "small_title": "Products",
+                    "small_title": "Portfolio",
                     "title": "Proven components, ready to specify",
                     "subtitle": "Standard models built to MIL-SPEC. Custom modifications available."
                 },
                 "columns": [
                     {
-                        "image": "",
-                        "image_description": "Naval Lockers & Cabinets",
-                        "title": "Naval Lockers & Cabinets",
-                        "subtitle": "Fabricated to conform to stringent U.S. Navy specifications. Configurations include ammo lockers, file cabinets, dressers, and specialized industrial stowage.",
-                        "with_border": true,
-                        "categories": [
-                            "Steel",
-                            "Shock Grade",
-                            "MIL-SPEC"
-                        ]
-                    },
-                    {
-                        "image": "",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785872728/Placeholder_Image.png_202608040955_qmmibs.jpg",
                         "image_description": "STATEROOM & BERTHING",
                         "title": "STATEROOM & BERTHING",
                         "subtitle": "Complete marine accommodations built with superior workmanship. Engineered to match marine standard drawings and your exact conceptual sketches.",
@@ -256,7 +237,7 @@ const siteData = [
                         ]
                     },
                     {
-                        "image": "",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785872728/metal-joiner-door.png_202608041000_cu2yvp.jpg",
                         "image_description": "Metal Joiner Doors",
                         "title": "Metal Joiner Doors",
                         "subtitle": "Custom manufactured shipboard doors designed to satisfy all marine environments. Supported by our dedicated technical catalog for rapid procurement.",
@@ -266,13 +247,32 @@ const siteData = [
                             "Joiner",
                             "Primed"
                         ]
+                    },
+                    {
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785872728/locker-01.png_202608041006_husihi.jpg",
+                        "image_description": "Naval Lockers & Cabinets",
+                        "title": "Naval Lockers & Cabinets",
+                        "subtitle": "Fabricated to conform to stringent U.S. Navy specifications. Configurations include ammo lockers, file cabinets, dressers, and specialized industrial stowage.",
+                        "with_border": true,
+                        "categories": [
+                            "Steel",
+                            "Shock Grade",
+                            "MIL-SPEC"
+                        ]
+                    },
+                    {
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785873047/seating-01.jpg_202608041249_cegd76.jpg",
+                        "image_description": "Seating",
+                        "title": "Seating",
+                        "subtitle": "MIL-SPEC compliant seating solutions engineered to balance crew comfort with strict space efficiency",
+                        "with_border": true,
+                        "categories": [
+                            "Aluminum",
+                            "Upholstered",
+                            "MIL-SPEC"
+                        ]
                     }
                 ]
-            },
-            "video_section": {
-                "video_id": "",
-                "video_title": "NAVSEA-Compliant Shipboard Fabrication & Seating",
-                "video_description": "Discover how we design and build heavy-duty marine furniture and custom seating for the U.S. Navy and commercial shipyards.",
             }
         },
         "about_page": {
@@ -296,6 +296,20 @@ const siteData = [
                         "button_style": "btn btn-secondary btn-animation-two"
                     }
                 ]
+            },
+            "about_pmi": {
+                "left_side": {
+                    "top_text": {
+                        "align_left": true,
+                        "small_title": "Quality",
+                        "title": "Comprehensive Manufacturing Services"
+                    }
+                },
+                "right_side": {
+                    "top_text": {
+                        "subtitle": "<p>The professionals of Pacific Maritime have built a reputation for quality products and services for the U.S. Navy, ship repair yards, the maritime fleet, and a variety of other on-the-water customers.</p><p>There's a reason why the maritime community has grown to depend on the innovative products built by PMI.</p><p>It's the superior quality and unsurpassed reliability of our fabrication process and our commitment to deliver products and services with an emphasis on hands-on customer service that is unmatched in the industry.</p><p>Pacific Maritime is at the forefront in assisting customers to leverage the maximum value for their shipboard furniture needs. Our ability to meet the stringent requirements of this industry - from design to quoting -has earned Pacific Maritime a reputation for product and service excellence through the application of our highly skilled design and manufacturing talent.</p>"
+                    }
+                }
             },
             "milestones_section": {
                 "top_text": {
@@ -544,22 +558,22 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "top_background_image": "",
+                        "icon": "drafting-compass",
                         "title": "Design and engineering",
                         "description": "SolidWorks modeling, BOM generation, and a full manufacturability feedback loop before the first cut."
                     },
                     {
-                        "top_background_image": "",
+                        "icon": "request-quote",
                         "title": "Quote and planning",
                         "description": "RFQ response within 24 hours. Lead time and schedule aligned directly to your project milestones."
                     },
                     {
-                        "top_background_image": "",
+                        "icon": "engineering",
                         "title": "Fabrication and QC",
                         "description": "Laser, waterjet, CNC, forming, welding, and finishing with in-process inspection using an ERP software system."
                     },
                     {
-                        "top_background_image": "",
+                        "icon": "clipboard",
                         "title": "Stage and Dispatch",
                         "description": "We mobilize the crew, complete final acceptance testing, and deliver the full documentation package."
                     },
@@ -580,29 +594,34 @@ const siteData = [
                 },
                 "equipment_list": [
                     {
-                        "small_title": "Laser",
-                        "title": "Mazak Hyper Turbo-X",
-                        "subtitle": "High-precision 2D laser with auto load and unload system. Ideal for precision sheet metal parts.",
+                        "small_title": "CNC Press",
+                        "title": "Amada HDS 2204 NT",
+                        "subtitle": "A high-performance, 240-ton CNC press brake featuring a Hybrid Drive system engineered for low energy consumption. It is designed for precise bending of heavy sheet metal, offering a maximum bending length of approximately 161.4 inches and equipped with an automated backgauge.",
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785875916/Amada_HDS_2204_NT_xo7ahy.jpg"
                     },
                     {
                         "small_title": "Waterjet",
-                        "title": "Omax 55100",
-                        "subtitle": "Abrasive waterjet for complex profiles and composite materials. Closed‑loop digital drives.",
+                        "title": "OMAX Waterjet",
+                        "subtitle": "A precision abrasive waterjet cutting system (likely the OMAX 55100 series noted in your equipment list) utilizing the Intelli-TRAX linear drive technology.",
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785875981/OMAX_Waterjet_d4keut.jpg"
                     },
                     {
-                        "small_title": "Punch",
-                        "title": "Amada Vipro 255",
-                        "subtitle": "CNC punching for high‑volume sheet metal parts with quick tool change.",
+                        "small_title": "Press Brake",
+                        "title": "Amada HG ATC Series Press Brake",
+                        "subtitle": "An advanced press brake equipped with an integrated Automatic Tool Changer (ATC).",
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785876049/Amada_HG_ATC_Series_Press_Brake_pl68sf.jpg"
                     },
                     {
-                        "small_title": "Bend",
-                        "title": "Amada RG series",
-                        "subtitle": "CNC bending and press brake for accurate forming of enclosures and frames."
+                        "small_title": "Laser",
+                        "title": "Amada ASFH 3015 E",
+                        "subtitle": "Designed to hold heavy sheet metal stock and automatically feed it directly into adjacent laser cutting systems",
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785876116/Amada_ASFH_3015_E_rtu6ke.jpg"
                     },
                     {
-                        "small_title": "Shear",
-                        "title": "Amada shears",
-                        "subtitle": "CNC shearing for clean, square cuts on sheet stock up to 10 gauge."
+                        "small_title": "Punch and Laser",
+                        "title": "Amada EML 2515 AJ",
+                        "subtitle": "CNC shearing for clean, square cuts on sheet stock up to 10 gauge.",
+                        "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785876252/Amada_EML_2515_AJ_giew1b.jpg"
                     },
                 ]
             },
@@ -2579,7 +2598,7 @@ const siteData = [
             },
             "hero_section": {
                 "title": "Contact Pacific Maritime Industries",
-                "subtitle": "Serving the Pacific Fleet from our San Diego facility. Standard component quotes are provided within 24 hours. Complex stateroom, berthing, and galley retrofits are quoted within 5 to 7 business days.",
+                "subtitle": "Serving the Pacific Fleet from our San Diego facility. Standard component quotes are provided within 24 hours.",
                 "center_text": true,
                 "buttons": [
                     {
@@ -2650,7 +2669,7 @@ const siteData = [
                 },
                 "columns": [
                     {
-                        "image": "",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785878814/pacific-maritime-industries-facility_vlhhyz.png",
                         "title": "Office",
                         "subtitle": "1790 Dornoch Court, San Diego, CA 92154",
                         "buttons": [
@@ -2663,9 +2682,9 @@ const siteData = [
                         ]
                     },
                     {
-                        "image": "",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785878815/san-diego-panoramic-view_xbzkut.jpg",
                         "title": "Ports we serve",
-                        "subtitle": "We deploy installation teams to Pacific Fleet homeports including Pearl Harbor, Yokosuka, and Guam. Contact us for mobilization details."
+                        "subtitle": "Delivering major West Coast and regional maritime support. Our operations span local naval adjacencies at the Port of San Diego, heavy-lift marine contracting in Long Beach and Los Angeles, and dedicated operational support across Seattle, Tacoma, and Portland."
                     }
                 ]
             },

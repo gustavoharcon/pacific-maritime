@@ -3,9 +3,22 @@
         background-color: var(--color-white);
     }
 
-    .columns-with-image-section,
     .three-columns-background-image-section {
         padding: 112px 0;
         background-color: var(--color-white);
+    }
+
+    .columns-with-image-section {
+        background-color: var(--color-primary);
+        padding: 112px 0;
+
+        .top-text {
+
+            .small-title,
+            .title,
+            .subtitle {
+                color: var(--color-white);
+            }
+        }
     }
 }

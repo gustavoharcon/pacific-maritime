@@ -43,6 +43,13 @@
                     padding-left: var(--container-padding);
                     padding-right: var(--container-padding);
 
+                    .small-title {
+                        color: var(--color-white);
+                        margin-bottom: 16px;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
                     .title {
                         color: var(--color-white);
                     }

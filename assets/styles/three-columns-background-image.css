@@ -30,6 +30,16 @@
                 }
             }
 
+            &:first-child {
+                .column-text-container {
+                    >.text-area {
+                        .title {
+                            font-size: 48px;
+                        }
+                    }
+                }
+            }
+
             &:nth-child(2),
             &:last-child {
                 width: 25%;

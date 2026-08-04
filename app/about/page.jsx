@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSections/HeroSection";
 import TopText from "@/components/Text/TopText";
 import Timeline from "@/components/Timeline";
+import TwoColumnsText from "@/components/TwoColumnsText";
 import TopTextThreeColumns from "@/components/TopTextThreeColumns";
 import TeamMembers from "@/components/TeamMembers";
 import Buttons from "@/components/Buttons/Buttons";
@@ -11,6 +12,7 @@ import siteData from "@/data/siteData";
 
 const aboutData = siteData.find(item => item.about_page)?.about_page;
 const milestonesData = aboutData?.milestones_section;
+const about_pmi = aboutData?.about_pmi;
 const capabilities = aboutData?.capabilities_section;
 const ourteamData = aboutData?.our_team_section;
 const processData = aboutData?.process_section;
@@ -41,6 +43,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </section> */}
+            <TwoColumnsText data={about_pmi} />
             <TopTextThreeColumns data={capabilities} className="capabilities-section" />
             <section className="our-team-section">
                 <div className="container">

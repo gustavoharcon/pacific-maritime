@@ -8,6 +8,12 @@
         padding: 112px 0;
     }
 
+    .workflow-section {
+        .columns-with-top-image-text {
+            margin-bottom: 80px;
+        }
+    }
+
     .equipment-section,
     .quality-section {
         background-color: var(--color-white);
