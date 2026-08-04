@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
                 <div className="row">
                     <div className="col menu-column">
-                        {bottom_credits.menu.map((item, index) => {
+                        {bottom_credits && bottom_credits.menu.map((item, index) => {
                             return (
                                 <div key={index}>
                                     <Link href={item.link}>{item.text}</Link>
