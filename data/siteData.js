@@ -523,7 +523,7 @@ const siteData = [
             },
             "hero_section": {
                 // "max_width": "768",
-                "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785937389/worker-at-cnc-machine_jphtg4.png",
+                "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785941197/worker-at-cnc-machine_1_puance.png",
                 "title": "Manufacturing Capabilities and Equipment",
                 "subtitle": "Precision fabrication and comprehensive staging from our San Diego facility. We turn Navy-grade specifications into ready-to-deploy shipboard interiors.",
                 "buttons": [
