@@ -11,7 +11,7 @@
 
         >.top-image {
             width: 100%;
-            border: 2px solid var(--color-text);
+            /* border: 2px solid var(--color-text); */
             border-radius: 16px;
             margin-bottom: 24px;
         }

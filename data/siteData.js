@@ -261,7 +261,7 @@ const siteData = [
                         ]
                     },
                     {
-                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785873047/seating-01.jpg_202608041249_cegd76.jpg",
+                        "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785944839/seating_202608050846_bobkzi.jpg",
                         "image_description": "Seating",
                         "title": "Seating",
                         "subtitle": "MIL-SPEC compliant seating solutions engineered to balance crew comfort with strict space efficiency",
