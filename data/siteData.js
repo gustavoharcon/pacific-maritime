@@ -172,7 +172,7 @@ const siteData = [
                     "title": "Why choose Pacific Maritime Industries?",
                     "subtitle": "Operating from a fully equipped 45,000-square-foot advanced manufacturing facility in San Diego, we turn rigorous naval specifications into rapid, ready-to-install shipboard interiors."
                 },
-                "right_side_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785869782/Warship_navigating_open_ocean_202608040717_rvqzmn.jpg",
+                "right_side_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785941532/Warship_navigating_open_ocean_202608040717_1_poicoo.jpg",
                 "items": [
                     {
                         "icon": "fabrication",
