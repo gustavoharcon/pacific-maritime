@@ -5,12 +5,23 @@
     .row {
         display: flex;
         flex-flow: row nowrap;
-        align-items: flex-start;
+        align-items: center;
+        gap: 80px;
 
         .col {
             width: 50%;
 
+            &.left-side-col {
+                .bottom-image-container {
+                    img {
+                        border-radius: 16px;
+                    }
+                }
+            }
+
             .top-text {
+                margin-bottom: 24px;
+
                 .subtitle {
                     text-align: left;
 
