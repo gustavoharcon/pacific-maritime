@@ -281,7 +281,8 @@ const siteData = [
                 "description": "About"
             },
             "hero_section": {
-                "max_width": "991",
+                // "max_width": "991",
+                "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785938994/Control_panel_of_CNC_press_202608050706_vdyaxo.jpg",
                 "title": "The mark of quality in shipboard furniture",
                 "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet.",
                 "buttons": [
@@ -299,16 +300,15 @@ const siteData = [
             },
             "about_pmi": {
                 "left_side": {
-                    "top_text": {
-                        "align_left": true,
-                        "small_title": "Quality",
-                        "title": "Comprehensive Manufacturing Services"
-                    }
+                    "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785939104/Worker_operating_industrial_pres__202608050710_md3qki.jpg"
                 },
                 "right_side": {
                     "top_text": {
+                        "align_left": true,
+                        "small_title": "Quality",
+                        "title": "Comprehensive Manufacturing Services",
                         "subtitle": "<p>The professionals of Pacific Maritime have built a reputation for quality products and services for the U.S. Navy, ship repair yards, the maritime fleet, and a variety of other on-the-water customers.</p><p>There's a reason why the maritime community has grown to depend on the innovative products built by PMI.</p><p>It's the superior quality and unsurpassed reliability of our fabrication process and our commitment to deliver products and services with an emphasis on hands-on customer service that is unmatched in the industry.</p><p>Pacific Maritime is at the forefront in assisting customers to leverage the maximum value for their shipboard furniture needs. Our ability to meet the stringent requirements of this industry - from design to quoting -has earned Pacific Maritime a reputation for product and service excellence through the application of our highly skilled design and manufacturing talent.</p>"
-                    }
+                    },
                 }
             },
             "milestones_section": {
@@ -472,13 +472,21 @@ const siteData = [
                     "description": "A record of on-time, on-budget delivery for the U.S. Navy and prime contractors. Contact us for past performance references.",
                     "title": "Notable contracts",
                     "contracts": [
+                        // {
+                        //     "description": "The Fleet & Industrial Supply Center has awarded an Indefinite Delivery Order IDTC Habitability Contract to Pacific Maritime Industries.",
+                        //     "number": "N00244-02-D-0039",
+                        //     "contact_info_title": "FISC Contact Information",
+                        //     "contact_name": "Pat Walsh",
+                        //     "contact_phone": "(619) 556-2116",
+                        //     "contact_email": "patrick.walsh@navy.mil"
+                        // }
                         {
-                            "description": "The Fleet & Industrial Supply Center has awarded an Indefinite Delivery Order IDTC Habitability Contract to Pacific Maritime Industries.",
-                            "number": "N00244-02-D-0039",
-                            "contact_info_title": "FISC Contact Information",
-                            "contact_name": "Pat Walsh",
-                            "contact_phone": "(619) 556-2116",
-                            "contact_email": "patrick.walsh@navy.mil"
+                            "description": "",
+                            "number": "",
+                            "contact_info_title": "Contact Information",
+                            "contact_name": "",
+                            "contact_phone": "",
+                            "contact_email": ""
                         }
                     ],
                     "buttons": [
@@ -514,7 +522,8 @@ const siteData = [
                 "description": "Precision fabrication and comprehensive staging from our San Diego facility. We turn Navy-grade specifications into ready-to-deploy shipboard interiors."
             },
             "hero_section": {
-                "max_width": "768",
+                // "max_width": "768",
+                "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/v1785937389/worker-at-cnc-machine_jphtg4.png",
                 "title": "Manufacturing Capabilities and Equipment",
                 "subtitle": "Precision fabrication and comprehensive staging from our San Diego facility. We turn Navy-grade specifications into ready-to-deploy shipboard interiors.",
                 "buttons": [
