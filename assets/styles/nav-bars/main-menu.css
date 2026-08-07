@@ -1,7 +1,6 @@
 .main-menu {
     width: 100%;
     z-index: 1000;
-    background-color: var(--color-primary);
     padding-top: 24px;
 
     >.container {

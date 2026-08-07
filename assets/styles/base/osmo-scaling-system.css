@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@400..800&display=swap');
-
 /* ------------------------- Osmo [https://osmo.supply/] ------------------------- */
 /* ------------------------- Variables ------------------------------------------- */
 :root {
     --color-light: var(--color-neutral-200);
     --color-dark: var(--color-neutral-800);
     --color-primary: #5F6980;
+    --color-blue: #123B93;
+    --color-red: #8B0000;
     --color-background: #E8E9EC;
     --color-foreground: #E8E9EC;
     --color-border: #010101;
@@ -73,8 +73,8 @@
 
     /* Roboto Button & Form Variables */
     /* --btn-font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", sans-serif; */
-    --btn-font-family: "Inter", Arial, Helvetica Neue, Helvetica, sans-serif;
-    --btn-radius: 12px;
+    --btn-font-family: var(--font-inter), Arial, Helvetica Neue, Helvetica, sans-serif;
+    --btn-radius: 5px;
     /* 8px */
     --btn-primary-1: #6b7c8c;
     /* dark start */
@@ -222,8 +222,9 @@ a {
 }
 
 body {
+    background: linear-gradient(119deg, rgba(18, 59, 147, 1) 0%, rgba(113, 147, 219, 1) 100%);
     color: #333;
-    font-family: "Inter", Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-family: var(--font-inter), Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: var(--font-size-body);
     line-height: var(--line-height-body);
     margin: 0;
@@ -253,10 +254,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Syne", sans-serif;
+    font-family: var(--font-tilt-warp), sans-serif;
     text-transform: uppercase;
-    letter-spacing: -1px;
-    color: var(--color-text);
+    color: var(--color-white);
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
 }
 
 h1 {
@@ -269,7 +272,6 @@ h2 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: var(--font-size-h2);
-    font-weight: 500;
     line-height: var(--line-height-h2);
 }
 
@@ -277,7 +279,6 @@ h3 {
     margin-top: 0;
     margin-bottom: 0;
     font-size: var(--font-size-h3);
-    font-weight: 500;
     line-height: var(--line-height-h3);
 }
 
@@ -285,7 +286,6 @@ h4 {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: var(--font-size-h4);
-    font-weight: 500;
     line-height: var(--line-height-h4);
 }
 
@@ -293,7 +293,6 @@ h5 {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: var(--font-size-h5);
-    font-weight: 500;
     line-height: var(--line-height-h5);
 }
 
@@ -301,7 +300,6 @@ h6 {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: var(--font-size-h6);
-    font-weight: 500;
     line-height: var(--line-height-h6);
 }
 
@@ -417,7 +415,6 @@ strong {
     >.title {
         font-size: 60px;
         margin-bottom: 24px;
-        font-weight: 700;
     }
 
     >.subtitle {
@@ -475,7 +472,7 @@ strong {
 .body {
     background-color: var(--color-neutral-300);
     color: var(--color-dark);
-    font-family: "Inter", Arial, sans-serif;
+    font-family: var(--font-inter), Arial, sans-serif;
     font-weight: 500;
     line-height: var(--line-height-body);
 }
@@ -753,7 +750,7 @@ strong {
 .btn {
     gap: 0.5rem;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 1;
     min-height: 2.75rem;
@@ -769,6 +766,7 @@ strong {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    color: var(--color-blue);
     transition: transform 120ms ease, box-shadow 120ms ease, color 300ms ease, border-color 300ms ease, background-color 300ms ease;
 
     &:active,
@@ -790,10 +788,11 @@ strong {
 /* Primary filled */
 .btn--primary,
 .btn-primary {
-    color: var(--btn-primary-contrast);
-    border: none;
-    box-shadow: 0 6px 18px rgba(11, 15, 25, 0.18);
-    background-color: var(--color-accent);
+    color: var(--color-blue);
+    border-style: solid;
+    border-width: 2px 4px 4px 2px;
+    border-color: var(--color-white);
+    background-color: var(--color-white);
 }
 
 .btn--primary::before,
@@ -812,8 +811,10 @@ strong {
 .btn--secondary,
 .btn-secondary {
     color: var(--color-white);
+    border-style: solid;
+    border-width: 2px 4px 4px 2px;
+    border-color: var(--color-white);
     background-color: transparent;
-    border: 2px solid var(--color-white);
 }
 
 .btn--secondary::before,
@@ -823,14 +824,8 @@ strong {
 
 .btn--secondary:hover,
 .btn-secondary:hover {
-    color: var(--color-text);
-}
-
-.btn--secondary:active,
-.btn-secondary:active,
-.btn-black-outline:active,
-.btn-white-background:active {
-    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.03);
+    color: var(--color-blue);
+    background-color: var(--color-white);
 }
 
 
@@ -869,20 +864,11 @@ strong {
     border: 2px solid var(--color-accent);
 }
 
-.btn-animation-two,
-.btn-animation-three,
-.btn-animation-four {
-
-    &:before {
-        display: none;
-    }
-}
-
 .btn-animation-two:hover,
 .btn-animation-two:active {
-    color: var(--color-white);
-    background-color: var(--color-accent);
-    border-color: var(--color-accent);
+    color: var(--color-blue);
+    background-color: var(--color-white);
+    border-color: var(--color-white);
 }
 
 .btn-animation-three:hover,
@@ -894,9 +880,9 @@ strong {
 
 .btn-animation-four:hover,
 .btn-animation-four:active {
-    color: var(--color-text);
-    background-color: var(--color-white);
-    border-color: var(--color-text);
+    color: var(--color-white);
+    background-color: transparent;
+    border-color: var(--color-white);
 }
 
 /* Alert/Danger button state (kept for compatibility) */

@@ -125,21 +125,21 @@ const siteData = [
     {
         "home_page": {
             "meta_data": {
-                "title": "NAVSEA Shipboard Furniture",
-                "description": "Pacific Maritime Industries Corp manufactures heavy-duty, NAVSEA-compliant marine furniture and custom seating for the U.S. Navy and commercial shipyards."
+                "title": "Pacific Maritime Industries Corp.",
+                "description": "Pacific Maritime Industries Corp. manufactures heavy-duty, NAVSEA-compliant marine furniture and custom seating for the U.S. Navy and commercial shipyards."
             },
             "hero_section": {
                 "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785864384/Navy_assault_ship_navigating_waters_202608040741_evc2ih.jpg",
-                "small_title": "Pacific Maritime Industries",
-                "title": "Shipboard interiors built to NAVY standards",
-                "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet.",
-                "buttons": [
-                    {
-                        "text": "Request quote",
-                        "link": "/request-quote",
-                        "button_style": "btn btn--primary btn-animation-four"
-                    }
-                ],
+                "small_title": "Pacific Maritime Industries Corp.",
+                "title": "MIL-SPEC INTERIORS, DOORS, AND CUSTOM FABRICATION",
+                "subtitle": "San Diego-based manufacturer offering comprehensive in-house fabrication—from stateroom outfitting to custom platforms and ladders. Proudly servicing the Pacific, Atlantic, and Gulf military fleets, alongside Coast Guard and commercial vessels.",
+                // "buttons": [
+                //     {
+                //         "text": "Request quote",
+                //         "link": "/request-quote",
+                //         "button_style": "btn btn--primary btn-animation-four"
+                //     }
+                // ],
             },
             "capabilities_three_columns": {
                 "top_text": {

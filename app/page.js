@@ -40,16 +40,6 @@ export default function Home() {
       </div>
       <TwoColumnsRightSideImage data={why_choose_pmi} />
       <TimelineThreeColumns data={timeline_three_columns} />
-      <section className="columns-with-image-section">
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <TopText data={products_three_columns.top_text} />
-              <ColumnsWithImage data={products_three_columns} />
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

@@ -1,5 +1,6 @@
 // import tailwind.css file
 import "../assets/styles/globals.css";
+import { Inter, Tilt_Warp } from "next/font/google";
 import AuthProvider from "@/components/AuthProvider.jsx";
 import { ToastContainer } from "react-toastify";
 import { GlobalProvider } from "@/context/GlobalContext.js";
@@ -8,6 +9,18 @@ import { GoogleTagManager } from '@next/third-parties/google'
 import TopNavBar from "@/components/NavBars/TopNavBar";
 import BodyWrapper from "@/components/BodyWrapper";
 import Footer from "@/components/Footer";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const tiltWarp = Tilt_Warp({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-tilt-warp",
+});
 
 export const metadata = {
   title: {
@@ -57,7 +70,7 @@ export default function RootLayout({
   return (
     <GlobalProvider>
       <AuthProvider>
-        <html lang="en">
+        <html lang="en" className={`${inter.variable} ${tiltWarp.variable}`}>
           <GoogleTagManager />
           <BodyWrapper>
             <TopNavBar />
