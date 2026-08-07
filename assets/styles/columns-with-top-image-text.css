@@ -1,18 +1,18 @@
 .columns-with-top-image-text {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: flex-start;
     justify-content: center;
     gap: 32px;
 
     >.column {
         text-align: center;
-        flex: 1 1 0;
+        width: calc(33% - 32px);
+        margin-bottom: 24px;
 
         >.top-image {
             width: 100%;
-            /* border: 2px solid var(--color-text); */
-            border-radius: 16px;
+            border-radius: var(--btn-radius);
             margin-bottom: 24px;
         }
 
@@ -27,7 +27,6 @@
         >.title {
             margin-bottom: 16px;
             font-size: 32px;
-            font-weight: 700;
         }
 
         >.description {

@@ -20,13 +20,16 @@
 @import "./columns-with-top-image-text.css";
 @import "./contracts-component.css";
 @import "./two-columns-left-side-image.css";
+@import "./two-columns-compliance.css";
 @import "./left-side-column-and-four-items.css";
 @import "./production-capacity.css";
 @import "./equipment-section.css";
+@import "./equipment-by-process.css";
 @import "./three-columns-with-icon-component.css";
 @import "./job-listings.css";
 @import "./two-columns-right-side-image.css";
 @import "./two-columns-text.css";
+@import "./equipment-by-process.css";
 @import "./pages/home-page.css";
 @import "./pages/about-page.css";
 @import "./pages/catalogs-page.css";

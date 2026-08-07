@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 const HeroTextContainer = ({ data }) => {
-    const { title, subtitle, buttons, center_text, max_width, small_title } = data;
+    const { title, subtitle, buttons, center_text, max_width, small_title, description_and_logo } = data;
 
     return (
         <div className={`hero-text-container ${center_text === true ? "center-text" : ""} ${max_width ? `max-width-${max_width}` : ""}`}>
@@ -35,6 +35,14 @@ const HeroTextContainer = ({ data }) => {
                                 </Link>
                             </div>
                         ))}
+                    </div>
+                )
+            }
+            {
+                description_and_logo && (
+                    <div className="description-and-logo">
+                        <p className="small-title">{description_and_logo.title}</p>
+                        <img className="logo" src={description_and_logo.logo.image} alt={description_and_logo.logo.alt} />
                     </div>
                 )
             }

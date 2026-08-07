@@ -11,13 +11,9 @@ const HeroSection = ({ data }) => {
                     <div className="col">
                         <HeroTextContainer data={data} />
                     </div>
-
-                    {right_column_image && <div
-                        className="col col-with-bg"
-                        style={{
-                            ...(right_column_image && { backgroundImage: `url(${right_column_image})` }),
-                        }}>
-                    </div>}
+                    <div className="col">
+                        <img src={right_column_image} className="right-column-image" alt="" />
+                    </div>
                 </div>
             </div>
         </section>

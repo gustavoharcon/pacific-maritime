@@ -15,9 +15,13 @@ import {
     MdOutlineVerified,
     MdOutlineHistory,
     MdPrecisionManufacturing,
-    MdOutlineRequestQuote
+    MdOutlineRequestQuote,
+    MdOutlineAccountTree,
+    MdOutlineTimeline,
+    MdOutlineWhatshot,
+    MdOutlineDirectionsBoat
 } from "react-icons/md";
-import { LuDroplet, LuZap } from "react-icons/lu";
+import { LuDroplet, LuZap, LuFoldVertical, LuGrip, LuDiamondPlus } from "react-icons/lu";
 import { FaPlusMinus, FaBoxesPacking } from "react-icons/fa6";
 import { FiClock } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
@@ -83,6 +87,22 @@ export const getIcon = (iconName) => {
             return <MdOutlineRequestQuote className="icon" />;
         case "clipboard":
             return <HiOutlineClipboardDocumentCheck className="icon" />;
+        case "erp":
+            return <MdOutlineAccountTree className="icon" />;
+        case "dotted-graph":
+            return <MdOutlineTimeline className="icon" />;
+        case "fire":
+            return <MdOutlineWhatshot className="icon" />;
+        case "boat":
+            return <MdOutlineDirectionsBoat className="icon" />;
+        case "droplet":
+            return <LuDroplet className="icon" />;
+        case "fold-vertical":
+            return <LuFoldVertical className="icon" />;
+        case "3by3dots":
+            return <LuGrip className="icon" />;
+        case "diamond-plus":
+            return <LuDiamondPlus className="icon" />;
         default:
             return null;
     }

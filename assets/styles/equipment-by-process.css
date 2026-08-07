@@ -1,0 +1,28 @@
+.equipment-by-process-list {
+    display: flex;
+    flex-flow: row wrap;
+
+    .equipment-by-process-item {
+        width: calc(50% - 32px);
+        margin-bottom: 16px;
+        display: flex;
+        flex-flow: column nowrap;
+        padding-left: 16px;
+        gap: 8px;
+
+        .equipment-by-process-icon {
+            font-size: 48px;
+            color: var(--color-white);
+        }
+
+        .equipment-by-process-title {
+            margin-bottom: 8px;
+            font-size: 40px;
+            text-transform: capitalize;
+        }
+
+        .equipment-by-process-description {
+            font-size: 20px;
+        }
+    }
+}

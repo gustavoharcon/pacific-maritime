@@ -16,4 +16,16 @@
         align-items: center;
         gap: 16px;
     }
+
+    .description-and-logo {
+        flex-flow: column;
+        align-items: center;
+        display: flex;
+        max-width: fit-content;
+
+        img {
+            width: 100%;
+            max-width: 120px;
+        }
+    }
 }

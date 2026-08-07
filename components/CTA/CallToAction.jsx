@@ -4,23 +4,13 @@ const CallToAction = () => {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <h2>Get the Compliance and Spec Pack</h2>
+                        <h2>Same-day or next-day quote guaranteed</h2>
                     </div>
                     <div className="col">
-                        <p className="text">Material certs, finish samples, and lead-time schedules. Standard RFQs quoted in 24 hours; complex refits quoted in 5 to 7 business days. Gated behind a short RFQ form.</p>
-                        <form action="">
-                            <div className="row">
-                                <div className="col">
-                                    <div className="input-container">
-                                        <input type="email" id="email" name="email" placeholder="Enter your email" />
-                                    </div>
-                                </div>
-                                <div className="col">
-                                    <a type="submit" className="btn btn-white-background">Request spec pack</a>
-                                </div>
-                            </div>
-                            <p className="small-text">Your information is secured and it’s never shared.</p>
-                        </form>
+                        <p className="text">Every RFQ is flagged urgent. Our estimating team commits to a complete, line-item quotation within one business day.</p>
+                        <div className="buttons">
+                            <a href="/request-quote" className="btn btn--primary btn-animation-four">Request quote</a>
+                        </div>
                     </div>
                 </div>
             </div>
