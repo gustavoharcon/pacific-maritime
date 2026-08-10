@@ -4,19 +4,18 @@
     .production-capacity-section,
     .equipment-section,
     .quality-section {
-        background-color: var(--color-background);
         padding: 112px 0;
     }
 
     .workflow-section {
         .columns-with-top-image-text {
             margin-bottom: 80px;
-        }
-    }
 
-    .equipment-section,
-    .quality-section {
-        background-color: var(--color-white);
+            .column {
+                width: calc(50% - 32px);
+                max-width: 500px;
+            }
+        }
     }
 
     .equipment-section {

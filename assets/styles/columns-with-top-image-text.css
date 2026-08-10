@@ -28,7 +28,7 @@
             >.icon-wrapper {
                 svg {
                     font-size: 48px;
-                    color: var(--color-text);
+                    color: var(--color-white);
                     margin-bottom: 24px;
                 }
             }

@@ -12,7 +12,6 @@
 
                 >.col {
                     width: 31%;
-                    border: 2px solid var(--color-text);
                     border-radius: 16px;
 
                     .background-image {
@@ -26,16 +25,13 @@
                     }
 
                     .icon-container {
-                        padding: 32px 32px 0 32px;
                         display: flex;
                         justify-content: flex-start;
 
                         .icon {
                             >svg {
                                 font-size: 48px;
-                                width: 48px;
-                                height: 48px;
-                                color: var(--color-text);
+                                color: var(--color-white);
                             }
                         }
 

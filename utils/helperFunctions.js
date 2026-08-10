@@ -19,7 +19,8 @@ import {
     MdOutlineAccountTree,
     MdOutlineTimeline,
     MdOutlineWhatshot,
-    MdOutlineDirectionsBoat
+    MdOutlineDirectionsBoat,
+    MdOutlineWorkspacePremium
 } from "react-icons/md";
 import { LuDroplet, LuZap, LuFoldVertical, LuGrip, LuDiamondPlus } from "react-icons/lu";
 import { FaPlusMinus, FaBoxesPacking } from "react-icons/fa6";
@@ -32,6 +33,8 @@ import Link from "next/link";
 
 export const getIcon = (iconName) => {
     switch (iconName) {
+        case "premium-prize":
+            return <MdOutlineWorkspacePremium className="icon" />;
         case "manufacturing":
             return <MdPrecisionManufacturing className="icon" />;
         case "engineering":

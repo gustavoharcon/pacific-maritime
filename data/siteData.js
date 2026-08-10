@@ -128,6 +128,17 @@ const siteData = [
                 "title": "Pacific Maritime Industries Corp.",
                 "description": "Pacific Maritime Industries Corp. manufactures heavy-duty, NAVSEA-compliant marine furniture and custom seating for the U.S. Navy and commercial shipyards."
             },
+            "call_to_action": {
+                "title": "Same-day or next-day quote guaranteed",
+                "subtitle": "Every RFQ is flagged urgent. Our estimating team commits to a complete, line-item quotation within one business day.",
+                "buttons": [
+                    {
+                        "text": "Request quote",
+                        "link": "/request-quote",
+                        "button_style": "btn btn-secondary btn-animation-two"
+                    }
+                ]
+            },
             "hero_section": {
                 "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/v1786122442/us-navy-ships-in-san-diego-bay_1_jwacbt.png",
                 "small_title": "Pacific Maritime Industries Corp.",
@@ -144,7 +155,7 @@ const siteData = [
             "compliance_section": {
                 "top_text": {
                     "title": "Strict MIL-SPEC & Maritime Compliance",
-                    "subtitle": "For over three decades, Pacific Maritime Industries Corp. has maintained uncompromising adherence to the highest military and commercial maritime regulations.",
+                    "subtitle": "For three decades, Pacific Maritime Industries Corp. has maintained uncompromising adherence to the highest military and commercial maritime regulations.",
                     "buttons": [
                         {
                             "text": "Request quote",
@@ -375,11 +386,22 @@ const siteData = [
                 "title": "About",
                 "description": "About"
             },
+            "call_to_action": {
+                "title": "Same-day or next-day quote guaranteed",
+                "subtitle": "Every RFQ is flagged urgent. Our estimating team commits to a complete, line-item quotation within one business day.",
+                "buttons": [
+                    {
+                        "text": "Request quote",
+                        "link": "/request-quote",
+                        "button_style": "btn btn-secondary btn-animation-two"
+                    }
+                ]
+            },
             "hero_section": {
                 // "max_width": "991",
                 "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785938994/Control_panel_of_CNC_press_202608050706_vdyaxo.jpg",
                 "title": "The mark of quality in shipboard furniture",
-                "subtitle": "San Diego shipboard interiors manufacturer offering in-house engineering and comprehensive fabrication services for the Pacific Fleet.",
+                "subtitle": "San Diego shipboard interiors manufacturer offering comprehensive in-house fabrication services for the Pacific, Atlantic, and Gulf military fleets, alongside Coast Guard and commercial vessels. As an ISO 9001:2015 certified company, we deliver MIL-SPEC compliant solutions.",
                 "buttons": [
                     {
                         "text": "Explore capabilities",
@@ -400,9 +422,8 @@ const siteData = [
                 "right_side": {
                     "top_text": {
                         "align_left": true,
-                        "small_title": "Quality",
                         "title": "Comprehensive Manufacturing Services",
-                        "subtitle": "<p>The professionals of Pacific Maritime have built a reputation for quality products and services for the U.S. Navy, ship repair yards, the maritime fleet, and a variety of other on-the-water customers.</p><p>There's a reason why the maritime community has grown to depend on the innovative products built by PMI.</p><p>It's the superior quality and unsurpassed reliability of our fabrication process and our commitment to deliver products and services with an emphasis on hands-on customer service that is unmatched in the industry.</p><p>Pacific Maritime is at the forefront in assisting customers to leverage the maximum value for their shipboard furniture needs. Our ability to meet the stringent requirements of this industry - from design to quoting -has earned Pacific Maritime a reputation for product and service excellence through the application of our highly skilled design and manufacturing talent.</p>"
+                        "subtitle": "<p>The professionals at Pacific Maritime Industries Corp. have built a reputation for quality products and services for the U.S. Navy, ship repair yards, the maritime fleet, and a variety of other on-the-water customers. We manufacture more than shipboard interiors; our capabilities extend to heavy-duty platforms, ladders, and metal joiner doors</p><p>It’s the superior quality and unsurpassed reliability of our fabrication process—managed through a centralized ERP software system for total digital traceability—along with our commitment to hands-on customer service that sets us apart.</p><p>Pacific Maritime Industries Corp. proudly manufactures structural components and modular interiors for the U.S. Navy Shipboard Habitability Program, engineered to balance crew comfort with strict space efficiency.</p>"
                     },
                 }
             },
@@ -444,7 +465,6 @@ const siteData = [
             },
             "capabilities_section": {
                 "top_text": {
-                    "small_title": "Capabilities",
                     "title": "Engineered and fabricated under one roof",
                     "subtitle": "The state-of-the-art facilities and talent to take your project from concept to shipyard integration."
                 },
@@ -457,7 +477,7 @@ const siteData = [
                             {
                                 "text": "Learn More",
                                 "link": "/about/manufacturing-capabilities",
-                                "button_style": "btn btn-black-outline btn-animation-two"
+                                "button_style": "btn btn-secondary btn-animation-two"
                             }
                         ]
                     },
@@ -469,7 +489,7 @@ const siteData = [
                             {
                                 "text": "Learn More",
                                 "link": "/about/manufacturing-capabilities",
-                                "button_style": "btn btn-black-outline btn-animation-two"
+                                "button_style": "btn btn-secondary btn-animation-two"
                             }
                         ]
                     },
@@ -481,7 +501,7 @@ const siteData = [
                             {
                                 "text": "Learn More",
                                 "link": "/about/manufacturing-capabilities",
-                                "button_style": "btn btn-black-outline btn-animation-two"
+                                "button_style": "btn btn-secondary btn-animation-two"
                             }
                         ]
                     },
@@ -491,12 +511,12 @@ const siteData = [
                 "top_text": {
                     "small_title": "Leadership",
                     "title": "Our team",
-                    "subtitle": "Decades of experience in maritime manufacturing, engineering, and quality control. These are the people who deliver on every contract.",
+                    "subtitle": "Three decades of experience in maritime manufacturing, fabrication, and quality control. These are the people who deliver on every contract.",
                     "buttons": [
                         {
                             "text": "Open positions",
                             "link": "/careers",
-                            "button_style": "btn btn-black-outline btn-animation-two"
+                            "button_style": "btn btn-secondary btn-animation-two"
                         }
                     ]
                 },
@@ -526,22 +546,22 @@ const siteData = [
                 "steps": [
                     {
                         "icon": "design-and-quote",
-                        "title": "Design and quote",
-                        "description": "We receive your ship specs and develop 3D models with a firm-fixed-price proposal within 5 to 7 business days."
+                        "title": "REVIEW AND QUOTE",
+                        "description": "We treat every request for quote as urgent. We return a firm-fixed-price and fabrication lead time the same day or the following day. Preliminary drawings are included for new fabrications or substantial modifications."
                     },
                     {
                         "icon": "engineering",
-                        "title": "Engineering Submittal",
-                        "description": "We submit shop drawings, material certifications, and finish samples for approval."
+                        "title": "TECHNICAL PLANNING",
+                        "description": "Using SolidWorks and our extensive, in-house archive of standard Navy manufacturing drawings, we finalize shop routing to ensure flawless first-time execution and MIL-SPEC compliance without technical delays."
                     },
                     {
                         "icon": "fabrication",
-                        "title": "Fabrication and QC",
+                        "title": "FABRICATION AND QUALITY CONTROL",
                         "description": "Production runs with in-process inspection. Final dimensional and coating checks meet all contract requirements."
                     },
                     {
                         "icon": "logistics",
-                        "title": "Stage and Dispatch",
+                        "title": "STAGING AND LOGISTICS",
                         "description": "Components are meticulously wrapped, palletized, and securely staged at our San Diego facility for seamless load-out and transport by logistics teams."
                     },
                 ],
@@ -549,12 +569,12 @@ const siteData = [
                     {
                         "text": "Contact",
                         "link": "/contact",
-                        "button_style": "btn btn-black-outline btn-animation-two"
+                        "button_style": "btn btn-secondary btn-animation-two"
                     },
                     {
                         "text": "Careers",
                         "link": "/careers",
-                        "button_style": "btn btn-black-outline btn-animation-two"
+                        "button_style": "btn btn--primary btn-animation-four"
                     }
                 ]
             },
@@ -583,30 +603,18 @@ const siteData = [
                             "contact_phone": "",
                             "contact_email": ""
                         }
-                    ],
-                    "buttons": [
-                        {
-                            "text": "Contact",
-                            "link": "/contact",
-                            "button_style": "btn btn-secondary btn-animation-two"
-                        },
-                        {
-                            "text": "Careers",
-                            "link": "/careers",
-                            "button_style": "btn btn-secondary btn-animation-two"
-                        }
                     ]
                 },
                 "buttons": [
                     {
                         "text": "Contact",
                         "link": "/contact",
-                        "button_style": "btn btn-white-background"
+                        "button_style": "btn btn-secondary btn-animation-two"
                     },
                     {
-                        "text": "Request a quote",
+                        "text": "Request quote",
                         "link": "/request-quote",
-                        "button_style": "btn btn-white-background"
+                        "button_style": "btn btn--primary btn-animation-four"
                     }
                 ]
             },
@@ -614,13 +622,24 @@ const siteData = [
         "manufacturing_capabilities_page": {
             "meta_data": {
                 "title": "Manufacturing Capabilities and Equipment",
-                "description": "Precision fabrication and comprehensive staging from our San Diego facility. We turn Navy-grade specifications into ready-to-deploy shipboard interiors."
+                "description": "Operating 66,000 square feet of advanced CNC fabrication space alongside 14,000 square feet of inventory staging in San Diego. We manufacture MIL-SPEC compliant shipboard interiors, doors, platforms, and ladders for the Pacific, Atlantic, and Gulf fleets."
+            },
+            "call_to_action": {
+                "title": "Same-day or next-day quote guaranteed",
+                "subtitle": "Every RFQ is flagged urgent. Our estimating team commits to a complete, line-item quotation within one business day.",
+                "buttons": [
+                    {
+                        "text": "Request quote",
+                        "link": "/request-quote",
+                        "button_style": "btn btn-secondary btn-animation-two"
+                    }
+                ]
             },
             "hero_section": {
                 // "max_width": "768",
                 "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785941197/worker-at-cnc-machine_1_puance.png",
                 "title": "Manufacturing Capabilities and Equipment",
-                "subtitle": "Precision fabrication and comprehensive staging from our San Diego facility. We turn Navy-grade specifications into ready-to-deploy shipboard interiors.",
+                "subtitle": "Operating 66,000 square feet of advanced CNC fabrication space alongside 14,000 square feet of inventory staging in San Diego. We manufacture MIL-SPEC compliant shipboard interiors, doors, platforms, and ladders for the Pacific, Atlantic, and Gulf fleets.",
                 "buttons": [
                     {
                         "text": "Request a quote",
@@ -663,30 +682,30 @@ const siteData = [
                 "columns": [
                     {
                         "icon": "drafting-compass",
-                        "title": "Design and engineering",
-                        "description": "SolidWorks modeling, BOM generation, and a full manufacturability feedback loop before the first cut."
+                        "title": "Design & Technical Planning",
+                        "description": "SolidWorks CAD modeling, BOM generation, and leveraging our extensive in-house archive of standard Navy manufacturing drawings for rapid production routing."
                     },
                     {
                         "icon": "request-quote",
-                        "title": "Quote and planning",
-                        "description": "RFQ response within 24 hours. Lead time and schedule aligned directly to your project milestones."
+                        "title": "RAPID RFQ & PLANNING",
+                        "description": "Every RFQ is treated as urgent. We return firm-fixed pricing, lead times, and conceptual drawings (for new or custom modifications) the same day or following day."
                     },
                     {
                         "icon": "engineering",
-                        "title": "Fabrication and QC",
-                        "description": "Laser, waterjet, CNC, forming, welding, and finishing with in-process inspection using an ERP software system."
+                        "title": "FABRICATION & QC",
+                        "description": "Laser cutting, waterjet, CNC punching, forming, and welding tracked in real time through our centralized ERP software system for total digital traceability."
                     },
                     {
                         "icon": "clipboard",
-                        "title": "Stage and Dispatch",
-                        "description": "We mobilize the crew, complete final acceptance testing, and deliver the full documentation package."
+                        "title": "STAGE & DISPATCH",
+                        "description": "Pre-assembled components are palletized, tightly wrapped, and staged for immediate freight dispatch."
                     },
                 ],
                 "buttons": [
                     {
                         "text": "Request a quote",
                         "link": "/request-quote",
-                        "button_style": "btn btn-black-outline btn-animation-two"
+                        "button_style": "btn btn-secondary btn-animation-two"
                     }
                 ]
             },
@@ -698,33 +717,33 @@ const siteData = [
                 },
                 "equipment_list": [
                     {
-                        "small_title": "CNC Press",
+                        "small_title": "CNC Press Brake",
                         "title": "Amada HDS 2204 NT",
-                        "subtitle": "A high-performance, 240-ton CNC press brake featuring a Hybrid Drive system engineered for low energy consumption. It is designed for precise bending of heavy sheet metal, offering a maximum bending length of approximately 161.4 inches and equipped with an automated backgauge.",
+                        "subtitle": "A high-performance, 240-ton CNC press brake featuring a Hybrid Drive system for low energy consumption. Designed for precise bending of heavy sheet metal up to 161.4 inches.",
                         "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785875916/Amada_HDS_2204_NT_xo7ahy.jpg"
                     },
                     {
-                        "small_title": "Waterjet",
+                        "small_title": "Abrasive Waterjet",
                         "title": "OMAX Waterjet",
-                        "subtitle": "A precision abrasive waterjet cutting system utilizing the Intelli-TRAX linear drive technology.",
+                        "subtitle": "A precision abrasive waterjet cutting system utilizing Intelli-TRAX linear drive technology for clean cuts on thick metals without heat-affected zones.",
                         "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785875981/OMAX_Waterjet_d4keut.jpg"
                     },
                     {
-                        "small_title": "Press Brake",
+                        "small_title": "CNC Press Brake",
                         "title": "Amada HG ATC Series Press Brake",
-                        "subtitle": "An advanced press brake equipped with an integrated Automatic Tool Changer (ATC).",
+                        "subtitle": "An advanced 110-ton press brake equipped with an integrated Automatic Tool Changer (ATC) to eliminate manual setup delays during high-mix production runs.",
                         "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785876049/Amada_HG_ATC_Series_Press_Brake_pl68sf.jpg"
                     },
                     {
-                        "small_title": "Laser",
+                        "small_title": "Automation",
                         "title": "Amada ASFH 3015 E",
-                        "subtitle": "Designed to hold heavy sheet metal stock and automatically feed it directly into adjacent laser cutting systems",
+                        "subtitle": "High-speed automated material storage tower and pallet changer designed to store heavy sheet stock and feed adjacent laser systems automatically.",
                         "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785876116/Amada_ASFH_3015_E_rtu6ke.jpg"
                     },
                     {
-                        "small_title": "Punch and Laser",
+                        "small_title": "Punch & Fiber Laser",
                         "title": "Amada EML 2515 AJ",
-                        "subtitle": "CNC shearing for clean, square cuts on sheet stock up to 10 gauge.",
+                        "subtitle": "High-speed punch and fiber laser combination system allowing complex profiling, punching, and forming to be completed on a single machine without transferring stock.",
                         "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785876252/Amada_EML_2515_AJ_giew1b.jpg"
                     },
                 ]
@@ -1113,11 +1132,11 @@ const siteData = [
                 "title": "Catalogs & Downloads",
                 "description": "Access the complete Naval Shipboard Furniture Catalog, Metal Joiner Door Catalog, and individual product datasheets.",
             },
-            "hero_section": {
-                "title": "Catalogs & downloads",
-                "subtitle": "Access the complete Naval Shipboard Furniture Catalog, Metal Joiner Door Catalog, and individual product datasheets. Download CAD files, DWGs, and technical PDFs.",
-                "center_text": true
-            },
+            // "hero_section": {
+            //     "title": "Catalogs & downloads",
+            //     "subtitle": "Access the complete Naval Shipboard Furniture Catalog, Metal Joiner Door Catalog, and individual product datasheets. Download CAD files, DWGs, and technical PDFs.",
+            //     "center_text": true
+            // },
             "catalogs_interactive_section": {
                 "catalogs": [
                     {
@@ -2675,7 +2694,6 @@ const siteData = [
                 "description": "Request a Quote"
             },
             "top_text": {
-                "small_title": "Start",
                 "title": "Request a Quote",
                 "subtitle": "Complete the steps below to receive a tailored quote.",
                 "heading_type": "h1"
@@ -2701,8 +2719,8 @@ const siteData = [
                 "description": "Contact"
             },
             "hero_section": {
-                "title": "Contact Pacific Maritime Industries",
-                "subtitle": "Serving the Pacific Fleet from our San Diego facility. Standard component quotes are provided within 24 hours.",
+                "title": "Contact Pacific Maritime Industries Corp.",
+                "subtitle": "Serving the Pacific, Atlantic, and Gulf military fleets. Because all requests for quote are urgent, standard component quotes are provided the same day or the following day.",
                 "center_text": true,
                 "buttons": [
                     {
@@ -2768,7 +2786,7 @@ const siteData = [
                 "top_text": {
                     "small_title": "Locations",
                     "title": "Our Facility",
-                    "subtitle": "Based on San Diego's working waterfront. We serve the entire Pacific Fleet.",
+                    "subtitle": "Based on San Diego's working waterfront. We proudly service the Pacific, Atlantic, and Gulf military fleets, alongside Coast Guard and commercial vessels.",
                     "align_left": true
                 },
                 "columns": [
@@ -2780,7 +2798,7 @@ const siteData = [
                             {
                                 "text": "Get directions",
                                 "link": "https://maps.app.goo.gl/vwELP8qpm7vgDPk16",
-                                "button_style": "btn btn-black-outline btn-animation-two",
+                                "button_style": "btn btn-secondary btn-animation-two",
                                 "button_icon": "arrow-right"
                             }
                         ]
@@ -2803,11 +2821,11 @@ const siteData = [
         "quality_compliance_page": {
             "meta_data": {
                 "title": "Quality & Compliance",
-                "description": "Quality & Compliance"
+                "description": "Evidence-based documentation for NAVSEA, ABS, and NVR procurement requirements. Every material lot and manufacturing phase is digitally traceable through our centralized ERP software system to ensure strict MIL-SPEC compliance."
             },
             "hero_section": {
                 "title": "Quality assurance & compliance",
-                "subtitle": "Evidence‑based documentation for NAVSEA, ABS, and NVR procurement requirements. Every material lot traceable to its mill cert.",
+                "subtitle": "Evidence-based documentation for NAVSEA, ABS, and NVR procurement requirements. Every material lot and manufacturing phase is digitally traceable through our centralized ERP software system to ensure strict MIL-SPEC compliance.",
                 "center_text": true,
                 "buttons": [
                     {
@@ -2819,25 +2837,38 @@ const siteData = [
             },
             "certifications_section": {
                 "top_text": {
-                    "small_title": "Certifications",
                     "title": "Certifications and Standards",
                     "subtitle": "Current credentials for NAVSEA, ABS, and NVR procurement requirements"
                 },
                 "certifications_list": [
                     {
-                        "small_title": "Quality",
-                        "title": "ISO 9001:2015",
-                        "subtitle": "Pacific Maritime Industries Corp. has been assessed and certified as meeting the requirements of ISO 9001:2015. Manufacturer of Sheet Metal Products. Initial certification was issued on January 31, 2019. Expires on January 30, 2028.",
-                        "buttons": [
-                            {
-                                "text": "View Certificate",
-                                "link": "https://res.cloudinary.com/irwujctd/image/upload/v1785420485/ISO-9001-2015_lpsmie.png",
-                                "target": "_blank",
-                                "button_style": "btn btn-black-outline btn-animation-two"
-                            }
-                        ],
+                        "top_text": {
+                            "icon": "premium-prize",
+                            "title": "ISO 9001:2015",
+                            "subtitle": "Pacific Maritime Industries Corp. has been assessed and certified as meeting the strict quality management requirements of ISO 9001:2015. As a precision manufacturer of maritime interiors, heavy-duty platforms, ladders, and metal joiner doors, we ensure every component is built to exact Navy standards. Initial certification was issued on January 31, 2019. Expires on January 30, 2028.",
+                            "heading_type": "h3",
+                            "buttons": [
+                                {
+                                    "text": "View Certificate",
+                                    "link": "https://res.cloudinary.com/irwujctd/image/upload/v1785420485/ISO-9001-2015_lpsmie.png",
+                                    "target": "_blank",
+                                    "button_style": "btn btn-secondary btn-animation-two"
+                                }
+                            ]
+                        },
                         "bottom_image": "https://res.cloudinary.com/irwujctd/image/upload/w_500/v1785420485/ISO-9001-2015_lpsmie.png",
                         "bottom_image_alt": "ISO-9001-2015",
+                        "bottom_image_width": "400"
+                    },
+                    {
+                        "top_text": {
+                            "icon": "verified",
+                            "title": "CYBERSECURITY CMMC LEVEL 2",
+                            "subtitle": "Pacific Maritime Industries Corp. meets the stringent Department of Defense requirements for Cybersecurity Maturity Model Certification (CMMC) Level 2. Because we manufacture MIL-SPEC shipboard interiors, doors, and platforms for the U.S. Navy, we are entrusted with sensitive project data and an extensive archive of standard Navy manufacturing drawings. Our centralized ERP software system and IT infrastructure are secured to protect all Controlled Unclassified Information (CUI) throughout your project's lifecycle.",
+                            "heading_type": "h3"
+                        },
+                        "bottom_image": "",
+                        "bottom_image_alt": "",
                         "bottom_image_width": "400"
                     }
                 ]
@@ -2874,7 +2905,7 @@ const siteData = [
                         {
                             "text": "Contact",
                             "link": "/contact",
-                            "button_style": "btn btn-black-outline btn-animation-two"
+                            "button_style": "btn btn-secondary btn-animation-two"
                         }
                     ]
                 }
@@ -2900,14 +2931,13 @@ const siteData = [
             },
             "built_on_safety_section": {
                 "top_text": {
-                    "small_title": "Why Harcon",
+                    "small_title": "Why Pacific Maritime Industries Corp.",
                     "title": "Built on safety and skill",
                     "subtitle": "A career where you go home safe and grow strong."
                 },
                 "columns": [
                     {
-                        "image": "",
-                        "small_title": "Safety",
+                        "icon": "engineering",
                         "title": "Safety first, always",
                         "subtitle": "OSHA-compliant shop, daily toolbox talks, and a TRIR well below industry average. We invest in your safety gear and training."
                     },
@@ -2921,7 +2951,7 @@ const siteData = [
                         "icon": "anchor",
                         "image": "",
                         "title": "Local and stable work",
-                        "subtitle": "45+ years in San Diego. No out-of-state relocations. We hire locally and promote from within.",
+                        "subtitle": "30 years serving the fleet. No out-of-state relocations. We hire locally and promote from within.",
                     },
                 ]
             },

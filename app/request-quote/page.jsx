@@ -22,7 +22,6 @@ const RequestQuotePage = () => {
                     <div className="row">
                         <div className="col">
                             <TopText data={requestQuoteData.top_text} />
-                            <MultiStepForm />
                         </div>
                         <div className="col contact-methods">
                             {contact_methods.map((method, index) => (
@@ -34,12 +33,17 @@ const RequestQuotePage = () => {
                                         {method.value && <p className="value" dangerouslySetInnerHTML={{ __html: method.value }}></p>}
                                         {
                                             method.icon === 'location' ?
-                                                <a href="https://maps.app.goo.gl/vwELP8qpm7vgDPk16" target="_blank" rel="noopener noreferrer" className="btn btn-black-outline btn-animation-two directions">Get directions</a> :
+                                                <a href="https://maps.app.goo.gl/vwELP8qpm7vgDPk16" target="_blank" rel="noopener noreferrer" className="btn btn-secondary btn-animation-two directions">Get directions</a> :
                                                 null
                                         }
                                     </div>
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                    <div className="form-row row">
+                        <div className="col">
+                            <MultiStepForm />
                         </div>
                     </div>
                 </div>

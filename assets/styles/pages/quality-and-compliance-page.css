@@ -1,7 +1,7 @@
 .quality-and-compliance-page-content {
+
     .certifications-section {
         padding: 112px 0;
-        background-color: var(--color-background);
 
         .left-side-column-and-four-items {
             .item {
@@ -16,23 +16,10 @@
                 margin-top: 32px;
 
                 img {
-                    border: 2px solid var(--color-text);
-                    border-radius: 16px;
-                }
-            }
-        }
-    }
-
-    .faqs-section {
-        padding: 112px 0;
-        background-color: var(--color-white);
-
-        >.container {
-            >.row {
-                &:last-child {
-                    .top-text {
-                        margin-bottom: 0;
-                    }
+                    border-radius: var(--btn-radius);
+                    border: 2px solid white;
+                    border-right-width: 4px;
+                    border-bottom-width: 4px;
                 }
             }
         }

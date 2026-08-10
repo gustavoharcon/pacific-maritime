@@ -1,9 +1,9 @@
 .hero-section {
-    padding: 60px 0 14%;
+    padding: 112px 0 14%;
     margin-bottom: -10%;
     position: relative;
 
-    &:before {
+    /* &:before {
         background-image: url("https://res.cloudinary.com/irwujctd/image/upload/v1786122065/american-flag-fade_1_qbkkxi.png");
         content: '';
         position: absolute;
@@ -15,7 +15,7 @@
         background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
-    }
+    } */
 
     >.container {
         >.row {

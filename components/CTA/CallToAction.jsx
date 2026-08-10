@@ -1,15 +1,20 @@
-const CallToAction = () => {
+const CallToAction = ({ data }) => {
+
+    const { title, subtitle, buttons } = data;
+
     return (
         <section className="call-to-action">
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <h2>Same-day or next-day quote guaranteed</h2>
+                        <h2>{title}</h2>
                     </div>
                     <div className="col">
-                        <p className="text">Every RFQ is flagged urgent. Our estimating team commits to a complete, line-item quotation within one business day.</p>
+                        <p className="text">{subtitle}</p>
                         <div className="buttons">
-                            <a href="/request-quote" className="btn btn--primary btn-animation-four">Request quote</a>
+                            {buttons.map((button, index) => (
+                                <a key={index} href={button.link} className={`${button.button_style}`}>{button.text}</a>
+                            ))}
                         </div>
                     </div>
                 </div>

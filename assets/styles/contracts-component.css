@@ -14,13 +14,12 @@
         >.description {
             color: var(--color-white);
             font-size: 20px;
-            margin-bottom: 32px;
+            margin-bottom: 16px;
         }
 
         >.title {
             color: var(--color-white);
             font-size: 26px;
-            font-weight: 600;
             margin-bottom: 16px;
         }
 

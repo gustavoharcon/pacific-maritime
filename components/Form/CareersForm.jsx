@@ -332,7 +332,7 @@ export default function CareersForm() {
       <div className="form-actions">
         <button
           type="submit"
-          className="btn btn-white-background"
+          className="btn btn-secondary btn-animation-two"
           disabled={loading}
         >
           {loading ? (

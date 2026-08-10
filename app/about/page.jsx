@@ -8,12 +8,12 @@ import Buttons from "@/components/Buttons/Buttons";
 import ColumnsWithIconText from "@/components/ColumnsWithIconText";
 import Contracts from "@/components/Contracts";
 import siteData from "@/data/siteData";
+import CallToAction from "@/components/CTA/CallToAction";
 
 
 const aboutData = siteData.find(item => item.about_page)?.about_page;
-const milestonesData = aboutData?.milestones_section;
 const about_pmi = aboutData?.about_pmi;
-const capabilities = aboutData?.capabilities_section;
+const callToAction = aboutData.call_to_action;
 const ourteamData = aboutData?.our_team_section;
 const processData = aboutData?.process_section;
 const contractsData = aboutData?.contracts_section;
@@ -44,7 +44,7 @@ const AboutPage = () => {
                 </div>
             </section> */}
             <TwoColumnsText data={about_pmi} />
-            <TopTextThreeColumns data={capabilities} className="capabilities-section" />
+            {/* <TopTextThreeColumns data={capabilities} className="capabilities-section" /> */}
             <section className="our-team-section">
                 <div className="container">
                     <div className="row">
@@ -57,6 +57,7 @@ const AboutPage = () => {
                     </div>
                 </div>
             </section>
+            <CallToAction data={callToAction} />
             <section className="process-section">
                 <div className="container">
                     <div className="row">

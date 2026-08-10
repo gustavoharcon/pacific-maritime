@@ -4,8 +4,10 @@ import ColumnsWithTopImageText from "@/components/ColumnsWithTopImageText";
 import TopText from "@/components/Text/TopText";
 import Buttons from "@/components/Buttons/Buttons";
 import LeftSideColumnAndFourItems from "@/components/LeftSideColumnAndFourItems";
+import CallToAction from "@/components/CTA/CallToAction";
 
 const manufacturingData = siteData.find(item => item.manufacturing_capabilities_page)?.manufacturing_capabilities_page;
+const callToAction = manufacturingData.call_to_action;
 const workflowData = manufacturingData.workflow_section;
 const equipmentData = manufacturingData.equipment_section;
 
@@ -43,6 +45,7 @@ const ManufacturingCapabilitiesPage = () => {
                     </div>
                 </div>
             </section>
+            <CallToAction data={callToAction} />
             {/* <ProductionCapacity data={productionCapacityData} /> */}
             {/* <section className="quality-section">
                 <div className="container">

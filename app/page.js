@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <CallToAction />
+      <CallToAction data={homeData.call_to_action} />
       <TwoColumnsRightSideImage data={why_choose_pmi} />
       {/* <TimelineThreeColumns data={timeline_three_columns} /> */}
       <section className="equipment-by-process-section">

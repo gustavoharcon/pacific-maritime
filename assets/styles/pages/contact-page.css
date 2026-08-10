@@ -1,11 +1,9 @@
 .contact-page-content {
     .contact-info-section {
-        background-color: var(--color-background);
         padding: 112px 0;
     }
 
     .send-a-message-section {
-        background-color: var(--color-white);
         padding: 112px 0;
 
         .top-text {
@@ -14,7 +12,6 @@
     }
 
     .facility-section {
-        background-color: var(--color-background);
         padding: 112px 0;
 
         .top-text {

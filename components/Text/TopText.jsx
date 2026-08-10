@@ -1,11 +1,13 @@
 import Link from "next/link";
+import { getIcon } from "@/utils/helperFunctions";
 
 const TopText = ({ data = {}, className = "" }) => {
 
-    const { small_title, title, subtitle, buttons, heading_type, align_left } = data;
+    const { small_title, title, subtitle, buttons, heading_type, align_left, icon } = data;
 
     return (
         <div className={`top-text ${className} ${align_left ? 'align-left' : ''}`}>
+            {icon && <div className="icon-wrapper">{getIcon(icon)}</div>}
             {small_title && <p className="small-title">{small_title}</p>}
             {title
                 ? heading_type === "h1"

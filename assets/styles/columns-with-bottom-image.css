@@ -1,0 +1,43 @@
+.columns-with-bottom-image {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+
+    .item {
+        width: calc(50% - 32px);
+
+        .column-text-container {
+
+            padding: 0;
+
+            .top-text {
+                .title {
+                    font-size: 42px;
+                }
+
+                .title,
+                .subtitle {
+                    text-align: left;
+                }
+
+                .buttons {
+                    justify-content: flex-start;
+                }
+            }
+
+        }
+
+        .bottom-image-container {
+            img {
+                width: 100%;
+                max-width: 500px;
+                border: 2px solid var(--color-white);
+                border-right-width: 4px;
+                border-bottom-width: 4px;
+                border-radius: var(--btn-radius);
+            }
+        }
+    }
+}

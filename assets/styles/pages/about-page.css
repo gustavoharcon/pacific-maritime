@@ -28,6 +28,8 @@
         padding: 112px 0;
 
         .column-text-container {
+            padding: 0;
+
             >.text-area {
                 margin-bottom: 0;
 

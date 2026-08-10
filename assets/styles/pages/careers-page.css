@@ -7,7 +7,6 @@
     }
 
     .job-openings-section {
-        background-color: var(--color-background);
 
         >.container {
             >.row {
@@ -40,7 +39,6 @@
     }
 
     .join-the-crew-section {
-        background-color: var(--color-accent);
 
         .top-text {
 

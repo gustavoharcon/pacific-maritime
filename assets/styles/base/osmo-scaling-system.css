@@ -6,6 +6,8 @@
     --color-primary: #5F6980;
     --color-blue: #123B93;
     --color-red: #8B0000;
+    --color-error: #ff0000;
+    --color-light-blue: #7193db;
     --color-background: #E8E9EC;
     --color-foreground: #E8E9EC;
     --color-border: #010101;
@@ -161,6 +163,22 @@
 }
 
 /* ------------------------- Hide Scrollbar -------------------------------------------------- */
+
+main {
+    &:before {
+        content: "";
+        z-index: -1;
+        background-image: url(https://res.cloudinary.com/irwujctd/image/upload/v1786382936/third-american-flag-fade_yh7lej.png);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: calc(100% + 100px);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
 
 /* body ::-webkit-scrollbar,
 body::-webkit-scrollbar {
@@ -328,7 +346,7 @@ select,
 textarea,
 button {
     font-size: 1rem;
-    font-family: "Syne", sans-serif;
+    font-family: var(--font-inter);
     /* Prevent iOS zoom behavior */
 }
 
@@ -405,6 +423,18 @@ strong {
     max-width: 768px;
     display: block;
     margin: 0 auto 80px;
+
+    >.icon-wrapper {
+        color: var(--color-white);
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        margin-bottom: 24px;
+
+        svg {
+            font-size: 48px;
+        }
+    }
 
     >.small-title {
         margin-bottom: 16px;
@@ -577,7 +607,7 @@ strong {
 
 .link {
     text-decoration: underline;
-    color: var(--color-text);
+    color: var(--color-white);
 
     &:hover,
     &:active,

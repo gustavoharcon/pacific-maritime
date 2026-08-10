@@ -26,6 +26,7 @@
 
                     p {
                         margin-bottom: 16px;
+                        font-size: 18px;
 
                         &:last-child {
                             margin-bottom: 0;

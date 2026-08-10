@@ -1,6 +1,5 @@
 /* SHIPBOARD FURNITURE CATALOG SECTION */
 .sfc-table-section {
-    background-color: var(--color-primary);
     color: var(--color-white);
     padding-top: 80px;
     padding-bottom: 112px;
@@ -54,11 +53,11 @@
         position: relative;
 
         &:nth-of-type(odd) {
-            background-color: var(--color-accent-3);
+            background-color: rgba(0, 0, 0, 0.1);
         }
 
         &:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(113, 147, 219, 0.4);
             z-index: 10;
             cursor: pointer;
 

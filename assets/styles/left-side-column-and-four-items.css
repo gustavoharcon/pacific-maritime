@@ -8,8 +8,10 @@
         width: 50%;
 
         .item {
-            border: 2px solid var(--color-text);
-            border-radius: 16px;
+            border: 2px solid var(--color-white);
+            border-right-width: 4px;
+            border-bottom-width: 4px;
+            border-radius: var(--btn-radius);
             display: flex;
             flex-flow: column nowrap;
             justify-content: space-between;
@@ -22,8 +24,8 @@
                 display: flex;
 
                 img {
-                    border-bottom-left-radius: 16px;
-                    border-bottom-right-radius: 16px;
+                    border-bottom-left-radius: var(--btn-radius);
+                    border-bottom-right-radius: var(--btn-radius);
                 }
 
             }

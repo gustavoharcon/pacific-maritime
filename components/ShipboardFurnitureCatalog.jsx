@@ -17,7 +17,6 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
             <div className="container">
 
                 <TopText data={{
-                    small_title: "Furniture",
                     title: title,
                     subtitle: subtitle
                 }} />

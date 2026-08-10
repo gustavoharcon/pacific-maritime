@@ -17,7 +17,7 @@
                 max-height: 404px;
                 overflow: hidden;
                 position: relative;
-                border-radius: 16px;
+                border-radius: var(--btn-radius);
                 margin-bottom: 32px;
 
                 >img {
