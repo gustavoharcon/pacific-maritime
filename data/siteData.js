@@ -2721,7 +2721,7 @@ const siteData = [
             "hero_section": {
                 "title": "Contact Pacific Maritime Industries Corp.",
                 "subtitle": "Serving the Pacific, Atlantic, and Gulf military fleets. Because all requests for quote are urgent, standard component quotes are provided the same day or the following day.",
-                "center_text": true,
+                "full_width": true,
                 "buttons": [
                     {
                         "text": "Call sales",

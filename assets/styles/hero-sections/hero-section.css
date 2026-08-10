@@ -51,5 +51,17 @@
                 }
             }
         }
+
+    }
+
+    &.full-width {
+        >.container {
+
+            >.row {
+                >.col {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
