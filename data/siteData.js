@@ -207,6 +207,11 @@ const siteData = [
                         "top_image": "https://res.cloudinary.com/irwujctd/image/upload/w_500/v1786125037/desk-4.jpg_202608061444_oiqrld.jpg",
                         "title": "Office & Dining Furniture",
                         "description": "Heavy-duty modular workstations, chart tables, mess deck dining assemblies, sideboards, and administrative office systems.",
+                    },
+                    {
+                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/v1786371254/eebd_he5hkr.jpg",
+                        "title": "Marine Accessories & Safety",
+                        "description": "Diverse manufacturing capabilities for essential shipboard accessories, ranging from emergency EEBD and first aid enclosures to custom stainless steel architectural fixtures and acoustic phone booths.",
                     }
                 ],
                 "buttons": [
