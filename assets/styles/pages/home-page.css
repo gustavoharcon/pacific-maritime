@@ -23,13 +23,9 @@
     .equipment-by-process-section {
         padding: 112px 0;
 
-        .equipment-by-process-list {
-            display: flex;
-            flex-flow: row wrap;
-
-            .equipment-by-process-item {
-                width: calc(50% - 32px);
-            }
+        .buttons-component {
+            margin-top: 32px;
         }
+
     }
 }

@@ -188,11 +188,11 @@ const siteData = [
                         "title": "Staterooms & Crew Berthing",
                         "description": "Complete marine accommodation systems including berths, wardrobes, chests of drawers, and built-in units engineered to match standard Navy drawings.",
                     },
-                    {
-                        "top_image": "https://res.cloudinary.com/irwujctd/image/upload/w_500/v1786124463/berth-3.jpg_202608061455_wrjegs.jpg",
-                        "title": "Platforms & Ladders",
-                        "description": "Heavy-duty marine platforms, access structures, and industrial ladders engineered for strict space efficiency and rugged shipboard environments.",
-                    },
+                    // {
+                    //     "top_image": "https://res.cloudinary.com/irwujctd/image/upload/w_500/v1786124463/berth-3.jpg_202608061455_wrjegs.jpg",
+                    //     "title": "Platforms & Ladders",
+                    //     "description": "Heavy-duty marine platforms, access structures, and industrial ladders engineered for strict space efficiency and rugged shipboard environments.",
+                    // },
                     {
                         "top_image": "https://res.cloudinary.com/irwujctd/image/upload/w_500/v1786125028/1000000249.jpg_202608061451_qfgaqf.jpg",
                         "title": "Naval Lockers & Stowage",

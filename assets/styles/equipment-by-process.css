@@ -1,14 +1,17 @@
 .equipment-by-process-list {
     display: flex;
     flex-flow: row wrap;
+    gap: 32px;
 
     .equipment-by-process-item {
         width: calc(50% - 32px);
-        margin-bottom: 16px;
+        margin-bottom: 48px;
         display: flex;
         flex-flow: column nowrap;
-        padding-left: 16px;
+        align-items: flex-start;
+        padding-left: 32px;
         gap: 8px;
+        border-left: 2px solid var(--color-white);
 
         .equipment-by-process-icon {
             font-size: 48px;
