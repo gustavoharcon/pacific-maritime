@@ -1,7 +1,7 @@
 import { getIcon } from "@/utils/helperFunctions";
 import Link from "next/link";
 
-const ColumnsWithTopBGImageText = ({ columns, buttons }) => {
+const ColumnsWithTopImageText = ({ columns, buttons }) => {
 
     return (
         <div className="columns-with-top-image-text-component">
@@ -28,4 +28,4 @@ const ColumnsWithTopBGImageText = ({ columns, buttons }) => {
     )
 }
 
-export default ColumnsWithTopBGImageText
+export default ColumnsWithTopImageText

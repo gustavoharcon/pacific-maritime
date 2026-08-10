@@ -1,7 +1,6 @@
 .top-text-three-columns {
     padding-top: 112px;
     padding-bottom: 112px;
-    background-color: var(--color-background);
 
     >.container {
         >.row {

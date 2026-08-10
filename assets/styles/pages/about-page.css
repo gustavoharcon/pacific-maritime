@@ -1,17 +1,5 @@
 .about-page {
 
-    .hero-section {
-        >.container {
-            >.row {
-                >.col {
-                    width: 100%;
-                    padding-right: var(--container-padding);
-                    padding-left: var(--container-padding);
-                }
-            }
-        }
-    }
-
     .milestones-section {
         background-color: var(--color-background);
         padding: 112px 0;
@@ -37,7 +25,6 @@
     }
 
     .capabilities-section {
-        background-color: var(--color-white);
         padding: 112px 0;
 
         .column-text-container {
@@ -52,7 +39,6 @@
     }
 
     .our-team-section {
-        background-color: var(--color-background);
         padding: 112px 0;
 
         >.container {
@@ -91,7 +77,6 @@
 
     .contracts-section {
         padding: 112px 0;
-        background-color: var(--color-accent);
 
         >.container {
             .contracts-component {

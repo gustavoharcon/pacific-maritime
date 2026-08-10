@@ -1,6 +1,6 @@
 import siteData from "@/data/siteData";
 import HeroSection from "@/components/HeroSections/HeroSection";
-import ColumnsWithTopBGImageText from "@/components/ColumnsWithTopImageText";
+import ColumnsWithTopImageText from "@/components/ColumnsWithTopImageText";
 import TopText from "@/components/Text/TopText";
 import Buttons from "@/components/Buttons/Buttons";
 import LeftSideColumnAndFourItems from "@/components/LeftSideColumnAndFourItems";
@@ -27,8 +27,8 @@ const ManufacturingCapabilitiesPage = () => {
                     <div className="row">
                         <div className="col">
                             <TopText data={workflowData.top_text} />
-                            <ColumnsWithTopBGImageText data={workflowData.columns} />
-                            <Buttons data={workflowData.buttons} />
+                            <ColumnsWithTopImageText columns={workflowData.columns} buttons={workflowData.buttons} />
+                            {/* <Buttons data={workflowData.buttons} /> */}
                         </div>
                     </div>
                 </div>
