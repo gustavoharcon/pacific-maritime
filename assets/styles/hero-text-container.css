@@ -1,6 +1,7 @@
 .hero-text-container {
     z-index: 1;
     color: var(--color-light);
+    text-align: left;
 
     .title {
         margin-bottom: 24px;

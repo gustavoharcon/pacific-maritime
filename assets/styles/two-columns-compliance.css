@@ -53,6 +53,27 @@
                             flex-flow: column nowrap;
                             gap: 16px;
                         }
+
+
+                        .item-title {
+                            margin: 0;
+                            font-size: 40px;
+                        }
+
+                        .item-subtitle {
+                            margin: 0;
+                            font-size: 18px;
+                        }
+
+                        @media screen and (max-width: 991px) {
+                            .item-title {
+                                font-size: 32px;
+                            }
+
+                            .item-subtitle {
+                                font-size: 16px;
+                            }
+                        }
                     }
                 }
 
@@ -73,6 +94,12 @@
                         top: 58px;
                         left: 24px;
                     }
+
+                    .item-content {
+                        display: flex;
+                        flex-flow: column nowrap;
+                        gap: 12px;
+                    }
                 }
 
                 svg {
@@ -80,21 +107,6 @@
                 }
             }
 
-            .icon-wrapper .item-content {
-                display: flex;
-                flex-flow: column nowrap;
-                gap: 12px;
-            }
-
-            .item-title {
-                margin: 0;
-                font-size: 40px;
-            }
-
-            .item-subtitle {
-                margin: 0;
-                font-size: 18px;
-            }
         }
     }
 }
