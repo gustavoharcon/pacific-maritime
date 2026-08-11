@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { signOut, useSession } from "next-auth/react";
+import { IoIosMenu } from "react-icons/io";
 // import profileDefault from "@/assets/images/profile.png";
 import LogoImageLink from "@/components/LogoImageLink";
 import MainMenu from "@/components/Menus/MainMenu";
@@ -46,7 +47,17 @@ const NavBar = () => {
         <nav className={`main-menu ${isScrolled ? "scrolled" : ""} ${isMobileMenuOpen ? "menu-open" : ""}`}>
             <div className="container">
                 <div className="row">
-                    <div className="mobile-menu-column col"></div>
+                    <div className="mobile-menu-button-container col">
+                        <button
+                            type="button"
+                            id="mobile-dropdown-button"
+                            aria-controls="mobile-menu"
+                            aria-expanded={isMobileMenuOpen}
+                            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+                        >
+                            <IoIosMenu />
+                        </button>
+                    </div>
                     <div className="logo-column col">
                         <LogoImageLink />
                     </div>
@@ -74,6 +85,9 @@ const NavBar = () => {
                                 </Link>
                             </div>
                         </div>)}
+                    </div>
+                    <div className="mobile-top-menu-container col">
+                        <MainMenu session={session} />
                     </div>
                 </div>
             </div>

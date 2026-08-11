@@ -11,7 +11,10 @@ const MainMenu = ({ session }) => {
   return (
     <ul className="main-menu-list">
       {menuItems.map((item, index) => (
-        <li key={index} className={`main-menu-item ${item.sub_menu && item.sub_menu.length > 0 ? "has-sub-menu" : ""}`}>
+        <li
+          key={index}
+          className={`main-menu-item ${item.sub_menu && item.sub_menu.length > 0 ? "has-sub-menu" : ""}`}
+        >
           <Link href={item.menu_url}>
             {item.menu_name}
             {item.sub_menu && item.sub_menu.length > 0 && (
