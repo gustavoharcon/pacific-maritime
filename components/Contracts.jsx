@@ -22,12 +22,12 @@ const Contracts = ({ data }) => {
                         key={index}
                         className="contract"
                     >
-                        <p className="description">{contract.description}</p>
-                        <p className="number">Contract #: {contract.number}</p>
-                        <p className="contact-info-title">{contract.contact_info_title}</p>
-                        <p className="contact-name">{contract.contact_name}</p>
-                        <a href={`tel:${contract.contact_phone}`} className="contact-phone"><FiPhoneCall className="icon" />{contract.contact_phone}</a>
-                        <a href={`mailto:${contract.contact_email}`} className="contact-email"><MdOutlineMail className="icon" />{contract.contact_email}</a>
+                        {contract.contact_info_title && <p className="contact-info-title">{contract.contact_info_title}</p>}
+                        {contract.description && <p className="description">{contract.description}</p>}
+                        {contract.number && <p className="number">Contract #: {contract.number}</p>}
+                        {contract.contact_name && <p className="contact-name">{contract.contact_name}</p>}
+                        {contract.contact_phone && <a href={`tel:${contract.contact_phone}`} className="contact-phone"><FiPhoneCall className="icon" />{contract.contact_phone}</a>}
+                        {contract.contact_email && <a href={`mailto:${contract.contact_email}`} className="contact-email"><MdOutlineMail className="icon" />{contract.contact_email}</a>}
                     </div>
                 ))}
                 {buttons && (

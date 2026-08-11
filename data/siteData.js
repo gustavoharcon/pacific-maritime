@@ -584,7 +584,7 @@ const siteData = [
                     "title": "Contracts that Prove the Work"
                 },
                 "contracts_text": {
-                    "description": "A record of on-time, on-budget delivery for the U.S. Navy and prime contractors. Contact us for past performance references.",
+                    "description": "With three decades of manufacturing experience, Pacific Maritime Industries Corp has a proven track record of delivering high-quality marine equipment to the defense sector. As a trusted government contractor, we hold multiple Indefinite Delivery/Indefinite Quantity (IDIQ) contracts to supply essential habitability and storage solutions for naval vessels.",
                     "title": "Notable contracts",
                     "contracts": [
                         // {
@@ -596,13 +596,37 @@ const siteData = [
                         //     "contact_email": "patrick.walsh@navy.mil"
                         // }
                         {
-                            "description": "",
-                            "number": "",
-                            "contact_info_title": "Contact Information",
+                            "contact_info_title": "Marine Recreation Furniture",
+                            "description": "Supplying durable, marine-grade recreation and lounge furniture designed to withstand rigorous maritime environments while improving crew morale and comfort during extended deployments.",
+                            "number": "N0018925D0013",
                             "contact_name": "",
                             "contact_phone": "",
                             "contact_email": ""
-                        }
+                        },
+                        {
+                            "contact_info_title": "Navy Shipboard Lavatory Countertops",
+                            "description": "Manufacturing specialized lavatory countertops engineered to meet stringent military specifications for hygiene, durability, and space efficiency in shipboard washrooms.",
+                            "number": "N0018925D0014",
+                            "contact_name": "",
+                            "contact_phone": "",
+                            "contact_email": ""
+                        },
+                        {
+                            "contact_info_title": "Lightweight Modular Berthing Systems",
+                            "description": "Fabricating modern, lightweight modular berths that optimize limited cabin space. These systems are designed to enhance overall crew habitability, rest, and safety on active-duty vessels.",
+                            "number": "N0018925D0027",
+                            "contact_name": "",
+                            "contact_phone": "",
+                            "contact_email": ""
+                        },
+                        {
+                            "contact_info_title": "Heavy-Duty Shipboard Lockers",
+                            "description": "Producing secure, space-efficient storage lockers tailored for crew organization. Built to military standards, these lockers provide robust personal storage solutions that integrate seamlessly into shipboard living quarters.",
+                            "number": "N0018925D0036",
+                            "contact_name": "",
+                            "contact_phone": "",
+                            "contact_email": ""
+                        },
                     ]
                 },
                 "buttons": [
