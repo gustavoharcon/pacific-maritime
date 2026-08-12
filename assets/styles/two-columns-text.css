@@ -13,7 +13,7 @@
             &.left-side-col {
                 .bottom-image-container {
                     img {
-                        border-radius: 16px;
+                        border-radius: var(--btn-radius);
                     }
                 }
             }
@@ -42,4 +42,45 @@
             }
         }
     }
+
+    @media screen and (max-width: 1200px) {
+        padding: 40px 0;
+
+        .row {
+            gap: 32px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .row {
+            flex-flow: column-reverse wrap;
+
+            .col {
+                width: 100%;
+
+                &.left-side-col {
+                    .bottom-image-container {
+                        img {
+                            max-width: 640px;
+                            margin: 0 auto;
+                            display: block;
+                        }
+                    }
+                }
+
+                .top-text {
+
+                    .subtitle {
+                        margin-bottom: 0;
+
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {}
 }
