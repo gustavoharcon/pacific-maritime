@@ -28,4 +28,26 @@
             font-size: 20px;
         }
     }
+
+    @media screen and (max-width: 1200px) {
+        .equipment-by-process-item {
+            margin-bottom: 24px;
+
+            .equipment-by-process-title {
+                font-size: 32px;
+            }
+
+            .equipment-by-process-description {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        gap: 16px;
+
+        .equipment-by-process-item {
+            width: 100%;
+        }
+    }
 }

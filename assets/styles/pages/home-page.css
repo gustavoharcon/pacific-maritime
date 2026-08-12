@@ -1,7 +1,4 @@
 .home-page {
-    .capabilities-three-columns {
-        background-color: var(--color-white);
-    }
 
     .three-columns-background-image-section {
         padding: 112px 0;
@@ -27,5 +24,20 @@
             margin-top: 32px;
         }
 
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        .three-columns-background-image-section,
+        .columns-with-image-section,
+        .equipment-by-process-section {
+            padding: 40px 0;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .top-text {
+            margin-bottom: 40px;
+        }
     }
 }

@@ -53,4 +53,40 @@
             }
         }
     }
+
+    @media screen and (max-width: 1200px) {
+        padding: 32px 0;
+
+        >.container {
+            >.row {
+                padding: 40px;
+                gap: 24px;
+
+                >.col {
+                    width: 100%;
+                    max-width: 768px;
+
+                    h2 {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        >.container {
+            >.row {
+                >.col {
+                    h2 {
+                        font-size: 32px;
+                    }
+
+                    >p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
 }

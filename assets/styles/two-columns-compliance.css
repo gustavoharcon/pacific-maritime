@@ -111,19 +111,31 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .two-columns-compliance {
+        padding: 40px 0;
+
+        >.container {
+            >.row {
+                gap: 60px;
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width: 991px) {
     .two-columns-compliance {
-        padding: 80px 0;
-
         >.container {
             >.row {
                 flex-flow: column nowrap;
-                gap: 60px;
 
                 >.col {
                     width: 100%;
+
+                    .item {
+                        gap: 20px;
+                    }
                 }
             }
         }

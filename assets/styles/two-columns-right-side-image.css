@@ -61,4 +61,56 @@
             }
         }
     }
+
+    @media screen and (max-width: 1200px) {
+        padding: 40px 0;
+
+    }
+
+    @media screen and (max-width: 991px) {
+
+        >.container {
+            >.row {
+                gap: 40px;
+                flex-flow: column nowrap;
+
+                >.col {
+                    width: 100%;
+
+                    &.left-column {
+
+                        .items-container {
+
+                            >.item {
+                                p {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        >.container {
+            >.row {
+                >.col {
+                    &.left-column {
+                        .items-container {
+                            >.item {
+                                flex: 100%;
+
+                                p {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
