@@ -61,4 +61,24 @@
             gap: 16px;
         }
     }
+
+    @media screen and (max-width: 1200px) {
+        gap: 32px;
+    }
+
+    @media screen and (max-width: 991px) {
+        flex-flow: column nowrap;
+
+        .column {
+            width: 100%;
+
+            .top-text {
+                margin: 0;
+
+                .title {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }

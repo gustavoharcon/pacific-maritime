@@ -30,7 +30,8 @@
             }
 
             >.col {
-                width: 50%;
+                width: 100%;
+                max-width: 768px;
 
                 h2 {
                     font-size: 60px;

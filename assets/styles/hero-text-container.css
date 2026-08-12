@@ -15,6 +15,7 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
+        justify-content: flex-start;
         gap: 16px;
     }
 
