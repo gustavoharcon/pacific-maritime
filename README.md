@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pacific Maritime Industries Corp. - Corporate Website
 
-## Getting Started
+A high-performance, modern corporate website and client portal for **Pacific Maritime Industries Corp.**, a San Diego-based manufacturer of MIL-SPEC compliant shipboard interiors and structural components. 
 
-First, run the development server:
+Built with the Next.js App Router, this application handles front-end marketing pages, dynamic catalog viewing, and secure backend API routes for job applications and urgent Request for Quote (RFQ) submissions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*   **Framework:** [Next.js](https://nextjs.org/) (App Router)
+*   **Library:** React.js
+*   **Database:** MongoDB (Mongoose/Native Driver)
+*   **Styling:** Modular CSS / PostCSS
+*   **Deployment:** Vercel (Optimized for edge networking and CI/CD)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Repository Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project follows a modular and scalable architecture:
 
-## Learn More
+*   **/app**: Contains the core Next.js App Router structure, including all page routes (`/about`, `/careers`, `/contact`, `/catalogs-and-downloads`).
+*   **/app/api**: Secure backend API routes handling form submissions (`/api/contact`, `/api/submit`), job applications (`/api/careers`), and data fetching.
+*   **/components**: Reusable React UI components categorized by function (e.g., `/Buttons`, `/HeroSections`, `/NavBars`, `/Form`).
+*   **/assets**: Static assets including global styles (`/styles`), images, and icons.
+*   **/config**: Database connection configurations (`mongodb.js`, `database.js`).
+*   **/context**: React Context providers (e.g., `GlobalContext.js`) for managing global application state.
+*   **/data**: Static site data and configuration files (`siteData.js`).
+*   **/utils**: Helper functions and authentication configurations (`helperFunctions.js`, `authOptions.js`).
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prerequisites
+Ensure you have the following installed on your local machine:
+*   Node.js (v18.x or later recommended)
+*   npm or yarn
+*   A running instance of MongoDB (Local or Atlas)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation
 
-## Deploy on Vercel
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-org/pacific-maritime.git](https://github.com/your-org/pacific-maritime.git)
+    cd pacific-maritime
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Set up Environment Variables:**
+    Create a `.env.local` file in the root directory and add your required variables (e.g., database URIs, API keys):
+    ```env
+    MONGODB_URI=your_mongodb_connection_string
+    NEXT_PUBLIC_BASE_URL=http://localhost:3000
+    # Add other required API keys here (e.g., email service providers)
+    ```
+
+4.  **Run the development server:**
+    ```bash
+    npm run dev
