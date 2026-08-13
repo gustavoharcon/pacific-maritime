@@ -4,6 +4,10 @@
     .job-openings-section,
     .join-the-crew-section {
         padding: 112px 0;
+
+        @media screen and (max-width: 1200px) {
+            padding: 40px 0;
+        }
     }
 
     .job-openings-section {
@@ -39,7 +43,6 @@
     }
 
     .join-the-crew-section {
-
         .top-text {
 
             .small-title,
@@ -47,6 +50,14 @@
             .subtitle {
                 color: var(--color-white);
             }
+        }
+    }
+
+    .hero-section {
+        padding-bottom: 40px;
+
+        .hero-text-container {
+            margin: 0;
         }
     }
 }
