@@ -1,12 +1,5 @@
 .left-side-column-and-four-items {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: stretch;
-    gap: 32px;
-
     >div {
-        width: 50%;
-
         .item {
             border: 2px solid var(--color-white);
             border-right-width: 4px;
@@ -15,9 +8,10 @@
             display: flex;
             flex-flow: column nowrap;
             justify-content: space-between;
+            align-items: flex-start;
 
             .column-text-container {
-                padding: 48px;
+                padding: 24px 24px 32px;
 
                 .subtitle {
                     font-size: 16px;
@@ -30,42 +24,17 @@
                 img {
                     border-bottom-left-radius: var(--btn-radius);
                     border-bottom-right-radius: var(--btn-radius);
+                    width: 100%;
                 }
 
             }
         }
 
-        &.left-side-column {
-            .item {
-                height: 100%;
+        &.items {
 
-                .column-text-container {
-                    display: flex;
-                    flex-flow: column wrap;
-                    justify-content: center;
-                    height: 100%;
-
-                    .title {
-                        font-size: 48px;
-                    }
-                }
-            }
-        }
-
-        &.right-side-four-items {
-            display: flex;
-            flex-flow: row wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
             gap: 32px;
-
-            >.item {
-                width: calc(50% - 16px);
-
-                .column-text-container {
-                    padding: 24px;
-                }
-            }
         }
-
-        @media screen and (max-width: 1200px) {}
     }
 }
