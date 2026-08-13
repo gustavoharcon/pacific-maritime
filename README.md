@@ -57,3 +57,20 @@ Ensure you have the following installed on your local machine:
 4.  **Run the development server:**
     ```bash
     npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+## 🚢 Core Features
+
+*   **Capabilities Showcase:** Dedicated pages outlining advanced CNC fabrication, equipment lists, and production capacities.
+*   **Quality & Compliance Hub:** Documentation of ISO 9001:2015 and Cybersecurity CMMC Level 2 credentials.
+*   **Interactive Catalogs:** Custom UI components (`CatalogsInteractive.jsx`, `ShipboardFurnitureCatalog.jsx`) for browsing marine components.
+*   **Multi-Step Forms:** Guided routing for detailed manufacturing quotes (`MultiStepForm.jsx`) ensuring exact specifications are captured.
+*   **Careers Portal:** Dynamic job listings and application form routing.
+
+## 🔒 Project Guidelines & Best Practices
+
+To maintain alignment with corporate and defense-contracting standards, please adhere to the following when contributing to this repository:
+
+*   **Performance:** All visual assets should be highly optimized to ensure rapid load times, reflecting the company's commitment to precision and speed.
+*   **Code Style:** ESLint configurations are included in the root directory (`eslint.config.mjs`). Ensure all code passes standard linting before opening a pull request.
