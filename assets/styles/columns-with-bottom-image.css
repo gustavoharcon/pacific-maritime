@@ -9,7 +9,6 @@
         width: calc(50% - 32px);
 
         .column-text-container {
-
             padding: 0;
 
             .top-text {
@@ -37,6 +36,40 @@
                 border-right-width: 4px;
                 border-bottom-width: 4px;
                 border-radius: var(--btn-radius);
+            }
+        }
+
+        @media screen and (max-width: 1200px) {
+            .column-text-container {
+                .top-text {
+                    .title {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 991px) {
+            .column-text-container {
+                .top-text {
+                    .title {
+                        font-size: 32px;
+                    }
+
+                    .subtitle {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+
+            .bottom-image-container {
+                img {
+                    max-width: 300px;
+                }
             }
         }
     }

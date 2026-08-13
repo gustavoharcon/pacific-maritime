@@ -23,5 +23,22 @@
                 }
             }
         }
+
+    }
+
+    .hero-section {
+        padding-bottom: 40px;
+
+        .top-text {
+            margin-bottom: 0;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding: 40px 0;
+
+        .certifications-section {
+            padding: 40px 0;
+        }
     }
 }
