@@ -4,6 +4,13 @@
     padding-top: 80px;
     padding-bottom: 112px;
     text-align: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    @media screen and (max-width: 1200px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 
     .top-text {
 
@@ -17,6 +24,7 @@
     .sfc-table-wrapper {
         background: transparent;
         margin-bottom: 40px;
+        min-width: 900px;
     }
 
     .sfc-table-header {
