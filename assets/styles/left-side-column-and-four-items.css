@@ -31,9 +31,30 @@
         }
 
         &.items {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: stretch;
             gap: 32px;
+
+            >.item {
+                width: calc(33.33% - 32px);
+            }
+
+            @media screen and (max-width: 991px) {
+                gap: 24px;
+
+                >.item {
+                    width: calc(50% - 24px);
+                }
+            }
+
+            @media screen and (max-width: 576px) {
+
+                >.item {
+                    width: 100%;
+                }
+            }
         }
     }
 }
