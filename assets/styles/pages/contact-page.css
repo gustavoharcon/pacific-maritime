@@ -1,4 +1,17 @@
 .contact-page-content {
+
+    .hero-section {
+        >.container {
+            >.row {
+                >.col {
+                    .top-text {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
     .contact-info-section {
         padding: 112px 0;
     }
@@ -16,6 +29,21 @@
 
         .top-text {
             margin-bottom: 48px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+
+        .contact-info-section,
+        .send-a-message-section,
+        .facility-section {
+            padding: 40px 0;
+        }
+
+        .contact-info-section {
+
+            .three-columns-with-icon-component {}
+
         }
     }
 }
