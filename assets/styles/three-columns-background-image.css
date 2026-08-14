@@ -97,4 +97,42 @@
         }
     }
 
+    @media screen and (max-width: 1200px) {
+        >.columns-row {
+            gap: 16px;
+            flex-flow: row wrap;
+
+            >.col {
+                padding: 24px;
+
+                &:nth-child(2),
+                &:last-child {
+                    width: calc(50% - 24px);
+                }
+
+                &:first-child {
+                    .column-text-container {
+                        >.text-area {
+                            >.title {
+                                font-size: 32px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        >.columns-row {
+            >.col {
+
+                &:nth-child(2),
+                &:last-child,
+                &:first-child {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
