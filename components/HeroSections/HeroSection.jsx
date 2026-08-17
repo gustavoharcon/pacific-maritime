@@ -2,7 +2,7 @@ import HeroTextContainer from "@/components/HeroTextContainer";
 
 const HeroSection = ({ data }) => {
 
-    const { right_column_image, full_width } = data;
+    const { right_column_image = "", full_width = false } = data || {};
 
     return (
         <section className={`hero-section ${full_width ? "full-width" : ""}`}>

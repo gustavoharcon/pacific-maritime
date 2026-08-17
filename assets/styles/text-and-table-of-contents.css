@@ -1,0 +1,38 @@
+.text-and-table-of-contents {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    align-items: flex-start;
+    gap: 32px;
+
+    >.text {
+        width: 80%;
+
+        >div {
+
+            >h2 {
+                margin-bottom: 24px;
+            }
+        }
+
+    }
+
+    >.table-of-contents {
+        width: 20%;
+
+        >.table-of-contents-list {
+
+            >.table-of-contents-item {
+
+                a {
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        flex-flow: column-reverse nowrap;
+        gap: 40px;
+    }
+}

@@ -31,6 +31,7 @@
 @import "./two-columns-text.css";
 @import "./equipment-by-process.css";
 @import "./columns-with-bottom-image.css";
+@import "./text-and-table-of-contents.css";
 @import "./pages/home-page.css";
 @import "./pages/about-page.css";
 @import "./pages/catalogs-page.css";
@@ -42,6 +43,7 @@
 @import "./pages/careers-page.css";
 @import "./pages/blog-page.css";
 @import "./pages/not-found-page.css";
+@import "./pages/term-of-service-page.css";
 @import "./catalogs/catalogs-interactive.css";
 @import "./catalogs/shipboard-furniture-catalog.css";
 @import "./catalogs/catalog-overlay.css";

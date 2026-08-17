@@ -1,0 +1,15 @@
+.terms-of-service-page-content {
+    .hero-section {
+        .hero-text-container {
+            margin-bottom: 0;
+        }
+    }
+
+    .terms-and-table-of-contents-section {
+        padding: 0 0 112px;
+
+        @media screen and (max-width: 1200px) {
+            padding: 40px 0;
+        }
+    }
+}

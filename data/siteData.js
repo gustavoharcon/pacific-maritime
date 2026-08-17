@@ -68,10 +68,10 @@ const siteData = [
                 //     "text": "Privacy policy",
                 //     "link": "/privacy-policy"
                 // },
-                // {
-                //     "text": "Terms of service",
-                //     "link": "/terms-of-service"
-                // }
+                {
+                    "text": "Terms of service",
+                    "link": "/terms-of-service"
+                }
             ],
             "copyright_text": "© " + new Date().getFullYear() + " Pacific Maritime Industries Corp. All rights reserved."
         }
@@ -121,6 +121,27 @@ const siteData = [
             //     "link": "/blog"
             // }
         ]
+    },
+    {
+        "terms_of_service_page": {
+            "meta_data": {
+                "title": "Terms of Service",
+                "description": "Terms of Service"
+            },
+            "hero_section": {
+                "title": "Terms of Service",
+                "subtitle": "Terms of Service for Pacific Maritime Industries Corp."
+            },
+            "text_and_table_of_contents": {
+                "text": "<h2 id='terms'>Terms of Service</h2><p>Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id.</p>",
+                "table_of_contents": [
+                    {
+                        "text": "Terms of Service",
+                        "link": "#terms"
+                    }
+                ]
+            }
+        }
     },
     {
         "home_page": {
