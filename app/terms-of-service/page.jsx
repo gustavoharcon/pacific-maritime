@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSections/HeroSection"
 import siteData from "@/data/siteData.js"
 import TextAndTableOfContents from "@/components/TextAndTableOfContents"
+import { generatePageMetadata } from "@/utils/metadata";
 
 const tosData = siteData.find(item => item.terms_of_service_page)?.terms_of_service_page;
 const heroSection = tosData.hero_section;
@@ -8,10 +9,11 @@ const heroSection = tosData.hero_section;
 console.log(tosData);
 
 export async function generateMetadata() {
-    return {
+    return generatePageMetadata({
         title: tosData.meta_data.title,
         description: tosData.meta_data.description,
-    };
+        path: "/terms-of-service",
+    });
 }
 
 const TermsOfService = () => {

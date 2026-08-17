@@ -23,6 +23,7 @@ const tiltWarp = Tilt_Warp({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://www.pacmaritime.com"),
   title: {
     // %s will be replaced by the specific page's title
     template: "%s | Pacific Maritime Industries Corp.",
@@ -54,9 +55,10 @@ export const metadata = {
     siteName: 'Pacific Maritime Industries Corp.',
     images: [
       {
-        url: '',
+        url: '/assets/images/logos/black_with_text_Pacific_Maritime_Industries_Corporation.png',
         width: 1200,
         height: 630,
+        alt: 'Pacific Maritime Industries Corp. Logo',
       },
     ],
     locale: 'en_US',

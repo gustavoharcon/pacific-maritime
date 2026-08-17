@@ -4,6 +4,7 @@ import ThreeColumnsWithIcon from "@/components/ThreeColumnsWithIcon";
 import siteData from "@/data/siteData"
 import ContactForm from "@/components/Form/ContactForm";
 import ColumnsWithImage from "@/components/ColumnsWithImage";
+import { generatePageMetadata } from "@/utils/metadata";
 
 const contactData = siteData.find(item => item.contact_page)?.contact_page;
 const contactInfoSection = contactData.contact_info_section;
@@ -12,10 +13,11 @@ const facilitySection = contactData.facility_section;
 const hoursSection = contactData.hours_section;
 
 export async function generateMetadata() {
-    return {
+    return generatePageMetadata({
         title: contactData.meta_data.title,
         description: contactData.meta_data.description,
-    };
+        path: "/contact",
+    });
 }
 
 const ContactPage = () => {

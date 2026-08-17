@@ -5,6 +5,7 @@ import TopText from "@/components/Text/TopText";
 import Buttons from "@/components/Buttons/Buttons";
 import LeftSideColumnAndFourItems from "@/components/LeftSideColumnAndFourItems";
 import CallToAction from "@/components/CTA/CallToAction";
+import { generatePageMetadata } from "@/utils/metadata";
 
 const manufacturingData = siteData.find(item => item.manufacturing_capabilities_page)?.manufacturing_capabilities_page;
 const callToAction = manufacturingData.call_to_action;
@@ -12,10 +13,11 @@ const workflowData = manufacturingData.workflow_section;
 const equipmentData = manufacturingData.equipment_section;
 
 export async function generateMetadata() {
-    return {
+    return generatePageMetadata({
         title: manufacturingData.meta_data.title,
         description: manufacturingData.meta_data.description,
-    };
+        path: "/about/manufacturing-capabilities",
+    });
 }
 
 const ManufacturingCapabilitiesPage = () => {

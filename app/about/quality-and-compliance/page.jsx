@@ -5,6 +5,7 @@ import LeftSideColumnAndFourItems from "@/components/LeftSideColumnAndFourItems"
 import FaqList from "@/components/FaqList";
 import CallToAction from "@/components/CTA/CallToAction";
 import ColumnsWithBottomImage from "@/components/ColumnsWithBottomImage";
+import { generatePageMetadata } from "@/utils/metadata";
 
 const qualityComplianceData = siteData.find(item => item.quality_compliance_page)?.quality_compliance_page
 const heroSectionData = qualityComplianceData.hero_section;
@@ -12,10 +13,11 @@ const certificationsSection = qualityComplianceData.certifications_section;
 const faqsSection = qualityComplianceData.faqs_section;
 
 export async function generateMetadata() {
-    return {
+    return generatePageMetadata({
         title: qualityComplianceData.meta_data.title,
         description: qualityComplianceData.meta_data.description,
-    }
+        path: "/about/quality-and-compliance",
+    });
 }
 
 const QualityAndCompliancePage = () => {

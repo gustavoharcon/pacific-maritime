@@ -2,15 +2,17 @@ import MultiStepForm from "@/components/Form/MultiStepForm";
 import TopText from "@/components/Text/TopText";
 import siteData from "@/data/siteData";
 import ThreeColumnsWithIcon from "@/components/ThreeColumnsWithIcon";
+import { generatePageMetadata } from "@/utils/metadata";
 
 const requestQuoteData = siteData.find(item => item.request_quote_page)?.request_quote_page;
 const contactMethods = requestQuoteData.contact_methods;
 
 export async function generateMetadata() {
-    return {
+    return generatePageMetadata({
         title: requestQuoteData.meta_data.title,
         description: requestQuoteData.meta_data.description,
-    };
+        path: "/request-quote",
+    });
 }
 
 const RequestQuotePage = () => {

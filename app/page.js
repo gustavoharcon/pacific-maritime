@@ -9,14 +9,16 @@ import CallToAction from "@/components/CTA/CallToAction";
 import TwoColumnsCompliance from "@/components/TwoColumnsCompliance";
 import EquipmentByProcess from "@/components/EquipmentByProcess";
 import Buttons from "@/components/Buttons/Buttons";
+import { generatePageMetadata } from "@/utils/metadata";
 
 const homeData = siteData.find(item => item.home_page)?.home_page;
 
 export async function generateMetadata() {
-  return {
+  return generatePageMetadata({
     title: homeData.meta_data.title,
     description: homeData.meta_data.description,
-  };
+    path: "",
+  });
 }
 
 export default function Home() {

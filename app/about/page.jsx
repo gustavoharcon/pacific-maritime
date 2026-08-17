@@ -9,6 +9,7 @@ import ColumnsWithIconText from "@/components/ColumnsWithIconText";
 import Contracts from "@/components/Contracts";
 import siteData from "@/data/siteData";
 import CallToAction from "@/components/CTA/CallToAction";
+import { generatePageMetadata } from "@/utils/metadata";
 
 
 const aboutData = siteData.find(item => item.about_page)?.about_page;
@@ -19,10 +20,11 @@ const processData = aboutData?.process_section;
 const contractsData = aboutData?.contracts_section;
 
 export async function generateMetadata() {
-    return {
+    return generatePageMetadata({
         title: aboutData.meta_data.title,
         description: aboutData.meta_data.description,
-    };
+        path: "/about",
+    });
 }
 
 const AboutPage = () => {

@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /
 
 # Point crawlers to your sitemap
-# Sitemap: 
+Sitemap: https://www.pacmaritime.com/sitemap.xml

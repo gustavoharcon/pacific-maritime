@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSections/HeroSection";
 import TopText from "@/components/Text/TopText";
 import JobListings from "@/components/JobListings";
 import ThreeColumnsBackgroundImage from "@/components/ThreeColumnsBackgroundImage";
+import { generatePageMetadata } from "@/utils/metadata";
 
 import CareersForm from "@/components/Form/CareersForm";
 
@@ -10,6 +11,14 @@ const careersData = siteData.find(item => item.careers_page)?.careers_page;
 const jobOpeningsSection = careersData.job_openings_section;
 const builtOnSafetySection = careersData.built_on_safety_section;
 const joinTheCrewSection = careersData.join_the_crew_section;
+
+export async function generateMetadata() {
+    return generatePageMetadata({
+        title: careersData.meta_data.title,
+        description: careersData.meta_data.description,
+        path: "/careers",
+    });
+}
 
 const CareersPage = () => {
     return (
