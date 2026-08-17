@@ -39,16 +39,42 @@
         .facility-section {
             padding: 40px 0;
         }
-
-
     }
 
     @media screen and (max-width: 991px) {
-
         .contact-info-section {
 
-            .three-columns-with-icon-component {}
+            .three-columns-with-icon-component {
+                >.item {
+                    >.content {
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
 
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .contact-info-section {
+
+            .three-columns-with-icon-component {
+                flex-flow: column nowrap;
+                align-items: center;
+
+                >.item {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .facility-section {
+            .columns-with-image-component>.columns {
+                flex-flow: column nowrap;
+            }
         }
     }
 }
