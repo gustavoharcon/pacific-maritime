@@ -197,7 +197,7 @@ const siteData = [
                         "top_image": "https://res.cloudinary.com/irwujctd/image/upload/w_500/v1786124463/berth-3.jpg_202608061455_wrjegs.jpg",
                         "small_title": "Interiors",
                         "title": "Staterooms & Crew Berthing",
-                        "description": "Complete marine accommodation systems including berths, wardrobes, chests of drawers, and built-in units engineered to match standard Navy drawings.",
+                        "description": "Complete marine accommodations built with superior workmanship. Precision-built to match marine standard drawings and your exact conceptual sketches.",
                     },
                     // {
                     //     "top_image": "https://res.cloudinary.com/irwujctd/image/upload/w_500/v1786124463/berth-3.jpg_202608061455_wrjegs.jpg",
@@ -250,7 +250,7 @@ const siteData = [
                     },
                     {
                         "icon": "anchor",
-                        "text": "Proudly manufacturing structural components and modular interiors for the U.S. Navy Shipboard Habitability Program, engineered to balance crew comfort with strict space efficiency."
+                        "text": "Proudly manufacturing structural components and modular interiors for the U.S. Navy Shipboard Habitability Program, custom-built to balance crew comfort with strict space efficiency."
                     },
                     {
                         "icon": "drafting-compass",
@@ -277,7 +277,7 @@ const siteData = [
                     {
                         "icon": "3by3dots",
                         "title": "CNC Punching",
-                        "subtitle": "High-performance CNC turret punching and shearing capabilities engineered to process heavy steel with exact, repeatable precision."
+                        "subtitle": "High-performance CNC turret punching and shearing capabilities designed to process heavy steel with exact, repeatable precision."
                     },
                     {
                         "icon": "diamond-plus",
@@ -334,7 +334,7 @@ const siteData = [
                         "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785872728/Placeholder_Image.png_202608040955_qmmibs.jpg",
                         "image_description": "STATEROOM & BERTHING",
                         "title": "STATEROOM & BERTHING",
-                        "subtitle": "Complete marine accommodations built with superior workmanship. Engineered to match marine standard drawings and your exact conceptual sketches.",
+                        "subtitle": "Complete marine accommodations built with superior workmanship. Precision-built to match marine standard drawings and your exact conceptual sketches.",
                         "with_border": true,
                         "categories": [
                             "Modular",
@@ -370,7 +370,7 @@ const siteData = [
                         "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785944839/seating_202608050846_bobkzi.jpg",
                         "image_description": "Seating",
                         "title": "Seating",
-                        "subtitle": "MIL-SPEC compliant seating solutions engineered to balance crew comfort with strict space efficiency",
+                        "subtitle": "MIL-SPEC compliant seating solutions designed to balance crew comfort with strict space efficiency",
                         "with_border": true,
                         "categories": [
                             "Aluminum",
@@ -423,7 +423,7 @@ const siteData = [
                     "top_text": {
                         "align_left": true,
                         "title": "Comprehensive Manufacturing Services",
-                        "subtitle": "<p>The professionals at Pacific Maritime Industries Corp. have built a reputation for quality products and services for the U.S. Navy, ship repair yards, the maritime fleet, and a variety of other on-the-water customers. We manufacture more than shipboard interiors; our capabilities extend to heavy-duty platforms, ladders, and metal joiner doors</p><p>It’s the superior quality and unsurpassed reliability of our fabrication process—managed through a centralized ERP software system for total digital traceability—along with our commitment to hands-on customer service that sets us apart.</p><p>Pacific Maritime Industries Corp. proudly manufactures structural components and modular interiors for the U.S. Navy Shipboard Habitability Program, engineered to balance crew comfort with strict space efficiency.</p>"
+                        "subtitle": "<p>The professionals at Pacific Maritime Industries Corp. have built a reputation for quality products and services for the U.S. Navy, ship repair yards, the maritime fleet, and a variety of other on-the-water customers. We manufacture more than shipboard interiors; our capabilities extend to heavy-duty platforms, ladders, and metal joiner doors</p><p>It’s the superior quality and unsurpassed reliability of our fabrication process—managed through a centralized ERP software system for total digital traceability—along with our commitment to hands-on customer service that sets us apart.</p><p>Pacific Maritime Industries Corp. proudly manufactures structural components and modular interiors for the U.S. Navy Shipboard Habitability Program, custom-built to balance crew comfort with strict space efficiency.</p>"
                     },
                 }
             },
@@ -525,7 +525,7 @@ const siteData = [
                         "image": "https://res.cloudinary.com/irwujctd/image/upload/v1784913543/team-member-placeholder_wpiqzi.png",
                         "name": "John Atkinson",
                         "position": "President",
-                        "description": "35 years in maritime manufacturing. Former NASSCO production engineer. Founded PMI in 1979. He oversees all contract execution.",
+                        "description": "5 years in maritime manufacturing. Former NASSCO production planner. Founded PMI in 1979. He oversees all contract execution.",
                         "phone": process.env.CONTACT_PHONE_NUMBER,
                         "email": "jatkinson@pacmaritime.com",
                         "social_media": [
@@ -605,7 +605,7 @@ const siteData = [
                         },
                         {
                             "contact_info_title": "Navy Shipboard Lavatory Countertops",
-                            "description": "Manufacturing specialized lavatory countertops engineered to meet stringent military specifications for hygiene, durability, and space efficiency in shipboard washrooms.",
+                            "description": "Manufacturing specialized lavatory countertops fabricated to meet stringent military specifications for hygiene, durability, and space efficiency in shipboard washrooms.",
                             "number": "N0018925D0014",
                             "contact_name": "",
                             "contact_phone": "",

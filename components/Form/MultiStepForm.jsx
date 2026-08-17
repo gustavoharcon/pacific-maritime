@@ -227,7 +227,7 @@ export default function MultiStepForm() {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="engineer@pacmaritime.com"
+                placeholder="sales@pacmaritime.com"
                 value={formData.email}
                 onChange={handleInputChange}
                 className={validationErrors.email ? "input-error" : ""}
