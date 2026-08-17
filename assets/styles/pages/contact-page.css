@@ -40,6 +40,11 @@
             padding: 40px 0;
         }
 
+
+    }
+
+    @media screen and (max-width: 991px) {
+
         .contact-info-section {
 
             .three-columns-with-icon-component {}
