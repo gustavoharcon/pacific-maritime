@@ -60,7 +60,7 @@
 
         >.container {
             >.row {
-                padding: 40px;
+                padding: 40px 24px;
                 gap: 24px;
 
                 >.col {
