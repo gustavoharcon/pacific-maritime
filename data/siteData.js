@@ -288,7 +288,7 @@ const siteData = [
                 "buttons": [
                     {
                         "text": "Learn More",
-                        "link": "/manufacturing-capabilities",
+                        "link": "/about/manufacturing-capabilities",
                         "button_style": "btn btn--primary btn-animation-four"
                     },
                     {
@@ -2722,20 +2722,38 @@ const siteData = [
                 "subtitle": "Complete the steps below to receive a tailored quote.",
                 "heading_type": "h1"
             },
-            "contact_methods": [
-                {
-                    "icon": "phone",
-                    "title": "Phone",
-                    "subtitle": "Call for urgent technical requests.",
-                    "value": `<a class="phone-number" href='tel:${process.env.CONTACT_PHONE_NUMBER}'>${process.env.CONTACT_PHONE_NUMBER}</a>`
-                },
-                {
-                    "icon": "location",
-                    "title": "Office",
-                    "subtitle": `${process.env.COMPANY_NAME}`,
-                    "value": `${process.env.COMPANY_ADDRESS}<br>${process.env.COMPANY_CITY}, ${process.env.COMPANY_STATE}, ${process.env.COMPANY_ZIP}`
-                }
-            ]
+            "contact_methods": {
+                "items": [
+                    {
+                        "icon": "mail",
+                        "title": "Email",
+                        "description": "New projects, product inquiries, and site visits",
+                        "link": {
+                            "text": `${process.env.SALES_EMAIL}`,
+                            "url": `mailto:${process.env.SALES_EMAIL}`
+                        }
+                    },
+                    {
+                        "icon": "phone",
+                        "title": "Call Sales",
+                        "description": "Talk to an estimator now",
+                        "link": {
+                            "text": `${process.env.CONTACT_PHONE_NUMBER}`,
+                            "url": `tel: ${process.env.CONTACT_PHONE_NUMBER}`
+                        }
+                    },
+                    {
+                        "icon": "location",
+                        "title": "Office",
+                        "description": `${process.env.COMPANY_NAME}`,
+                        "link": {
+                            "text": `${process.env.COMPANY_ADDRESS}, ${process.env.COMPANY_CITY}, ${process.env.COMPANY_STATE}, ${process.env.COMPANY_ZIP}`,
+                            "target": "_blank",
+                            "url": "https://maps.app.goo.gl/vwELP8qpm7vgDPk16"
+                        }
+                    }
+                ]
+            },
         },
         "contact_page": {
             "meta_data": {
