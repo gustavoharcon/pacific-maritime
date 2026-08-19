@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { signOut, useSession } from "next-auth/react";
+// import { signOut, useSession } from "next-auth/react";
 import { IoIosMenu } from "react-icons/io";
 // import profileDefault from "@/assets/images/profile.png";
 import LogoImageLink from "@/components/LogoImageLink";
@@ -10,7 +10,7 @@ import MainMenu from "@/components/Menus/MainMenu";
 
 const NavBar = () => {
 
-    const { data: session } = useSession() || {};
+    // const { data: session } = useSession() || {};
 
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     // const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
@@ -63,9 +63,11 @@ const NavBar = () => {
                     </div>
                     <div className="main-menu-and-buttons col">
                         <div className="main-menu-column col">
-                            <MainMenu session={session} />
+                            {/* <MainMenu session={session} /> */}
+                            <MainMenu />
                         </div>
-                        {!session && (<div className="main-menu-buttons col">
+                        {/* {!session && (<div className="main-menu-buttons col"> */}
+                        <div className="main-menu-buttons col">
                             <div className="main-menu-button">
                                 <Link
                                     href="/contact"
@@ -84,10 +86,12 @@ const NavBar = () => {
                                     Request quote
                                 </Link>
                             </div>
-                        </div>)}
+                            {/* </div>)} */}
+                        </div>
                     </div>
                     <div className="mobile-top-menu-container col">
-                        <MainMenu session={session} />
+                        {/* <MainMenu session={session} /> */}
+                        <MainMenu />
                     </div>
                 </div>
             </div>

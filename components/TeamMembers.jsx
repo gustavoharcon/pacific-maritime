@@ -15,9 +15,9 @@ const TeamMembers = ({ data }) => {
         <div className="team-members">
             {data.map((teamMember, index) => (
                 <div key={index} className="row">
-                    <div className="col">
+                    {/* <div className="col">
                         <img src={teamMember.image} alt={teamMember.name} />
-                    </div>
+                    </div> */}
                     <div className="col">
                         <h2 className="name">{teamMember.name}</h2>
                         <h3 className="position">{teamMember.position}</h3>

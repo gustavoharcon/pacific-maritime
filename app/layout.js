@@ -1,7 +1,7 @@
 // import tailwind.css file
 import "../assets/styles/globals.css";
 import { Inter, Tilt_Warp } from "next/font/google";
-import AuthProvider from "@/components/AuthProvider.jsx";
+// import AuthProvider from "@/components/AuthProvider.jsx";
 import { ToastContainer } from "react-toastify";
 import { GlobalProvider } from "@/context/GlobalContext.js";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -71,20 +71,20 @@ export default function RootLayout({
 }) {
   return (
     <GlobalProvider>
-      <AuthProvider>
-        <html lang="en" className={`${inter.variable} ${tiltWarp.variable}`}>
-          <GoogleTagManager />
-          <BodyWrapper>
-            <TopNavBar />
-            <main>
-              {children}
-            </main>
-            <ToastContainer />
-            <SpeedInsights />
-          </BodyWrapper>
-        </html>
-        <Footer />
-      </AuthProvider>
+      {/* <AuthProvider> */}
+      <html lang="en" className={`${inter.variable} ${tiltWarp.variable}`}>
+        <GoogleTagManager />
+        <BodyWrapper>
+          <TopNavBar />
+          <main>
+            {children}
+          </main>
+          <ToastContainer />
+          <SpeedInsights />
+        </BodyWrapper>
+      </html>
+      <Footer />
+      {/* </AuthProvider> */}
     </GlobalProvider>
   );
 }
