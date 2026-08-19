@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getIcon } from "@/utils/helperFunctions";
 
-const TopText = ({ data = {}, className = "" }) => {
+const TopText = ({ data = {}, className = undefined }) => {
 
     const { small_title, title, subtitle, buttons, heading_type, align_left, icon } = data;
 

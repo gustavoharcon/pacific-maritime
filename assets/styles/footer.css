@@ -96,10 +96,6 @@
                         display: flex;
                         flex-flow: row nowrap;
                         gap: 40px;
-
-                        a {
-                            text-decoration: underline;
-                        }
                     }
 
                     &.copyright-column {

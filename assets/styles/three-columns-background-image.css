@@ -6,8 +6,8 @@
         gap: 32px;
 
         >.col {
-            padding: 48px;
-            width: 50%;
+            padding: 32px;
+            width: calc(50% - 32px);
             border-radius: var(--btn-radius);
             background-size: cover;
             background-position: 100% 20%;
@@ -111,6 +111,8 @@
                 }
 
                 &:first-child {
+                    width: calc(50% - 24px);
+
                     .column-text-container {
                         >.text-area {
                             >.title {
