@@ -417,13 +417,6 @@
     }
 }
 
-/* Responsive */
-@media screen and (max-width: 480px) {
-    .rfq-form-card {
-        padding: 24px 20px;
-    }
-}
-
 /* Single Long Form & File Upload Styling */
 .form-row-2 {
     display: grid;
