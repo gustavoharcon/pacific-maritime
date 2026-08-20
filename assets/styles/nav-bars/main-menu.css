@@ -150,10 +150,13 @@
             }
 
             >.mobile-top-menu-container {
-                display: none;
                 width: 100%;
-                flex-flow: column nowrap;
+                max-height: 0;
+                overflow: hidden;
                 gap: 15px;
+                display: none;
+                flex-flow: column nowrap;
+                transition: max-height 0.3s ease-in-out;
 
                 >.main-menu-list {
                     list-style: none;
@@ -186,7 +189,6 @@
                     }
 
                     .sub-menu {
-                        /* display: none; */
                         list-style: none;
                         margin: 0;
                         padding: 0 0 0 15px;
@@ -212,7 +214,8 @@
                     display: none;
                 }
 
-                >.mobile-menu-button-container {
+                >.mobile-menu-button-container,
+                >.mobile-top-menu-container {
                     display: flex;
                 }
 
@@ -235,7 +238,7 @@
             >.container {
                 >.row {
                     >.mobile-top-menu-container {
-                        display: flex;
+                        max-height: 500px;
                     }
                 }
             }

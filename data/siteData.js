@@ -62,6 +62,43 @@ const siteData = [
         ]
     },
     {
+        "mobile_main_menu": [
+            {
+                "menu_name": "About",
+                "menu_url": "/about",
+                "sub_menu": [
+                    {
+                        "text": "Manufacturing Capabilities",
+                        "link": "/about/manufacturing-capabilities"
+                    },
+                    {
+                        "text": "Quality & Compliance",
+                        "link": "/about/quality-and-compliance"
+                    }
+                ],
+            },
+            {
+                "menu_name": "Catalogs",
+                "menu_url": "/catalogs-and-downloads"
+            },
+            {
+                "menu_name": "Careers",
+                "menu_url": "/careers",
+                "button_style": "secondary"
+            },
+            {
+                "menu_name": "Contact",
+                "menu_url": "/contact",
+                "button_style": "secondary"
+            },
+            {
+                "menu_name": "Request quote",
+                "menu_url": "/request-quote",
+                "button_style": "secondary"
+            }
+        ]
+    },
+    {
         "bottom_credits": {
             "menu": [
                 // {

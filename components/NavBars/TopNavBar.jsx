@@ -3,10 +3,11 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 // import { signOut, useSession } from "next-auth/react";
-import { IoIosMenu } from "react-icons/io";
+import { IoIosMenu, IoMdClose } from "react-icons/io";
 // import profileDefault from "@/assets/images/profile.png";
 import LogoImageLink from "@/components/LogoImageLink";
 import MainMenu from "@/components/Menus/MainMenu";
+import MobileMainMenu from "@/components/Menus/MobileMainMenu";
 
 const NavBar = () => {
 
@@ -55,7 +56,9 @@ const NavBar = () => {
                             aria-expanded={isMobileMenuOpen}
                             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
                         >
-                            <IoIosMenu />
+                            {
+                                isMobileMenuOpen ? <IoMdClose /> : <IoIosMenu />
+                            }
                         </button>
                     </div>
                     <div className="logo-column col">
@@ -91,7 +94,7 @@ const NavBar = () => {
                     </div>
                     <div className="mobile-top-menu-container col">
                         {/* <MainMenu session={session} /> */}
-                        <MainMenu />
+                        <MobileMainMenu />
                     </div>
                 </div>
             </div>
