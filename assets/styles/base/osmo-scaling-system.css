@@ -221,6 +221,14 @@ svg {
     vertical-align: middle;
 }
 
+img {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+    &.header-icon {
+        box-shadow: unset;
+    }
+}
+
 a {
     color: inherit;
 }
@@ -809,6 +817,7 @@ strong {
     font-size: 16px;
     line-height: 1.5;
     min-height: 2.75rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     padding: 7px 20px;
     align-items: center;
     text-align: center;

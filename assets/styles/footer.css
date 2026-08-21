@@ -28,6 +28,7 @@
                         width: auto;
                         height: auto;
                         max-width: 220px;
+                        box-shadow: unset;
                     }
                 }
             }

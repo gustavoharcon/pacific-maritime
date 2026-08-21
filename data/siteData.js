@@ -198,7 +198,7 @@ const siteData = [
                 ]
             },
             "hero_section": {
-                "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/v1786122442/us-navy-ships-in-san-diego-bay_1_jwacbt.png",
+                "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/v1787344203/san-diego-coronado-bridge-bay-area-us-navy-ships_hqs4uu.png",
                 "small_title": "Pacific Maritime Industries Corp.",
                 "title": "MIL-SPEC INTERIORS, DOORS, AND CUSTOM FABRICATION",
                 "subtitle": "San Diego-based manufacturer offering comprehensive in-house fabrication—from stateroom outfitting to custom platforms and ladders. Proudly servicing the Pacific, Atlantic, and Gulf military fleets, alongside Coast Guard and commercial vessels.",
