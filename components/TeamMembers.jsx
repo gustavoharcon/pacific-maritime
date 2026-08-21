@@ -22,12 +22,22 @@ const TeamMembers = ({ data }) => {
                         <h2 className="name">{teamMember.name}</h2>
                         <h3 className="position">{teamMember.position}</h3>
                         <p className="description">{teamMember.description}</p>
-                        <p className="phone"><a href={`tel:${teamMember.phone}`}>{teamMember.phone}</a></p>
+                        <p className="phone">
+                            <a
+                                href={`tel:${teamMember.phone}`}
+                                aria-label={`Phone number of ${teamMember.name} is ${teamMember.phone}`}
+                            >
+                                {teamMember.phone}
+                            </a>
+                        </p>
                         <p className="email"><a href={`mailto:${teamMember.email}`}>{teamMember.email}</a></p>
                         <ul className="social-media">
                             {teamMember.social_media.map((social, index) => (
                                 <li key={index}>
-                                    <a href={social.link}>{getSocialMediaIcon(social.icon)}</a>
+                                    <a
+                                        href={social.link}
+                                        aria-label={`Link to ${teamMember.name}'s ${social.icon} profile`}
+                                    >{getSocialMediaIcon(social.icon)}</a>
                                 </li>
                             ))}
                         </ul>

@@ -14,7 +14,12 @@ const TextAndTableOfContents = ({ data }) => {
                     {
                         data.table_of_contents.map((item, index) => (
                             <div className="table-of-contents-item" key={index}>
-                                <a href={item.link}>{item.text}</a>
+                                <a
+                                    href={item.link}
+                                    aria-label={`Section: ${item.text}`}
+                                >
+                                    {item.text}
+                                </a>
                             </div>
                         ))
                     }

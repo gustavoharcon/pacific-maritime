@@ -13,7 +13,14 @@ const CallToAction = ({ data }) => {
                         <p className="text">{subtitle}</p>
                         <div className="buttons">
                             {buttons.map((button, index) => (
-                                <a key={index} href={button.link} className={`${button.button_style}`}>{button.text}</a>
+                                <a
+                                    key={index}
+                                    href={button.link}
+                                    className={`${button.button_style}`}
+                                    aria-label={`Button to ${button.text}`}
+                                >
+                                    {button.text}
+                                </a>
                             ))}
                         </div>
                     </div>

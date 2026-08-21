@@ -74,6 +74,7 @@
                 border: 2px solid var(--color-white);
                 border-right-width: 4px;
                 border-bottom-width: 4px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
                 .column-text-container {
                     >.text-area {

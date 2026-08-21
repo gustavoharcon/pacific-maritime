@@ -128,6 +128,7 @@ const CatalogOverlay = ({ item, onClose }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-secondary btn-animation-two"
+                        aria-label="View full size the catalog"
                     >
                         View Full Size
                     </a>
@@ -137,6 +138,7 @@ const CatalogOverlay = ({ item, onClose }) => {
                         // download={highResUrl}
                         className="btn btn--primary btn-animation-four"
                         onClick={handleDownload}
+                        aria-label="Download catalog"
                     >
                         Download
                     </a>

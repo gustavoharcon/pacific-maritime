@@ -33,7 +33,12 @@ const Contracts = ({ data }) => {
                 {buttons && (
                     <div className="buttons">
                         {buttons.map((button, index) => (
-                            <Link href={button.link} key={index} className={button.button_style}>
+                            <Link
+                                href={button.link}
+                                key={index}
+                                className={button.button_style}
+                                aria-label={button.text}
+                            >
                                 {button.text}
                             </Link>
                         ))}

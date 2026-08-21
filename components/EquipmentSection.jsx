@@ -56,6 +56,7 @@ const EquipmentSection = ({ data, sectionKey }) => {
                                     key={idx}
                                     className={`tab-nav-btn animated-border-left ${activeTabIdx === idx ? "active" : ""}`}
                                     onClick={() => setActiveTabIdx(idx)}
+                                    aria-label={tab.title}
                                 >
                                     {tab.title}
                                 </a>

@@ -71,7 +71,11 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                             <h2 className="catalog-title">{activeCatalog.title}</h2>
                             <p className="catalog-subtitle">{activeCatalog.subtitle}</p>
                             <div className="action-buttons">
-                                <a href={activeCatalog.download_url} className="btn btn-black-outline btn-animation-two">
+                                <a
+                                    href={activeCatalog.download_url}
+                                    className="btn btn-black-outline btn-animation-two"
+                                    aria-label="Download the catalog"
+                                >
                                     Download
                                 </a>
                                 {/* <a
@@ -91,6 +95,7 @@ const CatalogsInteractive = ({ data = {}, onOpenOverlay }) => {
                                     key={catalog.id}
                                     className={`tab-item-btn ${activeCatalogId === catalog.id ? "active" : ""}`}
                                     onClick={() => handleCatalogChange(catalog.id)}
+                                    aria-label={`View ${catalog.tab_name} catalog`}
                                 >
                                     <span className="right-icon"><TfiLocationArrow /></span>
                                     {catalog.tab_name}
