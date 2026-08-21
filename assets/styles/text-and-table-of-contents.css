@@ -34,5 +34,10 @@
     @media screen and (max-width: 991px) {
         flex-flow: column-reverse nowrap;
         gap: 40px;
+
+        >.text,
+        >.table-of-content {
+            width: 100%;
+        }
     }
 }
