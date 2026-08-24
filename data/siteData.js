@@ -1,3 +1,5 @@
+import termsOfService from './terms_of_service.js';
+
 const siteData = [
     {
         "site_name": "Pacific Maritime Industries Corp.",
@@ -162,19 +164,115 @@ const siteData = [
     {
         "terms_of_service_page": {
             "meta_data": {
-                "title": "Terms of Service",
-                "description": "Terms of Service"
+                "title": "Terms and Conditions",
+                "description": "Terms and Conditions"
             },
             "hero_section": {
-                "title": "Terms of Service",
-                "subtitle": "Terms of Service for Pacific Maritime Industries Corp."
+                "title": "Terms and Conditions",
+                "subtitle": "Terms and Conditions for Pacific Maritime Industries Corp."
             },
             "text_and_table_of_contents": {
-                "text": "<h2 id='terms'>Terms of Service</h2><p>Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id.</p>",
+                "text": termsOfService,
                 "table_of_contents": [
                     {
-                        "text": "Terms of Service",
-                        "link": "#terms"
+                        "text": "Terms and Conditions",
+                        "link": "#terms-and-conditions"
+                    },
+                    {
+                        "text": "1. Acceptance; Entire Agreement; Order of Precedence",
+                        "link": "#acceptance-agreement-precedence"
+                    },
+                    {
+                        "text": "2. Definitions",
+                        "link": "#definitions"
+                    },
+                    {
+                        "text": "3. Pricing, Invoicing, and Payment",
+                        "link": "#pricing-invoicing-payment"
+                    },
+                    {
+                        "text": "4. Delivery; Title and Risk of Loss",
+                        "link": "#delivery-title-risk-of-loss"
+                    },
+                    {
+                        "text": "5. Quality Requirements; Certifications; Traceability",
+                        "link": "#quality-requirements"
+                    },
+                    {
+                        "text": "6. Inspection, Acceptance, and Nonconforming Goods",
+                        "link": "#inspection-acceptance"
+                    },
+                    {
+                        "text": "7. Packaging, Preservation, Marking, and Shipping",
+                        "link": "#packaging-preservation"
+                    },
+                    {
+                        "text": "8. Warranty",
+                        "link": "#warranty"
+                    },
+                    {
+                        "text": "9. Changes",
+                        "link": "#changes"
+                    },
+                    {
+                        "text": "10. Confidentiality; Proprietary Information; Publicity",
+                        "link": "#confidentiality"
+                    },
+                    {
+                        "text": "11. Cybersecurity; Safeguarding Covered Defense Information",
+                        "link": "#cybersecurity"
+                    },
+                    {
+                        "text": "12. Compliance with Laws; Anti-Corruption; Trade",
+                        "link": "#compliance-with-laws"
+                    },
+                    {
+                        "text": "13. Insurance",
+                        "link": "#insurance"
+                    },
+                    {
+                        "text": "14. Government Contract Flow-Down Provisions",
+                        "link": "#government-contract-flow-down"
+                    },
+                    {
+                        "text": "15. Intellectual Property; Rights in Technical Data",
+                        "link": "#intellectual-property"
+                    },
+                    {
+                        "text": "16. Indemnification; Limitation of Liability",
+                        "link": "#indemnification-liability"
+                    },
+                    {
+                        "text": "17. Termination",
+                        "link": "#termination"
+                    },
+                    {
+                        "text": "18. Records, Audit, and Retention",
+                        "link": "#records-audit"
+                    },
+                    {
+                        "text": "19. Disputes; Governing Law; Forum",
+                        "link": "#disputes-governing-law"
+                    },
+                    {
+                        "text": "20. Assignment; Subcontracting",
+                        "link": "#assignment-subcontracting"
+                    },
+                    {
+                        "text": "21. Force Majeure",
+                        "link": "#force-majeure"
+                    },
+                    {
+                        "text": "22. Notices",
+                        "link": "#notices"
+                    },
+                    {
+                        "text": "23. Survival",
+                        "link": "#survival"
+                    },
+                    {
+                        "text": "24. Miscellaneous",
+                        "link": "#miscellaneous"
                     }
                 ]
             }

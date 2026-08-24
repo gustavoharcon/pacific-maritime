@@ -6,8 +6,6 @@ import { generatePageMetadata } from "@/utils/metadata";
 const tosData = siteData.find(item => item.terms_of_service_page)?.terms_of_service_page;
 const heroSection = tosData.hero_section;
 
-console.log(tosData);
-
 export async function generateMetadata() {
     return generatePageMetadata({
         title: tosData.meta_data.title,
