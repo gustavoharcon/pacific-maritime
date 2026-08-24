@@ -161,9 +161,9 @@
 }
 
 .go-to-top:hover {
-    background-color: var(--color-red);
+    background-color: var(--color-blue);
     transform: translateY(-4px) scale(1.05);
-    box-shadow: 0 8px 25px rgba(139, 0, 0, 0.35);
+    box-shadow: 0 8px 25px var(--color-blue);
 }
 
 .go-to-top:active {
