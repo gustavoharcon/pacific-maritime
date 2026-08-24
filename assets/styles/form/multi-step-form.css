@@ -418,7 +418,7 @@
 }
 
 /* Single Long Form & File Upload Styling */
-.form-row-2 {
+/* .form-row-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -429,7 +429,7 @@
         grid-template-columns: 1fr;
         gap: 0;
     }
-}
+} */
 
 .file-upload-wrapper {
     display: flex;
