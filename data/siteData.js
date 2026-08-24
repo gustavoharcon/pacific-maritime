@@ -108,8 +108,8 @@ const siteData = [
                 //     "link": "/privacy-policy"
                 // },
                 {
-                    "text": "Terms of service",
-                    "link": "/terms-of-service"
+                    "text": "Terms & Conditions",
+                    "link": "/terms-and-conditions"
                 }
             ],
             "copyright_text": "© " + new Date().getFullYear() + " Pacific Maritime Industries Corp. All rights reserved."

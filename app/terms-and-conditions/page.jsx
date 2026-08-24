@@ -14,7 +14,7 @@ export async function generateMetadata() {
     });
 }
 
-const TermsOfService = () => {
+const TermsAndConditions = () => {
     return (
         <div className="terms-of-service-page-content">
             <HeroSection data={heroSection} />
@@ -31,4 +31,4 @@ const TermsOfService = () => {
     )
 }
 
-export default TermsOfService
+export default TermsAndConditions
