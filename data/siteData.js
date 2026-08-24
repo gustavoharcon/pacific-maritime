@@ -31,7 +31,7 @@ const siteData = [
         "contact_info": {
             "email_1": process.env.CONTACT_EMAIL,
             "sales_email": "sales@pacmaritime.com",
-            "phone_number_1": "(619) 423-5544",
+            "phone_number_1": process.env.CONTACT_PHONE_NUMBER,
             "address_line_1": "1790 Dornoch Court",
             "address_line_2": "San Diego, CA 92154"
         }
