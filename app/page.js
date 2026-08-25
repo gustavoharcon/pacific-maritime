@@ -59,6 +59,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <TwoColumnsRightSideImage data={homeData.fullfilment_and_logistics} className="fullfilment-and-logistics" />
     </>
   );
 }

@@ -26,6 +26,12 @@
 
     }
 
+    .fullfilment-and-logistics {
+        .buttons {
+            justify-content: flex-start;
+        }
+    }
+
     @media screen and (max-width: 1200px) {
 
         .three-columns-background-image-section,

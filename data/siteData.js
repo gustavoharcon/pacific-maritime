@@ -299,7 +299,7 @@ const siteData = [
                 "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/v1787344203/san-diego-coronado-bridge-bay-area-us-navy-ships_hqs4uu.png",
                 "small_title": "Pacific Maritime Industries Corp.",
                 "title": "MIL-SPEC INTERIORS, DOORS, AND CUSTOM FABRICATION",
-                "subtitle": "San Diego-based manufacturer offering comprehensive in-house fabrication—from stateroom outfitting to custom platforms and ladders. Proudly servicing the Pacific, Atlantic, and Gulf military fleets, alongside Coast Guard and commercial vessels.",
+                "subtitle": "San Diego-based shipboard furniture manufacturer offering comprehensive in-house fabrication—from stateroom outfitting to custom platforms and ladders. Proudly servicing the Pacific, Atlantic, and Gulf military fleets, alongside Coast Guard and commercial vessels.",
                 "description_and_logo": {
                     "title": "ISO 9001:2015 Certified",
                     "logo": {
@@ -414,10 +414,24 @@ const siteData = [
                     }
                 ]
             },
+            "fullfilment_and_logistics": {
+                "top_text": {
+                    "title": "Streamlined Logistics & Pickup",
+                    "subtitle": "We prioritize efficiency from fabrication to final delivery. To ensure a smooth handover and flexible transport to the shipyard, clients routinely come directly to our manufacturing building to pick up finalized products outside using their own trucks and trailers.",
+                    "buttons": [
+                        {
+                            "text": "Quality & Compliance",
+                            "link": "/about/quality-and-compliance",
+                            "button_style": "btn btn-secondary btn-animation-two"
+                        }
+                    ]
+                },
+                "right_side_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785878814/pacific-maritime-industries-facility_vlhhyz.png"
+            },
             "equipment_by_process_section": {
                 "top_text": {
                     "title": "ADVANCED EQUIPMENT BY PROCESS",
-                    "subtitle": "Our ongoing investment in cutting-edge machining capabilities ensures uninterrupted performance and rapid fulfillment of maritime defense orders."
+                    "subtitle": "Our manufacturing facility utilizes advanced, high-precision equipment to meet strict maritime standards. Our production floor features heavy-duty fabrication machinery, including CNC routers, precision press brakes, fiber laser cutting systems, and specialized welding stations, enabling us to handle everything from custom joinery to complex marine metalwork."
                 },
                 "columns": [
                     {

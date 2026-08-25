@@ -23,6 +23,7 @@ import {
     MdOutlineWorkspacePremium
 } from "react-icons/md";
 import { LuDroplet, LuZap, LuFoldVertical, LuGrip, LuDiamondPlus } from "react-icons/lu";
+import { GiFlatbedCovered } from "react-icons/gi";
 import { FaPlusMinus, FaBoxesPacking } from "react-icons/fa6";
 import { FiClock } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
@@ -58,6 +59,8 @@ export const getIcon = (iconName) => {
                     <LuZap className="icon-zap" />
                 </div>
             );
+        case "flatbed":
+            return <GiFlatbedCovered className="icon" />;
         case "blinds":
             return <MdOutlineBlinds className="icon" />;
         case "compress":
