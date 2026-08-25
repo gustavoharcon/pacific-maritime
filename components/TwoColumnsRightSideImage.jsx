@@ -23,6 +23,9 @@ const TwoColumnsRightSideImage = ({ data, className = "" }) => {
                                             </div>
                                             <div className="item-content">
                                                 {
+                                                    item.title && <h3>{item.title}</h3>
+                                                }
+                                                {
                                                     item.text && <p className="text">{item.text}</p>
                                                 }
                                             </div>

@@ -27,6 +27,7 @@ export default function Home() {
   const complianceData = homeData.compliance_section;
   const capabilities_top_text = homeData.capabilities_three_columns.top_text;
   const why_choose_pmi = homeData.why_choose_pmi;
+
   const capabilities_three_columns = homeData.capabilities_three_columns.columns;
   const equipment_by_process_section = homeData.equipment_by_process_section;
 

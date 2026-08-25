@@ -12,8 +12,17 @@
     }
 
     .workflow-section {
-        .columns-with-top-image-text {
+        >.container {
+            >.row {
+                >.col {
+                    >.top-text {
+                        max-width: 991px;
+                    }
+                }
+            }
+        }
 
+        .columns-with-top-image-text {
             .column {
                 width: calc(50% - 32px);
                 max-width: 500px;
@@ -21,6 +30,14 @@
                 @media screen and (max-width: 991px) {
                     width: 100%;
                 }
+            }
+        }
+    }
+
+    .core-fabrication-processes {
+        .item-content {
+            >h3 {
+                margin-bottom: 10px;
             }
         }
     }

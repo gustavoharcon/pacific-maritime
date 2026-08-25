@@ -440,7 +440,7 @@ const siteData = [
                         "subtitle": "Advanced press brakes designed for precise bending and forming of heavy sheet metal to support continuous high-volume manufacturing."
                     },
                     {
-                        "icon": "droplet",
+                        "icon": "diamond-plus",
                         "title": "Laser Cutting",
                         "subtitle": "Automated heavy sheet metal stock handling and direct-feed laser cutting systems for continuous clean, square cuts."
                     },
@@ -450,7 +450,7 @@ const siteData = [
                         "subtitle": "High-performance CNC turret punching and shearing capabilities designed to process heavy steel with exact, repeatable precision."
                     },
                     {
-                        "icon": "diamond-plus",
+                        "icon": "droplet",
                         "title": "Waterjet Cutting",
                         "subtitle": "Precision abrasive waterjet systems capable of cutting thick steel with extreme accuracy, leaving a satin-smooth edge that greatly reduces secondary operations."
                     }
@@ -570,7 +570,7 @@ const siteData = [
             "hero_section": {
                 // "max_width": "991",
                 "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785938994/Control_panel_of_CNC_press_202608050706_vdyaxo.jpg",
-                "title": "The mark of quality in shipboard furniture",
+                "title": "Premier Shipboard Furniture Manufacturers",
                 "subtitle": "San Diego shipboard interiors manufacturer offering comprehensive in-house fabrication services for the Pacific, Atlantic, and Gulf military fleets, alongside Coast Guard and commercial vessels. As an ISO 9001:2015 certified company, we deliver MIL-SPEC compliant solutions.",
                 "buttons": [
                     {
@@ -695,7 +695,7 @@ const siteData = [
                         "image": "https://res.cloudinary.com/irwujctd/image/upload/v1784913543/team-member-placeholder_wpiqzi.png",
                         "name": "John Atkinson",
                         "position": "President",
-                        "description": "5 years in maritime manufacturing. Former NASSCO production planner. Founded PMI in 1979. He oversees all contract execution.",
+                        "description": "Under the leadership of CEO John Atkinson, Pacific Maritime prioritizes continuous improvement, advanced manufacturing workflows, and rigorous quality control.",
                         "phone": process.env.CONTACT_PHONE_NUMBER,
                         "email": "jatkinson@pacmaritime.com",
                         "social_media": [
@@ -815,7 +815,7 @@ const siteData = [
         },
         "manufacturing_capabilities_page": {
             "meta_data": {
-                "title": "Manufacturing Capabilities and Equipment",
+                "title": "Custom Marine Fabrication & Manufacturing Capabilities",
                 "description": "Operating 66,000 square feet of advanced CNC fabrication space alongside 14,000 square feet of inventory staging in San Diego. We manufacture MIL-SPEC compliant shipboard interiors, doors, platforms, and ladders for the Pacific, Atlantic, and Gulf fleets."
             },
             "call_to_action": {
@@ -832,7 +832,7 @@ const siteData = [
             "hero_section": {
                 // "max_width": "768",
                 "right_column_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785941197/worker-at-cnc-machine_1_puance.png",
-                "title": "Manufacturing Capabilities and Equipment",
+                "title": "Custom Marine Fabrication & Manufacturing Capabilities",
                 "subtitle": "Operating 66,000 square feet of advanced CNC fabrication space alongside 14,000 square feet of inventory staging in San Diego. We manufacture MIL-SPEC compliant shipboard interiors, doors, platforms, and ladders for the Pacific, Atlantic, and Gulf fleets.",
                 "buttons": [
                     {
@@ -869,9 +869,8 @@ const siteData = [
             },
             "workflow_section": {
                 "top_text": {
-                    "small_title": "Workflow",
                     "title": "From Drawing to Deployment in Four Steps",
-                    "subtitle": "A clear production pipeline that moves your project from SolidWorks model to final acceptance aboard the vessel. Every step is measured and documented."
+                    "subtitle": "Scalability requires visibility. Our manufacturing facility operates on a robust ERP system, seamlessly integrating inventory management, work order planning, and shop floor routing. This data-driven approach allows us to track production milestones in real time, ensuring strict adherence to delivery schedules and quality control standards"
                 },
                 "columns": [
                     {
@@ -903,9 +902,32 @@ const siteData = [
                     }
                 ]
             },
+            "core_fabrication_processes": {
+                "top_text": {
+                    "title": "Core Fabrication Processes",
+                    "subtitle": "High-Precision marine machining & metal fabrication"
+                },
+                "right_side_image": "",
+                "items": [
+                    {
+                        "icon": "",
+                        "title": "Advanced Sheet Metal Fabrication",
+                        "text": "Equipped for high-volume and custom runs, our shop floor utilizes high-speed CNC laser cutting and precision press brake operations to form marine-grade aluminum, stainless steel, and mild steel with exacting tolerances."
+                    },
+                    {
+                        "icon": "",
+                        "title": "Marine Welding",
+                        "text": "Our fabrication relies on rigorous welding standards. We specialize in precision GTAW (TIG) welding to ensure structural integrity, seamless finishes, and superior corrosion resistance for all shipboard environments."
+                    },
+                    {
+                        "icon": "",
+                        "title": "CNC Machining & Turning",
+                        "text": "Delivering heavy-duty hardware and custom fittings through automated CNC lathe and milling operations, ensuring repeatable accuracy for fleet-wide outfitting."
+                    }
+                ]
+            },
             "equipment_section": {
                 "top_text": {
-                    "small_title": "Equipment",
                     "title": "Major Equipment by Process",
                     "subtitle": "The machines that turn specification into steel."
                 },
@@ -2932,7 +2954,7 @@ const siteData = [
             },
             "hero_section": {
                 "title": "Contact Pacific Maritime Industries Corp.",
-                "subtitle": "Serving the Pacific, Atlantic, and Gulf military fleets. Because all requests for quote are urgent, standard component quotes are provided the same day or the following day.",
+                "subtitle": "Custom Shipboard Furniture. Reach out to discuss your custom marine joinery, metal fabrication, or MIL-SPEC furniture requirements. Our San Diego manufacturing team is ready to support commercial and naval outfitting projects of any scale.",
                 "full_width": true,
                 "buttons": [
                     {
@@ -2998,7 +3020,7 @@ const siteData = [
                 "top_text": {
                     "small_title": "Locations",
                     "title": "Our Facility",
-                    "subtitle": "Based on San Diego's working waterfront. We proudly service the Pacific, Atlantic, and Gulf military fleets, alongside Coast Guard and commercial vessels.",
+                    "subtitle": "Based on San Diego's working waterfront, we are strategically located to seamlessly serve major West Coast shipyards and naval operations. We proudly service the Pacific, Atlantic, and Gulf military fleets, alongside Coast Guard and commercial vessels.",
                     "align_left": true
                 },
                 "columns": [

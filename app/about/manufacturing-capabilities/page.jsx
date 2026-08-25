@@ -2,7 +2,7 @@ import siteData from "@/data/siteData";
 import HeroSection from "@/components/HeroSections/HeroSection";
 import ColumnsWithTopImageText from "@/components/ColumnsWithTopImageText";
 import TopText from "@/components/Text/TopText";
-import Buttons from "@/components/Buttons/Buttons";
+import TwoColumnsRightSideImage from "@/components/TwoColumnsRightSideImage";
 import LeftSideColumnAndFourItems from "@/components/LeftSideColumnAndFourItems";
 import CallToAction from "@/components/CTA/CallToAction";
 import { generatePageMetadata } from "@/utils/metadata";
@@ -11,6 +11,7 @@ const manufacturingData = siteData.find(item => item.manufacturing_capabilities_
 const callToAction = manufacturingData.call_to_action;
 const workflowData = manufacturingData.workflow_section;
 const equipmentData = manufacturingData.equipment_section;
+const core_fabrication_processes = manufacturingData.core_fabrication_processes;
 
 export async function generateMetadata() {
     return generatePageMetadata({
@@ -37,6 +38,7 @@ const ManufacturingCapabilitiesPage = () => {
                     </div>
                 </div>
             </section>
+            <TwoColumnsRightSideImage data={core_fabrication_processes} className="core-fabrication-processes" />
             <section className="equipment-section">
                 <div className="container">
                     <div className="row">
