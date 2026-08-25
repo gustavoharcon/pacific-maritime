@@ -2,7 +2,7 @@ import termsOfService from './terms_of_service.js';
 
 const siteData = [
     {
-        "site_name": "Pacific Maritime Industries Corp.",
+        "site_name": process.env.COMPANY_NAME,
         "tagline": "Heavy-Duty Marine Fabrication & NAVSEA-Compliant Shipboard Furniture.",
         "site_url": "http://www.pacmaritime.com/",
         "site_logo": "/assets/images/logos/black_with_text_Pacific_Maritime_Industries_Corporation.png",
@@ -30,10 +30,10 @@ const siteData = [
     {
         "contact_info": {
             "email_1": process.env.CONTACT_EMAIL,
-            "sales_email": "sales@pacmaritime.com",
+            "sales_email": process.env.SALES_EMAIL,
             "phone_number_1": process.env.CONTACT_PHONE_NUMBER,
-            "address_line_1": "1790 Dornoch Court",
-            "address_line_2": "San Diego, CA 92154"
+            "address_line_1": process.env.COMPANY_ADDRESS,
+            "address_line_2": process.env.COMPANY_CITY + ", " + process.env.COMPANY_STATE + " " + process.env.COMPANY_ZIP
         }
     },
     {
