@@ -3173,13 +3173,13 @@ const siteData = [
                     {
                         "icon": "engineering",
                         "title": "Safety first, always",
-                        "subtitle": "OSHA-compliant shop, daily toolbox talks, and a TRIR well below industry average. We invest in your safety gear and training."
+                        "subtitle": "Operating in a secure, ISO 9001:2015 certified environment. We maintain a heavily standardized 66,000-square-foot CNC fabrication facility designed to protect our workforce while meeting strict MIL-SPEC requirements."
                     },
                     {
                         "icon": "drafting-compass",
                         "image": "",
                         "title": "Grow your skills here",
-                        "subtitle": "Company-paid certifications: NAVSEA welding, NDT, crane operator. Cross-training and apprenticeship pathways available.",
+                        "subtitle": "Work alongside experienced maritime manufacturing specialists. Master advanced CNC equipment, digital ERP tracking systems, and the precise technical standards required to support the U.S. Navy Shipboard Habitability Program.",
                     },
                     {
                         "icon": "anchor",
