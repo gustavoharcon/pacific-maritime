@@ -2,7 +2,7 @@ import termsOfService from './terms_of_service.js';
 
 const siteData = [
     {
-        "site_name": process.env.COMPANY_NAME,
+        "site_name": process.env.NEXT_PUBLIC_COMPANY_NAME || process.env.COMPANY_NAME || "Pacific Maritime Industries Corp.",
         "tagline": "Heavy-Duty Marine Fabrication & NAVSEA-Compliant Shipboard Furniture.",
         "site_url": "http://www.pacmaritime.com/",
         "site_logo": "/assets/images/logos/black_with_text_Pacific_Maritime_Industries_Corporation.png",

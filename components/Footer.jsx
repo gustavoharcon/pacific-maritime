@@ -9,8 +9,6 @@ import white_logo from "@/assets/images/logos/Pacific-Maritime-Industries-White-
 const footer_menu = siteData.find(item => item.footer_menu)?.footer_menu;
 const bottom_credits = siteData.find(item => item.bottom_credits)?.bottom_credits;
 
-console.log(white_logo);
-
 const Footer = () => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -92,4 +90,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer
