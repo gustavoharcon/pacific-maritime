@@ -899,7 +899,7 @@ const siteData = [
                     "title": "Core Fabrication Processes",
                     "subtitle": "High-Precision marine machining & metal fabrication"
                 },
-                "right_side_image": "",
+                "right_side_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1788279384/cnc_laser_cutting_nioodf.jpg",
                 "items": [
                     {
                         "icon": "",
