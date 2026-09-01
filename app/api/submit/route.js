@@ -3,7 +3,7 @@ import { Resend } from "resend";
 export async function POST(req) {
   try {
     const data = await req.formData();
-    
+
     const fullName = data.get("fullName");
     const email = data.get("email");
     const phoneNumber = data.get("phoneNumber");
@@ -58,7 +58,7 @@ export async function POST(req) {
     }
 
     const apiKey = process.env.RESEND_API_KEY;
-    const submissionEmail = process.env.FORM_SUBMISSION_EMAIL || "gustavo.amezcua@pacmaritime.com";
+    const submissionEmail = process.env.FORM_SUBMISSION_EMAIL;
 
     if (!apiKey) {
       console.error("Missing RESEND_API_KEY environment variable");

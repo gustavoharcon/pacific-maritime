@@ -757,14 +757,6 @@ const siteData = [
                     "description": "With three decades of manufacturing experience, Pacific Maritime Industries Corp has a proven track record of delivering high-quality marine equipment to the defense sector. As a trusted government contractor, we hold multiple Indefinite Delivery/Indefinite Quantity (IDIQ) contracts to supply essential habitability and storage solutions for naval vessels.",
                     "title": "Notable contracts",
                     "contracts": [
-                        // {
-                        //     "description": "The Fleet & Industrial Supply Center has awarded an Indefinite Delivery Order IDTC Habitability Contract to Pacific Maritime Industries.",
-                        //     "number": "N00244-02-D-0039",
-                        //     "contact_info_title": "FISC Contact Information",
-                        //     "contact_name": "Pat Walsh",
-                        //     "contact_phone": "(619) 556-2116",
-                        //     "contact_email": "patrick.walsh@navy.mil"
-                        // }
                         {
                             "contact_info_title": "Marine Recreation Furniture",
                             "description": "Supplying durable, marine-grade recreation and lounge furniture designed to withstand rigorous maritime environments while improving crew morale and comfort during extended deployments.",
