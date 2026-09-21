@@ -392,7 +392,7 @@ const siteData = [
             "why_choose_pmi": {
                 "top_text": {
                     "title": "why choose pacific maritime industries corp.",
-                    "subtitle": "Delivering MIL-SPEC compliant manufacturing backed by over three decades of dedicated service to the U.S. Navy and prime contractors."
+                    "subtitle": "Delivering MIL-SPEC compliant manufacturing backed by three decades of dedicated service to the U.S. Navy and prime contractors."
                 },
                 "right_side_image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785941532/Warship_navigating_open_ocean_202608040717_1_poicoo.jpg",
                 "items": [
