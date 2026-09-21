@@ -1,8 +1,5 @@
 import siteData from "@/data/siteData";
-import HeroSection from "@/components/HeroSections/HeroSection";
 import CatalogsClientContainer from "@/components/CatalogsClientContainer";
-import CallToAction from "@/components/CTA/CallToAction";
-
 import { generatePageMetadata } from "@/utils/metadata";
 
 const catalogsData = siteData.find(item => item.catalogs_page)?.catalogs_page;

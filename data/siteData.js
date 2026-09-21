@@ -754,7 +754,7 @@ const siteData = [
                     "title": "Contracts that Prove the Work"
                 },
                 "contracts_text": {
-                    "description": "With three decades of manufacturing experience, Pacific Maritime Industries Corp has a proven track record of delivering high-quality marine equipment to the defense sector. As a trusted government contractor, we hold multiple Indefinite Delivery/Indefinite Quantity (IDIQ) contracts to supply essential habitability and storage solutions for naval vessels.",
+                    "description": "With three decades of manufacturing experience, Pacific Maritime Industries Corp. has a proven track record of delivering high-quality marine equipment to the defense sector. As a trusted government contractor, we hold multiple Indefinite Delivery/Indefinite Quantity (IDIQ) contracts to supply essential habitability and storage solutions for naval vessels.",
                     "title": "Notable contracts",
                     "contracts": [
                         {
@@ -1498,7 +1498,7 @@ const siteData = [
             },
             "shipboard_furniture_catalog": {
                 "title": "Shipboard Furniture Catalog",
-                "subtitle": `The official US Navy Shipboard Furniture Catalog (SFC) which is updated at: <a href='https://navlogtd.navy.mil/habitability' rel='noopener noreferrer'>navlogtd.navy.mil/habitability</a>`,
+                "subtitle": `The official US Navy Shipboard Furniture Catalog (SFC) which is updated at: <a href='https://navlogtd.navy.mil/habitability' rel='noopener noreferrer' target='_blank'>navlogtd.navy.mil/habitability</a>`,
                 "headers": [
                     "Category",
                     "Section Title",
@@ -3196,7 +3196,7 @@ const siteData = [
             },
             "hero_section": {
                 "title": "Latest posts and updates",
-                "subtitle": "Industry updates, product announcements, and project highlights from Pacific Maritime Industries Corporation. We are San Diego's shipboard interior specialists.",
+                "subtitle": "Industry updates, product announcements, and project highlights from Pacific Maritime Industries Corp. We are San Diego's shipboard interior specialists.",
                 "center_text": true,
                 "buttons": []
             },
