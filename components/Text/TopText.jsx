@@ -23,7 +23,7 @@ const TopText = ({ data = {}, className = undefined }) => {
                                     : <h2 className="title">{title}</h2>
                 : null
             }
-            {subtitle && <p className="subtitle" dangerouslySetInnerHTML={{ __html: subtitle }} />}
+            {subtitle && <div className="subtitle" dangerouslySetInnerHTML={{ __html: subtitle }} />}
             {buttons && <div className="buttons"> {buttons.map((button, index) => (
                 <Link key={index} href={button.link} className={`${button.button_style}`}>{button.text}</Link>
             ))}</div>}

@@ -419,6 +419,10 @@ strong {
 }
 
 .top-text {
+    .subtitle {
+        color: var(--color-white);
+    }
+
     &.align-left {
         text-align: left;
         margin: 0 auto 80px 0;

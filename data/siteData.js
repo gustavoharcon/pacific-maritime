@@ -698,12 +698,12 @@ const siteData = [
                         "description": "Under the leadership of CEO John Atkinson, Pacific Maritime prioritizes continuous improvement, advanced manufacturing workflows, and rigorous quality control.",
                         "phone": process.env.CONTACT_PHONE_NUMBER,
                         "email": "jatkinson@pacmaritime.com",
-                        "social_media": [
-                            {
-                                "icon": "linkedin",
-                                "link": ""
-                            }
-                        ]
+                        // "social_media": [
+                        //     {
+                        //         "icon": "linkedin",
+                        //         "link": ""
+                        //     }
+                        // ]
                     }
                 ]
             },

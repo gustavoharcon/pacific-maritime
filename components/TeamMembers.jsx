@@ -31,16 +31,21 @@ const TeamMembers = ({ data }) => {
                             </a>
                         </p>
                         <p className="email"><a href={`mailto:${teamMember.email}`}>{teamMember.email}</a></p>
-                        <ul className="social-media">
-                            {teamMember.social_media.map((social, index) => (
-                                <li key={index}>
-                                    <a
-                                        href={social.link}
-                                        aria-label={`Link to ${teamMember.name}'s ${social.icon} profile`}
-                                    >{getSocialMediaIcon(social.icon)}</a>
-                                </li>
-                            ))}
-                        </ul>
+                        {
+                            // If social_medial length is 0 or undefined do not show the code
+                            teamMember.social_media && teamMember.social_media.length !== 0 && teamMember.social_media !== undefined(
+                                <ul className="social-media">
+                                    {teamMember.social_media.map((social, index) => (
+                                        <li key={index}>
+                                            <a
+                                                href={social.link}
+                                                aria-label={`Link to ${teamMember.name}'s ${social.icon} profile`}
+                                            >{getSocialMediaIcon(social.icon)}</a>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )
+                        }
                     </div>
                 </div>
             ))}
