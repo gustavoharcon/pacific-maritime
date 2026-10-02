@@ -73,7 +73,7 @@ export default function RootLayout({
     <GlobalProvider>
       {/* <AuthProvider> */}
       <html lang="en" className={`${inter.variable} ${tiltWarp.variable}`}>
-        <GoogleTagManager />
+        <GoogleTagManager gtmId="GTM-PSHTCJC3" />
         <BodyWrapper>
           <TopNavBar />
           <main>
