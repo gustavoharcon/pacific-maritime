@@ -199,14 +199,13 @@
 
     h3 {
         font-size: 40px;
-        font-weight: 700;
-        color: var(--color-text);
+        color: var(--color-white);
         margin: 0;
     }
 
     p {
         font-size: 18px;
-        color: var(--color-neutral-800, #333333);
+        color: var(--color-white);
         margin: 0 0 8px 0;
     }
 }

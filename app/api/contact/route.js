@@ -10,20 +10,12 @@ export async function POST(req) {
       phone,
       inquiryType,
       describeYou,
-      message,
-      acceptTerms
+      message
     } = body;
 
     // Validation
     if (!firstName || !lastName || !email || !phone || !inquiryType || !describeYou || !message) {
       return new Response(JSON.stringify({ error: "All fields are required" }), {
-        status: 400,
-        headers: { "Content-Type": "application/json" },
-      });
-    }
-
-    if (!acceptTerms) {
-      return new Response(JSON.stringify({ error: "You must accept the terms" }), {
         status: 400,
         headers: { "Content-Type": "application/json" },
       });

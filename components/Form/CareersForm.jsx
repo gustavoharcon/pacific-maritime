@@ -11,8 +11,7 @@ export default function CareersForm() {
     phone: "",
     positionOfInterest: "",
     yearsOfExperience: "",
-    coverNote: "",
-    acceptTerms: false
+    coverNote: ""
   });
 
   const [validationErrors, setValidationErrors] = useState({});
@@ -56,9 +55,6 @@ export default function CareersForm() {
     if (!formData.coverNote.trim()) {
       errors.coverNote = "Cover note is required";
     }
-    if (!formData.acceptTerms) {
-      errors.acceptTerms = "You must accept the terms to proceed";
-    }
 
     setValidationErrors(errors);
     return Object.keys(errors).length === 0;
@@ -94,8 +90,7 @@ export default function CareersForm() {
         phone: "",
         positionOfInterest: "",
         yearsOfExperience: "",
-        coverNote: "",
-        acceptTerms: false
+        coverNote: ""
       });
     } catch (err) {
       setErrorMsg(err.message || "An error occurred. Please try again.");
@@ -313,21 +308,7 @@ export default function CareersForm() {
         )}
       </div>
 
-      {/* <div className="form-group checkbox-group">
-        <label className="checkbox-wrapper">
-          <input
-            type="checkbox"
-            name="acceptTerms"
-            checked={formData.acceptTerms}
-            onChange={handleInputChange}
-            className={validationErrors.acceptTerms ? "input-error" : ""}
-          />
-          I accept the terms
-        </label>
-        {validationErrors.acceptTerms && (
-          <span className="error-text">{validationErrors.acceptTerms}</span>
-        )}
-      </div> */}
+
 
       <div className="form-actions">
         <button

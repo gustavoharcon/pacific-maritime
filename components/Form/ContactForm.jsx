@@ -11,8 +11,7 @@ export default function ContactForm() {
     phone: "",
     inquiryType: "",
     describeYou: "",
-    message: "",
-    acceptTerms: false
+    message: ""
   });
 
   const [validationErrors, setValidationErrors] = useState({});
@@ -56,9 +55,6 @@ export default function ContactForm() {
     if (!formData.message.trim()) {
       errors.message = "Message is required";
     }
-    if (!formData.acceptTerms) {
-      errors.acceptTerms = "You must accept the terms to proceed";
-    }
 
     setValidationErrors(errors);
     return Object.keys(errors).length === 0;
@@ -94,8 +90,7 @@ export default function ContactForm() {
         phone: "",
         inquiryType: "",
         describeYou: "",
-        message: "",
-        acceptTerms: false
+        message: ""
       });
     } catch (err) {
       setErrorMsg(err.message || "An error occurred. Please try again.");
@@ -287,21 +282,7 @@ export default function ContactForm() {
         )}
       </div>
 
-      {/* <div className="form-group checkbox-group">
-        <label className="checkbox-wrapper">
-          <input
-            type="checkbox"
-            name="acceptTerms"
-            checked={formData.acceptTerms}
-            onChange={handleInputChange}
-            className={validationErrors.acceptTerms ? "input-error" : ""}
-          />
-          I accept the terms
-        </label>
-        {validationErrors.acceptTerms && (
-          <span className="error-text">{validationErrors.acceptTerms}</span>
-        )}
-      </div> */}
+
 
       <div className="form-actions">
         <button

@@ -10,20 +10,12 @@ export async function POST(req) {
       phone,
       positionOfInterest,
       yearsOfExperience,
-      coverNote,
-      acceptTerms
+      coverNote
     } = body;
 
     // Validation
-    if (!fullName || !lastName || !email || !phone || !positionOfInterest || !yearsOfExperience || !coverNote) {
+    if (!firstName || !lastName || !email || !phone || !positionOfInterest || !yearsOfExperience || !coverNote) {
       return new Response(JSON.stringify({ error: "All fields are required" }), {
-        status: 400,
-        headers: { "Content-Type": "application/json" },
-      });
-    }
-
-    if (!acceptTerms) {
-      return new Response(JSON.stringify({ error: "You must accept the terms to proceed" }), {
         status: 400,
         headers: { "Content-Type": "application/json" },
       });
@@ -41,7 +33,7 @@ export async function POST(req) {
     }
 
     const resend = new Resend(apiKey);
-    const emailSubject = `New Job Application: ${positionOfInterest} - ${fullName} ${lastName}`;
+    const emailSubject = `New Job Application: ${positionOfInterest} - ${firstName} ${lastName}`;
 
     const emailHtml = `
       <div style="font-family: 'Inter', sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e3e1de; border-radius: 8px; background-color: #efeeec; color: #131313;">
