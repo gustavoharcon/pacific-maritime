@@ -4,7 +4,7 @@ export async function POST(req) {
   try {
     const body = await req.json();
     const {
-      fullName,
+      firstName,
       lastName,
       email,
       phone,
@@ -62,8 +62,8 @@ export async function POST(req) {
           </thead>
           <tbody>
             <tr>
-              <td style="padding: 10px; border: 1px solid #cbc8c5; font-weight: bold; width: 40%; background-color: #ffffff;">Full Name</td>
-              <td style="padding: 10px; border: 1px solid #cbc8c5; background-color: #ffffff;">${fullName}</td>
+              <td style="padding: 10px; border: 1px solid #cbc8c5; font-weight: bold; width: 40%; background-color: #ffffff;">First Name</td>
+              <td style="padding: 10px; border: 1px solid #cbc8c5; background-color: #ffffff;">${firstName}</td>
             </tr>
             <tr>
               <td style="padding: 10px; border: 1px solid #cbc8c5; font-weight: bold; background-color: #ffffff;">Last Name</td>

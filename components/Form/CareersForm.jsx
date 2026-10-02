@@ -5,7 +5,7 @@ import { FaSpinner } from "react-icons/fa6";
 
 export default function CareersForm() {
   const [formData, setFormData] = useState({
-    fullName: "",
+    firstName: "",
     lastName: "",
     email: "",
     phone: "",
@@ -33,8 +33,8 @@ export default function CareersForm() {
 
   const validateForm = () => {
     const errors = {};
-    if (!formData.fullName.trim()) {
-      errors.fullName = "Full name is required";
+    if (!formData.firstName.trim()) {
+      errors.firstName = "First name is required";
     }
     if (!formData.lastName.trim()) {
       errors.lastName = "Last name is required";
@@ -88,7 +88,7 @@ export default function CareersForm() {
 
       setSuccess(true);
       setFormData({
-        fullName: "",
+        firstName: "",
         lastName: "",
         email: "",
         phone: "",
@@ -125,19 +125,19 @@ export default function CareersForm() {
 
       <div className="form-row-2">
         <div className="form-group">
-          <label htmlFor="fullName">Full name</label>
+          <label htmlFor="firstName">First name</label>
           <div className="input-wrapper">
             <input
               type="text"
-              id="fullName"
-              name="fullName"
-              value={formData.fullName}
+              id="firstName"
+              name="firstName"
+              value={formData.firstName}
               onChange={handleInputChange}
-              className={validationErrors.fullName ? "input-error" : ""}
+              className={validationErrors.firstName ? "input-error" : ""}
             />
           </div>
-          {validationErrors.fullName && (
-            <span className="error-text">{validationErrors.fullName}</span>
+          {validationErrors.firstName && (
+            <span className="error-text">{validationErrors.firstName}</span>
           )}
         </div>
 
