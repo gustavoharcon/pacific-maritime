@@ -1,4 +1,5 @@
 "use client";
+import { Analytics } from "@vercel/analytics/next";
 
 import { usePathname } from "next/navigation";
 
@@ -18,7 +19,7 @@ const BodyWrapper = ({ children }) => {
 
   const pageClass = getPageClass(pathname);
 
-  return <body className={pageClass}>{children}</body>;
+  return <body className={pageClass}>{children}<Analytics /></body>;
 };
 
 export default BodyWrapper;
