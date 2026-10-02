@@ -112,7 +112,8 @@ export async function POST(req) {
     `;
 
     const { data, error } = await resend.emails.send({
-      from: "Pacific Maritime Careers <onboarding@resend.dev>",
+      // from: "Pacific Maritime Careers <onboarding@resend.dev>",
+      from: `Pacific Maritime Careers <${process.env.FROM_EMAIL}>`,
       to: submissionEmail,
       subject: emailSubject,
       html: emailHtml,
