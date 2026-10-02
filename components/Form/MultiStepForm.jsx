@@ -162,8 +162,8 @@ export default function MultiStepForm() {
 
       setSuccess(true);
     } catch (err) {
-      console.error(err);
-      setErrorMsg(err.message || "An unexpected error occurred. Please try again.");
+      console.error("Request Quote page form submission Error", err);
+      setErrorMsg("An unexpected error occurred. Please try again.");
     } finally {
       setLoading(false);
     }
