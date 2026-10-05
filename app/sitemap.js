@@ -53,7 +53,7 @@ export default async function sitemap() {
             priority: 0.5,
         },
         {
-            url: `${baseUrl}/terms-of-service`,
+            url: `${baseUrl}/terms-and-conditions`,
             lastModified: new Date(),
             changeFrequency: 'yearly',
             priority: 0.5,

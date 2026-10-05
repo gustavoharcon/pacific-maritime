@@ -1,6 +1,6 @@
 import HeroSection from "@/components/HeroSections/HeroSection";
-import TimelineThreeColumns from "@/components/TimelineThreeColumns";
-import ColumnsWithImage from "@/components/ColumnsWithImage";
+// import TimelineThreeColumns from "@/components/TimelineThreeColumns";
+// import ColumnsWithImage from "@/components/ColumnsWithImage";
 import TopText from "@/components/Text/TopText";
 import siteData from "@/data/siteData.js";
 import ColumnsWithTopBGImageText from "@/components/ColumnsWithTopImageText";
@@ -27,7 +27,6 @@ export default function Home() {
   const complianceData = homeData.compliance_section;
   const capabilities_top_text = homeData.capabilities_three_columns.top_text;
   const why_choose_pmi = homeData.why_choose_pmi;
-
   const capabilities_three_columns = homeData.capabilities_three_columns.columns;
   const equipment_by_process_section = homeData.equipment_by_process_section;
 
