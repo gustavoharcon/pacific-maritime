@@ -10,7 +10,7 @@ export async function generateMetadata() {
     return generatePageMetadata({
         title: tosData.meta_data.title,
         description: tosData.meta_data.description,
-        path: "/terms-of-service",
+        path: "/terms-and-conditions",
     });
 }
 
