@@ -3032,7 +3032,7 @@ const siteData = [
                     {
                         "image": "https://res.cloudinary.com/irwujctd/image/upload/w_768/v1785878815/san-diego-panoramic-view_xbzkut.jpg",
                         "title": "Ports we serve",
-                        "subtitle": "Delivering major West Coast and regional maritime support. Our operations span local naval adjacencies at the Port of San Diego, heavy-lift marine contracting in Long Beach and Los Angeles, and dedicated operational support across Seattle, Tacoma, and Portland."
+                        "subtitle": "Delivering major West Coast and regional maritime support."
                     }
                 ]
             },
