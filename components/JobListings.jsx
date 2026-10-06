@@ -37,13 +37,14 @@ const JobListings = ({ data = [] }) => {
                 </div>
             ) : (
                 jobs.map((item, index) => (
-                    <a
-                        href={item.link}
-                        target="_blank" rel="noopener noreferrer"
-                        key={index}
-                        className="job-listing"
-                        aria-label={`View job: ${item.title}`}
-                    >
+                    // <a
+                    //     href={item.link}
+                    //     target="_blank" rel="noopener noreferrer"
+                    //     key={index}
+                    //     className="job-listing"
+                    //     aria-label={`View job: ${item.title}`}
+                    // >
+                    <div key={index} className="job-listing">
                         <h3>{item.title}</h3>
                         <p>{item.description}</p>
                         <ul className="icons-container">
@@ -58,7 +59,8 @@ const JobListings = ({ data = [] }) => {
                                 ))
                             }
                         </ul>
-                    </a>
+                    </div>
+                    // </a>
                 ))
             )}
         </div>
