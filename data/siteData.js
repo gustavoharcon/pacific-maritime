@@ -807,7 +807,7 @@ const siteData = [
         },
         "manufacturing_capabilities_page": {
             "meta_data": {
-                "title": "Custom Marine Fabrication & Manufacturing Capabilities",
+                "title": "Manufacturing Capabilities",
                 "description": "Operating 66,000 square feet of advanced CNC fabrication space alongside 14,000 square feet of inventory staging in San Diego. We manufacture MIL-SPEC compliant shipboard interiors, doors, platforms, and ladders for the Pacific, Atlantic, and Gulf fleets."
             },
             "call_to_action": {
