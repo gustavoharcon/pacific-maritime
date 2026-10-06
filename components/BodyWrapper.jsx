@@ -2,6 +2,7 @@
 import { Analytics } from "@vercel/analytics/next";
 
 import { usePathname } from "next/navigation";
+import MicrosoftClarity from "@/components/MicrosoftClarity";
 
 const BodyWrapper = ({ children }) => {
   const pathname = usePathname();
@@ -19,7 +20,7 @@ const BodyWrapper = ({ children }) => {
 
   const pageClass = getPageClass(pathname);
 
-  return <body className={pageClass}>{children}<Analytics /></body>;
+  return <body className={pageClass}>{children}<Analytics /><MicrosoftClarity /></body>;
 };
 
 export default BodyWrapper;
