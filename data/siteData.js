@@ -1499,6 +1499,7 @@ const siteData = [
             "shipboard_furniture_catalog": {
                 "title": "Shipboard Furniture Catalog",
                 "subtitle": `The official US Navy Shipboard Furniture Catalog (SFC) which is updated at: <a href='https://navlogtd.navy.mil/habitability' rel='noopener noreferrer' target='_blank'>navlogtd.navy.mil/habitability</a>`,
+                "heading_type": "h1",
                 "headers": [
                     "Category",
                     "Section Title",

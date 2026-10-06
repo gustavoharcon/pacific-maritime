@@ -7,7 +7,7 @@ import downloadIcon from "@/assets/images/icons/download-icon.png"
 import TopText from "./Text/TopText";
 
 const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
-    const { title, subtitle, rows = [] } = data;
+    const { title, subtitle, heading_type, rows = [] } = data;
     const [isSfcExpanded, setIsSfcExpanded] = useState(false);
 
     const displayedSfcRows = isSfcExpanded ? rows : rows.slice(0, 4);
@@ -18,7 +18,8 @@ const ShipboardFurnitureCatalog = ({ data = {}, onOpenOverlay }) => {
 
                 <TopText data={{
                     title: title,
-                    subtitle: subtitle
+                    subtitle: subtitle,
+                    heading_type: heading_type
                 }} />
 
                 <div className="sfc-table-wrapper">
